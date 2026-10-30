@@ -1,0 +1,31 @@
+package @@PACKAGE@@
+
+import java.io.IOException
+import kotlinx.coroutines.CancellationException
+import kotlinx.serialization.SerializationException
+import retrofit2.HttpException
+
+sealed interface ApiResult<out T> {
+    data class Success<T>(val value: T) : ApiResult<T>
+    data class Failure(
+        val kind: Kind,
+        val httpCode: Int? = null,
+        internal val cause: Throwable? = null,
+    ) : ApiResult<Nothing> {
+        // Keep diagnostic causes internal; toString must not expose URL/token/payload text.
+        override fun toString(): String = "Failure(kind=$kind, httpCode=$httpCode)"
+    }
+    enum class Kind { NETWORK, AUTHENTICATION, HTTP, CONTRACT }
+}
+
+suspend fun <T> safeApiCall(block: suspend () -> T): ApiResult<T> = try {
+    ApiResult.Success(block())
+} catch (cancelled: CancellationException) {
+    throw cancelled
+} catch (http: HttpException) {
+    ApiResult.Failure(if (http.code() == 401) ApiResult.Kind.AUTHENTICATION else ApiResult.Kind.HTTP, http.code(), http)
+} catch (serialization: SerializationException) {
+    ApiResult.Failure(ApiResult.Kind.CONTRACT, cause = serialization)
+} catch (network: IOException) {
+    ApiResult.Failure(ApiResult.Kind.NETWORK, cause = network)
+}

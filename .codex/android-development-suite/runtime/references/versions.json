@@ -1,0 +1,33 @@
+{
+  "profile": "compose-api36-reproducible",
+  "verified_at": "2026-10-30",
+  "policy": "A compatible reproducible baseline, not a claim of latest versions. Recheck official requirements before upgrades or publishing. Never apply this profile to an existing project automatically.",
+  "versions": {
+    "agp": "8.13.2",
+    "kotlin": "2.3.0",
+    "gradle": "8.13",
+    "compose-bom": "2026.02.01",
+    "activity": "1.12.4",
+    "lifecycle": "2.10.0",
+    "coroutines": "1.10.2",
+    "junit": "4.13.2",
+    "androidx-test": "1.3.0",
+    "espresso": "3.7.0",
+    "detekt": "1.23.8"
+  },
+  "jdk": 17,
+  "compile_sdk": 36,
+  "sources": [
+    "https://developer.android.com/build/releases/agp-8-13-0-release-notes",
+    "https://kotlinlang.org/docs/gradle-configure-project.html",
+    "https://developer.android.com/develop/ui/compose/bom/bom-mapping",
+    "https://dl.google.com/dl/android/maven2/androidx/compose/compose-bom/2026.02.01/compose-bom-2026.02.01.pom",
+    "https://dl.google.com/dl/android/maven2/androidx/activity/activity-compose/1.12.4/activity-compose-1.12.4.pom",
+    "https://dl.google.com/dl/android/maven2/androidx/lifecycle/lifecycle-viewmodel-compose/2.10.0/lifecycle-viewmodel-compose-2.10.0.pom"
+  ],
+  "notes": [
+    "AGP 8.13.2 supports Kotlin 2.3 and requires Gradle 8.13/JDK 17. AGP 9 uses built-in Kotlin and requires a different template migration.",
+    "Compose compiler Gradle plugin uses the Kotlin version; the BOM versions Compose libraries only.",
+    "Detekt 1.x uses its own Kotlin compiler. The optional isolated CLI task avoids compiler classpath conflicts; migration of analysis rules to Detekt 2 needs explicit review."
+  ]
+}

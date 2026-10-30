@@ -1,0 +1,15 @@
+{
+  "name": "AIZZAK API Documentation",
+  "generated_at": "2026-10-22",
+  "source": {
+    "repository": "AIZZAK",
+    "branch": "chore/public-file-links-closing",
+    "commit": "ff547ad8228741a532077b8eaf8fa2eb928be782"
+  },
+  "openapi": {
+    "version": "3.1.0",
+    "api_version": "1.0.0",
+    "paths": 58,
+    "operations": 77
+  }
+}

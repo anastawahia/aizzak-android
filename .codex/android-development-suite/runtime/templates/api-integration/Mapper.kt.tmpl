@@ -1,0 +1,8 @@
+package @@PACKAGE@@
+
+// Supply a DTO-to-domain transform at the repository boundary. Domain types
+// should express product invariants rather than copying wire DTOs blindly.
+fun <T, R> ApiResult<T>.map(transform: (T) -> R): ApiResult<R> = when (this) {
+    is ApiResult.Success -> ApiResult.Success(transform(value))
+    is ApiResult.Failure -> this
+}

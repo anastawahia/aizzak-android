@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-30",
+  "timezone": "Asia/Baghdad",
+  "plugin_version": "1.3.0",
+  "command": "python android-development-suite/scripts/check_plugin.py --codex --report .test-output/orchestration-checks-1.3.0.json",
+  "exit_code": 0,
+  "status": "passed",
+  "checks": [
+    {
+      "name": "structure",
+      "status": "passed"
+    },
+    {
+      "name": "behavior",
+      "status": "passed"
+    },
+    {
+      "name": "codex-runtime-discovery",
+      "status": "passed"
+    },
+    {
+      "name": "codex-native-agents:project",
+      "status": "passed"
+    },
+    {
+      "name": "codex-native-agents:user",
+      "status": "passed"
+    }
+  ],
+  "python_tests_passed": 83,
+  "codex_skills_discovered": 39,
+  "native_agents_checked_per_scope": 12,
+  "native_agent_scopes": [
+    "project",
+    "user"
+  ],
+  "skill_quick_validation": "passed",
+  "independent_instruction_scenarios": 4,
+  "limits": [
+    "Agent invocation uses a deterministic local fixture, not real model reasoning.",
+    "Human checkpoint flows were instruction-simulated, not executed against an Android app.",
+    "No Android build, push, PR creation, merge or publication was performed."
+  ]
+}

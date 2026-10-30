@@ -1,0 +1,7 @@
+{
+  "requirements": ["requirements_documented", "acceptance_testable", "critical_decisions_resolved"],
+  "architecture": ["boundaries_defined", "dependencies_valid", "decisions_recorded"],
+  "implementation": ["compile", "static_analysis", "relevant_tests", "independent_review"],
+  "integration": ["contract_tests", "authentication_review", "failure_cases"],
+  "release": ["release_build", "signature_and_upload_certificate", "required_tests", "critical_security_resolved", "play_policy_current", "listing_and_data_safety", "track_eligibility", "human_approval"]
+}

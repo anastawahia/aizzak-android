@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-30",
+  "timezone": "Asia/Baghdad",
+  "plugin_version": "1.2.0",
+  "status": "passed",
+  "python_tests": 82,
+  "python_tests_skipped": 0,
+  "checks": [
+    {
+      "name": "structure",
+      "status": "passed"
+    },
+    {
+      "name": "behavior",
+      "status": "passed"
+    },
+    {
+      "name": "claude:android-development-suite",
+      "status": "passed"
+    },
+    {
+      "name": "claude:agents",
+      "status": "passed"
+    },
+    {
+      "name": "claude:skills",
+      "status": "passed"
+    },
+    {
+      "name": "claude:commands",
+      "status": "passed"
+    },
+    {
+      "name": "runtime-discovery",
+      "status": "passed"
+    },
+    {
+      "name": "codex-runtime-discovery",
+      "status": "passed"
+    },
+    {
+      "name": "codex-native-agents:project",
+      "status": "passed"
+    },
+    {
+      "name": "codex-native-agents:user",
+      "status": "passed"
+    }
+  ],
+  "codex": {
+    "version": "codex-cli 0.165.0-alpha.1.2",
+    "skills": 38,
+    "enabled": true,
+    "hook_discovery": "passed",
+    "native_agents": {
+      "project": {
+        "status": "passed",
+        "registered": [
+          "android-orchestrator",
+          "product-analyst",
+          "android-architect",
+          "ui-ux-designer",
+          "compose-developer",
+          "android-core-developer",
+          "integration-engineer",
+          "android-qa-engineer",
+          "security-reviewer",
+          "performance-engineer",
+          "build-release-engineer",
+          "android-code-reviewer"
+        ],
+        "invoked": [
+          "android-orchestrator",
+          "product-analyst",
+          "android-architect",
+          "ui-ux-designer",
+          "compose-developer",
+          "android-core-developer",
+          "integration-engineer",
+          "android-qa-engineer",
+          "security-reviewer",
+          "performance-engineer",
+          "build-release-engineer",
+          "android-code-reviewer"
+        ],
+        "handoffs": [
+          "android-orchestrator",
+          "product-analyst",
+          "android-architect",
+          "ui-ux-designer",
+          "compose-developer",
+          "android-core-developer",
+          "integration-engineer",
+          "android-qa-engineer",
+          "security-reviewer",
+          "performance-engineer",
+          "build-release-engineer",
+          "android-code-reviewer"
+        ],
+        "exact_contracts_verified": 12,
+        "local_fixture_requests": 49,
+        "external_model_calls": 0
+      },
+      "user": {
+        "status": "passed",
+        "registered": [
+          "android-orchestrator",
+          "product-analyst",
+          "android-architect",
+          "ui-ux-designer",
+          "compose-developer",
+          "android-core-developer",
+          "integration-engineer",
+          "android-qa-engineer",
+          "security-reviewer",
+          "performance-engineer",
+          "build-release-engineer",
+          "android-code-reviewer"
+        ],
+        "invoked": [
+          "android-orchestrator",
+          "product-analyst",
+          "android-architect",
+          "ui-ux-designer",
+          "compose-developer",
+          "android-core-developer",
+          "integration-engineer",
+          "android-qa-engineer",
+          "security-reviewer",
+          "performance-engineer",
+          "build-release-engineer",
+          "android-code-reviewer"
+        ],
+        "handoffs": [
+          "android-orchestrator",
+          "product-analyst",
+          "android-architect",
+          "ui-ux-designer",
+          "compose-developer",
+          "android-core-developer",
+          "integration-engineer",
+          "android-qa-engineer",
+          "security-reviewer",
+          "performance-engineer",
+          "build-release-engineer",
+          "android-code-reviewer"
+        ],
+        "exact_contracts_verified": 12,
+        "local_fixture_requests": 49,
+        "external_model_calls": 0
+      }
+    },
+    "isolated_homes": true,
+    "hook_trust_granted": false
+  },
+  "claude": {
+    "version": "2.1.289 (Claude Code)",
+    "agents": 12,
+    "skills_and_commands": 38
+  },
+  "python_syntax": "passed",
+  "root_marketplace_validation": "passed",
+  "real_model_android_delivery_tested": false
+}

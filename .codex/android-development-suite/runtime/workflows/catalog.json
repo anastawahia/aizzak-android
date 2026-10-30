@@ -1,0 +1,702 @@
+{
+  "orchestrate": {
+    "title": "Single-contact Android delivery",
+    "preconditions": [
+      "User outcome and inspected project/destination; repository instructions, Git changes and saved task state read."
+    ],
+    "agents": [
+      "android-orchestrator"
+    ],
+    "skills": [
+      "requirements-engineering",
+      "feature-planning"
+    ],
+    "steps": [
+      "Classify the task or reconcile unfinished work and select scoped workflows.",
+      "Prepare applicable requirements/design documents and stop for human review before dependent implementation.",
+      "Dispatch ready specialists, accept actual outputs, return rework to its owner and pass stable artifacts to the next owner.",
+      "Run required checks and independent review; prepare the PR packet when in scope and stop before push/open actions.",
+      "Resume after the user decision, verify authorized external actions and report actual completion or blockers."
+    ],
+    "parallel": [
+      "Independent research and disjoint-file tasks after stable contracts; no dependent work across an unapproved checkpoint."
+    ],
+    "artifacts": [
+      "task status",
+      "requirements/design documents",
+      "accepted handoffs",
+      "verification and review evidence",
+      "PR packet when applicable"
+    ],
+    "gates": [
+      "applicable scoped workflow evidence gates",
+      "applicable human review checkpoints"
+    ],
+    "human_checkpoints": [
+      "requirements",
+      "design",
+      "pull-request"
+    ],
+    "failure": [
+      "Record the resume point and stop dependent work on a failed gate, rejected handoff or pending human decision.",
+      "At most three targeted repairs per incident before escalation."
+    ],
+    "approval": [
+      "Follow references/single-agent-delivery.md; prepare reviewable artifacts before asking for approval.",
+      "Only the user approves human checkpoints; bind decisions to artifact versions and reopen affected approvals on change.",
+      "Preserve explicit user overrides and separate release/publication/destructive-action authorization."
+    ],
+    "report": [
+      "Scope, routes, accepted handoffs, actual checks, checkpoint decisions, artifacts/PR links, limitations and next action."
+    ]
+  },
+  "new-app": {
+    "title": "New application development",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "product-analyst",
+      "android-architect",
+      "ui-ux-designer",
+      "compose-developer",
+      "android-core-developer",
+      "android-qa-engineer",
+      "build-release-engineer"
+    ],
+    "skills": [
+      "requirements-engineering",
+      "android-project-bootstrap",
+      "compose-ui-patterns",
+      "unit-testing"
+    ],
+    "steps": [
+      "Inspect destination/host and define app identity, supported devices and essential acceptance cases.",
+      "Confirm architecture and implementable screen specs.",
+      "Render a new project, initialize memory and bootstrap wrapper.",
+      "Implement initial journey and tests; run compile/unit/lint and available device checks."
+    ],
+    "parallel": [
+      "Requirements research and environment inspection; design and test planning after requirements stabilize."
+    ],
+    "artifacts": [
+      "PRD",
+      "ADR",
+      "source",
+      "test reports",
+      "knowledge"
+    ],
+    "gates": [
+      "requirements",
+      "architecture",
+      "implementation"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "analyze": {
+    "title": "Existing application analysis",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "android-architect"
+    ],
+    "skills": [
+      "android-clean-architecture"
+    ],
+    "steps": [
+      "Run read-only inspection and Git status without executing Gradle or init-memory.",
+      "Inspect catalogs, manifests, modules, data flow, tests and CI; distinguish observed evidence from inferred architecture.",
+      "Return findings, constraints and recommended next steps without writing files."
+    ],
+    "parallel": [
+      "Independent read-only dependency and test inventory when needed."
+    ],
+    "artifacts": [
+      "analysis returned in conversation"
+    ],
+    "gates": [
+      "findings-report"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "feature": {
+    "title": "New feature development",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "product-analyst",
+      "android-core-developer",
+      "compose-developer",
+      "android-qa-engineer",
+      "android-code-reviewer"
+    ],
+    "skills": [
+      "feature-planning",
+      "state-management",
+      "compose-ui-patterns",
+      "unit-testing"
+    ],
+    "steps": [
+      "Inspect existing patterns and changed files; link scope to REQ IDs.",
+      "Agree state/interface contracts and file ownership.",
+      "Implement bounded core/UI/data changes and regression coverage.",
+      "Run relevant compile/test/lint checks and independent diff review; update traceability."
+    ],
+    "parallel": [
+      "Core and UI on separate files after contracts; QA test design while implementation proceeds."
+    ],
+    "artifacts": [
+      "plan",
+      "source",
+      "tests",
+      "review",
+      "traceability"
+    ],
+    "gates": [
+      "requirements",
+      "implementation"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "bugfix": {
+    "title": "Bug investigation and repair",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "android-core-developer",
+      "android-qa-engineer",
+      "android-code-reviewer"
+    ],
+    "skills": [
+      "feature-planning",
+      "unit-testing"
+    ],
+    "steps": [
+      "Capture the actual failing behavior and environment.",
+      "Trace the root cause and create a failing regression case.",
+      "Apply the smallest correction and rerun the failed/affected checks.",
+      "Review residual risk and record the repaired acceptance case."
+    ],
+    "parallel": [
+      "Read-only reproduction research and regression test design."
+    ],
+    "artifacts": [
+      "reproduction",
+      "regression test",
+      "fix",
+      "execution evidence"
+    ],
+    "gates": [
+      "implementation"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "ui-redesign": {
+    "title": "UI redesign",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "ui-ux-designer",
+      "compose-developer",
+      "android-qa-engineer"
+    ],
+    "skills": [
+      "material3-design-system",
+      "adaptive-ui-accessibility",
+      "compose-ui-testing"
+    ],
+    "steps": [
+      "Inspect current screen behavior and preserve product contracts.",
+      "Specify state-by-state design, adaptive rules, tokens and accessibility.",
+      "Implement the design in owned UI files and update semantic tests.",
+      "Validate light/dark, RTL, large fonts and supported window sizes."
+    ],
+    "parallel": [
+      "Design and accessibility audit; screenshots and semantic tests after implementation."
+    ],
+    "artifacts": [
+      "screen specs",
+      "UI source",
+      "visual/semantics evidence"
+    ],
+    "gates": [
+      "requirements",
+      "implementation"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "backend": {
+    "title": "Backend integration",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "integration-engineer",
+      "android-core-developer",
+      "android-qa-engineer",
+      "security-reviewer"
+    ],
+    "skills": [
+      "api-integration",
+      "local-persistence",
+      "offline-first-sync"
+    ],
+    "steps": [
+      "Read the real contract and auth/privacy requirements.",
+      "Define DTO/domain/repository/error contracts and ownership.",
+      "Implement client, storage and justified sync behavior.",
+      "Run contract, failure, auth-expiry and migration tests; perform scoped security review."
+    ],
+    "parallel": [
+      "Contract test design and data implementation after interfaces; security review of auth design."
+    ],
+    "artifacts": [
+      "API contract notes",
+      "data source",
+      "fixtures",
+      "test evidence"
+    ],
+    "gates": [
+      "integration",
+      "implementation"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "refactor": {
+    "title": "Architecture refactoring",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "android-architect",
+      "android-core-developer",
+      "android-code-reviewer",
+      "android-qa-engineer"
+    ],
+    "skills": [
+      "android-clean-architecture",
+      "dependency-injection",
+      "unit-testing"
+    ],
+    "steps": [
+      "Capture current behavior and dependencies before editing.",
+      "Record ADR and compiling migration slices.",
+      "Move one boundary at a time while preserving public behavior.",
+      "Run regression checks and review dependency direction/cycles."
+    ],
+    "parallel": [
+      "Read-only architecture review and regression inventory."
+    ],
+    "artifacts": [
+      "ADR",
+      "module map",
+      "incremental diffs",
+      "regression evidence"
+    ],
+    "gates": [
+      "architecture",
+      "implementation"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "test": {
+    "title": "Testing and regression validation",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "android-qa-engineer"
+    ],
+    "skills": [
+      "unit-testing",
+      "compose-ui-testing",
+      "integration-e2e-testing"
+    ],
+    "steps": [
+      "Map acceptance criteria and changed behavior to a test matrix.",
+      "Create missing focused cases and inspect host/device availability.",
+      "Run selected JVM, lint, compile and device checks without treating skipped work as passed.",
+      "Report failures/skips/coverage gaps and precise recovery actions."
+    ],
+    "parallel": [
+      "Independent JVM modules may run separately when Gradle/resources permit."
+    ],
+    "artifacts": [
+      "test matrix",
+      "XML/HTML reports",
+      "environment evidence"
+    ],
+    "gates": [
+      "implementation"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "security": {
+    "title": "Security audit",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "security-reviewer"
+    ],
+    "skills": [
+      "android-security"
+    ],
+    "steps": [
+      "Inspect threat/data boundaries, manifest, auth, networking and secret handling.",
+      "Review resolved dependencies/SBOM/licenses and approved scanner evidence.",
+      "Report severity-ranked findings and verify targeted remediation without editing by default."
+    ],
+    "parallel": [
+      "Independent read-only manifest, dependency and auth reviews."
+    ],
+    "artifacts": [
+      "findings",
+      "SBOM",
+      "scan evidence",
+      "retest status"
+    ],
+    "gates": [
+      "findings-report"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "performance": {
+    "title": "Performance optimization",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "performance-engineer",
+      "android-core-developer",
+      "android-qa-engineer"
+    ],
+    "skills": [
+      "performance-optimization"
+    ],
+    "steps": [
+      "Define journey, budget and representative benchmark environment.",
+      "Collect baseline and locate a measured bottleneck.",
+      "Apply narrow optimization with behavior regression coverage.",
+      "Repeat comparable measurements and report uncertainty and remaining budget."
+    ],
+    "parallel": [
+      "Read-only profiles of separate subsystems if measurement conditions remain controlled."
+    ],
+    "artifacts": [
+      "baseline",
+      "profile",
+      "patch",
+      "comparison"
+    ],
+    "gates": [
+      "implementation"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "release": {
+    "title": "Release preparation",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "build-release-engineer",
+      "android-qa-engineer",
+      "security-reviewer",
+      "android-code-reviewer"
+    ],
+    "skills": [
+      "gradle-build-management",
+      "android-ci-cd",
+      "android-security"
+    ],
+    "steps": [
+      "Freeze artifact inputs/version and review current Play requirements.",
+      "Run required tests/lint/security checks; resolve critical findings.",
+      "Build release AAB using approved signing provider; verify signature/hash and upload certificate.",
+      "Complete listing/policy/testing/rollout checklist and prepare a concrete submission plan without publishing."
+    ],
+    "parallel": [
+      "QA, independent review, listing readiness and security review of frozen source."
+    ],
+    "artifacts": [
+      "AAB",
+      "hash/certificate",
+      "release evidence",
+      "rollout plan"
+    ],
+    "gates": [
+      "implementation",
+      "release"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "publish": {
+    "title": "Google Play publication",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "build-release-engineer"
+    ],
+    "skills": [
+      "play-store-publishing"
+    ],
+    "steps": [
+      "Verify current policies, eligibility and release gate for frozen source/artifact.",
+      "Dry-run exact bundle/package/version/track/rollout and present it for human authorization.",
+      "Record explicit approval reference and execute the approved upload/edit once.",
+      "Inspect API result and Play Console serving/review status; retain submission IDs without claiming public availability prematurely."
+    ],
+    "parallel": [
+      "Read-only listing and policy readiness review before authorization."
+    ],
+    "artifacts": [
+      "approval reference",
+      "API result",
+      "Console verification",
+      "release history"
+    ],
+    "gates": [
+      "release"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  },
+  "incident": {
+    "title": "Post-release incident handling",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Trusted wrapper required only for execution; existing user work preserved."
+    ],
+    "agents": [
+      "android-orchestrator",
+      "android-core-developer",
+      "integration-engineer",
+      "android-qa-engineer",
+      "build-release-engineer"
+    ],
+    "skills": [
+      "crash-monitoring-maintenance",
+      "feature-planning",
+      "unit-testing"
+    ],
+    "steps": [
+      "Triage impact and affected versions with sanitized telemetry.",
+      "Reproduce and choose halt/forward-fix/rollback proposal based on version/data constraints.",
+      "Implement/test the smallest remediation and prepare the signed artifact.",
+      "Obtain approval before changing production rollout; verify serving/health recovery and record the incident."
+    ],
+    "parallel": [
+      "Read-only telemetry and backend contract investigation; regression test design."
+    ],
+    "artifacts": [
+      "incident timeline",
+      "reproduction",
+      "fix",
+      "health evidence"
+    ],
+    "gates": [
+      "implementation",
+      "release"
+    ],
+    "failure": [
+      "Capture actual error and affected REQ IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Existing authorization covers reversible in-scope edits and read-only checks.",
+      "Explicit human approval required immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope/REQ IDs; completed/failed/blocked stages; changed paths.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate results, approved exceptions, residual risks and next action."
+    ]
+  }
+}

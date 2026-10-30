@@ -1,0 +1,11 @@
+# Integrate @@FEATURE@@
+
+This is a small UI-only library. No repository or domain layer is justified yet.
+For an existing app prefer its feature pattern and adapt the generated files.
+
+For the suite starter, generate into `feature-@@FEATURE@@`, add
+`include(":feature-@@FEATURE@@")` to settings and
+`implementation(project(":feature-@@FEATURE@@"))` to the app dependencies.
+Align minSdk/compileSdk with the host and wire the screen through the existing
+navigation graph. The generated module compiles independently but is not routed
+automatically. Run its unit tests and the host's compile/lint checks after wiring.

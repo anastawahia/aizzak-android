@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-30",
+  "timezone": "Asia/Baghdad",
+  "host": {
+    "os": "Windows 11",
+    "claude_code": "2.1.289",
+    "python": "3.12",
+    "jdk": "17.0.19",
+    "android_platform": 36,
+    "gradle": "8.13"
+  },
+  "plugin": {
+    "status": "passed",
+    "behavior_tests": 54,
+    "checks": [
+      {
+        "name": "structure",
+        "status": "passed"
+      },
+      {
+        "name": "behavior",
+        "status": "passed",
+        "exit_code": 0
+      },
+      {
+        "name": "claude:android-development-suite",
+        "status": "passed",
+        "exit_code": 0
+      },
+      {
+        "name": "claude:agents",
+        "status": "passed",
+        "exit_code": 0
+      },
+      {
+        "name": "claude:skills",
+        "status": "passed",
+        "exit_code": 0
+      },
+      {
+        "name": "claude:commands",
+        "status": "passed",
+        "exit_code": 0
+      },
+      {
+        "name": "runtime-discovery",
+        "status": "passed",
+        "exit_code": 0
+      }
+    ],
+    "runtime_inventory": {
+      "agents": 12,
+      "reusable_skills": 24,
+      "commands": 14,
+      "loaded_skill_entries": 38,
+      "hooks": 1
+    }
+  },
+  "baseline": {
+    "kind": "all",
+    "status": "passed",
+    "source_sha256": "f6b0eb670d57445c873c17eff142834a6c8e6a22c836a141e3921bf67a5bd397",
+    "timestamp": 1793320841,
+    "artifacts": [
+      {
+        "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\sample-app\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+        "sha256": "8a1df1684141641f4c3bdc39d7194374295f7d306f828cc70baffe28994b41b6"
+      }
+    ],
+    "command": [
+      "<repository>\\.test-output\\sample-app\\gradlew.bat",
+      ":app:assembleDebug",
+      ":app:testDebugUnitTest",
+      ":app:lintDebug",
+      "--console=plain",
+      "--no-daemon"
+    ],
+    "exit_codes": [
+      0
+    ],
+    "duration_seconds": 431.625
+  },
+  "extended": [
+    {
+      "kind": "all",
+      "status": "passed",
+      "source_sha256": "2b9a246fb66806aee37c17b1a3eac251a80c16e67f8f3ad4ca34456e4c9f4f57",
+      "timestamp": 1793322030,
+      "test_summary": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "reports": [
+          "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\test-results\\testDebugUnitTest\\TEST-com.example.suitedemo.CounterViewModelTest.xml",
+          "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\test-results\\testDebugUnitTest\\TEST-com.example.suitedemo.data.ApiResultTest.xml",
+          "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\test-results\\testDebugUnitTest\\TEST-com.example.suitedemo.data.CatalogContractTest.xml"
+        ]
+      },
+      "artifacts": [
+        {
+          "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+          "sha256": "3ba94180d5e549b001159546b9fa4e179a38c2c5bba10db997bbe4b7409f4c11"
+        },
+        {
+          "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+          "sha256": "125a49947a1daeb74ff7a7e83a9b73f8807b6c12916d8d479e367782c1dd7042"
+        }
+      ],
+      "command": [
+        "<repository>\\.test-output\\extended-demo\\gradlew.bat",
+        ":app:assembleDebug",
+        ":app:testDebugUnitTest",
+        ":app:lintDebug",
+        "--console=plain",
+        "--no-daemon"
+      ],
+      "exit_codes": [
+        0
+      ],
+      "duration_seconds": 99.578
+    },
+    {
+      "kind": "static",
+      "status": "passed",
+      "source_sha256": "2b9a246fb66806aee37c17b1a3eac251a80c16e67f8f3ad4ca34456e4c9f4f57",
+      "timestamp": 1793322129,
+      "artifacts": [
+        {
+          "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+          "sha256": "3ba94180d5e549b001159546b9fa4e179a38c2c5bba10db997bbe4b7409f4c11"
+        },
+        {
+          "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+          "sha256": "125a49947a1daeb74ff7a7e83a9b73f8807b6c12916d8d479e367782c1dd7042"
+        }
+      ],
+      "command": [
+        "<repository>\\.test-output\\extended-demo\\gradlew.bat",
+        ":app:detekt",
+        "--console=plain",
+        "--no-daemon"
+      ],
+      "exit_codes": [
+        0
+      ],
+      "duration_seconds": 20.922
+    },
+    {
+      "kind": "ui-compile",
+      "status": "passed",
+      "source_sha256": "2b9a246fb66806aee37c17b1a3eac251a80c16e67f8f3ad4ca34456e4c9f4f57",
+      "timestamp": 1793322150,
+      "artifacts": [
+        {
+          "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+          "sha256": "3ba94180d5e549b001159546b9fa4e179a38c2c5bba10db997bbe4b7409f4c11"
+        },
+        {
+          "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+          "sha256": "125a49947a1daeb74ff7a7e83a9b73f8807b6c12916d8d479e367782c1dd7042"
+        }
+      ],
+      "command": [
+        "<repository>\\.test-output\\extended-demo\\gradlew.bat",
+        ":app:assembleDebugAndroidTest",
+        "--console=plain",
+        "--no-daemon"
+      ],
+      "exit_codes": [
+        0
+      ],
+      "duration_seconds": 31.14
+    },
+    {
+      "kind": "unit",
+      "status": "passed",
+      "source_sha256": "2b9a246fb66806aee37c17b1a3eac251a80c16e67f8f3ad4ca34456e4c9f4f57",
+      "timestamp": 1793322182,
+      "test_summary": {
+        "tests": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "reports": [
+          "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\feature-settings\\build\\test-results\\testDebugUnitTest\\TEST-com.example.suitedemo.settings.SettingsViewModelTest.xml"
+        ]
+      },
+      "artifacts": [],
+      "command": [
+        "<repository>\\.test-output\\extended-demo\\gradlew.bat",
+        ":feature-settings:testDebugUnitTest",
+        "--console=plain",
+        "--no-daemon"
+      ],
+      "exit_codes": [
+        0
+      ],
+      "duration_seconds": 25.204
+    }
+  ],
+  "release_fixture": {
+    "build": {
+      "kind": "release",
+      "status": "passed",
+      "source_sha256": "2b9a246fb66806aee37c17b1a3eac251a80c16e67f8f3ad4ca34456e4c9f4f57",
+      "timestamp": 1793322220,
+      "artifacts": [
+        {
+          "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+          "sha256": "3ba94180d5e549b001159546b9fa4e179a38c2c5bba10db997bbe4b7409f4c11"
+        },
+        {
+          "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+          "sha256": "125a49947a1daeb74ff7a7e83a9b73f8807b6c12916d8d479e367782c1dd7042"
+        },
+        {
+          "path": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\bundle\\release\\app-release.aab",
+          "sha256": "b7ed4e23d65d343dc607001a9077d6e0d6267c1c078afe6477e4cfd6ce2eedb4"
+        }
+      ],
+      "command": [
+        "<repository>\\.test-output\\extended-demo\\gradlew.bat",
+        ":app:bundleRelease",
+        "--console=plain",
+        "--no-daemon"
+      ],
+      "exit_codes": [
+        0
+      ],
+      "duration_seconds": 159.421
+    },
+    "audit": {
+      "status": "passed",
+      "test_key_only": true,
+      "bundle": "C:\\Users\\anast\\Desktop\\plugins\\android_builder\\.test-output\\extended-demo\\app\\build\\outputs\\bundle\\release\\app-release.aab",
+      "sha256": "b7ed4e23d65d343dc607001a9077d6e0d6267c1c078afe6477e4cfd6ce2eedb4",
+      "signature_verified": true,
+      "play_certificate_matched": false,
+      "release_gate_passed": false,
+      "published": false
+    },
+    "private_key_files_remaining": 0
+  },
+  "template_comparison": {
+    "compared_files": 27,
+    "comparison": "UTF-8 text with native line endings normalized",
+    "differences": []
+  },
+  "lint": {
+    "sample-app": {
+      "Warning": 11
+    },
+    "extended-demo": {
+      "Warning": 24
+    }
+  },
+  "not_executed": [
+    "device runtime/accessibility/performance",
+    "native Linux/WSL",
+    "hosted CI",
+    "authenticated model-agent behavior",
+    "live hook lifecycle",
+    "live backend/monitoring",
+    "Play operations and production certificate/eligibility"
+  ],
+  "published": false
+}

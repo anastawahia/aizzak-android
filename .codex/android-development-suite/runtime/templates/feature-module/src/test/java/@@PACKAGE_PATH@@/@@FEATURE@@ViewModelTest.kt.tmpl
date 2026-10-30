@@ -1,0 +1,17 @@
+package @@PACKAGE@@
+
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
+import org.junit.Test
+
+class @@FEATURE@@ViewModelTest {
+    @Test
+    fun toggleIsReversible() {
+        val model = @@FEATURE@@ViewModel()
+        assertFalse(model.state.value.enabled)
+        model.toggle()
+        assertTrue(model.state.value.enabled)
+        model.toggle()
+        assertFalse(model.state.value.enabled)
+    }
+}

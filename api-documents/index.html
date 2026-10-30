@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIZZAK API — ReDoc</title>
+  <style>
+    body { margin: 0; padding: 0; background: #fff; }
+    .notice { direction: rtl; font-family: system-ui, sans-serif; padding: 10px 16px; background: #0f172a; color: #e2e8f0; }
+    .notice a { color: #7dd3fc; margin-inline-start: 12px; }
+    #status { direction: rtl; font-family: system-ui, sans-serif; margin: 32px auto; max-width: 760px; padding: 18px 22px; border: 1px solid #cbd5e1; border-radius: 10px; color: #334155; background: #f8fafc; }
+    #status.error { border-color: #fca5a5; color: #991b1b; background: #fef2f2; }
+  </style>
+</head>
+<body>
+  <div class="notice">
+    توثيق AIZZAK API
+    <a href="swagger.html">Swagger UI</a>
+    <a href="openapi.yaml" download>تنزيل OpenAPI</a>
+  </div>
+  <div id="status">جارٍ تحميل التوثيق المحلي…</div>
+  <div id="redoc-container"></div>
+  <noscript><div class="error">يجب تفعيل JavaScript لعرض التوثيق.</div></noscript>
+  <script src="openapi.js"></script>
+  <script src="assets/redoc.standalone.js"></script>
+  <script>
+    (function () {
+      var status = document.getElementById("status");
+      function fail(message) {
+        status.className = "error";
+        status.textContent = "تعذر عرض التوثيق: " + message;
+      }
+      window.addEventListener("error", function (event) {
+        fail(event.message || "حدث خطأ غير معروف.");
+      });
+      try {
+        if (!window.AIZZAK_OPENAPI) throw new Error("لم يتم تحميل عقد OpenAPI المحلي.");
+        if (!window.Redoc) throw new Error("لم يتم تحميل مكتبة ReDoc المحلية.");
+        window.Redoc.init(
+          window.AIZZAK_OPENAPI,
+          {
+            nativeScrollbars: true,
+            hideDownloadButton: false,
+            expandResponses: "200,201,202,204",
+            requiredPropsFirst: true,
+            sortPropsAlphabetically: false
+          },
+          document.getElementById("redoc-container"),
+          function () { status.remove(); }
+        );
+      } catch (error) {
+        fail(error.message || String(error));
+      }
+    }());
+  </script>
+</body>
+</html>

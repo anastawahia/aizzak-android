@@ -1,0 +1,34 @@
+package @@PACKAGE@@
+
+import java.io.IOException
+import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.test.runTest
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.fail
+import org.junit.Test
+
+class ApiResultTest {
+    @Test
+    fun transportFailureRemainsDistinctFromApplicationData() = runTest {
+        val result = safeApiCall<String> { throw IOException("controlled test failure") }
+        assertEquals(ApiResult.Kind.NETWORK, (result as ApiResult.Failure).kind)
+        assertEquals(IOException::class.java, result.cause?.javaClass)
+    }
+
+    @Test
+    fun coroutineCancellationIsNeverConvertedToAnErrorState() = runTest {
+        try {
+            safeApiCall<String> { throw CancellationException("cancelled by caller") }
+            fail("Cancellation must propagate")
+        } catch (expected: CancellationException) {
+            assertEquals("cancelled by caller", expected.message)
+        }
+    }
+
+    @Test
+    fun diagnosticMessageIsNotExposedByErrorRendering() {
+        val error = ApiResult.Failure(ApiResult.Kind.NETWORK, cause = IOException("private diagnostic fixture"))
+        assertFalse(error.toString().contains("private diagnostic fixture"))
+    }
+}

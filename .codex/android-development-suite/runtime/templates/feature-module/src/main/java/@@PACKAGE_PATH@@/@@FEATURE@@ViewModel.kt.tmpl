@@ -1,0 +1,17 @@
+package @@PACKAGE@@
+
+import androidx.lifecycle.ViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
+
+data class @@FEATURE@@UiState(val enabled: Boolean = false)
+
+class @@FEATURE@@ViewModel : ViewModel() {
+    private val mutableState = MutableStateFlow(@@FEATURE@@UiState())
+    val state = mutableState.asStateFlow()
+
+    fun toggle() {
+        mutableState.update { it.copy(enabled = !it.enabled) }
+    }
+}

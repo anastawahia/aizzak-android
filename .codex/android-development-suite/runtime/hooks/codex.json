@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell|exec_command|shell_command|apply_patch|Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${PLUGIN_ROOT}/scripts/guard.py\" --host codex",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

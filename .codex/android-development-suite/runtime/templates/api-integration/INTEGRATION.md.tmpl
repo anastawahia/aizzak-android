@@ -1,0 +1,29 @@
+# Wire the generated API
+
+This generator deliberately supports JSON OpenAPI 3.0 parameterless GETs and
+local component DTOs. It fails on unsupported constructs rather than guessing.
+The integration skill handles richer contracts manually. Inspect securitySchemes:
+authenticated calls need an approved token provider and bounded single-flight
+refresh; this skeleton intentionally installs no credentials or interceptors.
+
+Apply `org.jetbrains.kotlin.plugin.serialization` matching the project's Kotlin
+version. Add reviewed compatible `com.squareup.retrofit2:retrofit`,
+`com.squareup.retrofit2:converter-kotlinx-serialization`, `com.squareup.okhttp3:okhttp`,
+and `org.jetbrains.kotlinx:kotlinx-serialization-json` catalog entries. Keep
+Retrofit and its converter at the same version. Validate against official
+Square and Kotlin release documentation before resolving dependencies.
+
+Place these files under the selected module's source package, add INTERNET to
+the manifest, and bind `createApi` and `ApiRepository` via the project's DI.
+Provide an HTTPS base URL ending with `/` and an OkHttpClient with explicit
+timeouts and no body/token logging in release. Map success DTOs to domain models
+with `map` at the repository boundary; provide product-specific error messages.
+Failure causes remain internal for diagnosis; the safe `toString` exposes only
+kind/code. Do not forward raw exception text or causes into UI/telemetry without
+an approved redaction and data policy.
+Test decoding, 401, 403, 429, 500, malformed JSON, IO failure, and cancellation
+using MockWebServer. Copy `tests/ApiResultTest.kt` to the module's JVM test source
+set and add JUnit plus kotlinx-coroutines-test matching the project. The emitted
+tests cover transport error translation and cancellation propagation; add
+contract-specific success/HTTP/decoding tests for the actual backend.
+This output is generated source, not a tested integration.

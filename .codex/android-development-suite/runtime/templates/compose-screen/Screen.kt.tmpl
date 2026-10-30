@@ -1,0 +1,26 @@
+package @@PACKAGE@@
+
+import androidx.compose.material3.Button
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+
+sealed interface @@FEATURE@@State {
+    data object Loading : @@FEATURE@@State
+    data object Empty : @@FEATURE@@State
+    data class Content(val text: String) : @@FEATURE@@State
+    data class Error(val message: String) : @@FEATURE@@State
+}
+
+@Composable
+fun @@FEATURE@@Screen(state: @@FEATURE@@State, emptyLabel: String, retryLabel: String, onRetry: () -> Unit) {
+    when (state) {
+        @@FEATURE@@State.Loading -> CircularProgressIndicator()
+        @@FEATURE@@State.Empty -> Text(emptyLabel)
+        is @@FEATURE@@State.Content -> Text(state.text)
+        is @@FEATURE@@State.Error -> {
+            Text(state.message)
+            Button(onClick = onRetry) { Text(retryLabel) }
+        }
+    }
+}

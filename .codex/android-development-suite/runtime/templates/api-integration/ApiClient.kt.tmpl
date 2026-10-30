@@ -1,0 +1,19 @@
+package @@PACKAGE@@
+
+import okhttp3.OkHttpClient
+import retrofit2.Retrofit
+import retrofit2.converter.kotlinx.serialization.asConverterFactory
+import okhttp3.MediaType.Companion.toMediaType
+import kotlinx.serialization.json.Json
+
+private val apiJson = Json { ignoreUnknownKeys = true }
+
+fun createApi(baseUrl: String, client: OkHttpClient): ApiService {
+    require(baseUrl.startsWith("https://") && baseUrl.endsWith("/"))
+    return Retrofit.Builder()
+        .baseUrl(baseUrl)
+        .client(client)
+        .addConverterFactory(apiJson.asConverterFactory("application/json".toMediaType()))
+        .build()
+        .create(ApiService::class.java)
+}

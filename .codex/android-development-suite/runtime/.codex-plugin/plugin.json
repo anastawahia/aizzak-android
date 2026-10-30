@@ -1,0 +1,19 @@
+{
+  "name": "android-development-suite",
+  "version": "1.3.0",
+  "description": "Android engineering skills, workflow entry points, project tooling and installable native Codex specialists.",
+  "author": {
+    "name": "Android Development Suite Contributors"
+  },
+  "license": "MIT",
+  "skills": "./codex-skills/",
+  "hooks": "./hooks/codex.json",
+  "interface": {
+    "displayName": "Android Development Suite",
+    "shortDescription": "Build, test and release Kotlin/Compose apps",
+    "defaultPrompt": [
+      "Analyze my Android project",
+      "Build a scoped Android feature"
+    ]
+  }
+}

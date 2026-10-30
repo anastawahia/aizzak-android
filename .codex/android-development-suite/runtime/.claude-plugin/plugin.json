@@ -1,0 +1,16 @@
+{
+  "name": "android-development-suite",
+  "version": "1.3.0",
+  "description": "Specialized Android engineering agents, reusable skills, safe project tooling, and evidence-driven delivery workflows.",
+  "author": {
+    "name": "Android Development Suite Contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "android",
+    "kotlin",
+    "compose",
+    "development",
+    "release"
+  ]
+}

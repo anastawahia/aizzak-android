@@ -1,0 +1,14 @@
+package @@PACKAGE@@
+
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+
+@Composable
+fun @@FEATURE@@Screen(state: @@FEATURE@@UiState, onToggle: () -> Unit, modifier: Modifier = Modifier) {
+    Button(onClick = onToggle, modifier = modifier) {
+        Text(stringResource(if (state.enabled) R.string.feature_enabled else R.string.feature_disabled))
+    }
+}

@@ -1,0 +1,14 @@
+package @@PACKAGE@@
+
+import org.junit.Assert.assertEquals
+import org.junit.Test
+
+class CounterViewModelTest {
+    @Test
+    fun incrementPublishesTheNewCount() {
+        val model = CounterViewModel()
+        assertEquals(0, model.state.value.count)
+        repeat(3) { model.increment() }
+        assertEquals(3, model.state.value.count)
+    }
+}

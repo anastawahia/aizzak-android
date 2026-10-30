@@ -1,0 +1,18 @@
+# @@APP_NAME@@
+
+Kotlin/Compose starter using a reproducible API 36 baseline. Default device class:
+phone/tablet; adapt navigation and resources before claiming Wear/TV/Auto support.
+Counter state survives configuration changes through a ViewModel, not process death.
+Persist product state with SavedStateHandle, DataStore or Room when required.
+
+1. Use Android Studio with JDK 17 and Android SDK @@COMPILE_SDK@@.
+2. Bootstrap the official Gradle Wrapper with the plugin's `suite.py wrapper --project . --download`.
+3. Run `./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug` (Windows: `gradlew.bat`).
+4. Run `:app:connectedDebugAndroidTest` on an authorized API @@MIN_SDK@@+ device.
+5. Optional source analysis: `:app:detekt`; review Kotlin parser support before enabling as a release gate.
+
+Release builds require an external upload keystore and the four `ANDROID_KEYSTORE_*`
+and `ANDROID_KEY_*` environment variables named in `app/build.gradle.kts`.
+Do not add passwords to Gradle properties. `bundleRelease` never publishes.
+The starter has no backend, tracking SDK, or unnecessary dependency injection layer.
+Add Hilt, Room, Retrofit, WorkManager or monitoring only for actual product needs.
