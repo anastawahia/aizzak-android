@@ -1,0 +1,12 @@
+.gradle/
+**/build/
+local.properties
+.idea/
+*.jks
+*.keystore
+*.p12
+.env
+*service-account*.json
+.android-suite/evidence/private/
+.android-suite/evidence/scaffold-*/
+.android-suite/evidence/bootstrap-cache/
