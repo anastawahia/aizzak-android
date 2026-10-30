@@ -1,0 +1,23 @@
+{
+  "kind": "build",
+  "status": "failed",
+  "source_sha256": "42e34882906b4d89c176c1e41bfe51a6465f417b403c37cea7f61b9e2b277d7d",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:assembleDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1793389015,
+  "attempts": [
+    {
+      "exit_code": 1,
+      "output": "Downloading https://services.gradle.org/distributions/gradle-8.13-bin.zip\n.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%\n\nWelcome to Gradle 8.13!\n\nHere are the highlights of this release:\n - Daemon JVM auto-provisioning\n - Enhancements for Scala plugin and JUnit testing\n - Improvements for build authors and plugin developers\n\nFor more details see https://docs.gradle.org/8.13/release-notes.html\n\nTo honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.\nDaemon will be stopped at the end of the build \n> Task :app:preBuild UP-TO-DATE\n> Task :app:preDebugBuild UP-TO-DATE\n> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE\n> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED\n> Task :app:checkDebugAarMetadata\n> Task :app:processDebugNavigationResources\n> Task :app:generateDebugResValues\n> Task :app:compileDebugNavigationResources\n> Task :app:mapDebugSourceSetPaths\n> Task :app:generateDebugResources\n> Task :app:packageDebugResources\n> Task :app:mergeDebugResources\n> Task :app:createDebugCompatibleScreenManifests\n> Task :app:extractDeepLinksDebug\n> Task :app:parseDebugLocalResources\n> Task :app:processDebugMainManifest\n> Task :app:processDebugManifest\n> Task :app:javaPreCompileDebug\n> Task :app:mergeDebugShaders\n> Task :app:compileDebugShaders NO-SOURCE\n> Task :app:generateDebugAssets UP-TO-DATE\n> Task :app:mergeDebugAssets\n> Task :app:compressDebugAssets\n> Task :app:desugarDebugFileDependencies\n> Task :app:mergeDebugJniLibFolders\n> Task :app:checkDebugDuplicateClasses\n> Task :app:mergeDebugNativeLibs\n> Task :app:mergeLibDexDebug\n\n> Task :app:stripDebugDebugSymbols\nUnable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so. Run with --info option to learn more.\n\n> Task :app:validateSigningDebug\n> Task :app:writeDebugAppMetadata\n> Task :app:writeDebugSigningConfigVersions\n> Task :app:processDebugManifestForPackage\n> Task :app:processDebugResources\n> Task :app:mergeExtDexDebug\n> Task :app:compileDebugKotlin\n\n> Task :app:compileDebugKotlin FAILED\n30 actionable tasks: 30 executed\ne: file:///C:/Users/anast/Desktop/aizzak-android/app/src/main/java/com/aizzak/android/feature/settings/SettingsScreen.kt:77:59 None of the following candidates is applicable:\n\nfun Modifier.selectable(selected: Boolean, enabled: Boolean = ..., role: Role? = ..., interactionSource: MutableInteractionSource? = ..., onClick: () -> Unit): Modifier:\n  No value passed for parameter 'onClick'.\n  Argument type mismatch: actual type is 'Function0<Unit>', but 'MutableInteractionSource?' was expected.\n\nfun Modifier.selectable(selected: Boolean, interactionSource: MutableInteractionSource?, indication: Indication?, enabled: Boolean = ..., role: Role? = ..., onClick: () -> Unit): Modifier:\n  No value passed for parameter 'onClick'.\n  Argument type mismatch: actual type is 'Boolean', but 'MutableInteractionSource?' was expected.\n  Argument type mismatch: actual type is 'Role', but 'Indication?' was expected.\n  Argument type mismatch: actual type is 'Function0<Unit>', but 'Boolean' was expected.\n\nFAILURE: Build failed with an exception.\n\n* What went wrong:\nExecution failed for task ':app:compileDebugKotlin'.\n> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction\n   > Compilation error. See log for more details\n\n* Try:\n> Run with --stacktrace option to get the stack trace.\n> Run with --info or --debug option to get more log output.\n> Run with --scan to get full insights.\n> Get more help at https://help.gradle.org.\n\nBUILD FAILED in 6m 22s\n",
+      "duration_seconds": 383.047
+    }
+  ],
+  "artifacts": [],
+  "recovery": "Inspect the first failure: JDK/SDK, dependency transport, then compiler/test failure. Apply the smallest reviewed correction; never disable checks. Maximum three attempts per incident.",
+  "signed_verified": false,
+  "published": false
+}

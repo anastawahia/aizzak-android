@@ -1,0 +1,43 @@
+{
+  "os": "Windows",
+  "host": "Windows-11-10.0.26200-SP0",
+  "wsl": false,
+  "java": {
+    "exit_code": 0,
+    "output": "java version \"17.0.19\" 2026-04-21 LTS\nJava(TM) SE Runtime Environment (build 17.0.19+9-LTS-183)\nJava HotSpot(TM) 64-Bit Server VM (build 17.0.19+9-LTS-183, mixed mode, sharing)\n",
+    "duration_seconds": 0.094
+  },
+  "sdk": "D:\\SDK",
+  "sdk_exists": true,
+  "platforms": [
+    "android-36"
+  ],
+  "build_tools": [
+    "35.0.0",
+    "36.0.0",
+    "36.1.0",
+    "37.0.0"
+  ],
+  "adb": "D:\\SDK\\platform-tools\\adb.exe",
+  "emulator_binary": true,
+  "git": "C:\\Program Files\\Git\\cmd\\git.EXE",
+  "global_gradle": null,
+  "wrapper": true,
+  "devices_checked": true,
+  "diagnostics": [],
+  "configured_versions": {
+    "agp": "8.13.2",
+    "kotlin": "2.3.0",
+    "compose-bom": "2026.02.01",
+    "gradle": "8.13"
+  },
+  "javac": "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath\\javac.EXE",
+  "java_major": 17,
+  "devices": {
+    "exit_code": 0,
+    "output": "List of devices attached\n\n",
+    "duration_seconds": 0.047
+  },
+  "usable_devices": [],
+  "running_emulators": []
+}

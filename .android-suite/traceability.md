@@ -1,0 +1,12 @@
+# Requirements traceability
+
+| Requirement | Acceptance case | Implementation | Test ID | Execution evidence | Release |
+|---|---|---|---|---|---|
+
+| V1-THEME-01 | System default; stable persistence across store recreation; failed write retries and rapid changes | app/src/main/java/com/aizzak/android/data/preferences/DataStorePreferencesRepository.kt; feature/settings/SettingsViewModel.kt; SettingsScreen.kt | DataStorePreferencesRepositoryTest; SettingsViewModelTest; LocalFoundationUiTest preference callback case | Final suite report pending; device UI execution blocked | Local debug only |
+| V1-LOCALE-01 | First-run English; explicit locale via AppCompat; Arabic resources/RTL; do not duplicate locale value | MainActivity.kt; res/values-ar/strings.xml; res/xml/locales_config.xml; manifest | LocalFoundationUiTest language callback case; DataStore marker persistence case | Callback test does not establish actual locale/recreation behavior; device checks pending | Local debug only |
+| V1-QUALITY-01..02 | Read/write loading/error/retry and cancellation; no saved passwords or fake session | SettingsViewModel.kt; AuthScreen.kt; navigation/LocalFoundationApp.kt | SettingsViewModelTest; LocalFoundationUiTest gated-navigation case | Independent review in tasks/foundation/review.md; Gradle execution pending | Local debug only |
+| V1-HOME-01..05 | Three list-driven descriptive unavailable agents, no click action; no production route without session | feature/home/HomeScreen.kt; navigation/LocalFoundationApp.kt | LocalFoundationUiTest deferredAgentsAreReadableContentWithNoClickActions | Android test source authored; execution blocked by device availability | Preview/stateless content only |
+| V1-AUTH-01..03 / V1-ACCOUNT-01..02 | Real Firebase identity, verification/context gate and account changes | Local form/content shell only; real integration deferred | No integration test claimed | Blocked by explicitly unavailable service inputs | Not delivered as functional auth/account |
+
+Final execution supersedes the pending labels above: [all](evidence/foundation-all.json) passed build/10 JVM cases/lint (0 errors, 20 warnings); [UI compilation](evidence/foundation-ui-compile.json) passed. All three instrumented cases remain unexecuted. Reviewed source and current gate details: [FOUNDATION-01](tasks/foundation/status.md). Device/integration requirements remain unverified; compilation/callback tests do not establish real platform/service behavior.

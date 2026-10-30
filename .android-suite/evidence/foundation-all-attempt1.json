@@ -1,0 +1,40 @@
+{
+  "kind": "all",
+  "status": "failed",
+  "source_sha256": "5a05ed0d5844455731e1b7a49ef998ac5ce0b06c48af22b7d45df8ad65694e4e",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1793389428,
+  "attempts": [
+    {
+      "exit_code": 1,
+      "output": "To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.\nDaemon will be stopped at the end of the build \n> Task :app:preBuild UP-TO-DATE\n> Task :app:preDebugBuild UP-TO-DATE\n> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE\n> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED\n> Task :app:checkDebugAarMetadata UP-TO-DATE\n> Task :app:processDebugNavigationResources UP-TO-DATE\n> Task :app:compileDebugNavigationResources UP-TO-DATE\n> Task :app:generateDebugResValues UP-TO-DATE\n> Task :app:mapDebugSourceSetPaths UP-TO-DATE\n> Task :app:generateDebugResources UP-TO-DATE\n> Task :app:mergeDebugResources UP-TO-DATE\n> Task :app:packageDebugResources UP-TO-DATE\n> Task :app:parseDebugLocalResources UP-TO-DATE\n> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE\n> Task :app:extractDeepLinksDebug UP-TO-DATE\n> Task :app:processDebugMainManifest UP-TO-DATE\n> Task :app:processDebugManifest UP-TO-DATE\n> Task :app:processDebugManifestForPackage UP-TO-DATE\n> Task :app:processDebugResources UP-TO-DATE\n> Task :app:javaPreCompileDebug UP-TO-DATE\n> Task :app:mergeDebugShaders UP-TO-DATE\n> Task :app:compileDebugShaders NO-SOURCE\n> Task :app:generateDebugAssets UP-TO-DATE\n> Task :app:mergeDebugAssets UP-TO-DATE\n> Task :app:compressDebugAssets UP-TO-DATE\n> Task :app:desugarDebugFileDependencies UP-TO-DATE\n> Task :app:checkDebugDuplicateClasses UP-TO-DATE\n> Task :app:mergeExtDexDebug UP-TO-DATE\n> Task :app:mergeLibDexDebug UP-TO-DATE\n> Task :app:mergeDebugJniLibFolders UP-TO-DATE\n> Task :app:mergeDebugNativeLibs UP-TO-DATE\n> Task :app:stripDebugDebugSymbols UP-TO-DATE\n> Task :app:validateSigningDebug UP-TO-DATE\n> Task :app:writeDebugAppMetadata UP-TO-DATE\n> Task :app:writeDebugSigningConfigVersions UP-TO-DATE\n> Task :app:preDebugUnitTestBuild UP-TO-DATE\n> Task :app:preDebugAndroidTestBuild SKIPPED\n> Task :app:generateDebugAndroidTestResValues\n> Task :app:javaPreCompileDebugUnitTest\n> Task :app:extractProguardFiles\n> Task :app:compileDebugKotlin\n> Task :app:compileDebugJavaWithJavac NO-SOURCE\n> Task :app:dexBuilderDebug\n> Task :app:mergeDebugGlobalSynthetics\n> Task :app:processDebugJavaRes\n> Task :app:bundleDebugClassesToCompileJar\n> Task :app:bundleDebugClassesToRuntimeJar\n> Task :app:mergeProjectDexDebug\n> Task :app:mergeDebugJavaResource\n> Task :app:generateDebugLintReportModel\n> Task :app:compileDebugUnitTestKotlin\n> Task :app:generateDebugAndroidTestLintModel\n> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE\n> Task :app:processDebugUnitTestJavaRes\n\n> Task :app:testDebugUnitTest\n\nDataStorePreferencesRepositoryTest > themeAndInitializationSurviveRepositoryAndStoreRecreation FAILED\n    java.io.IOException at FileStorage.kt:121\n        Caused by: java.io.IOException at DataStorePreferencesRepositoryTest.kt:39\n\n> Task :app:testDebugUnitTest FAILED\n> Task :app:packageDebug\n> Task :app:createDebugApkListingFileRedirect\n47 actionable tasks: 18 executed, 29 up-to-date\n\n10 tests completed, 1 failed\n\nFAILURE: Build failed with an exception.\n\n* What went wrong:\nExecution failed for task ':app:testDebugUnitTest'.\n> There were failing tests. See the report at: file:///C:/Users/anast/Desktop/aizzak-android/app/build/reports/tests/testDebugUnitTest/index.html\n\n* Try:\n> Run with --scan to get full insights.\n\nBUILD FAILED in 33s\n",
+      "duration_seconds": 34.14
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "sha256": "f47e66ca555b5363d22605d0bc48bd2aa43c75722316a62c824c5f7dada1da8f"
+    }
+  ],
+  "recovery": "Inspect the first failure: JDK/SDK, dependency transport, then compiler/test failure. Apply the smallest reviewed correction; never disable checks. Maximum three attempts per incident.",
+  "test_summary": {
+    "tests": 10,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-com.aizzak.android.data.preferences.DataStorePreferencesRepositoryTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-com.aizzak.android.feature.settings.SettingsViewModelTest.xml"
+    ]
+  },
+  "signed_verified": false,
+  "published": false
+}
