@@ -1,6 +1,6 @@
 # UI decisions
 
-Approved [UI design 0.2](../UI-DESIGN.md) and [HTML reference 0.2](../UI-PREVIEW.html) retain their reviewed bytes. Approval is in [FOUNDATION-01](tasks/foundation/status.md); their historical draft labels precede that decision.
+Approved [UI design 0.2](../docs/UI-DESIGN.md) and [HTML reference 0.2](../docs/UI-PREVIEW.html) retain their reviewed bytes. Approval is in [FOUNDATION-01](tasks/foundation/status.md); their historical draft labels precede that decision.
 
 Local slice implements shared theme, auth forms and pre-login preferences. Authentication submissions remain unavailable while services are absent. Home/Account content may be rendered in explicit previews/tests; production entry requires real session/verification/context in the later integration slice.
 
