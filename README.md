@@ -42,6 +42,11 @@ The scoped integration and logout semantics are recorded in
 Backend files/configuration are owned by its developer. Record needed changes as Markdown
 requests in the Android task directory; do not modify the backend from this project.
 
+Firebase settings verified on 2026-10-31: the registered `aizzak-agent` Android app
+matches `android.aizzak.com`, the local JSON matches the remote SDK configuration,
+and Email/Password is enabled in Firebase Console. Build, JVM test and lint verification
+passed. See [verification and limitations](.android-suite/tasks/firebase-settings/status.md).
+
 Pinned baseline: AGP 8.13.2, Kotlin/Compose compiler 2.3.0, Compose BOM 2026.02.01,
 Activity 1.12.4, Lifecycle 2.10.0, Coroutines 1.10.2, AppCompat 1.7.1,
 DataStore 1.1.7 and Navigation 3 1.0.1. This is a reproducible compatibility
