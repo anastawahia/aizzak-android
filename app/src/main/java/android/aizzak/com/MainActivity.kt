@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                     modelClass.isAssignableFrom(SettingsViewModel::class.java) ->
                         SettingsViewModel(DataStorePreferencesRepository(applicationContext.aizzakPreferencesDataStore))
                     modelClass.isAssignableFrom(AuthViewModel::class.java) ->
-                        AuthViewModel(AppContainer.authRepository)
+                        AuthViewModel(AppContainer.authRepository, AppContainer.accountContextRepository)
                     else -> error("Unsupported ViewModel")
                 } as T
             }
@@ -104,7 +104,8 @@ class MainActivity : AppCompatActivity() {
                         onRetry = { if (state.error == SettingsError.READ) settings.retryRead() else settings.retrySave() },
                         authState = authState,
                         authActions = AuthActions(auth::signIn, auth::signUp, auth::resetPassword,
-                            auth::resendVerification, auth::refreshIdentity, auth::signOut, auth::clearFeedback))
+                            auth::resendVerification, auth::refreshIdentity, auth::signOut, auth::clearFeedback,
+                            changePassword = auth::changePassword))
                 }
             }
         }

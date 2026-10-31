@@ -30,6 +30,11 @@
     <string name="auth_check_verification">تحققت من بريدي الإلكتروني</string>
     <string name="auth_resend_verification">إعادة إرسال رسالة التحقق</string>
     <string name="auth_context_title">خدمات الحساب غير متاحة</string>
+    <string name="auth_context_loading">جارٍ تحميل حسابك…</string>
+    <string name="auth_access_denied_title">الوصول إلى الحساب مرفوض</string>
+    <string name="auth_access_denied">لا يملك حسابك صلاحية الوصول. تواصل مع الدعم أو أعد المحاولة بعد تحديث صلاحياتك.</string>
+    <string name="auth_context_invalid">تعذر تحميل معلومات الحساب. أعد المحاولة أو تواصل مع الدعم.</string>
+    <string name="support_reference">مرجع الدعم: %1$s</string>
     <string name="auth_context_unavailable">تم تسجيل دخولك، لكن الوصول إلى خدمات الحساب غير متاح مؤقتاً. أعد المحاولة لاحقاً.</string>
     <string name="send_reset">إرسال رسالة الاستعادة</string>
     <string name="forgot_password">نسيت كلمة المرور؟</string>
@@ -49,6 +54,7 @@
     <string name="retry">إعادة المحاولة</string>
     <string name="saving">جارٍ الحفظ…</string>
     <string name="home_title">مساعدوك</string>
+    <string name="home">الرئيسية</string>
     <string name="home_description">مكان لمعارفك وعمليات البحث والمخططات.</string>
     <string name="coming_later">متاح لاحقاً</string>
     <string name="smart_description">إجابات من معارف تديرها المنصة مركزياً.</string>
@@ -57,5 +63,10 @@
     <string name="no_assistants">لا يوجد مساعدون متاحون</string>
     <string name="account">الحساب</string>
     <string name="change_password">تغيير كلمة المرور</string>
+    <string name="current_password">كلمة المرور الحالية</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="save_password">حفظ كلمة المرور</string>
+    <string name="password_change_description">أكد كلمة المرور الحالية، ثم أدخل كلمة المرور الجديدة وأعد تأكيدها.</string>
+    <string name="password_changed">تم تغيير كلمة المرور.</string>
     <string name="sign_out">تسجيل الخروج</string>
 </resources>

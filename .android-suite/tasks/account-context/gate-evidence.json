@@ -1,0 +1,81 @@
+{
+  "scope": "Local implementation and isolated integration evidence. Does not establish live Vault readiness, authenticated account success or release readiness.",
+  "checks": {
+    "authentication_review": {
+      "evidence": [
+        {
+          "sha256": "926f7d2f189e7e89748741fbd4e5e812b495b476f615154f1cf9d1e6b42ef449",
+          "path": ".android-suite/tasks/account-context/security-review.md"
+        }
+      ],
+      "status": "passed"
+    },
+    "independent_review": {
+      "evidence": [
+        {
+          "sha256": "926f7d2f189e7e89748741fbd4e5e812b495b476f615154f1cf9d1e6b42ef449",
+          "path": ".android-suite/tasks/account-context/security-review.md"
+        },
+        {
+          "sha256": "72b03dde22f3a8a03d8fb69c674a5e0f59e1e3602b538933d317678fd237bc00",
+          "path": ".android-suite/tasks/account-context/correctness-review.md"
+        }
+      ],
+      "status": "passed"
+    },
+    "contract_tests": {
+      "evidence": [
+        {
+          "sha256": "bfbb9ce089efcb1fea815b1f0b8ab38784062002b007dc6ef0d95cb32849cb42",
+          "path": ".android-suite/evidence/account-context-all-final.json"
+        },
+        {
+          "sha256": "fa71904f8e1c5fc66ca1e17589acb3fe6844841d2a6ca617f312160c80adad5d",
+          "path": ".android-suite/evidence/account-context-backend-unit.xml"
+        }
+      ],
+      "status": "passed"
+    },
+    "relevant_tests": {
+      "evidence": [
+        {
+          "sha256": "bfbb9ce089efcb1fea815b1f0b8ab38784062002b007dc6ef0d95cb32849cb42",
+          "path": ".android-suite/evidence/account-context-all-final.json"
+        }
+      ],
+      "status": "passed"
+    },
+    "failure_cases": {
+      "evidence": [
+        {
+          "sha256": "bfbb9ce089efcb1fea815b1f0b8ab38784062002b007dc6ef0d95cb32849cb42",
+          "path": ".android-suite/evidence/account-context-all-final.json"
+        },
+        {
+          "sha256": "fa71904f8e1c5fc66ca1e17589acb3fe6844841d2a6ca617f312160c80adad5d",
+          "path": ".android-suite/evidence/account-context-backend-unit.xml"
+        }
+      ],
+      "status": "passed"
+    },
+    "static_analysis": {
+      "evidence": [
+        {
+          "sha256": "bfbb9ce089efcb1fea815b1f0b8ab38784062002b007dc6ef0d95cb32849cb42",
+          "path": ".android-suite/evidence/account-context-all-final.json"
+        }
+      ],
+      "status": "passed"
+    },
+    "compile": {
+      "evidence": [
+        {
+          "sha256": "bfbb9ce089efcb1fea815b1f0b8ab38784062002b007dc6ef0d95cb32849cb42",
+          "path": ".android-suite/evidence/account-context-all-final.json"
+        }
+      ],
+      "status": "passed"
+    }
+  },
+  "source_sha256": "470826ab677410a518606c0bf45ef936100103bb14c7bde77bf8f7d3cf03870a"
+}

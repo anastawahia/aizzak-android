@@ -1,5 +1,6 @@
 package android.aizzak.com.data.auth
 
+import android.aizzak.com.core.network.IdTokenProvider
 import android.aizzak.com.feature.auth.AuthError
 import android.aizzak.com.feature.auth.AuthFailure
 import android.aizzak.com.feature.auth.AuthIdentity
@@ -10,6 +11,7 @@ import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthException
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.EmailAuthProvider
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.NonCancellable
@@ -29,13 +31,16 @@ import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
 
 /** Firebase owns persisted credentials; this adapter never stores ID tokens or passwords. */
-class FirebaseAuthRepository internal constructor(private val gateway: FirebaseAuthGateway) : AuthRepository {
+class FirebaseAuthRepository internal constructor(private val gateway: FirebaseAuthGateway) : AuthRepository, IdTokenProvider {
     constructor(auth: FirebaseAuth) : this(SdkFirebaseAuthGateway(auth))
 
     private val credentialMutex = Mutex()
+    private val tokenMutex = Mutex()
     private val stateLock = Any()
     private var generation = 0L
     private var credentialInFlight = false
+    private var reauthentication: Reauthentication? = null
+    private var tokenRefreshVersion = 0L
     private val changes = MutableStateFlow(0L)
 
     override val session: Flow<AuthSession> = callbackFlow {
@@ -83,13 +88,72 @@ class FirebaseAuthRepository internal constructor(private val gateway: FirebaseA
         if (expected != synchronized(stateLock) { generation } || identity.uid != uid) {
             throw CancellationException("Identity changed")
         }
-        if (identity.emailVerified) gateway.refreshIdToken()
+        if (identity.emailVerified) getIdToken(uid, forceRefresh = true)
         currentCoroutineContext().ensureActive()
         if (expected != synchronized(stateLock) { generation } || gateway.identity?.uid != uid) {
             throw CancellationException("Identity changed")
         }
         changes.update { it + 1 }
         return identity
+    }
+
+    override suspend fun getIdToken(expectedUid: String, forceRefresh: Boolean): String {
+        val expected = captureAccount(expectedUid)
+        val refreshVersion = synchronized(stateLock) { tokenRefreshVersion }
+        return tokenMutex.withLock {
+            checkAccount(expectedUid, expected)
+            // Concurrent forced callers share a refresh completed while waiting.
+            val refresh = forceRefresh && refreshVersion == synchronized(stateLock) { tokenRefreshVersion }
+            val token = gateway.getIdToken(refresh)
+            currentCoroutineContext().ensureActive()
+            checkAccount(expectedUid, expected)
+            if (token.isBlank()) throw AuthFailure(AuthError.SESSION_EXPIRED)
+            if (refresh) synchronized(stateLock) { tokenRefreshVersion++ }
+            token
+        }
+    }
+
+    override suspend fun changePassword(currentPassword: String, newPassword: String) {
+        val caller = currentCoroutineContext()
+        credentialMutex.withLock {
+            caller.ensureActive()
+            val uid = gateway.identity?.uid ?: throw AuthFailure(AuthError.SESSION_EXPIRED)
+            val expected = captureAccount(uid)
+            synchronized(stateLock) { reauthentication = Reauthentication(uid, expected) }
+            // Reauthentication can complete in the SDK after its caller is
+            // cancelled. Keep the credential lane until it settles.
+            withContext(NonCancellable) {
+                try {
+                    gateway.reauthenticate(currentPassword)
+                    if (caller.isActive) {
+                        checkAccount(uid, expected)
+                        gateway.updatePassword(newPassword)
+                    }
+                } finally {
+                    val stale = expected != synchronized(stateLock) { generation }
+                    try {
+                        if (stale && gateway.identity?.uid == uid) gateway.signOut()
+                    } finally {
+                        synchronized(stateLock) { reauthentication = null }
+                        changes.update { it + 1 }
+                    }
+                }
+            }
+            caller.ensureActive()
+            checkAccount(uid, expected)
+        }
+    }
+
+    private fun captureAccount(expectedUid: String): Long = synchronized(stateLock) {
+        val identity = gateway.identity ?: throw AuthFailure(AuthError.SESSION_EXPIRED)
+        if (credentialInFlight || identity.uid != expectedUid) throw CancellationException("Identity changed")
+        if (!identity.emailVerified) throw AuthFailure(AuthError.SESSION_EXPIRED)
+        generation
+    }
+
+    private fun checkAccount(expectedUid: String, expectedGeneration: Long) {
+        val actual = captureAccount(expectedUid)
+        if (actual != expectedGeneration) throw CancellationException("Identity changed")
     }
 
     override suspend fun signOut() {
@@ -99,9 +163,18 @@ class FirebaseAuthRepository internal constructor(private val gateway: FirebaseA
     }
 
     private fun snapshot(): AuthSession = synchronized(stateLock) {
-        if (credentialInFlight) AuthSession.SignedOut
-        else gateway.identity?.let { AuthSession.SignedIn(it) } ?: AuthSession.SignedOut
+        val identity = gateway.identity
+        val lateReauthentication = reauthentication?.let {
+            it.generation != generation && it.uid == identity?.uid
+        } == true
+        // An SDK reauthentication may restore and notify the old identity before
+        // its await returns to our cleanup. Suppress that superseded identity at
+        // the publication boundary, while keeping normal password changes signed in.
+        if (credentialInFlight || lateReauthentication) AuthSession.SignedOut
+        else identity?.let { AuthSession.SignedIn(it) } ?: AuthSession.SignedOut
     }
+
+    private data class Reauthentication(val uid: String, val generation: Long)
 
     private suspend fun credentialMutation(block: suspend (() -> Boolean) -> Unit) {
         val caller = currentCoroutineContext()
@@ -145,7 +218,9 @@ internal interface FirebaseAuthGateway {
     suspend fun sendPasswordReset(email: String)
     suspend fun resendVerification()
     suspend fun reload()
-    suspend fun refreshIdToken()
+    suspend fun getIdToken(forceRefresh: Boolean): String
+    suspend fun reauthenticate(currentPassword: String)
+    suspend fun updatePassword(newPassword: String)
     fun signOut()
 }
 
@@ -182,9 +257,19 @@ private class SdkFirebaseAuthGateway(private val auth: FirebaseAuth) : FirebaseA
 
     override suspend fun resendVerification() = mapped { currentUser().sendEmailVerification().await(); Unit }
     override suspend fun reload() = mapped { currentUser().reload().await(); Unit }
-    override suspend fun refreshIdToken() = mapped {
-        val token = currentUser().getIdToken(true).await().token
-        if (token.isNullOrBlank()) throw AuthFailure(AuthError.SESSION_EXPIRED)
+    override suspend fun getIdToken(forceRefresh: Boolean): String = mapped {
+        currentUser().getIdToken(forceRefresh).await().token
+            ?.takeIf { it.isNotBlank() } ?: throw AuthFailure(AuthError.SESSION_EXPIRED)
+    }
+    override suspend fun reauthenticate(currentPassword: String) = mapped {
+        val user = currentUser()
+        val email = user.email ?: throw AuthFailure(AuthError.SESSION_EXPIRED)
+        user.reauthenticate(EmailAuthProvider.getCredential(email, currentPassword)).await()
+        Unit
+    }
+    override suspend fun updatePassword(newPassword: String) = mapped {
+        currentUser().updatePassword(newPassword).await()
+        Unit
     }
 
     override fun signOut() = auth.signOut()

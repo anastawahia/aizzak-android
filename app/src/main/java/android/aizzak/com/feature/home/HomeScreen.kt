@@ -41,7 +41,7 @@ val foundationAssistants = listOf(
     AssistantCardModel("wire", R.string.wire_twin, R.string.wire_description, AssistantAccent.AMBER),
 )
 
-/** Stateless authorized-content view. Not registered in the unconfigured application's navigation. */
+/** Stateless authorized-content view, reachable only after current server context succeeds. */
 @Composable
 fun HomeScreen(assistants: List<AssistantCardModel>) {
     BoxWithConstraints(Modifier.fillMaxSize()) {

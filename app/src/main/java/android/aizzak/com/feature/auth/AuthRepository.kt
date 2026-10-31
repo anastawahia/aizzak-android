@@ -25,5 +25,8 @@ interface AuthRepository {
     suspend fun sendPasswordReset(email: String)
     suspend fun resendVerification()
     suspend fun refreshIdentity(): AuthIdentity?
+    suspend fun changePassword(currentPassword: String, newPassword: String) {
+        throw AuthFailure(AuthError.SERVICE_UNAVAILABLE)
+    }
     suspend fun signOut()
 }
