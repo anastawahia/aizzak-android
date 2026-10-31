@@ -1,3 +1,5 @@
+import java.net.URI
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -8,6 +10,14 @@ plugins {
 
 val signingValues = listOf("ANDROID_KEYSTORE_PATH", "ANDROID_KEYSTORE_PASSWORD", "ANDROID_KEY_ALIAS", "ANDROID_KEY_PASSWORD")
     .associateWith { providers.environmentVariable(it).orNull }
+
+// Environment values are public origins, never credentials. A missing release origin
+// fails release preparation, while debug and manifest inspection remain available.
+val configuredApiBaseUrl = providers.gradleProperty("AIZZAK_API_BASE_URL")
+    .orElse(providers.environmentVariable("AIZZAK_API_BASE_URL"))
+val debugApiBaseUrl = configuredApiBaseUrl.orElse("http://127.0.0.1:8080/api/v1/")
+fun quotedBuildConfig(value: String): String = "\"" + value
+    .replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n").replace("\r", "\\r") + "\""
 
 android {
     namespace = "android.aizzak.com"
@@ -31,7 +41,11 @@ android {
         }
     }
     buildTypes {
+        debug {
+            buildConfigField("String", "API_BASE_URL", quotedBuildConfig(debugApiBaseUrl.get()))
+        }
         release {
+            buildConfigField("String", "API_BASE_URL", quotedBuildConfig(configuredApiBaseUrl.orNull.orEmpty()))
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -42,7 +56,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    buildFeatures { compose = true }
+    buildFeatures { compose = true; buildConfig = true }
     testOptions { unitTests.isReturnDefaultValues = false }
 }
 kotlin { jvmToolchain(17) }
@@ -56,6 +70,20 @@ val validateReleaseSigning by tasks.registering {
 }
 tasks.matching { it.name == "preReleaseBuild" }.configureEach { dependsOn(validateReleaseSigning) }
 
+val validateReleaseApiEnvironment by tasks.registering {
+    doLast {
+        val value = configuredApiBaseUrl.orNull
+        val uri = value?.let { runCatching { URI(it) }.getOrNull() }
+        check(uri != null && uri.scheme == "https" && !uri.host.isNullOrBlank() &&
+            uri.rawUserInfo == null && uri.rawQuery == null && uri.rawFragment == null &&
+            uri.rawPath == "/api/v1/") {
+            "Release requires AIZZAK_API_BASE_URL as an absolute HTTPS origin with /api/v1/ and no credentials, query or fragment."
+        }
+    }
+}
+tasks.matching { it.name in setOf("assembleRelease", "bundleRelease", "packageRelease", "packageReleaseBundle") }
+    .configureEach { dependsOn(validateReleaseApiEnvironment) }
+
 // Isolate Detekt's compiler from Kotlin 2.3. Opt-in task; no baseline suppressions.
 val detektCli by configurations.creating
 dependencies {
@@ -64,6 +92,10 @@ dependencies {
     implementation(libs.navigation3.runtime)
     implementation(libs.navigation3.ui)
     implementation(libs.kotlinx.serialization.core)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.kotlinx.serialization)
+    implementation(libs.okhttp)
     detektCli(libs.detekt.cli) { artifact { classifier = "all" } }
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.ui)
@@ -78,6 +110,7 @@ dependencies {
     debugImplementation(libs.compose.ui.test.manifest)
     testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.okhttp.mockwebserver)
     androidTestImplementation(platform(libs.compose.bom))
     androidTestImplementation(libs.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.test.ext.junit)

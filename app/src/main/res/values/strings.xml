@@ -31,6 +31,11 @@
     <string name="auth_check_verification">I have verified my email</string>
     <string name="auth_resend_verification">Resend verification email</string>
     <string name="auth_context_title">Account services unavailable</string>
+    <string name="auth_context_loading">Loading your account…</string>
+    <string name="auth_access_denied_title">Account access denied</string>
+    <string name="auth_access_denied">Your account does not have access. Contact support or try again after your access changes.</string>
+    <string name="auth_context_invalid">Account information could not be loaded. Try again or contact support.</string>
+    <string name="support_reference">Support reference: %1$s</string>
     <string name="auth_context_unavailable">You are signed in, but account access is temporarily unavailable. Please try again later.</string>
     <string name="send_reset">Send reset email</string>
     <string name="forgot_password">Forgot password?</string>
@@ -52,6 +57,7 @@
     <string name="retry">Try again</string>
     <string name="saving">Saving…</string>
     <string name="home_title">Your assistants</string>
+    <string name="home">Home</string>
     <string name="home_description">A place for your knowledge, searches and diagrams.</string>
     <string name="coming_later">Coming later</string>
     <string name="smart_assistant" translatable="false">Smart Assistant</string>
@@ -63,5 +69,10 @@
     <string name="no_assistants">No assistants are available</string>
     <string name="account">Account</string>
     <string name="change_password">Change password</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="save_password">Save password</string>
+    <string name="password_change_description">Confirm your current password, then enter and confirm your new password.</string>
+    <string name="password_changed">Your password was changed.</string>
     <string name="sign_out">Sign out</string>
 </resources>

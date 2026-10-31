@@ -22,7 +22,7 @@ class LocalFoundationUiTest {
     @get:Rule val compose = createComposeRule()
 
     @Test fun signedOutNavigationKeepsHomeGatedAndPreferencesReturnsToSource() {
-        compose.setContent {
+        compose.setEnglishContent {
             AizzakTheme {
                 LocalFoundationApp(SettingsUiState(loading = false, preferences = AppPreferences(localeInitialized = true)), "en", "1.0.0", {}, {}, {},
                     AuthUiState(stage = AuthStage.SIGNED_OUT), fakeAuthActions())
@@ -41,7 +41,7 @@ class LocalFoundationUiTest {
     @Test fun preferenceSelectionDispatchesThemeAndLanguageWithoutAuthentication() {
         var chosenLanguage = "en"
         var preferences by mutableStateOf(AppPreferences(localeInitialized = true))
-        compose.setContent {
+        compose.setEnglishContent {
             AizzakTheme(preferences.theme) {
                 LocalFoundationApp(SettingsUiState(loading = false, preferences = preferences), "en", "1.0.0",
                     onTheme = { preferences = preferences.copy(theme = it) }, onLanguage = { chosenLanguage = it }, onRetry = {},
@@ -56,7 +56,7 @@ class LocalFoundationUiTest {
     }
 
     @Test fun deferredAgentsAreReadableContentWithNoClickActions() {
-        compose.setContent { AizzakTheme { HomeScreen(foundationAssistants) } }
+        compose.setEnglishContent { AizzakTheme { HomeScreen(foundationAssistants) } }
         foundationAssistants.forEach { assistant ->
             compose.onNodeWithTag("assistant-${assistant.id}").performScrollTo().assertHasNoClickAction()
         }

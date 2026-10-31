@@ -1,5 +1,13 @@
 # Testing policy
 
+Current account-context live acceptance is now user-confirmed: «وصلت للرئيسية ونجحت إعادة الدخول» after final installation and the verified sign-in/logout/re-login request. This is human runtime evidence, separate from the passing 55 JVM/15 isolated device cases. No credentials were submitted by the coordinator. See [acceptance](tasks/account-context/local-logout-acceptance.md); pending live-user notes below are historical.
+
+Latest Android-only account-context continuation: `account-context-local-logout-all.json` passes build/55 JVM cases/Lint (0 errors/27 warnings); `account-context-local-logout-ui.json` passes 15 device cases with the retention options below. Fingerprint `d35135fd4664397e22a247b2fc44d58c40d2a03f34e8a1f8015945fcd6aec06f`, independent local-logout review and implementation/isolated integration gates passed. Current runtime is the backend owner's master, not the previously tested/unmerged branch. Live user account acceptance remains separate from isolated checks. Details: [verification](tasks/account-context/verification.md).
+
+Physical-device preservation: connected UI checks must keep compatible installed APKs and must not remove an incompatible installed package as automatic recovery. Use `:app:connectedDebugAndroidTest -Pandroid.injected.androidTest.leaveApksInstalledAfterRun=true -Pandroid.experimental.testOptions.uninstallIncompatibleApks=false --console=plain --no-daemon`, capture command/output/JUnit evidence, and verify the target remains installed. No clear-data commands/options. See current account-context verification for inspected AGP/UTP evidence. The plain suite UI command below does not pass these options; use the explicit wrapper command for a user's device.
+
+Current ACCOUNT-CONTEXT-01 verification supersedes older inventory/pending statements below: build + 54 JVM cases + lint (0 errors/27 warnings) + 15 isolated device UI cases passed on Samsung/API35. Source fingerprint `470826ab677410a518606c0bf45ef936100103bb14c7bde77bf8f7d3cf03870a`; independent security/correctness and implementation/isolated integration gates passed. UI fixtures now supply English resources locally, independently reviewed, without changing the device language. Backend focused 232 cases passed. Exact attempts, hashes, failed-run diagnoses and final installation are recorded in [verification](tasks/account-context/verification.md). Real service acceptance remains blocked by Vault AppRole login; these fake/isolated cases do not prove it.
+
 Local slice verification owner: build-release-engineer (Gradle execution); independent reviewer checks correctness and acceptance coverage. Avoid concurrent Gradle invocation while source owners are integrating.
 
 Required local checks after source freeze:

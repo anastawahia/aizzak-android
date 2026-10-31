@@ -45,6 +45,7 @@ data class AuthActions(
     val refreshIdentity: () -> Unit,
     val signOut: () -> Unit,
     val clearFeedback: () -> Unit,
+    val changePassword: (String, String, String) -> Unit = { _, _, _ -> },
 )
 
 @Composable
@@ -120,6 +121,7 @@ fun AuthFeedback(state: AuthUiState) {
                 AuthMessage.RESET_REQUESTED -> R.string.auth_reset_requested
                 AuthMessage.VERIFICATION_SENT -> R.string.auth_verification_sent
                 AuthMessage.EMAIL_NOT_VERIFIED -> R.string.auth_email_not_verified
+                AuthMessage.PASSWORD_CHANGED -> R.string.password_changed
             }))
         }
         if (state.busy) {

@@ -1,0 +1,81 @@
+{
+  "scope": "Android-only local logout and context integration against supplied backend reply. Isolated tests; no real-account success or backend branch approval inferred.",
+  "source_sha256": "d35135fd4664397e22a247b2fc44d58c40d2a03f34e8a1f8015945fcd6aec06f",
+  "checks": {
+    "relevant_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "7239b1474ea726f64384139369ea9002f20aa9af1ba174d3a0277381519c4eaa",
+          "path": ".android-suite/evidence/account-context-local-logout-all.json"
+        },
+        {
+          "sha256": "96a223d59a39eb96ab0a900fa7cf116bacb70fc02588debd662ff43403e793e3",
+          "path": ".android-suite/evidence/account-context-local-logout-ui.json"
+        }
+      ]
+    },
+    "independent_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "7da1545032aa5020bbb1776f09ed53b882b65e54e5979f64dc8304ed8cc8037d",
+          "path": ".android-suite/tasks/account-context/local-logout-review.md"
+        }
+      ]
+    },
+    "static_analysis": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "7239b1474ea726f64384139369ea9002f20aa9af1ba174d3a0277381519c4eaa",
+          "path": ".android-suite/evidence/account-context-local-logout-all.json"
+        }
+      ]
+    },
+    "contract_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "7239b1474ea726f64384139369ea9002f20aa9af1ba174d3a0277381519c4eaa",
+          "path": ".android-suite/evidence/account-context-local-logout-all.json"
+        }
+      ]
+    },
+    "failure_cases": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "7239b1474ea726f64384139369ea9002f20aa9af1ba174d3a0277381519c4eaa",
+          "path": ".android-suite/evidence/account-context-local-logout-all.json"
+        },
+        {
+          "sha256": "96a223d59a39eb96ab0a900fa7cf116bacb70fc02588debd662ff43403e793e3",
+          "path": ".android-suite/evidence/account-context-local-logout-ui.json"
+        }
+      ]
+    },
+    "authentication_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "7da1545032aa5020bbb1776f09ed53b882b65e54e5979f64dc8304ed8cc8037d",
+          "path": ".android-suite/tasks/account-context/local-logout-review.md"
+        },
+        {
+          "sha256": "5a0d78336cc587caceca941b8d07ce08ee952378eabb9a04b26f97a2f42fd0c3",
+          "path": ".android-suite/tasks/account-context/backend-reply.md"
+        }
+      ]
+    },
+    "compile": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "7239b1474ea726f64384139369ea9002f20aa9af1ba174d3a0277381519c4eaa",
+          "path": ".android-suite/evidence/account-context-local-logout-all.json"
+        }
+      ]
+    }
+  }
+}
