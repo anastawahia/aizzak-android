@@ -1,6 +1,6 @@
 # Requirements and feature inventory
 
-Governing requirements: [agreed scope 1.1](../V1-AGREED-SCOPE.md). Approval and original document hashes: [FOUNDATION-01](tasks/foundation/status.md).
+Governing requirements: [agreed scope 1.1](../docs/V1-AGREED-SCOPE.md). Approval and original document hashes: [FOUNDATION-01](tasks/foundation/status.md).
 
 Current authorized slice: bootstrap and local foundation, explicitly requested while Firebase/API inputs are unavailable. Namespace/application ID: com.aizzak.android (debug variant adds .debug).
 

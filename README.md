@@ -4,7 +4,7 @@ Native Android foundation for AIZZAK, using Kotlin, Jetpack Compose and Material
 Phone/tablet support starts at Android 8.0 (API 26), with compile/target API 36.
 Namespace and application ID: `android.aizzak.com`, matching the supplied Firebase Android client.
 Debug and release use this same application ID; no debug suffix is applied.
-The reviewed scope and design are linked from [DESIGN-REVIEW.md](DESIGN-REVIEW.md).
+The reviewed scope and design are linked from [DESIGN-REVIEW.md](docs/DESIGN-REVIEW.md).
 The later approval and delivery evidence are recorded in [.android-suite/tasks/foundation/status.md](.android-suite/tasks/foundation/status.md).
 
 1. Use Android Studio with JDK 17 and Android SDK 36.
