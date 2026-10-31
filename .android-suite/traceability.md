@@ -1,5 +1,11 @@
 # Requirements traceability
 
+ACCOUNT-CONTEXT-01 acceptance closed locally: user confirmed actual Home access and successful re-login after logout. Human runtime evidence complements current 55 JVM/15 device cases and successful reviews/gates. See [acceptance](tasks/account-context/local-logout-acceptance.md). Earlier awaiting-user statements below are historical; backend modifications remain prohibited.
+
+Latest ACCOUNT-CONTEXT-01 decision from backend reply: ordinary Android exit is local-only and never invokes master `/me/logout`; HTTP adapter dormant. Current 55 JVM cases cover zero remote requests, cleanup/concurrency, stale results and immediate verified re-login. Fifteen device UI cases, build/lint, independent review and scoped gates pass. Backend owner renewed Vault and restored master; previous 232 backend cases below apply only to an unapproved, unmerged branch. User's backend read-only/Markdown-request rule is in AGENTS.md. Live verified-account journey still awaits user check.
+
+Current account-context slice supersedes the deferred-auth foundation row below: V1-AUTH-02/03 and V1-ACCOUNT-01/02 are implemented by FirebaseAuthRepository, HttpAccountContextRepository, AuthViewModel, protected LocalFoundationApp and PasswordScreen. Executed current JVM/HTTP contracts cover context shape, retry/denial, failure/cancellation, account switching, logout and reauthentication; build/lint pass with 54 JVM cases. Backend focused evidence has 232 passing cases. Independent reviews accepted the source. Live service acceptance remains pending Vault credential renewal and a real authenticated context result. Current device outcomes and exact evidence are in [ACCOUNT-CONTEXT-01](tasks/account-context/verification.md).
+
 | Requirement | Acceptance case | Implementation | Test ID | Execution evidence | Release |
 |---|---|---|---|---|---|
 

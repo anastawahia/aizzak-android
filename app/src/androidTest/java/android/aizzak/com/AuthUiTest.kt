@@ -35,7 +35,7 @@ class AuthUiTest {
             calls++
             state = state.copy(busy = true)
         })
-        compose.setContent {
+        compose.setEnglishContent {
             AizzakTheme { AuthScreen(AuthPage.SIGN_IN, state, actions, {}, {}, {}, {}) }
         }
         compose.onNodeWithTag("auth-email").performTextInput("screen@example.com")
@@ -54,7 +54,7 @@ class AuthUiTest {
             attempts++
             state = state.copy(error = AuthError.NETWORK)
         })
-        compose.setContent { AizzakTheme { AuthScreen(AuthPage.SIGN_IN, state, actions, {}, {}, {}, {}) } }
+        compose.setEnglishContent { AizzakTheme { AuthScreen(AuthPage.SIGN_IN, state, actions, {}, {}, {}, {}) } }
         compose.onNodeWithTag("auth-email").performTextInput("screen@example.com")
         compose.onNodeWithTag("auth-password").performTextInput("sample-password")
         compose.onNodeWithTag("auth-submit").performScrollTo().performClick()
@@ -72,7 +72,7 @@ class AuthUiTest {
             signUp = { email, password, confirmation -> submitted = Triple(email, password, confirmation) },
             resetPassword = { email -> resetEmail = email; state = state.copy(message = AuthMessage.RESET_REQUESTED) },
         )
-        compose.setContent { AizzakTheme { AuthScreen(page, state, actions, {}, {}, {}, {}) } }
+        compose.setEnglishContent { AizzakTheme { AuthScreen(page, state, actions, {}, {}, {}, {}) } }
         compose.onNodeWithTag("auth-email").performTextInput("screen@example.com")
         compose.onNodeWithTag("auth-password").performTextInput("sample-password")
         compose.onNodeWithTag("auth-confirmation").performScrollTo().performTextInput("sample-password")
@@ -94,7 +94,7 @@ class AuthUiTest {
             refreshIdentity = { refreshed++ }, resendVerification = { resent++ },
             signOut = { state = AuthUiState(stage = AuthStage.SIGNED_OUT) },
         )
-        compose.setContent {
+        compose.setEnglishContent {
             AizzakTheme { LocalFoundationApp(SettingsUiState(loading = false, preferences = AppPreferences(localeInitialized = true)),
                 "en", "1.0.0", {}, {}, {}, state, actions) }
         }
@@ -113,7 +113,7 @@ class AuthUiTest {
         val state = AuthUiState(stage = AuthStage.CONTEXT_UNAVAILABLE,
             identity = AuthIdentity("fake-user", "screen@example.com", true))
         val actions = fakeAuthActions(refreshIdentity = { retries++ })
-        compose.setContent {
+        compose.setEnglishContent {
             AizzakTheme { LocalFoundationApp(SettingsUiState(loading = false, preferences = AppPreferences(localeInitialized = true)),
                 "en", "1.0.0", {}, {}, {}, state, actions) }
         }
@@ -126,7 +126,7 @@ class AuthUiTest {
     }
 
     @Test fun sessionRestorationDoesNotOfferPrematureSignInOrHome() {
-        compose.setContent { AizzakTheme { AuthSessionScreen(AuthUiState(), fakeAuthActions(), {}) } }
+        compose.setEnglishContent { AizzakTheme { AuthSessionScreen(AuthUiState(), fakeAuthActions(), {}) } }
         compose.onNodeWithText("Restoring your session…").assertExists()
         compose.onNodeWithTag("auth-submit").assertDoesNotExist()
         compose.onNodeWithText("Your assistants").assertDoesNotExist()
@@ -141,4 +141,5 @@ internal fun fakeAuthActions(
     refreshIdentity: () -> Unit = {},
     signOut: () -> Unit = {},
     clearFeedback: () -> Unit = {},
-) = AuthActions(signIn, signUp, resetPassword, resendVerification, refreshIdentity, signOut, clearFeedback)
+    changePassword: (String, String, String) -> Unit = { _, _, _ -> },
+) = AuthActions(signIn, signUp, resetPassword, resendVerification, refreshIdentity, signOut, clearFeedback, changePassword)
