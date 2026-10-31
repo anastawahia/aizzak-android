@@ -2,7 +2,8 @@
 
 Native Android foundation for AIZZAK, using Kotlin, Jetpack Compose and Material 3.
 Phone/tablet support starts at Android 8.0 (API 26), with compile/target API 36.
-Application ID: `com.aizzak.android`; debug installs use `com.aizzak.android.debug`.
+Namespace and application ID: `android.aizzak.com`, matching the supplied Firebase Android client.
+Debug and release use this same application ID; no debug suffix is applied.
 The reviewed scope and design are linked from [DESIGN-REVIEW.md](DESIGN-REVIEW.md).
 The later approval and delivery evidence are recorded in [.android-suite/tasks/foundation/status.md](.android-suite/tasks/foundation/status.md).
 
@@ -15,8 +16,12 @@ The later approval and delivery evidence are recorded in [.android-suite/tasks/f
 Release builds require an external upload keystore and the four `ANDROID_KEYSTORE_*`
 and `ANDROID_KEY_*` environment variables named in `app/build.gradle.kts`.
 Do not add passwords to Gradle properties. `bundleRelease` never publishes.
-Firebase Android configuration and an approved API environment have not been supplied.
-Successful authentication or account context must not be inferred from local foundation UI.
+Firebase Android configuration is supplied in `app/google-services.json`; an approved API environment is still pending.
+Enable Email/Password in Firebase Authentication for this project. The app uses Firebase Authentication
+for sign-in, account creation, email verification and password reset; Firebase manages session persistence.
+After verified authentication, the app remains at the account-services unavailable screen until the
+account context API is configured. No local roles or Home access are granted in its place.
+Authentication tests use isolated fakes and do not create real Firebase accounts.
 Agent operations, workspaces and conversations remain deferred by the agreed scope.
 
 Pinned baseline: AGP 8.13.2, Kotlin/Compose compiler 2.3.0, Compose BOM 2026.02.01,

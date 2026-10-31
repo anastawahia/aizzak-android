@@ -1,0 +1,46 @@
+{
+  "scope": "AUTH-LOGIN-01 Firebase client and isolated UI regression repair; live credentials/backend account context not claimed",
+  "checks": {
+    "relevant_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/auth-login-all.json",
+          "sha256": "a9d129b4ba659e21567ed3ec76dec94d72271a09e960fbfde376b88185b2379b"
+        },
+        {
+          "path": ".android-suite/evidence/auth-login-ui.json",
+          "sha256": "bee0dd5aa9e83b7fd2f98e179e0d91f985579624173a5d2be526257be42e3345"
+        }
+      ]
+    },
+    "independent_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/tasks/auth-login/review.md",
+          "sha256": "ae50cba824de7b8dbc691860c9d7fd76a24e8216abd4db521bbace897a1eb868"
+        }
+      ]
+    },
+    "static_analysis": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/auth-login-all.json",
+          "sha256": "a9d129b4ba659e21567ed3ec76dec94d72271a09e960fbfde376b88185b2379b"
+        }
+      ]
+    },
+    "compile": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/auth-login-all.json",
+          "sha256": "a9d129b4ba659e21567ed3ec76dec94d72271a09e960fbfde376b88185b2379b"
+        }
+      ]
+    }
+  },
+  "source_sha256": "85dc70f2a9583432acbc977dbffcc2fbb16e8bedce45c7876a9ad002bc960a28"
+}

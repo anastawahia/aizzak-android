@@ -1,0 +1,17 @@
+{
+  "scope": "AUTH-LOGIN-01 updated APK install and startup smoke only; no live credentials",
+  "install_result": "Success",
+  "activity": "android.aizzak.com.MainActivity",
+  "date": "2026-10-31",
+  "apk_sha256": "b8a424ca28cfc46ddd29cc928d342726dc1e2dd881960538ba59e28ab94fdfa8",
+  "process_running": true,
+  "launch_state": "COLD",
+  "launch_exit_code": 0,
+  "device": "Samsung SM-A155F, API 35",
+  "package": "android.aizzak.com",
+  "install_exit_code": 0,
+  "launch_status": "ok",
+  "real_credentials_submitted": false,
+  "launcher_resumed": true,
+  "data_preserved": true
+}

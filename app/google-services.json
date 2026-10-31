@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "987003822796",
+    "project_id": "aizzak-agent",
+    "storage_bucket": "aizzak-agent.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987003822796:android:d785ab43fb63755bfb1869",
+        "android_client_info": {
+          "package_name": "android.aizzak.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987003822796-9u2p7a9jl12jdlnntme680jb5cmf0itq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoNzD5XnjheVkDw0u7rmoaqiVQyDthGks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987003822796-9u2p7a9jl12jdlnntme680jb5cmf0itq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
