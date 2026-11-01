@@ -173,7 +173,7 @@ private fun AuthenticatedApp(
                         MainDestination.ACCOUNT -> AccountScreen(authState.identity?.email, null,
                             onChangePassword = { actions.clearFeedback(); password = true }, onSignOut = actions.signOut, state = authState)
                         MainDestination.SETTINGS -> SettingsScreen(state, language, version, onTheme, onLanguage, onRetry,
-                            onBack = { selected = MainDestination.HOME.name })
+                            onBack = null)
                     }
                 }
             }

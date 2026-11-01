@@ -1,6 +1,8 @@
 package android.aizzak.com.core.designsystem
 
+import android.aizzak.com.core.model.ThemePreference
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes
 import androidx.compose.material3.Typography
@@ -8,9 +10,9 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import android.aizzak.com.core.model.ThemePreference
+import androidx.compose.ui.unit.sp
 
 private val LightColors = lightColorScheme(
     primary = Color(0xFF245AE8), onPrimary = Color.White,
@@ -42,6 +44,25 @@ private val DarkColors = darkColorScheme(
     errorContainer = Color(0xFF542B40), onErrorContainer = Color(0xFFFFB6C6),
 )
 
+private val AizzakTypography = Typography().run {
+    copy(
+        headlineLarge = headlineLarge.copy(fontSize = 28.sp, lineHeight = 34.sp, fontWeight = FontWeight.Bold),
+        headlineMedium = headlineMedium.copy(fontSize = 24.sp, lineHeight = 30.sp, fontWeight = FontWeight.Bold),
+        titleLarge = titleLarge.copy(fontSize = 20.sp, lineHeight = 26.sp, fontWeight = FontWeight.SemiBold),
+        titleMedium = titleMedium.copy(fontSize = 16.sp, lineHeight = 22.sp, fontWeight = FontWeight.SemiBold),
+        bodyLarge = bodyLarge.copy(fontSize = 16.sp, lineHeight = 24.sp),
+        bodyMedium = bodyMedium.copy(fontSize = 14.sp, lineHeight = 21.sp),
+        labelLarge = labelLarge.copy(fontSize = 14.sp, lineHeight = 20.sp, fontWeight = FontWeight.SemiBold),
+    )
+}
+
+private val AizzakShapes = Shapes(
+    extraSmall = RoundedCornerShape(8.dp),
+    small = RoundedCornerShape(12.dp),
+    medium = RoundedCornerShape(20.dp),
+    large = RoundedCornerShape(24.dp),
+)
+
 @Composable
 fun AizzakTheme(preference: ThemePreference = ThemePreference.SYSTEM, content: @Composable () -> Unit) {
     val dark = when (preference) {
@@ -51,8 +72,8 @@ fun AizzakTheme(preference: ThemePreference = ThemePreference.SYSTEM, content: @
     }
     MaterialTheme(
         colorScheme = if (dark) DarkColors else LightColors,
-        typography = Typography(),
-        shapes = Shapes(small = RoundedCornerShape(12.dp), medium = RoundedCornerShape(20.dp)),
+        typography = AizzakTypography,
+        shapes = AizzakShapes,
         content = content,
     )
 }

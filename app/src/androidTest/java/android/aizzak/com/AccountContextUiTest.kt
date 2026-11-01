@@ -34,7 +34,7 @@ class AccountContextUiTest {
         compose.onNodeWithTag("auth-context-loading").assertExists()
         compose.onNodeWithTag("nav-home").assertDoesNotExist()
         compose.runOnIdle { state = state.copy(stage = AuthStage.ACCESS_DENIED, contextError = AccountContextError.FORBIDDEN) }
-        compose.onNodeWithText("Account access denied").assertExists()
+        compose.onNodeWithTag("auth-context-title").assertTextEquals("Account access denied")
         compose.onNodeWithTag("auth-context-retry").performScrollTo().performClick()
         compose.runOnIdle { assertEquals(1, retries) }
         compose.onNodeWithText("Your assistants").assertDoesNotExist()
@@ -43,7 +43,7 @@ class AccountContextUiTest {
     @Test fun readyWithoutContextRemainsClosedUntilContextExists() {
         var state by mutableStateOf(ready().copy(context = null))
         show({ state })
-        compose.onNodeWithText("Account services unavailable").assertExists()
+        compose.onNodeWithTag("auth-context-title").assertTextEquals("We couldn’t load your account")
         compose.onNodeWithTag("nav-home").assertDoesNotExist()
         compose.runOnIdle { state = ready() }
         compose.onNodeWithText("Your assistants").assertExists()
@@ -54,9 +54,10 @@ class AccountContextUiTest {
         var state by mutableStateOf(ready())
         show({ state }, fakeAuthActions(signOut = { state = AuthUiState(stage = AuthStage.SIGNED_OUT) }))
         compose.onNodeWithTag("nav-account").performClick()
-        compose.onNodeWithText("account-a@example.com").assertExists()
+        compose.onAllNodesWithText("account-a@example.com").onFirst().assertExists()
         compose.onNodeWithTag("nav-settings").performClick()
-        compose.onNodeWithText("Back").performClick()
+        compose.onNodeWithTag("settings-back").assertDoesNotExist()
+        compose.onNodeWithTag("nav-home").performClick()
         compose.onNodeWithText("Your assistants").assertExists()
         compose.onNodeWithTag("nav-account").performClick()
         compose.onNodeWithTag("account-sign-out").performScrollTo().performClick()
@@ -108,7 +109,7 @@ class AccountContextUiTest {
         compose.onNodeWithText("Your assistants").assertExists()
         compose.onNodeWithTag("password-current").assertDoesNotExist()
         compose.onNodeWithTag("nav-account").performClick()
-        compose.onNodeWithText("account-b@example.com").assertExists()
+        compose.onAllNodesWithText("account-b@example.com").onFirst().assertExists()
         compose.onNodeWithText("account-a@example.com").assertDoesNotExist()
         compose.onNodeWithTag("account-change-password").performScrollTo().performClick()
         compose.onNodeWithTag("password-current").assert(emptyPassword())

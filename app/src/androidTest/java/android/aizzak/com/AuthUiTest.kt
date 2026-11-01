@@ -98,12 +98,12 @@ class AuthUiTest {
             AizzakTheme { LocalFoundationApp(SettingsUiState(loading = false, preferences = AppPreferences(localeInitialized = true)),
                 "en", "1.0.0", {}, {}, {}, state, actions) }
         }
-        compose.onNodeWithText("Verify your email").assertExists()
+        compose.onNodeWithTag("auth-verification-title").assertTextEquals("Check your inbox")
         compose.onNodeWithTag("auth-refresh").performScrollTo().performClick()
-        compose.onNodeWithText("Resend verification email").performScrollTo().performClick()
+        compose.onNodeWithTag("auth-resend").performScrollTo().performClick()
         compose.runOnIdle { assertEquals(1, refreshed); assertEquals(1, resent) }
         compose.onNodeWithText("Your assistants").assertDoesNotExist()
-        compose.onNodeWithText("Sign out").performScrollTo().performClick()
+        compose.onNodeWithTag("auth-sign-out").performScrollTo().performClick()
         compose.onNodeWithTag("auth-submit").assertExists()
         compose.onNodeWithText("screen@example.com").assertDoesNotExist()
     }
@@ -117,7 +117,7 @@ class AuthUiTest {
             AizzakTheme { LocalFoundationApp(SettingsUiState(loading = false, preferences = AppPreferences(localeInitialized = true)),
                 "en", "1.0.0", {}, {}, {}, state, actions) }
         }
-        compose.onNodeWithText("Account services unavailable").assertExists()
+        compose.onNodeWithTag("auth-context-title").assertTextEquals("We couldn’t load your account")
         compose.onNodeWithTag("auth-context-retry").performScrollTo().performClick()
         compose.runOnIdle { assertEquals(1, retries) }
         compose.onNodeWithText("Your assistants").assertDoesNotExist()
@@ -127,7 +127,7 @@ class AuthUiTest {
 
     @Test fun sessionRestorationDoesNotOfferPrematureSignInOrHome() {
         compose.setEnglishContent { AizzakTheme { AuthSessionScreen(AuthUiState(), fakeAuthActions(), {}) } }
-        compose.onNodeWithText("Restoring your session…").assertExists()
+        compose.onNodeWithTag("auth-loading-title").assertTextEquals("Getting things ready")
         compose.onNodeWithTag("auth-submit").assertDoesNotExist()
         compose.onNodeWithText("Your assistants").assertDoesNotExist()
     }

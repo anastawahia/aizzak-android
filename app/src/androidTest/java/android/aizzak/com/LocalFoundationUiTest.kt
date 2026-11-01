@@ -30,12 +30,11 @@ class LocalFoundationUiTest {
         }
         compose.onNodeWithTag("auth-submit").assertIsEnabled()
         compose.onNodeWithText("Your assistants").assertDoesNotExist()
-        compose.onNodeWithText("Create account").performScrollTo().performClick()
-        compose.onNodeWithTag("auth-submit").assertIsEnabled()
-        compose.onNodeWithText("Preferences").performScrollTo().performClick()
+        compose.onNodeWithTag("auth-preferences").performScrollTo().performClick()
         compose.onNodeWithText("Settings").assertIsDisplayed()
-        compose.onNodeWithText("Back").performClick()
-        compose.onNodeWithText("Confirm password").assertExists()
+        compose.onNodeWithTag("settings-back").performClick()
+        compose.onNodeWithTag("auth-title").assertTextEquals("Welcome back")
+        compose.onNodeWithTag("auth-confirmation").assertDoesNotExist()
     }
 
     @Test fun preferenceSelectionDispatchesThemeAndLanguageWithoutAuthentication() {
@@ -48,10 +47,10 @@ class LocalFoundationUiTest {
                     authState = AuthUiState(stage = AuthStage.SIGNED_OUT), authActions = fakeAuthActions())
             }
         }
-        compose.onNodeWithText("Preferences").performScrollTo().performClick()
-        compose.onNodeWithText("Dark").performScrollTo().performClick()
+        compose.onNodeWithTag("auth-preferences").performScrollTo().performClick()
+        compose.onNodeWithTag("settings-theme-dark").performScrollTo().performClick()
         compose.runOnIdle { assertEquals(ThemePreference.DARK, preferences.theme) }
-        compose.onNodeWithText("العربية").performScrollTo().performClick()
+        compose.onNodeWithTag("settings-language-ar").performScrollTo().performClick()
         compose.runOnIdle { assertEquals("ar", chosenLanguage) }
     }
 
