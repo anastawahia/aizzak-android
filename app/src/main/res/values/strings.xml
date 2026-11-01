@@ -2,10 +2,18 @@
     <string name="app_name" translatable="false">AIZZAK</string>
     <string name="app_tagline">AI Assistant</string>
     <string name="sign_in">Sign in</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="sign_in_description">Sign in to continue to your AIZZAK account.</string>
     <string name="create_account">Create account</string>
+    <string name="create_account_title">Create your account</string>
+    <string name="sign_up_description">Create your identity, then verify your email before continuing.</string>
     <string name="reset_password">Reset password</string>
+    <string name="reset_description">Enter your email and we’ll send reset instructions if it can receive them.</string>
     <string name="email">Email</string>
+    <string name="email_address">Email address</string>
+    <string name="email_placeholder">name@example.com</string>
     <string name="password">Password</string>
+    <string name="password_placeholder">Enter your password</string>
     <string name="confirm_password">Confirm password</string>
     <string name="show_password">Show</string>
     <string name="hide_password">Hide</string>
@@ -51,14 +59,19 @@
     <string name="theme_dark">Dark</string>
     <string name="version">Version %1$s</string>
     <string name="back">Back</string>
+    <string name="back_with_arrow">‹  Back</string>
+    <string name="new_here">New here?</string>
+    <string name="already_have_account">Already have an account?</string>
     <string name="loading">Loading preferences…</string>
     <string name="preferences_read_error">Your preferences could not be loaded. Try again to continue.</string>
     <string name="preferences_write_error">Your change could not be saved. Please try again.</string>
     <string name="retry">Try again</string>
     <string name="saving">Saving…</string>
     <string name="home_title">Your assistants</string>
+    <string name="home_eyebrow">Your workspace</string>
     <string name="home">Home</string>
     <string name="home_description">A place for your knowledge, searches and diagrams.</string>
+    <string name="assistants_preparing">Your assistants are being prepared. They’ll appear here when they’re ready.</string>
     <string name="coming_later">Coming later</string>
     <string name="smart_assistant" translatable="false">Smart Assistant</string>
     <string name="data_search" translatable="false">Data Search</string>
@@ -68,6 +81,10 @@
     <string name="wire_description">Retrieve information from electrical diagrams.</string>
     <string name="no_assistants">No assistants are available</string>
     <string name="account">Account</string>
+    <string name="account_description">Review your identity and keep your account secure.</string>
+    <string name="your_account">Your account</string>
+    <string name="name">Name</string>
+    <string name="security">Security</string>
     <string name="change_password">Change password</string>
     <string name="current_password">Current password</string>
     <string name="new_password">New password</string>
@@ -75,4 +92,12 @@
     <string name="password_change_description">Confirm your current password, then enter and confirm your new password.</string>
     <string name="password_changed">Your password was changed.</string>
     <string name="sign_out">Sign out</string>
+    <string name="settings_description">Choose the language and appearance used on this device.</string>
+    <string name="getting_ready">Getting things ready</string>
+    <string name="restoring_description">Restoring your session and checking your account access.</string>
+    <string name="context_loading_description">Loading your account and access settings.</string>
+    <string name="check_inbox">Check your inbox</string>
+    <string name="verification_notice">After opening the verification link, return here and check again.</string>
+    <string name="context_failure_title">We couldn’t load your account</string>
+    <string name="context_failure_description">Account access is temporarily unavailable. Try again or sign out.</string>
 </resources>
