@@ -1,0 +1,1229 @@
+{
+  "company": {
+    "title": "Android software house delivery",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director"
+    ],
+    "skills": [
+      "requirements-engineering",
+      "feature-planning"
+    ],
+    "stages": [
+      "intake",
+      "discovery",
+      "requirements",
+      "design",
+      "architecture",
+      "build",
+      "verification",
+      "design-qa",
+      "acceptance",
+      "release-prep",
+      "store-readiness",
+      "publish",
+      "operate"
+    ],
+    "mandatory": [
+      "intake",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "human_checkpoints": [
+      "discovery",
+      "requirements",
+      "design",
+      "acceptance",
+      "publish"
+    ],
+    "small_agents": [
+      "company-director"
+    ],
+    "steps": [
+      "Classify the request and select the scoped workflow below; open its lifecycle.",
+      "Run each stage with its owner, accept real outputs and record them with suite.py.",
+      "Stop at every human checkpoint with a complete packet in the owner's language.",
+      "Report only what `suite.py lifecycle` shows as passed; completion requires acceptance."
+    ],
+    "parallel": [
+      "Independent research and disjoint-file work after contracts stabilize; never across an open dependent checkpoint."
+    ],
+    "artifacts": [
+      "lifecycle record",
+      "checkpoint packets",
+      "accepted handoffs",
+      "gate and conformance reports",
+      "delivery report"
+    ],
+    "gates": [
+      "requirements",
+      "architecture",
+      "implementation",
+      "design_conformance",
+      "release",
+      "store"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "new-app": {
+    "title": "New app from idea to Google Play",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "product-manager",
+      "business-analyst",
+      "ux-designer",
+      "ui-designer",
+      "android-architect",
+      "build-release-engineer",
+      "android-core-developer",
+      "compose-developer",
+      "integration-engineer",
+      "qa-engineer",
+      "android-code-reviewer",
+      "design-qa-reviewer",
+      "security-reviewer",
+      "store-listing-specialist"
+    ],
+    "skills": [
+      "product-discovery",
+      "requirements-engineering",
+      "ux-journeys-wireframes",
+      "design-handoff-inventory",
+      "android-project-bootstrap",
+      "compose-ui-patterns",
+      "screenshot-testing",
+      "design-conformance-review"
+    ],
+    "stages": [
+      "intake",
+      "discovery",
+      "requirements",
+      "design",
+      "architecture",
+      "build",
+      "verification",
+      "design-qa",
+      "acceptance",
+      "release-prep",
+      "store-readiness",
+      "publish",
+      "operate"
+    ],
+    "mandatory": [
+      "intake",
+      "discovery",
+      "requirements",
+      "design",
+      "architecture",
+      "build",
+      "verification",
+      "design-qa",
+      "acceptance"
+    ],
+    "human_checkpoints": [
+      "discovery",
+      "requirements",
+      "design",
+      "acceptance",
+      "publish"
+    ],
+    "small_agents": [
+      "company-director",
+      "product-manager",
+      "business-analyst",
+      "ux-designer",
+      "ui-designer",
+      "android-architect",
+      "build-release-engineer",
+      "android-core-developer",
+      "compose-developer",
+      "integration-engineer",
+      "qa-engineer",
+      "android-code-reviewer",
+      "design-qa-reviewer",
+      "security-reviewer",
+      "store-listing-specialist"
+    ],
+    "steps": [
+      "Discovery: brief, MVP and open decisions; owner checkpoint.",
+      "Requirements with REQ IDs and acceptance cases; owner checkpoint.",
+      "Journeys, wireframes, visual reference and screen inventory; owner design checkpoint binds their hashes.",
+      "Architecture ADRs, then scaffold with suite.py init and bootstrap the wrapper.",
+      "Build screen by screen from the inventory with screenshot tests; core and data in parallel on disjoint files.",
+      "Verification gate, then independent design QA from screenshots, then owner acceptance.",
+      "If the owner wants to ship: release prep, store readiness, publish checkpoint, then operations."
+    ],
+    "parallel": [
+      "Competitor research with environment inspection; core/data and UI implementation on separate files after contracts."
+    ],
+    "artifacts": [
+      "product brief",
+      "requirements",
+      "design reference and screen inventory",
+      "ADRs",
+      "source and tests",
+      "screenshots and conformance record",
+      "release and store evidence"
+    ],
+    "gates": [
+      "requirements",
+      "architecture",
+      "implementation",
+      "design_conformance",
+      "release",
+      "store"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "discovery": {
+    "title": "Idea discovery and requirements",
+    "mode": "planning",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "product-manager",
+      "business-analyst"
+    ],
+    "skills": [
+      "product-discovery",
+      "requirements-engineering"
+    ],
+    "stages": [
+      "intake",
+      "discovery",
+      "requirements"
+    ],
+    "mandatory": [
+      "intake",
+      "discovery",
+      "requirements"
+    ],
+    "human_checkpoints": [
+      "discovery",
+      "requirements"
+    ],
+    "small_agents": [
+      "company-director",
+      "product-manager",
+      "business-analyst"
+    ],
+    "steps": [
+      "Interview the idea and research comparable apps from cited sources.",
+      "Write the brief and present the discovery checkpoint.",
+      "Write requirements and present the requirements checkpoint."
+    ],
+    "parallel": [
+      "Market research and constraint gathering."
+    ],
+    "artifacts": [
+      "product brief",
+      "requirements"
+    ],
+    "gates": [
+      "requirements"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "feature": {
+    "title": "Feature delivery",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "business-analyst",
+      "ui-designer",
+      "android-core-developer",
+      "compose-developer",
+      "qa-engineer",
+      "android-code-reviewer",
+      "design-qa-reviewer"
+    ],
+    "skills": [
+      "feature-planning",
+      "state-management",
+      "compose-ui-patterns",
+      "unit-testing",
+      "screenshot-testing"
+    ],
+    "stages": [
+      "intake",
+      "requirements",
+      "design",
+      "architecture",
+      "build",
+      "verification",
+      "design-qa",
+      "acceptance"
+    ],
+    "mandatory": [
+      "intake",
+      "requirements",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "human_checkpoints": [
+      "requirements",
+      "design",
+      "acceptance"
+    ],
+    "small_agents": [
+      "android-core-developer",
+      "qa-engineer"
+    ],
+    "steps": [
+      "Link scope to REQ IDs; owner approves changed requirements.",
+      "For UI changes extend the reference and inventory; owner design checkpoint.",
+      "Agree state/interface contracts and file ownership; implement core, data and UI slices.",
+      "Verification gate, independent code review, design QA for UI changes, owner acceptance."
+    ],
+    "parallel": [
+      "Core and UI on separate files after contracts; QA test design while implementation proceeds."
+    ],
+    "artifacts": [
+      "requirements delta",
+      "inventory delta",
+      "source",
+      "tests",
+      "screenshots",
+      "reviews"
+    ],
+    "gates": [
+      "requirements",
+      "implementation",
+      "design_conformance"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "bugfix": {
+    "title": "Defect repair",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "android-core-developer",
+      "compose-developer",
+      "qa-engineer",
+      "android-code-reviewer",
+      "design-qa-reviewer"
+    ],
+    "skills": [
+      "feature-planning",
+      "unit-testing"
+    ],
+    "stages": [
+      "intake",
+      "build",
+      "verification",
+      "design-qa",
+      "acceptance"
+    ],
+    "mandatory": [
+      "intake",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "human_checkpoints": [
+      "acceptance"
+    ],
+    "small_agents": [
+      "android-core-developer",
+      "qa-engineer"
+    ],
+    "steps": [
+      "Capture the actual failing behavior and environment.",
+      "Write a failing regression case, then the smallest fix.",
+      "Rerun failed/affected checks and independent review; design QA when a screen changed.",
+      "Owner acceptance of the repaired behavior."
+    ],
+    "parallel": [
+      "Reproduction research and regression test design."
+    ],
+    "artifacts": [
+      "reproduction",
+      "regression test",
+      "fix",
+      "execution evidence"
+    ],
+    "gates": [
+      "implementation",
+      "design_conformance"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "ui-redesign": {
+    "title": "Screen design or redesign",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "ux-designer",
+      "ui-designer",
+      "compose-developer",
+      "qa-engineer",
+      "design-qa-reviewer"
+    ],
+    "skills": [
+      "ux-journeys-wireframes",
+      "material3-design-system",
+      "design-handoff-inventory",
+      "compose-ui-patterns",
+      "screenshot-testing",
+      "design-conformance-review",
+      "adaptive-ui-accessibility"
+    ],
+    "stages": [
+      "intake",
+      "design",
+      "build",
+      "verification",
+      "design-qa",
+      "acceptance"
+    ],
+    "mandatory": [
+      "intake",
+      "design",
+      "build",
+      "verification",
+      "design-qa",
+      "acceptance"
+    ],
+    "human_checkpoints": [
+      "design",
+      "acceptance"
+    ],
+    "small_agents": [
+      "compose-developer",
+      "design-qa-reviewer",
+      "qa-engineer"
+    ],
+    "steps": [
+      "Inspect current behavior and preserve product contracts.",
+      "Wireframes, visual reference and inventory; owner design checkpoint.",
+      "Implement every inventory element with screenshot tests.",
+      "Verification, independent design QA from screenshots, owner acceptance."
+    ],
+    "parallel": [
+      "Accessibility audit with design work; screenshots and semantic tests after implementation."
+    ],
+    "artifacts": [
+      "wireframes",
+      "design reference",
+      "screen inventory",
+      "UI source",
+      "screenshots",
+      "conformance record"
+    ],
+    "gates": [
+      "implementation",
+      "design_conformance"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "design-review": {
+    "title": "Design conformance audit of an existing app",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "ui-designer",
+      "design-qa-reviewer"
+    ],
+    "skills": [
+      "design-handoff-inventory",
+      "screenshot-testing",
+      "design-conformance-review"
+    ],
+    "stages": [
+      "intake",
+      "design",
+      "design-qa"
+    ],
+    "mandatory": [
+      "intake",
+      "design",
+      "design-qa"
+    ],
+    "human_checkpoints": [
+      "design"
+    ],
+    "small_agents": [
+      "company-director",
+      "ui-designer",
+      "design-qa-reviewer"
+    ],
+    "steps": [
+      "Locate the approved reference; derive or reuse its screen inventory and have the owner confirm it.",
+      "Record current screenshots for every inventory configuration.",
+      "Independent element-by-element review and suite.py conformance report.",
+      "Report matched, deviation and missing elements; route fixes to a ui-redesign or bugfix task."
+    ],
+    "parallel": [
+      "Screenshot capture for separate screens."
+    ],
+    "artifacts": [
+      "screen inventory",
+      "screenshots",
+      "conformance record and report"
+    ],
+    "gates": [
+      "design_conformance"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "backend": {
+    "title": "Backend integration",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "integration-engineer",
+      "backend-liaison",
+      "android-core-developer",
+      "qa-engineer",
+      "security-reviewer",
+      "android-code-reviewer"
+    ],
+    "skills": [
+      "api-integration",
+      "backend-change-requests",
+      "local-persistence",
+      "offline-first-sync"
+    ],
+    "stages": [
+      "intake",
+      "requirements",
+      "architecture",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "mandatory": [
+      "intake",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "human_checkpoints": [
+      "requirements",
+      "acceptance"
+    ],
+    "small_agents": [
+      "company-director",
+      "integration-engineer",
+      "backend-liaison",
+      "android-core-developer",
+      "qa-engineer",
+      "security-reviewer",
+      "android-code-reviewer"
+    ],
+    "steps": [
+      "Read the real contract, ownership rules and auth/privacy requirements.",
+      "Write backend change requests for anything the backend must change; block only dependent work.",
+      "Implement client, storage and justified sync behavior against confirmed contracts.",
+      "Contract, failure, auth-expiry and migration tests; scoped security review; owner acceptance."
+    ],
+    "parallel": [
+      "Contract test design and data implementation after interfaces; security review of auth design."
+    ],
+    "artifacts": [
+      "contract notes",
+      "backend change requests",
+      "data source",
+      "fixtures",
+      "test evidence"
+    ],
+    "gates": [
+      "integration",
+      "implementation"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "refactor": {
+    "title": "Architecture refactoring",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "android-architect",
+      "android-core-developer",
+      "android-code-reviewer",
+      "qa-engineer"
+    ],
+    "skills": [
+      "android-clean-architecture",
+      "dependency-injection",
+      "unit-testing"
+    ],
+    "stages": [
+      "intake",
+      "architecture",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "mandatory": [
+      "intake",
+      "architecture",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "human_checkpoints": [
+      "acceptance"
+    ],
+    "small_agents": [
+      "company-director",
+      "android-architect",
+      "android-core-developer",
+      "android-code-reviewer",
+      "qa-engineer"
+    ],
+    "steps": [
+      "Capture current behavior and dependencies before editing.",
+      "Record the ADR and compiling migration slices.",
+      "Move one boundary at a time while preserving public behavior.",
+      "Regression checks, dependency review, owner acceptance."
+    ],
+    "parallel": [
+      "Read-only architecture review and regression inventory."
+    ],
+    "artifacts": [
+      "ADR",
+      "module map",
+      "incremental diffs",
+      "regression evidence"
+    ],
+    "gates": [
+      "architecture",
+      "implementation"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "test": {
+    "title": "Testing and regression validation",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "qa-engineer"
+    ],
+    "skills": [
+      "unit-testing",
+      "compose-ui-testing",
+      "integration-e2e-testing",
+      "screenshot-testing"
+    ],
+    "stages": [
+      "intake",
+      "verification"
+    ],
+    "mandatory": [
+      "intake",
+      "verification"
+    ],
+    "human_checkpoints": [],
+    "small_agents": [
+      "company-director",
+      "qa-engineer"
+    ],
+    "steps": [
+      "Map acceptance criteria and changed behavior to a test matrix.",
+      "Add missing focused cases and inspect host/device availability.",
+      "Run selected JVM, lint, compile, screenshot and device checks without treating skipped work as passed.",
+      "Report failures, skips, coverage gaps and recovery actions."
+    ],
+    "parallel": [
+      "Independent JVM modules when Gradle resources permit."
+    ],
+    "artifacts": [
+      "test matrix",
+      "reports",
+      "environment evidence"
+    ],
+    "gates": [
+      "implementation"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "security": {
+    "title": "Security and privacy audit",
+    "mode": "review",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "security-reviewer"
+    ],
+    "skills": [
+      "android-security",
+      "privacy-data-safety"
+    ],
+    "stages": [],
+    "mandatory": [],
+    "human_checkpoints": [],
+    "small_agents": [
+      "security-reviewer"
+    ],
+    "steps": [
+      "Inspect threat/data boundaries, manifest, auth, networking and secret handling.",
+      "Review dependencies, SBOM, licenses and data declarations.",
+      "Report severity-ranked findings without editing by default."
+    ],
+    "parallel": [
+      "Independent manifest, dependency and auth reviews."
+    ],
+    "artifacts": [
+      "findings",
+      "SBOM",
+      "scan evidence"
+    ],
+    "gates": [
+      "integration"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "performance": {
+    "title": "Performance optimization",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "performance-engineer",
+      "android-core-developer",
+      "qa-engineer"
+    ],
+    "skills": [
+      "performance-optimization"
+    ],
+    "stages": [
+      "intake",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "mandatory": [
+      "intake",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "human_checkpoints": [
+      "acceptance"
+    ],
+    "small_agents": [
+      "company-director",
+      "performance-engineer",
+      "android-core-developer",
+      "qa-engineer"
+    ],
+    "steps": [
+      "Define journey, budget and benchmark environment.",
+      "Collect a baseline and locate a measured bottleneck.",
+      "Apply a narrow optimization with regression coverage.",
+      "Repeat comparable measurements; owner acceptance of the measured result."
+    ],
+    "parallel": [
+      "Profiles of separate subsystems under controlled conditions."
+    ],
+    "artifacts": [
+      "baseline",
+      "profile",
+      "patch",
+      "comparison"
+    ],
+    "gates": [
+      "implementation"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "release": {
+    "title": "Release preparation",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "build-release-engineer",
+      "qa-engineer",
+      "security-reviewer",
+      "android-code-reviewer",
+      "store-listing-specialist"
+    ],
+    "skills": [
+      "gradle-build-management",
+      "android-ci-cd",
+      "android-security",
+      "store-listing-aso",
+      "privacy-data-safety"
+    ],
+    "stages": [
+      "intake",
+      "verification",
+      "acceptance",
+      "release-prep",
+      "store-readiness"
+    ],
+    "mandatory": [
+      "intake",
+      "verification",
+      "acceptance",
+      "release-prep"
+    ],
+    "human_checkpoints": [
+      "acceptance"
+    ],
+    "small_agents": [
+      "company-director",
+      "build-release-engineer",
+      "qa-engineer",
+      "security-reviewer",
+      "android-code-reviewer",
+      "store-listing-specialist"
+    ],
+    "steps": [
+      "Freeze artifact inputs and version; review current Play requirements.",
+      "Required tests, lint and security checks on the frozen source; owner accepts the release candidate.",
+      "Build and verify the signed AAB, hash and upload certificate.",
+      "Store listing, assets from the accepted build, Data safety and content rating; no publishing."
+    ],
+    "parallel": [
+      "QA, independent review, listing work and security review of frozen source."
+    ],
+    "artifacts": [
+      "AAB",
+      "hash/certificate",
+      "release evidence",
+      "store evidence"
+    ],
+    "gates": [
+      "implementation",
+      "release",
+      "store"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "publish": {
+    "title": "Google Play publication",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "build-release-engineer",
+      "store-listing-specialist"
+    ],
+    "skills": [
+      "play-store-publishing",
+      "store-listing-aso"
+    ],
+    "stages": [
+      "intake",
+      "release-prep",
+      "store-readiness",
+      "publish"
+    ],
+    "mandatory": [
+      "intake",
+      "release-prep",
+      "store-readiness",
+      "publish"
+    ],
+    "human_checkpoints": [
+      "publish"
+    ],
+    "small_agents": [
+      "company-director",
+      "build-release-engineer",
+      "store-listing-specialist"
+    ],
+    "steps": [
+      "Verify current policies, eligibility and the release gate for the frozen artifact.",
+      "Dry-run the exact bundle/package/version/track/rollout; owner publish checkpoint.",
+      "Execute the approved submission once and record its reference.",
+      "Check Play Console review/serving status; never claim public availability early."
+    ],
+    "parallel": [
+      "Listing and policy readiness review before authorization."
+    ],
+    "artifacts": [
+      "approval reference",
+      "API result",
+      "Console verification"
+    ],
+    "gates": [
+      "release",
+      "store"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "incident": {
+    "title": "Post-release incident handling",
+    "mode": "delivery",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "company-director",
+      "app-operations-engineer",
+      "android-core-developer",
+      "integration-engineer",
+      "qa-engineer",
+      "build-release-engineer"
+    ],
+    "skills": [
+      "crash-monitoring-maintenance",
+      "feature-planning",
+      "unit-testing"
+    ],
+    "stages": [
+      "intake",
+      "build",
+      "verification",
+      "acceptance",
+      "release-prep",
+      "publish"
+    ],
+    "mandatory": [
+      "intake",
+      "build",
+      "verification",
+      "acceptance"
+    ],
+    "human_checkpoints": [
+      "acceptance",
+      "publish"
+    ],
+    "small_agents": [
+      "company-director",
+      "app-operations-engineer",
+      "android-core-developer",
+      "integration-engineer",
+      "qa-engineer",
+      "build-release-engineer"
+    ],
+    "steps": [
+      "Triage impact and affected versions with sanitized telemetry.",
+      "Reproduce; propose halt, forward fix or rollback within version/data constraints.",
+      "Implement and test the smallest remediation; owner acceptance.",
+      "Owner approval before any production rollout change; verify recovery and record the incident."
+    ],
+    "parallel": [
+      "Telemetry and backend investigation; regression test design."
+    ],
+    "artifacts": [
+      "incident timeline",
+      "reproduction",
+      "fix",
+      "health evidence"
+    ],
+    "gates": [
+      "implementation",
+      "release"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  },
+  "analyze": {
+    "title": "Existing application analysis",
+    "mode": "review",
+    "preconditions": [
+      "Explicit project root and scope; repository instructions and Git changes inspected.",
+      "Open task lifecycle read when resuming; existing user work preserved."
+    ],
+    "agents": [
+      "android-architect"
+    ],
+    "skills": [
+      "android-clean-architecture"
+    ],
+    "stages": [],
+    "mandatory": [],
+    "human_checkpoints": [],
+    "small_agents": [
+      "android-architect"
+    ],
+    "steps": [
+      "Run read-only inspection and Git status without Gradle or init-memory.",
+      "Inspect catalogs, manifests, modules, data flow, tests, design references and CI; separate observed evidence from inference.",
+      "Return findings and recommended next workflow without writing files."
+    ],
+    "parallel": [
+      "Independent read-only dependency and test inventory."
+    ],
+    "artifacts": [
+      "analysis returned in conversation"
+    ],
+    "gates": [
+      "findings-report"
+    ],
+    "failure": [
+      "Capture the actual error and affected REQ/SCR IDs.",
+      "Apply at most three targeted corrections, rerunning failed/affected checks.",
+      "Stop dependent stages when a required gate fails; report infrastructure blockers separately."
+    ],
+    "approval": [
+      "Human checkpoints pass only by the owner's recorded decision bound to the packet hashes.",
+      "Explicit owner approval immediately before destructive or consequential external actions.",
+      "Publishing approval binds package, artifact hash, version, track and rollout; never self-authorize."
+    ],
+    "report": [
+      "Scope, REQ/SCR IDs and the `suite.py lifecycle` result.",
+      "Exact commands, exit codes, environment and evidence paths.",
+      "Gate and conformance results, approved deviations/exceptions, residual risks and next action."
+    ]
+  }
+}

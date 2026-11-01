@@ -1,0 +1,19 @@
+{
+  "name": "android-software-house",
+  "version": "2.0.0",
+  "description": "Android software company for Codex: lifecycle-enforced delivery from idea to Google Play with design-conformance gates, human checkpoints and installable native specialists.",
+  "author": {
+    "name": "Android Software House Contributors"
+  },
+  "license": "MIT",
+  "skills": "./codex-skills/",
+  "hooks": "./hooks/codex.json",
+  "interface": {
+    "displayName": "Android Software House",
+    "shortDescription": "From app idea to Google Play, with enforced gates",
+    "defaultPrompt": [
+      "Turn my app idea into a published Android app",
+      "Check this app against its approved design"
+    ]
+  }
+}
