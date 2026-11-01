@@ -14,7 +14,11 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.EmailAuthProvider
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.CoroutineStart
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.NonCancellable
+import kotlinx.coroutines.async
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.ensureActive
@@ -29,9 +33,13 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.withTimeoutOrNull
 
 /** Firebase owns persisted credentials; this adapter never stores ID tokens or passwords. */
-class FirebaseAuthRepository internal constructor(private val gateway: FirebaseAuthGateway) : AuthRepository, IdTokenProvider {
+class FirebaseAuthRepository internal constructor(
+    private val gateway: FirebaseAuthGateway,
+    private val requestTimeoutMillis: Long = REQUEST_TIMEOUT_MS,
+) : AuthRepository, IdTokenProvider {
     constructor(auth: FirebaseAuth) : this(SdkFirebaseAuthGateway(auth))
 
     private val credentialMutex = Mutex()
@@ -59,25 +67,29 @@ class FirebaseAuthRepository internal constructor(private val gateway: FirebaseA
         }
     }
 
-    override suspend fun signIn(email: String, password: String) = credentialMutation {
-        try {
-            gateway.signIn(email, password)
-        } catch (failure: AuthFailure) {
-            if (failure.error == AuthError.SESSION_EXPIRED) throw AuthFailure(AuthError.INVALID_CREDENTIALS)
-            throw failure
+    override suspend fun signIn(email: String, password: String) = bounded {
+        credentialMutation {
+            try {
+                gateway.signIn(email, password)
+            } catch (failure: AuthFailure) {
+                if (failure.error == AuthError.SESSION_EXPIRED) throw AuthFailure(AuthError.INVALID_CREDENTIALS)
+                throw failure
+            }
         }
     }
 
-    override suspend fun signUp(email: String, password: String) = credentialMutation { isCurrent ->
-        gateway.signUp(email, password)
-        if (isCurrent()) gateway.resendVerification()
+    override suspend fun signUp(email: String, password: String) = bounded {
+        credentialMutation { isCurrent ->
+            gateway.signUp(email, password)
+            if (isCurrent()) gateway.resendVerification()
+        }
     }
 
-    override suspend fun sendPasswordReset(email: String) = gateway.sendPasswordReset(email)
+    override suspend fun sendPasswordReset(email: String) = bounded { gateway.sendPasswordReset(email) }
 
     override suspend fun resendVerification() {
         if (gateway.identity == null) throw AuthFailure(AuthError.SESSION_EXPIRED)
-        gateway.resendVerification()
+        bounded { gateway.resendVerification() }
     }
 
     override suspend fun refreshIdentity(): AuthIdentity? {
@@ -176,36 +188,52 @@ class FirebaseAuthRepository internal constructor(private val gateway: FirebaseA
 
     private data class Reauthentication(val uid: String, val generation: Long)
 
+    /** Firebase can wait indefinitely on an unvalidated network; surface it as a network failure. */
+    private suspend fun bounded(block: suspend () -> Unit) {
+        withTimeoutOrNull(requestTimeoutMillis) { block() } ?: throw AuthFailure(AuthError.NETWORK)
+    }
+
     private suspend fun credentialMutation(block: suspend (() -> Boolean) -> Unit) {
         val caller = currentCoroutineContext()
-        credentialMutex.withLock {
+        credentialMutex.lock()
+        val expected = try {
             caller.ensureActive()
-            val expected = synchronized(stateLock) {
+            synchronized(stateLock) {
                 credentialInFlight = true
                 ++generation
             }
-            changes.update { it + 1 }
-            // Cancelling Task.await does not cancel Firebase's credential mutation.
-            // Keep this serialized section until the SDK task settles, then remove a
-            // late identity before exposing state or admitting another credential task.
-            withContext(NonCancellable) {
+        } catch (failure: Throwable) {
+            credentialMutex.unlock()
+            throw failure
+        }
+        changes.update { it + 1 }
+        // Cancelling Task.await does not cancel Firebase's credential mutation.
+        // The SDK task settles in its own job, which keeps the serialized lane, removes
+        // a late identity before exposing state, and only then admits another credential
+        // task. A cancelled or timed-out caller stops waiting at once.
+        val settled = CoroutineScope(caller.minusKey(Job)).async(start = CoroutineStart.UNDISPATCHED) {
+            try {
+                block { expected == synchronized(stateLock) { generation } && caller.isActive }
+            } finally {
+                val stale = expected != synchronized(stateLock) { generation } || !caller.isActive
                 try {
-                    block { expected == synchronized(stateLock) { generation } && caller.isActive }
+                    if (stale) gateway.signOut()
                 } finally {
-                    val stale = expected != synchronized(stateLock) { generation } || !caller.isActive
-                    try {
-                        if (stale) gateway.signOut()
-                    } finally {
-                        synchronized(stateLock) { credentialInFlight = false }
-                        changes.update { it + 1 }
-                    }
+                    synchronized(stateLock) { credentialInFlight = false }
+                    changes.update { it + 1 }
+                    credentialMutex.unlock()
                 }
             }
-            caller.ensureActive()
-            if (expected != synchronized(stateLock) { generation }) {
-                throw CancellationException("Credential operation superseded")
-            }
         }
+        settled.await()
+        caller.ensureActive()
+        if (expected != synchronized(stateLock) { generation }) {
+            throw CancellationException("Credential operation superseded")
+        }
+    }
+
+    private companion object {
+        const val REQUEST_TIMEOUT_MS = 20_000L
     }
 }
 
