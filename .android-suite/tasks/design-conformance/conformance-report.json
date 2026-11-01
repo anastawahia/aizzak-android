@@ -1,0 +1,27 @@
+{
+  "command": "python \"C:\\Users\\anast\\Desktop\\aizzak-android\\.codex\\android-software-house\\runtime\\scripts\\suite.py\" conformance --project \"C:\\Users\\anast\\Desktop\\aizzak-android\" --task design-conformance --record \"C:\\Users\\anast\\Desktop\\aizzak-android\\.android-suite\\tasks\\design-conformance\\conformance-record.json\"",
+  "exit_code": 0,
+  "result": {
+    "stage": "design_conformance",
+    "task": "design-conformance",
+    "status": "passed",
+    "errors": [],
+    "checks": {
+      "reference_locked": true,
+      "inventory_complete": true,
+      "screenshots_current": true,
+      "independent_design_review": true
+    },
+    "summary": {
+      "deviation": 0,
+      "missing": 0,
+      "matched": 119
+    },
+    "approved_deviations": [],
+    "source_sha256": "9d787246f8d1081e382b85d6a85cf3fe989b463ba8eba9b4309cff11a24e71f6",
+    "inventory_sha256": "89fef11c5447da7f501ccf463da98cc2e1f4023f00f42726ad788b4f30f8093a",
+    "record": "C:/Users/anast/Desktop/aizzak-android/.android-suite/tasks/design-conformance/conformance-record.json",
+    "record_sha256": "ebb6c2412fcf8b2ef81178ccecb017e06d704add71203570e3298e15f28cc560",
+    "limitations": "Element judgments are the reviewer's; suite.py verifies completeness, approvals, screenshot provenance, independence claims and freshness, not visual similarity."
+  }
+}

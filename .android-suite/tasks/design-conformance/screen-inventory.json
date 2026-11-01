@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "reference": [
+    "docs/UI-PREVIEW.html",
+    "docs/UI-DESIGN.md",
+    ".android-suite/tasks/design-conformance/journeys-wireframes.md",
+    ".android-suite/tasks/design-conformance/design-tokens.md"
+  ],
+  "locales": ["en", "ar"],
+  "adaptive": true,
+  "required_configs": [
+    {"locale": "en", "theme": "light", "width_dp": 390, "font_scale": 1.0},
+    {"locale": "ar", "theme": "dark", "width_dp": 390, "font_scale": 1.0},
+    {"locale": "en", "theme": "dark", "width_dp": 840, "font_scale": 1.0},
+    {"locale": "ar", "theme": "light", "width_dp": 840, "font_scale": 1.5}
+  ],
+  "screens": [
+    {
+      "id": "SCR-HOME-01",
+      "name": "Home",
+      "reference_anchor": "docs/UI-PREVIEW.html#home",
+      "elements": [
+        {"id": "HOME-01", "kind": "header", "description": "AIZZAK bar at the top with the original 36dp logo."},
+        {"id": "HOME-02", "kind": "text", "description": "AIZZAK brand name and localized AI Assistant descriptor beside the logo."},
+        {"id": "HOME-03", "kind": "label", "description": "Localized eyebrow text above the title, start-aligned and primary colored."},
+        {"id": "HOME-04", "kind": "title", "description": "Localized Your assistants screen title, start-aligned and semantically a heading."},
+        {"id": "HOME-05", "kind": "text", "description": "Localized supporting introduction directly below the title."},
+        {"id": "HOME-06", "kind": "card", "description": "Smart Assistant surface card with violet start accent and violet icon container."},
+        {"id": "HOME-07", "kind": "title", "description": "Smart Assistant name kept LTR and wrapping without truncation."},
+        {"id": "HOME-08", "kind": "text", "description": "Localized Smart Assistant description below its name."},
+        {"id": "HOME-09", "kind": "label", "description": "Localized Coming later status chip with a visible status dot."},
+        {"id": "HOME-10", "kind": "card", "description": "Data Search surface card with cyan start accent and cyan icon container."},
+        {"id": "HOME-11", "kind": "title", "description": "Data Search name kept LTR and wrapping without truncation."},
+        {"id": "HOME-12", "kind": "text", "description": "Localized Data Search description below its name."},
+        {"id": "HOME-13", "kind": "label", "description": "Localized Coming later status chip with a visible status dot."},
+        {"id": "HOME-14", "kind": "card", "description": "Wire Twin surface card with amber start accent and amber icon container."},
+        {"id": "HOME-15", "kind": "title", "description": "Wire Twin name kept LTR and wrapping without truncation."},
+        {"id": "HOME-16", "kind": "text", "description": "Localized Wire Twin description below its name."},
+        {"id": "HOME-17", "kind": "label", "description": "Localized Coming later status chip with a visible status dot."},
+        {"id": "HOME-18", "kind": "notice", "description": "Primary-container information callout with info icon and localized assistants-being-prepared text."},
+        {"id": "HOME-19", "kind": "navigation", "description": "Home destination with icon and label, visibly selected without relying on color alone."},
+        {"id": "HOME-20", "kind": "navigation", "description": "Account destination with icon and localized label."},
+        {"id": "HOME-21", "kind": "navigation", "description": "Settings destination with icon and localized label; navigation is bottom bar in compact and start rail in expanded."}
+      ]
+    },
+    {
+      "id": "SCR-ACCT-01",
+      "name": "Account",
+      "reference_anchor": "docs/UI-PREVIEW.html#account",
+      "elements": [
+        {"id": "ACCOUNT-01", "kind": "header", "description": "AIZZAK bar with original logo, brand name and localized descriptor."},
+        {"id": "ACCOUNT-02", "kind": "title", "description": "Localized Account screen title, start-aligned and semantically a heading."},
+        {"id": "ACCOUNT-03", "kind": "text", "description": "Localized account supporting introduction below the title."},
+        {"id": "ACCOUNT-04", "kind": "icon", "description": "70dp circular account avatar container with decorative user icon."},
+        {"id": "ACCOUNT-05", "kind": "title", "description": "Localized Your account identity heading."},
+        {"id": "ACCOUNT-06", "kind": "text", "description": "Available account email rendered LTR below the identity heading."},
+        {"id": "ACCOUNT-07", "kind": "panel", "description": "Single connected identity panel with surface background, border and internal dividers."},
+        {"id": "ACCOUNT-08", "kind": "text", "description": "Email row with localized label and LTR account email value."},
+        {"id": "ACCOUNT-09", "kind": "text", "description": "Name row with localized label and available display name; row is omitted only when name is unavailable."},
+        {"id": "ACCOUNT-10", "kind": "label", "description": "Localized Security section label above the security panel."},
+        {"id": "ACCOUNT-11", "kind": "panel", "description": "Connected security panel containing a full-width Change password row."},
+        {"id": "ACCOUNT-12", "kind": "action", "description": "Change password row with lock icon and localized label, minimum 48dp touch target."},
+        {"id": "ACCOUNT-13", "kind": "action", "description": "Full-width Sign out danger action using error container and explicit text."},
+        {"id": "ACCOUNT-14", "kind": "navigation", "description": "Home destination with icon and localized label."},
+        {"id": "ACCOUNT-15", "kind": "navigation", "description": "Account destination with icon and label, visibly selected without relying on color alone."},
+        {"id": "ACCOUNT-16", "kind": "navigation", "description": "Settings destination with icon and localized label; bottom bar in compact and start rail in expanded."}
+      ]
+    },
+    {
+      "id": "SCR-AUTH-01",
+      "name": "Sign in",
+      "reference_anchor": "docs/UI-PREVIEW.html#signin",
+      "elements": [
+        {"id": "SIGNIN-01", "kind": "header", "description": "AIZZAK bar with original logo, brand name and localized descriptor; no main navigation."},
+        {"id": "SIGNIN-02", "kind": "title", "description": "Localized Welcome back title above the form, start-aligned and semantically a heading."},
+        {"id": "SIGNIN-03", "kind": "text", "description": "Localized sign-in supporting introduction directly under the title."},
+        {"id": "SIGNIN-04", "kind": "label", "description": "Localized Email address label shown above the field, never as an inside-only label."},
+        {"id": "SIGNIN-05", "kind": "field", "description": "Outlined surface email field with localized placeholder and LTR input in both layouts."},
+        {"id": "SIGNIN-06", "kind": "label", "description": "Localized Password label shown above the field."},
+        {"id": "SIGNIN-07", "kind": "field", "description": "Outlined surface password field preserving secret input."},
+        {"id": "SIGNIN-08", "kind": "action", "description": "Localized Show or Hide action inside the password field end edge with 48dp touch target."},
+        {"id": "SIGNIN-09", "kind": "action", "description": "Full-width primary Sign in button below the fields."},
+        {"id": "SIGNIN-10", "kind": "action", "description": "Full-width text-style Forgot password action below the primary button."},
+        {"id": "SIGNIN-11", "kind": "text", "description": "Centered localized New here footer sentence."},
+        {"id": "SIGNIN-12", "kind": "action", "description": "Inline emphasized Create account link within the footer."},
+        {"id": "SIGNIN-13", "kind": "action", "description": "Full-width text-style Preferences action after the account footer."}
+      ]
+    },
+    {
+      "id": "SCR-AUTH-02",
+      "name": "Sign up",
+      "reference_anchor": "docs/UI-PREVIEW.html#signup",
+      "elements": [
+        {"id": "SIGNUP-01", "kind": "header", "description": "AIZZAK bar with original logo, brand name and localized descriptor; no main navigation."},
+        {"id": "SIGNUP-02", "kind": "action", "description": "Top Back action with directional arrow returning to Sign in; arrow mirrors in RTL."},
+        {"id": "SIGNUP-03", "kind": "title", "description": "Localized Create your account title, start-aligned and semantically a heading."},
+        {"id": "SIGNUP-04", "kind": "text", "description": "Localized sign-up supporting introduction directly under the title."},
+        {"id": "SIGNUP-05", "kind": "label", "description": "Localized Email address label above the field."},
+        {"id": "SIGNUP-06", "kind": "field", "description": "Outlined surface email field with LTR input in both layouts."},
+        {"id": "SIGNUP-07", "kind": "label", "description": "Localized Password label above the field."},
+        {"id": "SIGNUP-08", "kind": "field", "description": "Outlined surface password field with Show or Hide action at the end edge."},
+        {"id": "SIGNUP-09", "kind": "label", "description": "Localized Confirm password label above the field."},
+        {"id": "SIGNUP-10", "kind": "field", "description": "Outlined surface confirmation field with Show or Hide action at the end edge."},
+        {"id": "SIGNUP-11", "kind": "action", "description": "Full-width primary Create account button below all three fields."},
+        {"id": "SIGNUP-12", "kind": "text", "description": "Centered localized Already have an account footer sentence."},
+        {"id": "SIGNUP-13", "kind": "action", "description": "Inline emphasized Sign in link within the footer."}
+      ]
+    },
+    {
+      "id": "SCR-AUTH-03",
+      "name": "Reset password",
+      "reference_anchor": "docs/UI-PREVIEW.html#reset",
+      "elements": [
+        {"id": "RESET-01", "kind": "header", "description": "AIZZAK bar with original logo, brand name and localized descriptor; no main navigation."},
+        {"id": "RESET-02", "kind": "action", "description": "Top Back action with directional arrow returning to Sign in; arrow mirrors in RTL."},
+        {"id": "RESET-03", "kind": "icon", "description": "62dp primary-container mail icon block above the reset heading."},
+        {"id": "RESET-04", "kind": "title", "description": "Localized Reset password title, start-aligned and semantically a heading."},
+        {"id": "RESET-05", "kind": "text", "description": "Localized reset supporting introduction directly under the title."},
+        {"id": "RESET-06", "kind": "label", "description": "Localized Email address label above the field."},
+        {"id": "RESET-07", "kind": "field", "description": "Outlined surface email field with localized placeholder and LTR input."},
+        {"id": "RESET-08", "kind": "action", "description": "Full-width primary Send reset email button."},
+        {"id": "RESET-09", "kind": "action", "description": "Full-width text-style Back to sign in action below the form."}
+      ]
+    },
+    {
+      "id": "SCR-AUTH-04",
+      "name": "Verify email",
+      "reference_anchor": "docs/UI-PREVIEW.html#verify",
+      "elements": [
+        {"id": "VERIFY-01", "kind": "header", "description": "AIZZAK bar with original logo, brand name and localized descriptor; no main navigation."},
+        {"id": "VERIFY-02", "kind": "icon", "description": "62dp primary-container mail icon block above the verification heading."},
+        {"id": "VERIFY-03", "kind": "title", "description": "Localized Check your inbox title, start-aligned and semantically a heading."},
+        {"id": "VERIFY-04", "kind": "text", "description": "Localized verification supporting introduction below the title."},
+        {"id": "VERIFY-05", "kind": "text", "description": "Available account email displayed LTR on its own supporting line."},
+        {"id": "VERIFY-06", "kind": "notice", "description": "Primary-container information callout with info icon and localized verification instructions."},
+        {"id": "VERIFY-07", "kind": "action", "description": "Full-width primary I've verified my email button."},
+        {"id": "VERIFY-08", "kind": "action", "description": "Full-width outlined Resend email secondary button."},
+        {"id": "VERIFY-09", "kind": "action", "description": "Full-width text-style Sign out action; there is no Back into protected content."}
+      ]
+    },
+    {
+      "id": "SCR-LOAD-01",
+      "name": "Loading session and context",
+      "reference_anchor": "docs/UI-PREVIEW.html#loading",
+      "elements": [
+        {"id": "LOADING-01", "kind": "header", "description": "AIZZAK bar with original logo, brand name and localized descriptor; no main navigation."},
+        {"id": "LOADING-02", "kind": "indicator", "description": "36dp circular progress indicator using outlineVariant track and primary active arc."},
+        {"id": "LOADING-03", "kind": "title", "description": "Localized Getting things ready title in the centered state block."},
+        {"id": "LOADING-04", "kind": "text", "description": "Localized session and access restoration description directly below the title."}
+      ]
+    },
+    {
+      "id": "SCR-CTX-01",
+      "name": "Context error",
+      "reference_anchor": "docs/UI-PREVIEW.html#context",
+      "elements": [
+        {"id": "CONTEXT-01", "kind": "header", "description": "AIZZAK bar with original logo, brand name and localized descriptor; no main navigation."},
+        {"id": "CONTEXT-02", "kind": "icon", "description": "62dp primary-container warning icon block above the error heading."},
+        {"id": "CONTEXT-03", "kind": "title", "description": "Localized We couldn't load your account title in the centered state block."},
+        {"id": "CONTEXT-04", "kind": "text", "description": "Localized safe context failure description with no raw server error."},
+        {"id": "CONTEXT-05", "kind": "action", "description": "Full-width primary Try again button."},
+        {"id": "CONTEXT-06", "kind": "action", "description": "Full-width text-style Sign out action below Retry; action performs local logout only."}
+      ]
+    },
+    {
+      "id": "SCR-SET-01",
+      "name": "Settings",
+      "reference_anchor": "docs/UI-PREVIEW.html#settings",
+      "elements": [
+        {"id": "SETTINGS-01", "kind": "header", "description": "AIZZAK bar with original logo, brand name and localized descriptor."},
+        {"id": "SETTINGS-02", "kind": "action", "description": "Conditional top Back action shown only when Settings was opened from Sign in; absent for the main destination."},
+        {"id": "SETTINGS-03", "kind": "title", "description": "Localized Settings screen title, start-aligned and semantically a heading."},
+        {"id": "SETTINGS-04", "kind": "text", "description": "Localized settings supporting introduction below the title."},
+        {"id": "SETTINGS-05", "kind": "label", "description": "Localized Language section label above one connected radiogroup panel."},
+        {"id": "SETTINGS-06", "kind": "panel", "description": "Single connected Language panel with internal divider; rows are not separate cards."},
+        {"id": "SETTINGS-07", "kind": "action", "description": "English full-width radio row with selection indicator at the end edge."},
+        {"id": "SETTINGS-08", "kind": "action", "description": "Arabic full-width radio row with selection indicator at the end edge."},
+        {"id": "SETTINGS-09", "kind": "label", "description": "Localized Appearance section label above one connected radiogroup panel."},
+        {"id": "SETTINGS-10", "kind": "panel", "description": "Single connected Appearance panel with two internal dividers; rows are not separate cards."},
+        {"id": "SETTINGS-11", "kind": "action", "description": "Follow system full-width radio row with selection indicator at the end edge."},
+        {"id": "SETTINGS-12", "kind": "action", "description": "Light full-width radio row with selection indicator at the end edge."},
+        {"id": "SETTINGS-13", "kind": "action", "description": "Dark full-width radio row with selection indicator at the end edge."},
+        {"id": "SETTINGS-14", "kind": "text", "description": "Centered localized Version text using the actual package version."},
+        {"id": "SETTINGS-15", "kind": "navigation", "description": "Conditional Home destination shown when Settings is a main destination."},
+        {"id": "SETTINGS-16", "kind": "navigation", "description": "Conditional Account destination shown when Settings is a main destination."},
+        {"id": "SETTINGS-17", "kind": "navigation", "description": "Conditional Settings destination visibly selected; main navigation is bottom bar in compact and start rail in expanded."}
+      ]
+    },
+    {
+      "id": "SCR-ACCT-02",
+      "name": "Change password",
+      "reference_anchor": "docs/UI-PREVIEW.html#password",
+      "elements": [
+        {"id": "PASSWORD-01", "kind": "header", "description": "AIZZAK bar with original logo, brand name and localized descriptor; no main navigation."},
+        {"id": "PASSWORD-02", "kind": "action", "description": "Top Back action with directional arrow returning to Account; arrow mirrors in RTL."},
+        {"id": "PASSWORD-03", "kind": "title", "description": "Localized Change password title, start-aligned and semantically a heading."},
+        {"id": "PASSWORD-04", "kind": "text", "description": "Localized change-password supporting introduction below the title."},
+        {"id": "PASSWORD-05", "kind": "label", "description": "Localized Current password label above the field."},
+        {"id": "PASSWORD-06", "kind": "field", "description": "Outlined surface current-password field with Show or Hide action at the end edge."},
+        {"id": "PASSWORD-07", "kind": "label", "description": "Localized New password label above the field."},
+        {"id": "PASSWORD-08", "kind": "field", "description": "Outlined surface new-password field with Show or Hide action at the end edge."},
+        {"id": "PASSWORD-09", "kind": "label", "description": "Localized Confirm password label above the field."},
+        {"id": "PASSWORD-10", "kind": "field", "description": "Outlined surface confirmation field with Show or Hide action at the end edge."},
+        {"id": "PASSWORD-11", "kind": "action", "description": "Full-width primary Save password button below all three fields."}
+      ]
+    }
+  ]
+}
