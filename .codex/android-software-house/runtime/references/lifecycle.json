@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "policy": "Stage order and prerequisites enforced by suite.py lifecycle/checkpoint/advance. A stage is passed only through its recorded human decision or a passed, current gate report. Records establish provenance, not cryptographic proof.",
+  "stages": [
+    {"id": "intake", "owner": "company-director", "kind": "work", "requires": [], "skippable": false,
+     "purpose": "Classify the request, read repository instructions and Git state, open the task record."},
+    {"id": "discovery", "owner": "product-manager", "kind": "human", "requires": ["intake"], "skippable": true,
+     "purpose": "Owner approves the product brief and its open decisions."},
+    {"id": "requirements", "owner": "business-analyst", "kind": "human", "requires": ["discovery"], "skippable": true,
+     "purpose": "Owner approves REQ IDs, acceptance cases and exclusions."},
+    {"id": "design", "owner": "ui-designer", "kind": "human", "requires": ["requirements"], "skippable": true, "inventory": true,
+     "purpose": "Owner approves journeys, the visual reference and screen-inventory.json; their hashes become the conformance baseline."},
+    {"id": "architecture", "owner": "android-architect", "kind": "gate", "gate": "architecture", "requires": ["design"], "skippable": true,
+     "purpose": "ADRs, module map and interface contracts."},
+    {"id": "build", "owner": "company-director", "kind": "work", "requires": ["architecture"], "skippable": false,
+     "purpose": "Implementation slices by the engineering owners; accepted handoffs recorded."},
+    {"id": "verification", "owner": "qa-engineer", "kind": "gate", "gate": "implementation", "requires": ["build"], "skippable": false, "source_bound": true,
+     "purpose": "Compile, static analysis, executed tests and independent code review on the current source."},
+    {"id": "design-qa", "owner": "design-qa-reviewer", "kind": "conformance", "gate": "design_conformance", "requires": ["verification"], "skippable": true, "source_bound": true,
+     "purpose": "Independent element-by-element conformance with the approved design from current screenshots. Mandatory whenever the design stage approved an inventory."},
+    {"id": "acceptance", "owner": "company-director", "kind": "human", "requires": ["design-qa"], "skippable": false, "requires_report": "design-qa",
+     "purpose": "Owner reviews the delivered app, screenshots next to the reference, test and review results, and accepts or requests changes."},
+    {"id": "release-prep", "owner": "build-release-engineer", "kind": "gate", "gate": "release", "requires": ["acceptance"], "skippable": true, "source_bound": true,
+     "purpose": "Signed release artifact, required tests, security review and policy checks."},
+    {"id": "store-readiness", "owner": "store-listing-specialist", "kind": "gate", "gate": "store", "requires": ["release-prep"], "skippable": true,
+     "purpose": "Listing, store assets from the accepted build, Data safety, content rating and privacy policy."},
+    {"id": "publish", "owner": "build-release-engineer", "kind": "human", "requires": ["store-readiness"], "skippable": true,
+     "purpose": "Owner authorizes the exact bundle, package, version, track and rollout; the approved submission runs once."},
+    {"id": "operate", "owner": "app-operations-engineer", "kind": "work", "requires": ["publish"], "skippable": true,
+     "purpose": "Monitoring, incident response and maintenance after release."}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "task": "example-task",
+  "inventory_sha256": "<sha256 of the approved screen-inventory.json, from suite.py lifecycle>",
+  "source_sha256": "<source fingerprint printed by suite.py screenshots or suite.py lifecycle>",
+  "reviewer": {"role": "design-qa-reviewer", "id": "<agent or session id of the reviewer>"},
+  "implementers": [{"role": "compose-developer", "id": "<agent or session id that built the screens>"}],
+  "screens": [
+    {
+      "id": "SCR-SIGNIN",
+      "screenshots": [
+        {"path": ".android-suite/evidence/screenshots/<run>/SCR-SIGNIN__en_light_w411_fs1.0.png", "sha256": "<from manifest.json>",
+         "config": {"locale": "en", "theme": "light", "width_dp": 411, "font_scale": 1.0}}
+      ],
+      "elements": [
+        {"id": "SIGNIN-01", "status": "matched", "note": ""},
+        {"id": "SIGNIN-03", "status": "deviation", "note": "Approved with suite.py deviation"},
+        {"id": "SIGNIN-06", "status": "missing", "note": "Footer link rendered as a separate text button"}
+      ]
+    }
+  ]
+}
