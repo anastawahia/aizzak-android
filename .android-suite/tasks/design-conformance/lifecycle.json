@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "task": "design-conformance",
+  "workflow": "ui-redesign",
+  "created": "2026-11-01T00:23:20+0300",
+  "sequence": 7,
+  "mandatory": [
+    "intake",
+    "design",
+    "build",
+    "verification",
+    "design-qa",
+    "acceptance"
+  ],
+  "stages": {
+    "intake": {
+      "state": "passed",
+      "at": "2026-11-01T00:23:21+0300",
+      "source_sha256": "263d1b66d746b3e3959f9255a7e77dffb19fafc2bb3cf354b4af4df61766440c",
+      "note": "صُنّف الطلب كإعادة تصميم للشاشات العشر. خُصص النطاق لطبقة Compose والمكونات المشتركة واختبارات screenshots فقط، مع تثبيت ViewModels والمستودعات وعقود المصادقة ومنع أي تعديل باك إند وفق AGENTS.md. خط الأساس البصري هو docs/UI-PREVIEW.html وdocs/UI-DESIGN.md والتقرير DESIGN-CONFORMANCE-01.",
+      "seq": 1
+    },
+    "design": {
+      "state": "passed",
+      "decision": "approved",
+      "ref": "اعتمد حزمة التصميم — صاحب المشروع، 2026-11-01 (توقيت بغداد)",
+      "packet": [
+        {
+          "path": "docs/UI-PREVIEW.html",
+          "sha256": "d20dc95814303301c5dfb0146f8ec25ea717d4ecca64e28d5e4ac6e125f98d0c"
+        },
+        {
+          "path": "docs/UI-DESIGN.md",
+          "sha256": "1f74b0a82357a560443045864f89cc27685a58af2a6b3999e0ec702f7b51e7ab"
+        },
+        {
+          "path": ".android-suite/tasks/design-conformance/journeys-wireframes.md",
+          "sha256": "741060e3dafc26a20342bec72e16e3e184dd210aa1abf2027cb68beedc09d0c9"
+        },
+        {
+          "path": ".android-suite/tasks/design-conformance/design-tokens.md",
+          "sha256": "1fdff12ca5cf83c6bfb7f6f3a2dd98dad0b9b16d71c43afa545dd234adf6b521"
+        },
+        {
+          "path": ".android-suite/tasks/design-conformance/screen-inventory.json",
+          "sha256": "89fef11c5447da7f501ccf463da98cc2e1f4023f00f42726ad788b4f30f8093a"
+        }
+      ],
+      "at": "2026-11-01T01:14:10+0300",
+      "seq": 2
+    },
+    "build": {
+      "state": "passed",
+      "at": "2026-11-01T01:31:38+0300",
+      "source_sha256": "17ce8b283f4076968f785bebe9adbec0e775d20945b8367e7413d58f6c799238",
+      "note": "قُبل تسليم Compose الموثق في .android-suite/tasks/design-conformance/compose-handoff.md: نُفذت الشاشات العشر ضمن ملكية UI فقط، وسُجلت 40 لقطة للتهيئات المعتمدة في manifest 1793485748، ونجح compileDebugKotlin وrecordRoborazziDebug وlintDebug، مع 56 اختبار JVM بلا فشل. لم تُعدل ViewModels أو المستودعات أو الباك إند، ولا توجد deviations مقترحة.",
+      "seq": 3
+    },
+    "verification": {
+      "state": "passed",
+      "at": "2026-11-01T18:56:49+0300",
+      "source_sha256": "04454cbdfae23445beed14a68c718c52771e86661137b823d1b0d2886b7769f5",
+      "evidence": [
+        {
+          "path": ".android-suite/tasks/design-conformance/reports/verification.json",
+          "sha256": "7a5c1846f7f7f23f307646fd7b3a801f5f210eb7a0ad0feff64651ee7d7e93a1"
+        }
+      ],
+      "seq": 7
+    },
+    "design-qa": {
+      "state": "passed",
+      "at": "2026-11-01T18:39:09+0300",
+      "source_sha256": "9d787246f8d1081e382b85d6a85cf3fe989b463ba8eba9b4309cff11a24e71f6",
+      "evidence": [
+        {
+          "path": ".android-suite/tasks/design-conformance/reports/design-qa.json",
+          "sha256": "6d7c398acef8c0fa098bdec681a790708568c40869c198a93e9c011cf1d47a8f"
+        }
+      ],
+      "seq": 6
+    },
+    "acceptance": {
+      "state": "pending"
+    }
+  },
+  "deviations": {},
+  "history": [
+    {
+      "at": "2026-11-01T00:23:20+0300",
+      "event": "opened",
+      "workflow": "ui-redesign"
+    },
+    {
+      "at": "2026-11-01T00:23:21+0300",
+      "event": "advanced",
+      "stage": "intake",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-01T01:14:10+0300",
+      "event": "checkpoint",
+      "stage": "design",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-01T01:31:38+0300",
+      "event": "advanced",
+      "stage": "build",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-01T18:27:42+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-01T18:36:41+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-01T18:39:09+0300",
+      "event": "advanced",
+      "stage": "design-qa",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-01T18:56:49+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
+    }
+  ]
+}

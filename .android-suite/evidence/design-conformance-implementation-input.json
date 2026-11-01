@@ -1,0 +1,50 @@
+{
+  "scope": "UI redesign implementation verification on local JVM/Android build tooling and a connected Samsung SM-A155F running Android 15/API 35. Device UI tests executed successfully.",
+  "source_sha256": "04454cbdfae23445beed14a68c718c52771e86661137b823d1b0d2886b7769f5",
+  "checks": {
+    "compile": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/design-conformance-all-final.json",
+          "sha256": "8e146914c9da2f635367625f37bb08924b54fa499b84afa753e3177817511dae"
+        },
+        {
+          "path": ".android-suite/evidence/design-conformance-ui-compile.json",
+          "sha256": "e4abca6a79d55035c581aedfcf571d3c1b81be13e221165d988039a7f48b1c79"
+        }
+      ]
+    },
+    "static_analysis": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/design-conformance-all-final.json",
+          "sha256": "8e146914c9da2f635367625f37bb08924b54fa499b84afa753e3177817511dae"
+        }
+      ]
+    },
+    "relevant_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/design-conformance-all-final.json",
+          "sha256": "8e146914c9da2f635367625f37bb08924b54fa499b84afa753e3177817511dae"
+        },
+        {
+          "path": ".android-suite/tasks/design-conformance/device-test-report.md",
+          "sha256": "862a4effbd13ed8f02a30f46468092140780dec47bdb52529d70efb04dc2272f"
+        }
+      ]
+    },
+    "independent_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/tasks/design-conformance/code-review.md",
+          "sha256": "5c5cfa70c29430f6c85620e73c416edb72a808569d677572c018c1d92cb3f997"
+        }
+      ]
+    }
+  }
+}

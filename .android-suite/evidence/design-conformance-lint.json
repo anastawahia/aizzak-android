@@ -1,0 +1,19 @@
+{
+  "kind": "lint",
+  "status": "passed",
+  "source_sha256": "48edead838a739aadbff12265709633c9acbc8564b03f1590587ef779382a83b",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:lintDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1793546666,
+  "attempts": [
+    {
+      "exit_code": 0,
+      "output": "BUILD SUCCESSFUL in 22s; 31 actionable tasks: 1 executed, 30 up-to-date.",
+      "duration_seconds": 22.593
+    }
+  ]
+}
