@@ -16,6 +16,7 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.test.advanceTimeBy
 import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.runCurrent
 import kotlinx.coroutines.test.runTest
@@ -77,6 +78,28 @@ class FirebaseAuthRepositoryTest {
         gateway.credentialGate!!.complete(Unit)
         advanceUntilIdle()
         assertNull(gateway.identity)
+    }
+
+    @Test fun unansweredSigninTimesOutAsNetworkAndClearsLateIdentity() = runTest {
+        val gateway = FakeGateway().apply { credentialGate = CompletableDeferred() }
+        val repository = FirebaseAuthRepository(gateway, requestTimeoutMillis = 1_000)
+        val sessions = mutableListOf<AuthSession>()
+        backgroundScope.launch { repository.session.collect { sessions += it } }
+        val first = async { runCatching { repository.signIn("person@example.com", "value") } }
+        advanceTimeBy(1_001)
+        assertEquals(AuthError.NETWORK, (first.await().exceptionOrNull() as AuthFailure).error)
+        val retry = async { runCatching { repository.signIn("person@example.com", "value") } }
+        advanceTimeBy(1_001)
+        assertEquals(AuthError.NETWORK, (retry.await().exceptionOrNull() as AuthFailure).error)
+        assertEquals(1, gateway.credentialCalls)
+        gateway.credentialGate!!.complete(Unit)
+        advanceUntilIdle()
+        assertNull(gateway.identity)
+        assertEquals(1, gateway.signOutCalls)
+        assertTrue(sessions.none { it is AuthSession.SignedIn })
+        gateway.credentialGate = null
+        repository.signIn("person@example.com", "value")
+        assertEquals("person@example.com", gateway.identity!!.email)
     }
 
     @Test fun onlyVerifiedReloadRefreshesTokenAndStillReturnsIdentityOnly() = runTest {
