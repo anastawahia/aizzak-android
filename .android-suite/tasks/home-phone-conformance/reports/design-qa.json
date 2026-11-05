@@ -1,0 +1,23 @@
+{
+  "stage": "design_conformance",
+  "task": "home-phone-conformance",
+  "status": "passed",
+  "errors": [],
+  "checks": {
+    "reference_locked": true,
+    "inventory_complete": true,
+    "screenshots_current": true,
+    "independent_design_review": true
+  },
+  "summary": {
+    "missing": 0,
+    "matched": 21,
+    "deviation": 0
+  },
+  "approved_deviations": [],
+  "source_sha256": "829d3aa66be11058f3051412d22109d6eed93b23720c9e9403061eb2f62217ac",
+  "inventory_sha256": "21689f116d41f68541b10ccdc4792c76b2d847fa28c35275b7c1e0c2c0708ab8",
+  "record": "C:/Users/anast/Desktop/aizzak-android/.android-suite/tasks/home-phone-conformance/conformance-record.json",
+  "record_sha256": "ee54db94129f9e2273d7aa28544cc3d4337dbed84d2c5bf62f3d66bf603da627",
+  "limitations": "Element judgments are the reviewer's; suite.py verifies completeness, approvals, screenshot provenance, independence claims and freshness, not visual similarity."
+}

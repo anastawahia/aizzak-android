@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "task": "home-phone-conformance",
+  "workflow": "ui-redesign",
+  "created": "2026-11-05T14:49:07+0300",
+  "sequence": 6,
+  "mandatory": [
+    "intake",
+    "design",
+    "build",
+    "verification",
+    "design-qa",
+    "acceptance"
+  ],
+  "stages": {
+    "intake": {
+      "state": "passed",
+      "at": "2026-11-05T14:50:06+0300",
+      "source_sha256": "311b474bed8db9c178be3075a6c9bd4332606d2c77591a9bbe39770255260188",
+      "note": "وثقت المراجعة في review.md. طلب المستخدم إصلاح Home للهاتف وفق المرجع المعتمد مع استثناء العرض الواسع من الإصلاح.",
+      "seq": 1
+    },
+    "design": {
+      "state": "passed",
+      "decision": "approved",
+      "ref": "2026-11-05: قم بتوثيق هذه المراجعة ثم اعمل على مطابقة التصميم للصفحة الرئيسية في وضع الهاتف — استمرار اعتماد المرجع نفسه، والجرد مشتق لنطاق الهاتف فقط دون تصميم جديد.",
+      "packet": [
+        {
+          "path": "docs/UI-PREVIEW.html",
+          "sha256": "d20dc95814303301c5dfb0146f8ec25ea717d4ecca64e28d5e4ac6e125f98d0c"
+        },
+        {
+          "path": ".android-suite/tasks/home-phone-conformance/screen-inventory.json",
+          "sha256": "21689f116d41f68541b10ccdc4792c76b2d847fa28c35275b7c1e0c2c0708ab8"
+        },
+        {
+          "path": ".android-suite/tasks/home-phone-conformance/design-scope.md",
+          "sha256": "ac29affd767ae1eb3a57c9671816ae834021f73802010d0dc8c628ecb8aace89"
+        }
+      ],
+      "at": "2026-11-05T14:51:34+0300",
+      "seq": 2
+    },
+    "build": {
+      "state": "passed",
+      "at": "2026-11-05T19:41:48+0300",
+      "source_sha256": "829d3aa66be11058f3051412d22109d6eed93b23720c9e9403061eb2f62217ac",
+      "note": "نُفذ تخطيط Home الخاص بالهاتف وفق المرجع: بطاقات أفقية مضغوطة، SVG، النصوص، RTL، والتنقل السفلي، مع إبقاء العرض الواسع مستقلاً.",
+      "seq": 3
+    },
+    "verification": {
+      "state": "passed",
+      "at": "2026-11-05T19:41:50+0300",
+      "source_sha256": "829d3aa66be11058f3051412d22109d6eed93b23720c9e9403061eb2f62217ac",
+      "evidence": [
+        {
+          "path": ".android-suite/tasks/home-phone-conformance/reports/verification.json",
+          "sha256": "2fe8a263921dfa667c08e45519989d5e8161dad61395bb38e1eb92f55dec4582"
+        }
+      ],
+      "seq": 4
+    },
+    "design-qa": {
+      "state": "passed",
+      "at": "2026-11-05T19:46:34+0300",
+      "source_sha256": "829d3aa66be11058f3051412d22109d6eed93b23720c9e9403061eb2f62217ac",
+      "evidence": [
+        {
+          "path": ".android-suite/tasks/home-phone-conformance/reports/design-qa.json",
+          "sha256": "bf2a03b7c9dc8086d75fa5b8a744a7e25b2a6cd7abcc1c29440d6b8a24cca5ce"
+        }
+      ],
+      "seq": 5
+    },
+    "acceptance": {
+      "state": "passed",
+      "decision": "approved",
+      "ref": "2026-11-06: اعتمد التنفيذ",
+      "packet": [
+        {
+          "path": ".android-suite/tasks/home-phone-conformance/acceptance-checkpoint.md",
+          "sha256": "0d576d3922d3ad5cf967f9ac801f9ad7665002189dae86e1dedf5cb474a96ff6"
+        },
+        {
+          "path": ".android-suite/tasks/home-phone-conformance/qa-report.md",
+          "sha256": "0e71301c17e38648850dda7e6009e0e6f89a047a23842e16c2025496b5ee5325"
+        },
+        {
+          "path": ".android-suite/tasks/home-phone-conformance/design-qa.md",
+          "sha256": "0ef68180ba9b03006e2c3aabf3f99ee1c273412feb04f898e9a52d7139fb71a0"
+        },
+        {
+          "path": ".android-suite/tasks/home-phone-conformance/reports/design-qa.json",
+          "sha256": "bf2a03b7c9dc8086d75fa5b8a744a7e25b2a6cd7abcc1c29440d6b8a24cca5ce"
+        }
+      ],
+      "at": "2026-11-06T02:37:54+0300",
+      "seq": 6
+    }
+  },
+  "deviations": {},
+  "history": [
+    {
+      "at": "2026-11-05T14:49:07+0300",
+      "event": "opened",
+      "workflow": "ui-redesign"
+    },
+    {
+      "at": "2026-11-05T14:50:06+0300",
+      "event": "advanced",
+      "stage": "intake",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T14:51:34+0300",
+      "event": "checkpoint",
+      "stage": "design",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T19:41:48+0300",
+      "event": "advanced",
+      "stage": "build",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T19:41:50+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T19:46:34+0300",
+      "event": "advanced",
+      "stage": "design-qa",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-06T02:37:54+0300",
+      "event": "checkpoint",
+      "stage": "acceptance",
+      "state": "passed"
+    }
+  ]
+}
