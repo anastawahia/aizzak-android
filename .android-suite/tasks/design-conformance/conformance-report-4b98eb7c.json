@@ -1,0 +1,57 @@
+{
+  "command": "python -B \"C:\\Users\\anast\\.codex\\plugins\\cache\\android-software-house-marketplace\\android-software-house\\2.0.0\\scripts\\suite.py\" conformance --project \"C:\\Users\\anast\\Desktop\\aizzak-android\" --task design-conformance --record \"C:\\Users\\anast\\Desktop\\aizzak-android\\.android-suite\\tasks\\design-conformance\\conformance-record-4b98eb7c.json\"",
+  "exit_code": 0,
+  "result": {
+    "stage": "design_conformance",
+    "task": "design-conformance",
+    "status": "passed",
+    "errors": [],
+    "checks": {
+      "reference_locked": true,
+      "inventory_complete": true,
+      "screenshots_current": true,
+      "independent_design_review": true
+    },
+    "summary": {
+      "missing": 0,
+      "deviation": 0,
+      "matched": 119
+    },
+    "approved_deviations": [],
+    "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
+    "inventory_sha256": "89fef11c5447da7f501ccf463da98cc2e1f4023f00f42726ad788b4f30f8093a",
+    "record": "C:/Users/anast/Desktop/aizzak-android/.android-suite/tasks/design-conformance/conformance-record-4b98eb7c.json",
+    "record_sha256": "c499600cb6f7a4d58401708d8a91e5d4d91f8ce49949fd951f941e96243d1fc6",
+    "limitations": "Element judgments are the reviewer's; suite.py verifies completeness, approvals, screenshot provenance, independence claims and freshness, not visual similarity."
+  },
+  "evidence_binding": {
+    "current_manifest": {
+      "path": ".android-suite/evidence/screenshots/1793858048/manifest.json",
+      "sha256": "ce148af6eb71a3fa165739b8edd8dc1ce709bc0eca794c8022d43366a6c99fe3",
+      "png_count": 40,
+      "png_hash_failures": 0
+    },
+    "previous_reviewed_manifest": {
+      "path": ".android-suite/evidence/screenshots/1793547328/manifest.json",
+      "sha256": "1d28a9d8fc11aef753988b2f8fb25f21a622c259fc6d19ac36368c893482243d",
+      "png_count": 40,
+      "png_hash_failures": 0
+    },
+    "previous_element_record": {
+      "path": ".android-suite/tasks/design-conformance/conformance-record.json",
+      "sha256": "68d8697e45afda7f1e87c6ba774e230eeb49bad9c8f1dbef7d1c01481ea0c197",
+      "reviewer": "/root/final_design_qa",
+      "screens": 10,
+      "elements": 119,
+      "matched": 119
+    },
+    "identical_png_pairs": 40,
+    "mismatched_png_pairs": 0
+  },
+  "review_limits": [
+    "The current PNG files are byte-identical by SHA-256 to the 40 screenshots visually reviewed in the previous independent design-QA pass, so the prior element judgments were rebound after verifying every current and previous PNG hash.",
+    "The approved local docs/UI-PREVIEW.html reference was not rendered directly during this revalidation; the historical visual review used the locked design documentation and machine-checkable inventory alongside the real screenshots.",
+    "Robolectric screenshots are deterministic layout evidence, not device-specific rendering or assistive-technology execution evidence.",
+    "No source, lifecycle, checkpoint, acceptance, or Gradle file was modified by this review."
+  ]
+}

@@ -1,0 +1,1082 @@
+{
+  "task": "design-conformance",
+  "inventory_sha256": "89fef11c5447da7f501ccf463da98cc2e1f4023f00f42726ad788b4f30f8093a",
+  "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
+  "reviewer": {
+    "role": "design-qa-reviewer",
+    "id": "/root/final_design_qa"
+  },
+  "implementers": [
+    {
+      "role": "compose-developer",
+      "id": "/root/compose_build"
+    }
+  ],
+  "screens": [
+    {
+      "id": "SCR-HOME-01",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-HOME-01__ar_dark_w390_fs1.0.png",
+          "sha256": "eb3d39e3a0378cc3c2b015da10d86b357454a956ef04c6d7c885791dbb3549b8",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-HOME-01__ar_light_w840_fs1.5.png",
+          "sha256": "f2d9980936d961d0ef8c640367e681561f04aee817c79eebbf1e0960e7b72a4e",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-HOME-01__en_dark_w840_fs1.0.png",
+          "sha256": "284f5a32725b4cc433497c94a663c3896b43374e958ebca880dc8edf1d4cdad4",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-HOME-01__en_light_w390_fs1.0.png",
+          "sha256": "53f96fb1c2d2cfc65eff42cc3ef861abcc8d58b50b3033b37caeb2370eedcf65",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "HOME-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-02",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-04",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-05",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-06",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-07",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-08",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-09",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-10",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-11",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-12",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-13",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-14",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-15",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-16",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-17",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-18",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-19",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-20",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "HOME-21",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "SCR-ACCT-01",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-ACCT-01__ar_dark_w390_fs1.0.png",
+          "sha256": "42353b3cf32d6176b2ffebb20410a002f717d2b54141230e97760752bb1a1b29",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-ACCT-01__ar_light_w840_fs1.5.png",
+          "sha256": "49ecb89547dbc093242c0025547a827c9a89c302a7a5eef1a3dba29250abaedd",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-ACCT-01__en_dark_w840_fs1.0.png",
+          "sha256": "87bfdd2ed34c8611e0abc58768628f7eebeee8fd1e675b70d3434151eadf8b44",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-ACCT-01__en_light_w390_fs1.0.png",
+          "sha256": "f6f244b0fd131b60e6cf82ee1f31c93f79f2dfe13ba4a0a2c3b139ad669c722f",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "ACCOUNT-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-02",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-04",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-05",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-06",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-07",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-08",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-09",
+          "status": "matched",
+          "note": "Display name is unavailable in the fixed screenshot fixture; omission is explicitly allowed by the approved inventory."
+        },
+        {
+          "id": "ACCOUNT-10",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-11",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-12",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-13",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-14",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-15",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "ACCOUNT-16",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "SCR-AUTH-01",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-01__ar_dark_w390_fs1.0.png",
+          "sha256": "28d0fe5ade0ae5690e19011b4ca5df093f0aedb5d67a0017e531db6954c617c3",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-01__ar_light_w840_fs1.5.png",
+          "sha256": "2d2a4988a6b6e1f042f8e2431bd4e8f35b11a0179b1a88edf7f49bfb7174fc54",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-01__en_dark_w840_fs1.0.png",
+          "sha256": "73978d0ac4e0cad7481440b7f6e99595b1b5aba1587a1dbbc7bcbd7976284b51",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-01__en_light_w390_fs1.0.png",
+          "sha256": "7367ece1ac4645ba496b823c1f92ed6e4214b13a8aac56fa9ecff20bbc0c007f",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "SIGNIN-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-02",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-04",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-05",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-06",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-07",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-08",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-09",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-10",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-11",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-12",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNIN-13",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "SCR-AUTH-02",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-02__ar_dark_w390_fs1.0.png",
+          "sha256": "c1b4e1b552e0e8fe67cddf788e849aa86c1381dc977b5d085cf358018b7a6536",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-02__ar_light_w840_fs1.5.png",
+          "sha256": "325092e2e172c5d1d0e37de752185891c5adfe759600b6066ec74c80370f7b59",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-02__en_dark_w840_fs1.0.png",
+          "sha256": "c9b3fa5ef35794db2373e4a21891f929f1a6f981b129b6ce87d104fad396e544",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-02__en_light_w390_fs1.0.png",
+          "sha256": "deb1097ef6cb9a4a246f7fd46a6eb1d06525f37f3950278b22ed9586ba007916",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "SIGNUP-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-02",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-04",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-05",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-06",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-07",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-08",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-09",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-10",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-11",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-12",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SIGNUP-13",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "SCR-AUTH-03",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-03__ar_dark_w390_fs1.0.png",
+          "sha256": "c6b92606e9040fdbb4b39dc37f5b67ad7931bac5182b34d7e88a52d0c68d9070",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-03__ar_light_w840_fs1.5.png",
+          "sha256": "c516dbdb20cbd41b2c1123ec5576f7d16259836b8675cad4a60f3e9baa2eb80c",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-03__en_dark_w840_fs1.0.png",
+          "sha256": "e2fd9031cbd2229d2c09926cc6f0921b983d3590e66a248d4c7cfc8631ab9006",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-03__en_light_w390_fs1.0.png",
+          "sha256": "a600e20d47f4b5548a57a7a10119ddc79d711dcd2a8ca4f0a57c0d1e92edfc25",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "RESET-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "RESET-02",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "RESET-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "RESET-04",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "RESET-05",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "RESET-06",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "RESET-07",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "RESET-08",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "RESET-09",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "SCR-AUTH-04",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-04__ar_dark_w390_fs1.0.png",
+          "sha256": "7ce9e84c602e9742dd6d002c788be9b87e8e81ec1269da9bf417cc7428bb4474",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-04__ar_light_w840_fs1.5.png",
+          "sha256": "bd354353824077479949f08aa194b44f3ed92f1a1335ea81c25b3c9a4fb380fb",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-04__en_dark_w840_fs1.0.png",
+          "sha256": "b6264751e077cc7a7344e1cb5cac14b4ab9e722d130adfca50e76c0a4355a2d7",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-AUTH-04__en_light_w390_fs1.0.png",
+          "sha256": "7b51ffe1ac48bf03adeaafec4d8ff6714dcbb48864118c53cc538d5139f23f8c",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "VERIFY-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "VERIFY-02",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "VERIFY-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "VERIFY-04",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "VERIFY-05",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "VERIFY-06",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "VERIFY-07",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "VERIFY-08",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "VERIFY-09",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "SCR-LOAD-01",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-LOAD-01__ar_dark_w390_fs1.0.png",
+          "sha256": "635d7efcd4928911b1170f0b85bfff333b494d206a1962f7528e3897ea755834",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-LOAD-01__ar_light_w840_fs1.5.png",
+          "sha256": "ef85e9c70fe2cb13292a102649bb066fea78a40e04cc39b82a9e0019e421d8cf",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-LOAD-01__en_dark_w840_fs1.0.png",
+          "sha256": "51b5ec525bd12162d7eb27d396ed81e0fe50036ab142759c451c73fba657738f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-LOAD-01__en_light_w390_fs1.0.png",
+          "sha256": "066a7c8e6265c2bec4d7f1161edc430a0ab8de7552bbca2c544694dd817cc3ce",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "LOADING-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "LOADING-02",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "LOADING-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "LOADING-04",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "SCR-CTX-01",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-CTX-01__ar_dark_w390_fs1.0.png",
+          "sha256": "a7d8543f8e76b1cf9668b4ab314869523b6b2b0275bd2c74746e2609155a9829",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-CTX-01__ar_light_w840_fs1.5.png",
+          "sha256": "6539acaf817f5841bd653da05e7692d2db4ceb7d9f1b667aac2db7704e777de5",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-CTX-01__en_dark_w840_fs1.0.png",
+          "sha256": "5790706ec66cf6c605c8e459a693cdea5f4781278423f9ef3780e4b4a6f9b3f4",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-CTX-01__en_light_w390_fs1.0.png",
+          "sha256": "5984f232cdc1baf0dacf8791cb8b53bb7bcb47efd8337fd48696c829fece7d9c",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "CONTEXT-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "CONTEXT-02",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "CONTEXT-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "CONTEXT-04",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "CONTEXT-05",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "CONTEXT-06",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "SCR-SET-01",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-SET-01__ar_dark_w390_fs1.0.png",
+          "sha256": "4154f2431aaa7e56db068b8dabf0ffa569a4d0785abac805ded8e70cf8f8a1c6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-SET-01__ar_light_w840_fs1.5.png",
+          "sha256": "ecade1988954afd7e6b8bc02bb0b6cf8dd019580feb328037c5d3ec1c282975a",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-SET-01__en_dark_w840_fs1.0.png",
+          "sha256": "75eba6ae130207707abbba446a5da3d59f8903dc606bb034825e1ee8dc26843d",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-SET-01__en_light_w390_fs1.0.png",
+          "sha256": "e7df9ee05a3330fdf5531c7afba0391f0468909274f9a8c25e85dc3df88c9095",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "SETTINGS-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-02",
+          "status": "matched",
+          "note": "The fixed screenshots exercise Settings as a main destination, where the approved inventory requires this conditional Back action to be absent."
+        },
+        {
+          "id": "SETTINGS-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-04",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-05",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-06",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-07",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-08",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-09",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-10",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-11",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-12",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-13",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-14",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-15",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-16",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "SETTINGS-17",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "SCR-ACCT-02",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-ACCT-02__ar_dark_w390_fs1.0.png",
+          "sha256": "5130efa598c63b116f8133e0dc8c1b39dd5b795fcd2432f8b5b487f6960c85b8",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-ACCT-02__ar_light_w840_fs1.5.png",
+          "sha256": "441e141727d16129741967a3f4adffbd8802cc3d7b400a37a703e03b5b78c669",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.5
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-ACCT-02__en_dark_w840_fs1.0.png",
+          "sha256": "6a76ced399a97ddd70ec8f8d7686aeb84e8b26fb54bacdb1d01279037c72a0f5",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1.0
+          }
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793858048/SCR-ACCT-02__en_light_w390_fs1.0.png",
+          "sha256": "c474a674625645a3fdd5e0a98e2c3fcedb8f8611de1c100d4d63e40979caa862",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1.0
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "PASSWORD-01",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-02",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-03",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-04",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-05",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-06",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-07",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-08",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-09",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-10",
+          "status": "matched",
+          "note": ""
+        },
+        {
+          "id": "PASSWORD-11",
+          "status": "matched",
+          "note": ""
+        }
+      ]
+    }
+  ]
+}
