@@ -1,0 +1,64 @@
+{
+  "task": "home-phone-conformance",
+  "inventory_sha256": "21689f116d41f68541b10ccdc4792c76b2d847fa28c35275b7c1e0c2c0708ab8",
+  "source_sha256": "829d3aa66be11058f3051412d22109d6eed93b23720c9e9403061eb2f62217ac",
+  "reviewer": {
+    "role": "design-qa-reviewer",
+    "id": "/root/home_design_qa"
+  },
+  "implementers": [
+    {
+      "role": "compose-developer",
+      "id": "/root/phone_implementation"
+    },
+    {
+      "role": "company-director",
+      "id": "/root"
+    }
+  ],
+  "screens": [
+    {
+      "id": "SCR-HOME-01",
+      "screenshots": [
+        {
+          "path": ".android-suite/evidence/screenshots/1793896783/SCR-HOME-01__en_light_w390_fs1.0.png",
+          "sha256": "5d1fd2cd64856951e4285ddb7dd0fe73144ce2f7b37b9f12a55282df8cb3d83b",
+          "config": {"locale": "en", "theme": "light", "width_dp": 390, "font_scale": 1.0}
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793896783/SCR-HOME-01__ar_dark_w390_fs1.0.png",
+          "sha256": "c76680c5f8fba76b9472a3a174df0809c2032735e8cf5788b076d2bc4e6d0a40",
+          "config": {"locale": "ar", "theme": "dark", "width_dp": 390, "font_scale": 1.0}
+        },
+        {
+          "path": ".android-suite/evidence/screenshots/1793896783/SCR-HOME-01__en_light_w360_fs1.5.png",
+          "sha256": "e44a8aa686d7e569fc52d239279f34878eae4a639528b46ef28ed18fc6e30859",
+          "config": {"locale": "en", "theme": "light", "width_dp": 360, "font_scale": 1.5}
+        }
+      ],
+      "elements": [
+        {"id": "HOME-01", "status": "matched", "note": "Phone brand bar uses the original 36dp logo and no rail."},
+        {"id": "HOME-02", "status": "matched", "note": "Brand and localized descriptor are stacked, start-aligned and use the expected muted role."},
+        {"id": "HOME-03", "status": "matched", "note": "Localized eyebrow matches the primary color, semibold weight, scale and letter spacing."},
+        {"id": "HOME-04", "status": "matched", "note": "Localized heading matches the 28sp hierarchy, start alignment and heading semantics without clipping."},
+        {"id": "HOME-05", "status": "matched", "note": "The localized introduction is verbatim, muted and positioned before the card column."},
+        {"id": "HOME-06", "status": "matched", "note": "Smart card matches the 20dp/20dp geometry, outline, 3dp violet start stripe, 42dp container and 24dp sparkle."},
+        {"id": "HOME-07", "status": "matched", "note": "Smart Assistant stays LTR and start-aligned in both locales without truncation."},
+        {"id": "HOME-08", "status": "matched", "note": "Localized Smart description is verbatim, muted and wraps cleanly."},
+        {"id": "HOME-09", "status": "matched", "note": "First status chip has the soft fill, outline, pill shape, neutral dot and localized label."},
+        {"id": "HOME-10", "status": "matched", "note": "Data Search card repeats the reference geometry with cyan stripe, container and line icon."},
+        {"id": "HOME-11", "status": "matched", "note": "Data Search stays LTR and start-aligned without ellipsis."},
+        {"id": "HOME-12", "status": "matched", "note": "Localized Data Search description is verbatim and wraps without clipping."},
+        {"id": "HOME-13", "status": "matched", "note": "Second status chip matches the reference fill, border, dot and localized text."},
+        {"id": "HOME-14", "status": "matched", "note": "Wire Twin card matches the reference geometry with amber stripe, container and wiring icon."},
+        {"id": "HOME-15", "status": "matched", "note": "Wire Twin stays LTR in RTL and is not clipped."},
+        {"id": "HOME-16", "status": "matched", "note": "Localized Wire Twin description is verbatim and wraps cleanly."},
+        {"id": "HOME-17", "status": "matched", "note": "Third status chip matches the reference appearance and localized label."},
+        {"id": "HOME-18", "status": "matched", "note": "The localized information callout follows the third card and remains reachable in the 360dp scrolled evidence."},
+        {"id": "HOME-19", "status": "matched", "note": "Home is selected with the filled icon pill, icon and label, providing a non-color-only state."},
+        {"id": "HOME-20", "status": "matched", "note": "Account is unselected with the line icon, localized label and a 58dp minimum target."},
+        {"id": "HOME-21", "status": "matched", "note": "Settings is unselected with the gear icon, localized label and a 58dp target; no phone rail is rendered."}
+      ]
+    }
+  ]
+}

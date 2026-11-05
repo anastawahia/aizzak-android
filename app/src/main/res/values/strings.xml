@@ -68,10 +68,10 @@
     <string name="retry">Try again</string>
     <string name="saving">Saving…</string>
     <string name="home_title">Your assistants</string>
-    <string name="home_eyebrow">Your workspace</string>
+    <string name="home_eyebrow">Your knowledge, connected</string>
     <string name="home">Home</string>
-    <string name="home_description">A place for your knowledge, searches and diagrams.</string>
-    <string name="assistants_preparing">Your assistants are being prepared. They’ll appear here when they’re ready.</string>
+    <string name="home_description">A place for your knowledge and the tools to work with it.</string>
+    <string name="assistants_preparing">Your assistants are being prepared. Their tools will be available in a later update.</string>
     <string name="coming_later">Coming later</string>
     <string name="smart_assistant" translatable="false">Smart Assistant</string>
     <string name="data_search" translatable="false">Data Search</string>

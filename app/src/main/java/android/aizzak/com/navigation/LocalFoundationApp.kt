@@ -47,6 +47,7 @@ import android.aizzak.com.feature.auth.AuthSessionScreen
 import android.aizzak.com.feature.auth.AuthStage
 import android.aizzak.com.feature.auth.AuthUiState
 import android.aizzak.com.feature.home.HomeScreen
+import android.aizzak.com.feature.home.HomePhoneNavigation
 import android.aizzak.com.feature.home.foundationAssistants
 import android.aizzak.com.feature.settings.SettingsScreen
 import android.aizzak.com.feature.settings.SettingsUiState
@@ -144,12 +145,24 @@ private fun AuthenticatedApp(
         Scaffold(containerColor = MaterialTheme.colorScheme.background,
             bottomBar = {
                 if (!wide && !password) {
-                    NavigationBar {
-                        MainDestination.entries.forEach { item ->
-                            NavigationBarItem(selected = destination == item,
-                                onClick = { selected = item.name; actions.clearFeedback() },
-                                icon = { Icon(item.icon, contentDescription = null) },
-                                label = { Text(stringResource(item.label)) }, modifier = Modifier.testTag(item.tag))
+                    if (destination == MainDestination.HOME) {
+                        val select: (MainDestination) -> Unit = { target ->
+                            selected = target.name
+                            actions.clearFeedback()
+                        }
+                        HomePhoneNavigation(
+                            onHome = { select(MainDestination.HOME) },
+                            onAccount = { select(MainDestination.ACCOUNT) },
+                            onSettings = { select(MainDestination.SETTINGS) },
+                        )
+                    } else {
+                        NavigationBar {
+                            MainDestination.entries.forEach { item ->
+                                NavigationBarItem(selected = destination == item,
+                                    onClick = { selected = item.name; actions.clearFeedback() },
+                                    icon = { Icon(item.icon, contentDescription = null) },
+                                    label = { Text(stringResource(item.label)) }, modifier = Modifier.testTag(item.tag))
+                            }
                         }
                     }
                 }
@@ -169,7 +182,7 @@ private fun AuthenticatedApp(
                     if (password) {
                         PasswordScreen(authState, actions.changePassword, actions.clearFeedback, ::cancelPassword)
                     } else when (destination) {
-                        MainDestination.HOME -> HomeScreen(foundationAssistants)
+                        MainDestination.HOME -> HomeScreen(foundationAssistants, phone = !wide)
                         MainDestination.ACCOUNT -> AccountScreen(authState.identity?.email, null,
                             onChangePassword = { actions.clearFeedback(); password = true }, onSignOut = actions.signOut, state = authState)
                         MainDestination.SETTINGS -> SettingsScreen(state, language, version, onTheme, onLanguage, onRetry,
