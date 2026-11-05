@@ -64,7 +64,18 @@ val foundationAssistants = listOf(
 
 /** Stateless authorized-content view; cards are intentionally descriptive and non-clickable. */
 @Composable
-fun HomeScreen(assistants: List<AssistantCardModel>) {
+fun HomeScreen(assistants: List<AssistantCardModel>, phone: Boolean? = null) {
+    BoxWithConstraints(Modifier.fillMaxSize()) {
+        if (phone ?: (maxWidth < 600.dp)) {
+            HomePhoneContent(assistants)
+        } else {
+            WideHomeScreen(assistants)
+        }
+    }
+}
+
+@Composable
+private fun WideHomeScreen(assistants: List<AssistantCardModel>) {
     Column(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
         BrandBar()
         BoxWithConstraints(Modifier.fillMaxSize()) {
