@@ -1,0 +1,77 @@
+{
+  "scope": "CONN-01 Android-only debug API connectivity repair. Environment forwarding restored; no application or backend source change.",
+  "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
+  "checks": {
+    "relevant_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "8c0e4b8054b5eb65e3f4e0bb1252f1588fa44dc213b96443038da1134e35258d",
+          "path": ".android-suite/evidence/debug-api-connectivity-all.json"
+        },
+        {
+          "sha256": "c72906098e319ae142b54e748bb0dd2f0ccc82f048eb2d297fd49ec541126dd1",
+          "path": ".android-suite/tasks/debug-api-connectivity/qa-verification.md"
+        }
+      ]
+    },
+    "independent_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "41605621bd9d4d65b7a8836b197b660c44a293e14fad9ce3f4b6ce360a7ef67e",
+          "path": ".android-suite/tasks/debug-api-connectivity/code-review.md"
+        }
+      ]
+    },
+    "static_analysis": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "8c0e4b8054b5eb65e3f4e0bb1252f1588fa44dc213b96443038da1134e35258d",
+          "path": ".android-suite/evidence/debug-api-connectivity-all.json"
+        }
+      ]
+    },
+    "contract_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "8c0e4b8054b5eb65e3f4e0bb1252f1588fa44dc213b96443038da1134e35258d",
+          "path": ".android-suite/evidence/debug-api-connectivity-all.json"
+        }
+      ]
+    },
+    "failure_cases": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "8c0e4b8054b5eb65e3f4e0bb1252f1588fa44dc213b96443038da1134e35258d",
+          "path": ".android-suite/evidence/debug-api-connectivity-all.json"
+        },
+        {
+          "sha256": "c72906098e319ae142b54e748bb0dd2f0ccc82f048eb2d297fd49ec541126dd1",
+          "path": ".android-suite/tasks/debug-api-connectivity/qa-verification.md"
+        }
+      ]
+    },
+    "authentication_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "41605621bd9d4d65b7a8836b197b660c44a293e14fad9ce3f4b6ce360a7ef67e",
+          "path": ".android-suite/tasks/debug-api-connectivity/code-review.md"
+        }
+      ]
+    },
+    "compile": {
+      "status": "passed",
+      "evidence": [
+        {
+          "sha256": "8c0e4b8054b5eb65e3f4e0bb1252f1588fa44dc213b96443038da1134e35258d",
+          "path": ".android-suite/evidence/debug-api-connectivity-all.json"
+        }
+      ]
+    }
+  }
+}
