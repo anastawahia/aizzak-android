@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "task": "debug-api-connectivity",
+  "workflow": "bugfix",
+  "created": "2026-11-05T09:18:52+0300",
+  "sequence": 5,
+  "mandatory": [
+    "intake",
+    "build",
+    "verification",
+    "acceptance"
+  ],
+  "stages": {
+    "intake": {
+      "state": "passed",
+      "at": "2026-11-05T09:19:05+0300",
+      "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
+      "note": "User-authorized Android-only bugfix: reproduce account-context network failure on connected phone, align debug HTTP loopback policy with the existing ADB reverse development contract, preserve release HTTPS policy and local-only logout, verify build/tests/lint/device connectivity. No backend modifications. Existing design-conformance work is out of scope and must be preserved.",
+      "seq": 1
+    },
+    "build": {
+      "state": "passed",
+      "at": "2026-11-05T09:27:37+0300",
+      "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
+      "note": "Accepted android-core-developer handoff: environment-only repair. Existing tracked debug loopback policy and API URL are correct; no source/test change. scripts/connect-local-api.ps1 -SkipStackStart exited 0, restored adb reverse tcp:8080->tcp:80, and Retry reached Home on connected SM-A155F. No backend mutation; no unrelated files touched.",
+      "seq": 2
+    },
+    "verification": {
+      "state": "passed",
+      "at": "2026-11-05T09:31:26+0300",
+      "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
+      "evidence": [
+        {
+          "path": ".android-suite/tasks/debug-api-connectivity/reports/verification.json",
+          "sha256": "394370e9e46afe619c1c539552518d9b00414ab87a5cf8f143a012c1d8ca50c1"
+        }
+      ],
+      "seq": 3
+    },
+    "design-qa": {
+      "state": "not_applicable",
+      "reason": "No UI, design, screen inventory, or application source changed; the repair restored the existing ADB reverse runtime dependency and the previously approved Home screen rendered unchanged.",
+      "at": "2026-11-05T09:31:35+0300",
+      "seq": 4
+    },
+    "acceptance": {
+      "state": "passed",
+      "decision": "approved",
+      "ref": "تم القبول — 2026-11-05",
+      "packet": [
+        {
+          "path": ".android-suite/tasks/debug-api-connectivity/acceptance-packet.md",
+          "sha256": "8914c3c8e9815df7ac9969dc7f4026a20c6c28534507014013de3147dde252ae"
+        }
+      ],
+      "at": "2026-11-05T10:11:12+0300",
+      "seq": 5
+    }
+  },
+  "deviations": {},
+  "history": [
+    {
+      "at": "2026-11-05T09:18:52+0300",
+      "event": "opened",
+      "workflow": "bugfix"
+    },
+    {
+      "at": "2026-11-05T09:19:05+0300",
+      "event": "advanced",
+      "stage": "intake",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T09:27:37+0300",
+      "event": "advanced",
+      "stage": "build",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T09:31:26+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T09:31:35+0300",
+      "event": "not-applicable",
+      "stage": "design-qa",
+      "state": "not_applicable"
+    },
+    {
+      "at": "2026-11-05T10:11:12+0300",
+      "event": "checkpoint",
+      "stage": "acceptance",
+      "state": "passed"
+    }
+  ]
+}
