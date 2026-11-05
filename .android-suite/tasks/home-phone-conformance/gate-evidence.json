@@ -1,0 +1,46 @@
+{
+  "scope": "Home phone design conformance against docs/UI-PREVIEW.html; Android UI only, wide layout and backend excluded.",
+  "source_sha256": "829d3aa66be11058f3051412d22109d6eed93b23720c9e9403061eb2f62217ac",
+  "checks": {
+    "compile": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/home-phone-all.json",
+          "sha256": "4ca3319b22b80f161aaf5b0b506b5dbe8040c78bc640b1b4398c18de7f6862d0"
+        }
+      ]
+    },
+    "static_analysis": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/home-phone-all.json",
+          "sha256": "4ca3319b22b80f161aaf5b0b506b5dbe8040c78bc640b1b4398c18de7f6862d0"
+        }
+      ]
+    },
+    "relevant_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/home-phone-all.json",
+          "sha256": "4ca3319b22b80f161aaf5b0b506b5dbe8040c78bc640b1b4398c18de7f6862d0"
+        },
+        {
+          "path": ".android-suite/evidence/home-phone-screenshots.json",
+          "sha256": "f792c1fa6989abd5cc372f9e1410b4c692e8a2924d838324e3783b0be197e2ea"
+        }
+      ]
+    },
+    "independent_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/tasks/home-phone-conformance/code-review.md",
+          "sha256": "4a53c53161e98144f8128303c13438bf389f2f8b8885acc1929015bfb198519f"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "reference": [
+    "docs/UI-PREVIEW.html",
+    ".android-suite/tasks/design-conformance/journeys-wireframes.md",
+    ".android-suite/tasks/design-conformance/design-tokens.md",
+    ".android-suite/tasks/home-phone-conformance/design-scope.md"
+  ],
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "adaptive": false,
+  "required_configs": [
+    {
+      "locale": "en",
+      "theme": "light",
+      "width_dp": 390,
+      "font_scale": 1.0
+    },
+    {
+      "locale": "ar",
+      "theme": "dark",
+      "width_dp": 390,
+      "font_scale": 1.0
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width_dp": 360,
+      "font_scale": 1.5
+    }
+  ],
+  "screens": [
+    {
+      "id": "SCR-HOME-01",
+      "name": "Home phone",
+      "reference_anchor": "docs/UI-PREVIEW.html#home",
+      "elements": [
+        {
+          "id": "HOME-01",
+          "kind": "header",
+          "description": "Phone AIZZAK bar at the top of the content with the original, unretinted 36dp logo; no wide navigation rail is present."
+        },
+        {
+          "id": "HOME-02",
+          "kind": "text",
+          "description": "AIZZAK brand name and localized AI Assistant descriptor are stacked beside the logo, start-aligned, with the descriptor using the muted text role."
+        },
+        {
+          "id": "HOME-03",
+          "kind": "label",
+          "description": "Localized eyebrow text appears above the title, start-aligned, primary colored, semibold and visually smaller than the supporting copy."
+        },
+        {
+          "id": "HOME-04",
+          "kind": "title",
+          "description": "Localized Your assistants screen title is start-aligned, semibold, approximately 28sp at font scale 1.0, and exposed as a heading."
+        },
+        {
+          "id": "HOME-05",
+          "kind": "text",
+          "description": "Localized supporting introduction appears directly below the title in the muted role, before the agent-card column."
+        },
+        {
+          "id": "HOME-06",
+          "kind": "card",
+          "description": "First single-column surface card is Smart Assistant: 20dp content padding, approximately 20dp corner radius, violet start accent, violet icon container and decorative sparkle icon; the whole card is non-interactive."
+        },
+        {
+          "id": "HOME-07",
+          "kind": "title",
+          "description": "Smart Assistant name remains LTR in both locales, is start-aligned beside the icon, and wraps without ellipsis or truncation."
+        },
+        {
+          "id": "HOME-08",
+          "kind": "text",
+          "description": "Localized Smart Assistant description is directly below its name, uses the muted role and wraps without clipping."
+        },
+        {
+          "id": "HOME-09",
+          "kind": "label",
+          "description": "Localized Coming later status chip follows the Smart Assistant description with soft-container fill, outline, pill shape and a visible status dot."
+        },
+        {
+          "id": "HOME-10",
+          "kind": "card",
+          "description": "Second single-column surface card is Data Search: same structure and spacing as the first card, with cyan start accent, cyan icon container and decorative search icon; the whole card is non-interactive."
+        },
+        {
+          "id": "HOME-11",
+          "kind": "title",
+          "description": "Data Search name remains LTR in both locales, is start-aligned beside the icon, and wraps without ellipsis or truncation."
+        },
+        {
+          "id": "HOME-12",
+          "kind": "text",
+          "description": "Localized Data Search description is directly below its name, uses the muted role and wraps without clipping."
+        },
+        {
+          "id": "HOME-13",
+          "kind": "label",
+          "description": "Localized Coming later status chip follows the Data Search description with soft-container fill, outline, pill shape and a visible status dot."
+        },
+        {
+          "id": "HOME-14",
+          "kind": "card",
+          "description": "Third single-column surface card is Wire Twin: same structure and spacing as the preceding cards, with amber start accent, amber icon container and decorative wiring icon; the whole card is non-interactive."
+        },
+        {
+          "id": "HOME-15",
+          "kind": "title",
+          "description": "Wire Twin name remains LTR in both locales, is start-aligned beside the icon, and wraps without ellipsis or truncation."
+        },
+        {
+          "id": "HOME-16",
+          "kind": "text",
+          "description": "Localized Wire Twin description is directly below its name, uses the muted role and wraps without clipping."
+        },
+        {
+          "id": "HOME-17",
+          "kind": "label",
+          "description": "Localized Coming later status chip follows the Wire Twin description with soft-container fill, outline, pill shape and a visible status dot."
+        },
+        {
+          "id": "HOME-18",
+          "kind": "notice",
+          "description": "Primary-container information callout follows the third card, with a decorative info icon and localized assistants-being-prepared text; it wraps and remains reachable by vertical scrolling."
+        },
+        {
+          "id": "HOME-19",
+          "kind": "navigation",
+          "description": "Home item is the selected destination in the phone bottom navigation, with icon, localized label and a non-color-only selected treatment using the filled icon pill."
+        },
+        {
+          "id": "HOME-20",
+          "kind": "navigation",
+          "description": "Account item appears in the phone bottom navigation with user icon and localized label, unselected, with at least a 48dp touch target."
+        },
+        {
+          "id": "HOME-21",
+          "kind": "navigation",
+          "description": "Settings item appears in the phone bottom navigation with settings icon and localized label, unselected, with at least a 48dp touch target; no side rail is rendered in this scope."
+        }
+      ]
+    }
+  ]
+}
