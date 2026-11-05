@@ -1,0 +1,47 @@
+{
+  "kind": "all",
+  "status": "passed",
+  "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1793857572,
+  "attempts": [
+    {
+      "exit_code": 0,
+      "duration_seconds": 172.016,
+      "output": "BUILD SUCCESSFUL in 2m 50s; 59 actionable tasks: 15 executed, 44 up-to-date. Lint HTML: app/build/reports/lint-results-debug.html"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+      "sha256": "847658174af2b49a6dcc660ba8ff166f6db25e8cd332e921d0009704b803fd95"
+    },
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "sha256": "0aa914aafb1c3f3514f1c41cc450ce9fa05cb4a7e369a953e156cb6b3afa0017"
+    }
+  ],
+  "test_summary": {
+    "tests": 96,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.data.auth.FirebaseAuthRepositoryTest.xml",
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.data.preferences.DataStorePreferencesRepositoryTest.xml",
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.data.session.HttpAccountContextRepositoryTest.xml",
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.DesignScreenshotTest.xml",
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.feature.auth.AuthViewModelTest.xml",
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.feature.settings.SettingsViewModelTest.xml"
+    ]
+  },
+  "signed_verified": false,
+  "published": false
+}

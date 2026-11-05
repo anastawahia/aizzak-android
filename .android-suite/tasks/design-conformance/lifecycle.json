@@ -3,7 +3,7 @@
   "task": "design-conformance",
   "workflow": "ui-redesign",
   "created": "2026-11-01T00:23:20+0300",
-  "sequence": 7,
+  "sequence": 11,
   "mandatory": [
     "intake",
     "design",
@@ -58,30 +58,44 @@
     },
     "verification": {
       "state": "passed",
-      "at": "2026-11-01T18:56:49+0300",
-      "source_sha256": "04454cbdfae23445beed14a68c718c52771e86661137b823d1b0d2886b7769f5",
+      "at": "2026-11-05T09:02:04+0300",
+      "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
       "evidence": [
         {
           "path": ".android-suite/tasks/design-conformance/reports/verification.json",
-          "sha256": "7a5c1846f7f7f23f307646fd7b3a801f5f210eb7a0ad0feff64651ee7d7e93a1"
+          "sha256": "cd0015c5c3f3a10e571d145bf2d6fa98a5780b1132a6f5339852326913ef175f"
         }
       ],
-      "seq": 7
+      "seq": 9
     },
     "design-qa": {
       "state": "passed",
-      "at": "2026-11-01T18:39:09+0300",
-      "source_sha256": "9d787246f8d1081e382b85d6a85cf3fe989b463ba8eba9b4309cff11a24e71f6",
+      "at": "2026-11-05T09:05:09+0300",
+      "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
       "evidence": [
         {
           "path": ".android-suite/tasks/design-conformance/reports/design-qa.json",
-          "sha256": "6d7c398acef8c0fa098bdec681a790708568c40869c198a93e9c011cf1d47a8f"
+          "sha256": "7669bf5026d99da7ee0e1d5ac64ae5c38e155c33a34145bad4f175ba5793b595"
         }
       ],
-      "seq": 6
+      "seq": 10
     },
     "acceptance": {
-      "state": "pending"
+      "state": "passed",
+      "decision": "approved",
+      "ref": "تم القبول — صاحب المشروع، 2026-11-05 (توقيت بغداد)",
+      "packet": [
+        {
+          "path": ".android-suite/tasks/design-conformance/acceptance-checkpoint-2026-11-05.md",
+          "sha256": "b10a57c0a45d4970597ae75b67d248ab3fd1d304982b789c5464e73d14b35765"
+        },
+        {
+          "path": ".android-suite/tasks/design-conformance/reports/design-qa.json",
+          "sha256": "7669bf5026d99da7ee0e1d5ac64ae5c38e155c33a34145bad4f175ba5793b595"
+        }
+      ],
+      "at": "2026-11-05T10:13:00+0300",
+      "seq": 11
     }
   },
   "deviations": {},
@@ -131,6 +145,30 @@
       "at": "2026-11-01T18:56:49+0300",
       "event": "advanced",
       "stage": "verification",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T09:00:50+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T09:02:04+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T09:05:09+0300",
+      "event": "advanced",
+      "stage": "design-qa",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-05T10:13:00+0300",
+      "event": "checkpoint",
+      "stage": "acceptance",
       "state": "passed"
     }
   ]
