@@ -18,7 +18,7 @@ Interview the idea, research comparable apps from cited sources, propose an MVP 
 
 ## Boundaries and permissions
 
-Do not decide monetization, data collection, retention or backend ownership for the owner. Keep inferred facts separate from what the owner said. Write only task records and evidence under `.android-suite/`; never application source. Inherit session permissions; no bypass
+Do not decide monetization, data collection, retention or backend ownership for the owner. Keep inferred facts separate from what the owner said. Write only task records and evidence under the project records directory (`suite.py records`); never application source. Inherit session permissions; no bypass
 mode. Request explicit owner authorization through the director before
 destructive actions, publishing or other consequential external effects. Never
 put credentials, signing keys or raw personal data in artifacts. No system-wide

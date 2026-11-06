@@ -1,6 +1,6 @@
 """Task lifecycle, human checkpoints, approved deviations and design conformance.
 
-The lifecycle record `.android-suite/tasks/<task>/lifecycle.json` is written only
+The lifecycle record `<records>/tasks/<task>/lifecycle.json` is written only
 by these functions. Records establish provenance (who decided what, bound to
 which file hashes and source fingerprint); they are not cryptographic proof and
 a local user can forge them. They exist so that an agent cannot report a stage,
@@ -12,7 +12,7 @@ import re
 import time
 from pathlib import Path
 
-from suite import PLUGIN, SuiteError, digest, gate, read_json, safe_child, source_fingerprint, write_json
+from suite import PLUGIN, SuiteError, digest, gate, read_json, recorded_file, records_child, safe_child, source_fingerprint, write_json
 
 TASK = re.compile(r'[a-z0-9][a-z0-9-]{0,63}')
 SCREEN_ID = re.compile(r'[A-Z][A-Z0-9-]{1,47}')
@@ -31,7 +31,7 @@ def stage_defs():
 def record_path(root, task):
     if not isinstance(task, str) or not TASK.fullmatch(task):
         raise SuiteError('Task slug must be lowercase letters, digits and hyphens (max 64).')
-    return safe_child(root, f'.android-suite/tasks/{task}/lifecycle.json')
+    return records_child(root, f'tasks/{task}/lifecycle.json')
 
 
 def load(root, task):
@@ -66,7 +66,7 @@ def hashed(root, paths):
 def changed(root, files):
     reasons = []
     for item in files:
-        file = safe_child(root, item['path'])
+        file = recorded_file(root, item['path'])
         if not file.is_file() or digest(file) != item['sha256']:
             reasons.append(f'{item["path"]} changed after it was recorded')
     return reasons
@@ -253,7 +253,7 @@ def approved_design(root, data):
 def deviation(root, task, element, reason, ref):
     data = load(root, task)
     inventory, _ = approved_design(root, data)
-    ids = {e['id'] for s in read_json(safe_child(root, inventory['path']))['screens'] for e in s['elements']}
+    ids = {e['id'] for s in read_json(recorded_file(root, inventory['path']))['screens'] for e in s['elements']}
     if element not in ids:
         raise SuiteError(f'{element} is not an element of the approved inventory.')
     if not str(reason or '').strip() or not str(ref or '').strip():
@@ -273,7 +273,7 @@ def conformance(root, task, record_file):
     locked = not changed(root, [inventory_entry] + references)
     if not locked or view['design']['effective'] != 'passed':
         errors.append('reference_locked: the approved reference or inventory changed, or the design approval is stale.')
-    inventory = read_json(safe_child(root, inventory_entry['path']))
+    inventory = read_json(recorded_file(root, inventory_entry['path']))
     record = read_json(record_file)
     current = source_fingerprint(root)
     if record.get('task') != task:
@@ -323,7 +323,7 @@ def conformance(root, task, record_file):
         covered = set()
         for shot in shots:
             try:
-                file = safe_child(root, shot['path'])
+                file = recorded_file(root, shot['path'])
                 if not file.is_file() or digest(file) != shot.get('sha256'):
                     errors.append(f'screenshots_current: {sid} screenshot {shot["path"]} is missing or changed.')
                     shots_ok = False
@@ -384,7 +384,7 @@ def advance(root, task, sid, evidence=None, record=None, note=None, not_applicab
             if not evidence:
                 raise SuiteError(f'{sid} advances only with --evidence <gate evidence for {defs[sid]["gate"]}>.')
             report = gate(root, evidence, defs[sid]['gate'])
-        report_file = safe_child(root, f'.android-suite/tasks/{task}/reports/{sid}.json')
+        report_file = records_child(root, f'tasks/{task}/reports/{sid}.json')
         write_json(report_file, report)
         if report['status'] != 'passed':
             return {**report, 'advanced': False, 'report_file': report_file.as_posix()}

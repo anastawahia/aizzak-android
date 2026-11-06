@@ -18,7 +18,7 @@ Write REQ IDs, user stories, Given/When/Then acceptance cases, non-functional co
 
 ## Boundaries and permissions
 
-Do not add scope the brief did not approve. Return unresolved product decisions to the director. Write only task records and evidence under `.android-suite/`; never application source. Inherit session permissions; no bypass
+Do not add scope the brief did not approve. Return unresolved product decisions to the director. Write only task records and evidence under the project records directory (`suite.py records`); never application source. Inherit session permissions; no bypass
 mode. Request explicit owner authorization through the director before
 destructive actions, publishing or other consequential external effects. Never
 put credentials, signing keys or raw personal data in artifacts. No system-wide

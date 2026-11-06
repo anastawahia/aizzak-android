@@ -65,7 +65,7 @@ Rules `suite.py` enforces:
 1. **Intake.** Read repository instructions, Git state and existing records.
    Choose the workflow. `suite.py lifecycle --project <dir> --task <slug> --init --workflow <id>`.
    For a new app, `<dir>` is the intended destination: this creates only its
-   `.android-suite/`, and `suite.py init` later renders the app around it.
+   `<records>/`, and `suite.py init` later renders the app around it.
 2. **Dispatch** the next ready stage to its owner with: project and plugin roots,
    task slug, stage, REQ/SCR IDs, approved artifacts with hashes, owned files,
    expected output and allowed checks. Specialists report to the director only.
@@ -119,14 +119,22 @@ acceptance packet. An exception never turns a failed gate into a pass.
 ## Backend and external systems
 
 When repository instructions say another team owns the backend, the backend
-liaison writes change requests under `.android-suite/tasks/<task>/` and Android
+liaison writes change requests under `<records>/tasks/<task>/` and Android
 work that depends on them waits for the confirmed reply. Release, publication,
 production rollout and destructive actions keep their own explicit
 authorization; approving a design or acceptance never authorizes them.
 
 ## Records
 
-`.android-suite/tasks/<task>/lifecycle.json` is written only by `suite.py`.
+`<records>` is the project's records directory, reported by
+`suite.py records --project <dir>`. The project decides it: the
+`androidSoftwareHouse.recordsDir` setting in `gradle.properties`, else the existing
+directory holding `tasks/` or `evidence/` (`docs/`, one level under `docs/`, or a
+legacy `.android-suite/`), else `docs/delivery/` for a project with neither. Never
+create a parallel documentation path. When repository instructions name another
+location, set `androidSoftwareHouse.recordsDir` to it instead of writing elsewhere.
+
+`<records>/tasks/<task>/lifecycle.json` is written only by `suite.py`.
 Briefs, requirements, design files, handoffs, reviews and packets live next to
-it. Evidence lives under `.android-suite/evidence/`. Secrets, tokens and raw
+it. Evidence lives under `<records>/evidence/`. Secrets, tokens and raw
 personal data never enter records. Read-only requests never write records.

@@ -18,7 +18,7 @@ Classify the request, open the task lifecycle, staff the smallest suitable team,
 
 ## Boundaries and permissions
 
-Do not do a specialist's work while that specialist is available. Never mark a stage passed, a task completed or a design matched without the suite.py result that proves it. Never act as the independent reviewer of work you or your session implemented. Write only task records and evidence under `.android-suite/`; never application source. Inherit session permissions; no bypass
+Do not do a specialist's work while that specialist is available. Never mark a stage passed, a task completed or a design matched without the suite.py result that proves it. Never act as the independent reviewer of work you or your session implemented. Write only task records and evidence under the project records directory (`suite.py records`); never application source. Inherit session permissions; no bypass
 mode. Request explicit owner authorization through the director before
 destructive actions, publishing or other consequential external effects. Never
 put credentials, signing keys or raw personal data in artifacts. No system-wide
@@ -94,5 +94,5 @@ in this session, and leave independent review stages blocked: they require a
 reviewer that did not implement the work. Never claim an agent ran without its
 tool result.
 
-Initialize `.android-suite/` with `suite.py init-memory` for authorized work only.
+Initialize the project records directory with `suite.py init-memory` for authorized work only.
 Analyze, status and review-only requests never write memory.

@@ -10,7 +10,7 @@ from pathlib import Path
 import shutil
 import sys
 
-from suite import (PLUGIN, SuiteError, bootstrap_wrapper, generate_api, init_project,
+from suite import (PLUGIN, SuiteError, bootstrap_wrapper, generate_api, init_project, records_child,
                    new_feature, screenshots, verify, write_json)
 
 API_TEST = '''package com.example.suitedemo.data
@@ -136,20 +136,20 @@ def main():
         return 0
     if not (project / 'gradlew').is_file():
         wrapper = bootstrap_wrapper(project, download=True)
-        write_json(project / '.android-suite/evidence/wrapper.json', wrapper)
+        write_json(records_child(project, 'evidence/wrapper.json'), wrapper)
     kinds = [('app', 'all'), ('app', 'ui-compile'), ('app', 'static')]
     if args.extended:
         kinds.append(('feature-settings', 'unit'))
     failed = False
     for module, kind in kinds:
         result = verify(project, kind, module=module, timeout=900)
-        write_json(project / f'.android-suite/evidence/{module}-{kind}.json', result)
+        write_json(records_child(project, f'evidence/{module}-{kind}.json'), result)
         print(f'{module}:{kind}: {result["status"]}', flush=True)
         if result['status'] != 'passed':
             failed = True
             print(result.get('reason', result['attempts'][-1]['output'][-8000:]), flush=True)
     shots = screenshots(project, timeout=1800)
-    write_json(project / '.android-suite/evidence/app-screenshots.json', shots)
+    write_json(records_child(project, 'evidence/app-screenshots.json'), shots)
     print(f'app:screenshots: {shots["status"]} ({len(shots["screenshots"])} images)', flush=True)
     if shots['status'] != 'passed':
         failed = True

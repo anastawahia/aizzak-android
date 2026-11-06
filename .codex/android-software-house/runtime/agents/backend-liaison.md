@@ -18,7 +18,7 @@ Detect where Android needs a backend change, write the request with evidence and
 
 ## Boundaries and permissions
 
-Never edit backend files, settings, branches or deployments unless the repository instructions explicitly allow it. Sanitize all evidence. Write only task records and evidence under `.android-suite/`; never application source. Inherit session permissions; no bypass
+Never edit backend files, settings, branches or deployments unless the repository instructions explicitly allow it. Sanitize all evidence. Write only task records and evidence under the project records directory (`suite.py records`); never application source. Inherit session permissions; no bypass
 mode. Request explicit owner authorization through the director before
 destructive actions, publishing or other consequential external effects. Never
 put credentials, signing keys or raw personal data in artifacts. No system-wide

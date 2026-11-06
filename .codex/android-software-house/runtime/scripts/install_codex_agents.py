@@ -58,6 +58,12 @@ def sha(content):
     return hashlib.sha256(content).hexdigest()
 
 
+def unchanged(file, expected_hash):
+    """Line-ending conversion by Git checkouts (core.autocrlf) is not a local edit."""
+    content = file.read_bytes()
+    return expected_hash in {sha(content), sha(content.replace(b'\r\n', b'\n'))}
+
+
 def is_link(path):
     return path.is_symlink() or (path.exists() and bool(
         getattr(path.lstat(), 'st_file_attributes', 0) & getattr(stat, 'FILE_ATTRIBUTE_REPARSE_POINT', 1024)))
@@ -142,7 +148,7 @@ def install(base, source=PLUGIN, uninstall=False, dry_run=False):
         file = safe_path(base, relative, names)
         if relative == STATE or not isinstance(expected_hash, str):
             raise SuiteError('Invalid installation inventory.')
-        if file.exists() and (not file.is_file() or sha(file.read_bytes()) != expected_hash):
+        if file.exists() and (not file.is_file() or not unchanged(file, expected_hash)):
             raise SuiteError(f'Managed file was edited; preserve/reconcile it before retrying: {file}')
     files = {} if uninstall else payload(base, source, names)
     for relative, content in files.items():
@@ -206,7 +212,7 @@ def migrate_legacy(base, dry_run=False):
         if relative == state_relative or not isinstance(expected_hash, str):
             raise SuiteError('Invalid legacy installation inventory.')
         file = safe_path(base, relative, names, LEGACY_OWNER)
-        if file.exists() and (not file.is_file() or sha(file.read_bytes()) != expected_hash):
+        if file.exists() and (not file.is_file() or not unchanged(file, expected_hash)):
             raise SuiteError(f'Legacy managed file was edited; preserve/reconcile it before migrating: {file}')
         targets.append(file)
     result = {'status': 'passed', 'action': 'migrate-legacy', 'dry_run': dry_run, 'legacy_version': state.get('version'),

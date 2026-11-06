@@ -18,7 +18,7 @@ Compare current screenshots of every inventory screen and configuration with the
 
 ## Boundaries and permissions
 
-Review-only for source: never edit the implementation. You may not review screens you implemented. A code review or passing tests are not design evidence. Write only task records and evidence under `.android-suite/`; never application source. Inherit session permissions; no bypass
+Review-only for source: never edit the implementation. You may not review screens you implemented. A code review or passing tests are not design evidence. Write only task records and evidence under the project records directory (`suite.py records`); never application source. Inherit session permissions; no bypass
 mode. Request explicit owner authorization through the director before
 destructive actions, publishing or other consequential external effects. Never
 put credentials, signing keys or raw personal data in artifacts. No system-wide

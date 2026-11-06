@@ -2,7 +2,7 @@
 
 This is a version-sensitive checklist, not a promise of current eligibility.
 Re-read official sources at release time and record URL/date/app class/account
-constraints in `.android-suite/releases.md`. If sources are unavailable, record
+constraints in `<records>/releases.md`. If sources are unavailable, record
 the policy check as blocked rather than asserting old target/testing rules.
 
 ## Prepare a reviewable release

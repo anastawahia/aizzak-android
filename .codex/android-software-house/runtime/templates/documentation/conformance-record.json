@@ -8,7 +8,7 @@
     {
       "id": "SCR-SIGNIN",
       "screenshots": [
-        {"path": ".android-suite/evidence/screenshots/<run>/SCR-SIGNIN__en_light_w411_fs1.0.png", "sha256": "<from manifest.json>",
+        {"path": "<records>/evidence/screenshots/<run>/SCR-SIGNIN__en_light_w411_fs1.0.png", "sha256": "<from manifest.json>",
          "config": {"locale": "en", "theme": "light", "width_dp": 411, "font_scale": 1.0}}
       ],
       "elements": [
