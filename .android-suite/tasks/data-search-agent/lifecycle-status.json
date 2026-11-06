@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "task": "data-search-agent",
+  "workflow": "ui-redesign",
+  "stages": [
+    {
+      "stage": "intake",
+      "kind": "work",
+      "owner": "company-director",
+      "state": "passed",
+      "effective": "passed"
+    },
+    {
+      "stage": "design",
+      "kind": "human",
+      "owner": "ui-designer",
+      "state": "changes_requested",
+      "effective": "changes_requested"
+    },
+    {
+      "stage": "build",
+      "kind": "work",
+      "owner": "company-director",
+      "state": "pending",
+      "effective": "pending"
+    },
+    {
+      "stage": "verification",
+      "kind": "gate",
+      "owner": "qa-engineer",
+      "state": "pending",
+      "effective": "pending"
+    },
+    {
+      "stage": "design-qa",
+      "kind": "conformance",
+      "owner": "design-qa-reviewer",
+      "state": "pending",
+      "effective": "pending"
+    },
+    {
+      "stage": "acceptance",
+      "kind": "human",
+      "owner": "company-director",
+      "state": "pending",
+      "effective": "pending"
+    }
+  ],
+  "next_stage": "design",
+  "completed": false,
+  "open_deviations_approved": [],
+  "source_sha256": "949e4ff00f55d60cab3c0ddda0a79b9f55103012056fe94a22ea689f1f083865",
+  "limitations": "Provenance record, not cryptographic proof. Human decisions are recorded as reported by the director."
+}

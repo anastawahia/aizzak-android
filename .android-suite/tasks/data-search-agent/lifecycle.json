@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "task": "data-search-agent",
+  "workflow": "ui-redesign",
+  "created": "2026-11-06T01:58:49+0300",
+  "sequence": 2,
+  "mandatory": [
+    "intake",
+    "design",
+    "build",
+    "verification",
+    "design-qa",
+    "acceptance"
+  ],
+  "stages": {
+    "intake": {
+      "state": "passed",
+      "at": "2026-11-06T02:00:17+0300",
+      "source_sha256": "829d3aa66be11058f3051412d22109d6eed93b23720c9e9403061eb2f62217ac",
+      "note": "تم قبول استقبال نطاق تصميم شاشات Data Search Agent فقط؛ حُفظت تغييرات المستخدم ولم يُمس الباك إند أو مصدر التطبيق.",
+      "seq": 1
+    },
+    "design": {
+      "state": "changes_requested",
+      "decision": "changes_requested",
+      "ref": "طلب المالك: قم بتحديث التصميم — 2026-11-06؛ السبب: مواءمة التصميم مع وثائق API المحلية.",
+      "packet": [
+        {
+          "path": ".android-suite/tasks/data-search-agent/ux-journeys.md",
+          "sha256": "2d376cf68bbe5576349860affd9aa0133689abc9c4297b757ae03f45e40ed9f4"
+        },
+        {
+          "path": ".android-suite/tasks/data-search-agent/wireframes.md",
+          "sha256": "6e6ac10ac563f52ce9efc8bad382d8c72b85a2c910e90c6bb5dce3778485a81a"
+        },
+        {
+          "path": ".android-suite/tasks/data-search-agent/design-reference.html",
+          "sha256": "e7215b9ca2ab9927f9ca4f2e5ad495ce2f4f90393d04452c22f1b31de3005131"
+        },
+        {
+          "path": ".android-suite/tasks/data-search-agent/design-tokens.md",
+          "sha256": "479312910f435e30724900d6da2e35d5ebbc924ad55f69915d88ad5a32ae11de"
+        },
+        {
+          "path": ".android-suite/tasks/data-search-agent/screen-inventory.json",
+          "sha256": "e8cbe7d9c1cf200c0e3fa47f51552e15d05395f7d63c4242f84f757de10ae65f"
+        }
+      ],
+      "at": "2026-11-06T02:51:24+0300",
+      "seq": 2
+    },
+    "build": {
+      "state": "pending"
+    },
+    "verification": {
+      "state": "pending"
+    },
+    "design-qa": {
+      "state": "pending"
+    },
+    "acceptance": {
+      "state": "pending"
+    }
+  },
+  "deviations": {},
+  "history": [
+    {
+      "at": "2026-11-06T01:58:49+0300",
+      "event": "opened",
+      "workflow": "ui-redesign"
+    },
+    {
+      "at": "2026-11-06T02:00:17+0300",
+      "event": "advanced",
+      "stage": "intake",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-06T02:51:24+0300",
+      "event": "checkpoint",
+      "stage": "design",
+      "state": "changes_requested"
+    }
+  ]
+}

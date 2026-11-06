@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "reference": [
+    ".android-suite/tasks/data-search-agent/design-reference.html",
+    ".android-suite/tasks/data-search-agent/ux-journeys.md",
+    ".android-suite/tasks/data-search-agent/wireframes.md",
+    ".android-suite/tasks/data-search-agent/design-tokens.md"
+  ],
+  "locales": ["en", "ar"],
+  "adaptive": true,
+  "required_configs": [
+    {"locale": "en", "theme": "light", "width_dp": 390, "font_scale": 1.0},
+    {"locale": "ar", "theme": "dark", "width_dp": 390, "font_scale": 1.0},
+    {"locale": "en", "theme": "dark", "width_dp": 840, "font_scale": 1.0},
+    {"locale": "ar", "theme": "light", "width_dp": 840, "font_scale": 1.3}
+  ],
+  "screens": [
+    {
+      "id": "SCR-DS-001",
+      "name": "Data Search dashboard",
+      "reference_anchor": "design-reference.html#SCR-DS-001",
+      "elements": [
+        {"id": "DS001-01", "kind": "header", "description": "Surface app bar with directional Back action, DATA SEARCH eyebrow, title, and Sources action."},
+        {"id": "DS001-02", "kind": "action", "description": "Cyan space chip directly below the app-bar row shows the selected existing space and opens space selection."},
+        {"id": "DS001-03", "kind": "icon", "description": "Decorative cyan search glyph beside the dashboard introduction."},
+        {"id": "DS001-04", "kind": "title", "description": "Localized Search this space heading and explanation that safe indexed sources provide excerpts."},
+        {"id": "DS001-05", "kind": "field", "description": "Permanently labelled query field scoped to the selected space."},
+        {"id": "DS001-06", "kind": "action", "description": "Filled Search action enabled only when an indexed source and knowledge-read access exist."},
+        {"id": "DS001-07", "kind": "action", "description": "Add text tile explains that UTF-8 text becomes a file source."},
+        {"id": "DS001-08", "kind": "action", "description": "Choose file tile explicitly opens the Android system document picker."},
+        {"id": "DS001-09", "kind": "panel", "description": "Three written readiness counters distinguish searchable, safety-check, and indexing groups."},
+        {"id": "DS001-10", "kind": "list", "description": "Recent sources list uses one full-width target per source."},
+        {"id": "DS001-11", "kind": "card", "description": "Every recent-source card contains separate File safety and Search index status rows."},
+        {"id": "DS001-12", "kind": "panel", "description": "Empty or no-indexed-source state explains why search is unavailable and offers permitted add paths."},
+        {"id": "DS001-13", "kind": "notice", "description": "Offline, permission-denied, and session-expired variants hide unauthorized content and provide a safe exit."},
+        {"id": "DS001-14", "kind": "navigation", "description": "Expanded layout retains app navigation with Data Search visibly selected by label, icon, and container."}
+      ]
+    },
+    {
+      "id": "SCR-DS-002",
+      "name": "Add text as file",
+      "reference_anchor": "design-reference.html#SCR-DS-002",
+      "elements": [
+        {"id": "DS002-01", "kind": "header", "description": "App bar with Back, Add text title, and selected-space chip."},
+        {"id": "DS002-02", "kind": "title", "description": "Localized Add text as a file heading."},
+        {"id": "DS002-03", "kind": "text", "description": "Explanation that Android prepares UTF-8 text/plain bytes and uses the normal file pipeline."},
+        {"id": "DS002-04", "kind": "label", "description": "Persistent Source file name label."},
+        {"id": "DS002-05", "kind": "field", "description": "Outlined source-file-name field with a text-file example and no invented server limit."},
+        {"id": "DS002-06", "kind": "label", "description": "Persistent Content label."},
+        {"id": "DS002-07", "kind": "field", "description": "Multiline text field that grows or scrolls and remains reachable with the IME."},
+        {"id": "DS002-08", "kind": "text", "description": "Supporting text states that accepted MIME types and size limits still need working-backend confirmation."},
+        {"id": "DS002-09", "kind": "notice", "description": "Draft retention and upload-recovery decision note is visible without claiming behavior."},
+        {"id": "DS002-10", "kind": "action", "description": "Outlined Cancel action precedes the primary action in reading order."},
+        {"id": "DS002-11", "kind": "action", "description": "Filled Add and index action is disabled until local form validation succeeds."},
+        {"id": "DS002-12", "kind": "panel", "description": "Submitting variant shows distinct local preparation, registration, byte upload, safety scan, readiness, and indexing steps."},
+        {"id": "DS002-13", "kind": "notice", "description": "Quarantined, failed, offline, permission, and session variants never turn an unknown stage into success."}
+      ]
+    },
+    {
+      "id": "SCR-DS-003",
+      "name": "Source library",
+      "reference_anchor": "design-reference.html#SCR-DS-003",
+      "elements": [
+        {"id": "DS003-01", "kind": "header", "description": "App bar with Back, Sources title, Add source action, and selected-space chip."},
+        {"id": "DS003-02", "kind": "title", "description": "Localized Source library heading."},
+        {"id": "DS003-03", "kind": "text", "description": "Supporting text states that file safety and search indexing are separate."},
+        {"id": "DS003-04", "kind": "list", "description": "Scrollable unified source list joins file and document data by file_id rather than name."},
+        {"id": "DS003-05", "kind": "card", "description": "Indexed source row shows safe-and-ready plus indexed-and-searchable as separate written statuses."},
+        {"id": "DS003-06", "kind": "card", "description": "Scanning source row shows safety check in progress and indexing not started."},
+        {"id": "DS003-07", "kind": "card", "description": "Failed-index source row shows a safe file and a failed index without a raw server reason."},
+        {"id": "DS003-08", "kind": "notice", "description": "Paging note says file pages and document-status pages have independent cursors."},
+        {"id": "DS003-09", "kind": "panel", "description": "Expanded trailing pane asks the user to choose a source until a row is selected."},
+        {"id": "DS003-10", "kind": "panel", "description": "Empty state explains that no files exist in the selected space and offers an allowed add path."},
+        {"id": "DS003-11", "kind": "notice", "description": "Offline and partial-read variants retain only confirmed content and identify the unresolved side."},
+        {"id": "DS003-12", "kind": "notice", "description": "Permission and session variants hide names and status data and expose only a safe next action."}
+      ]
+    },
+    {
+      "id": "SCR-DS-004",
+      "name": "Source details",
+      "reference_anchor": "design-reference.html#SCR-DS-004",
+      "elements": [
+        {"id": "DS004-01", "kind": "header", "description": "App bar with Back, Source details title, and selected-space chip."},
+        {"id": "DS004-02", "kind": "icon", "description": "Decorative source-type glyph in a cyan container."},
+        {"id": "DS004-03", "kind": "title", "description": "Localized source file name and source-type eyebrow."},
+        {"id": "DS004-04", "kind": "panel", "description": "File safety panel independently renders uploaded, scanning, safe-and-ready, or quarantined."},
+        {"id": "DS004-05", "kind": "notice", "description": "Quarantine notice states that the file cannot be indexed or searched."},
+        {"id": "DS004-06", "kind": "panel", "description": "Search index panel independently renders not-started, pending, indexing, indexed, or failed."},
+        {"id": "DS004-07", "kind": "text", "description": "Failed-index supporting text avoids a raw reason because DocumentOut does not publish one."},
+        {"id": "DS004-08", "kind": "panel", "description": "Source information panel shows confirmed kind, size, and update data from FileOut."},
+        {"id": "DS004-09", "kind": "action", "description": "Start indexing is enabled only for a safe ready file with manage access and no live document."},
+        {"id": "DS004-10", "kind": "action", "description": "Search this space is enabled only when the source is indexed."},
+        {"id": "DS004-11", "kind": "action", "description": "Delete file and index is a full-width danger action shown only with actual file-delete access."},
+        {"id": "DS004-12", "kind": "notice", "description": "Offline, permission, and session variants reconcile or hide state instead of retrying mutations blindly."}
+      ]
+    },
+    {
+      "id": "SCR-DS-005",
+      "name": "Search in progress",
+      "reference_anchor": "design-reference.html#SCR-DS-005",
+      "elements": [
+        {"id": "DS005-01", "kind": "header", "description": "App bar with Back, Searching title, and selected-space chip."},
+        {"id": "DS005-02", "kind": "title", "description": "Localized Searching this space heading."},
+        {"id": "DS005-03", "kind": "label", "description": "Persistent localized query label."},
+        {"id": "DS005-04", "kind": "field", "description": "Read-only outlined field preserves the active query."},
+        {"id": "DS005-05", "kind": "indicator", "description": "Cyan progress indicator has an accessible searching label."},
+        {"id": "DS005-06", "kind": "text", "description": "Text says the search uses indexed sources in the selected space."},
+        {"id": "DS005-07", "kind": "notice", "description": "Contract note explains top-k behavior and that there is no cursor pagination."},
+        {"id": "DS005-08", "kind": "panel", "description": "No-indexed-source variant routes to sources instead of starting a fake search."},
+        {"id": "DS005-09", "kind": "notice", "description": "Offline variant states that no new search starts."},
+        {"id": "DS005-10", "kind": "notice", "description": "Permission and session variants hide the query and provide a safe action."}
+      ]
+    },
+    {
+      "id": "SCR-DS-006",
+      "name": "Top search results",
+      "reference_anchor": "design-reference.html#SCR-DS-006",
+      "elements": [
+        {"id": "DS006-01", "kind": "header", "description": "App bar with Back, Results title, and selected-space chip."},
+        {"id": "DS006-02", "kind": "title", "description": "Localized Top search results heading and source-excerpt explanation."},
+        {"id": "DS006-03", "kind": "field", "description": "Permanently labelled query field retains the current query."},
+        {"id": "DS006-04", "kind": "action", "description": "Filled Search action reruns the query in the same selected space."},
+        {"id": "DS006-05", "kind": "text", "description": "Top 5 matches label reflects the documented default k without claiming a total."},
+        {"id": "DS006-06", "kind": "list", "description": "Result list contains source-linked excerpts in returned relevance order."},
+        {"id": "DS006-07", "kind": "card", "description": "Result with metadata shows excerpt, file_name, page number, and section when non-null."},
+        {"id": "DS006-08", "kind": "card", "description": "Result with null page or section states that metadata is unavailable rather than inventing it."},
+        {"id": "DS006-09", "kind": "notice", "description": "Contract note says excerpts are not a generated answer and score is not displayed."},
+        {"id": "DS006-10", "kind": "panel", "description": "Empty state suggests changing words and explicitly avoids next-page controls."},
+        {"id": "DS006-11", "kind": "notice", "description": "Offline, permission, and session variants do not expose cached excerpts as authorization."},
+        {"id": "DS006-12", "kind": "navigation", "description": "Expanded layout uses navigation rail and a wide result surface without changing reading order."}
+      ]
+    },
+    {
+      "id": "SCR-DS-007",
+      "name": "Search excerpt detail",
+      "reference_anchor": "design-reference.html#SCR-DS-007",
+      "elements": [
+        {"id": "DS007-01", "kind": "header", "description": "App bar with Back, Search excerpt title, and selected-space chip."},
+        {"id": "DS007-02", "kind": "label", "description": "Localized Source eyebrow."},
+        {"id": "DS007-03", "kind": "title", "description": "File name or a generic source label when file_name is null."},
+        {"id": "DS007-04", "kind": "text", "description": "Page and section metadata appear only when returned by the search contract."},
+        {"id": "DS007-05", "kind": "title", "description": "Localized Matched excerpt section heading."},
+        {"id": "DS007-06", "kind": "panel", "description": "Quoted RetrievedChunk text with a non-color-only highlighted query match."},
+        {"id": "DS007-07", "kind": "notice", "description": "Notice clarifies that only context returned by search is shown and no score or IDs are exposed."},
+        {"id": "DS007-08", "kind": "action", "description": "Open source details action is shown only when the result can be mapped safely to a visible source."},
+        {"id": "DS007-09", "kind": "notice", "description": "Permission and session variants immediately hide the excerpt."}
+      ]
+    },
+    {
+      "id": "SCR-DS-008",
+      "name": "Delete file and index dialog",
+      "reference_anchor": "design-reference.html#SCR-DS-008",
+      "elements": [
+        {"id": "DS008-01", "kind": "panel", "description": "Modal scrim obscures the source-details surface while preserving context."},
+        {"id": "DS008-02", "kind": "icon", "description": "Error-container delete glyph identifies destructive intent without relying on color alone."},
+        {"id": "DS008-03", "kind": "title", "description": "Dialog title includes the file name and asks for irreversible deletion confirmation."},
+        {"id": "DS008-04", "kind": "text", "description": "Body says the file leaves reads and its documents, chunks, and search index are purged."},
+        {"id": "DS008-05", "kind": "notice", "description": "Guard text says the row remains until the service confirms deletion."},
+        {"id": "DS008-06", "kind": "action", "description": "Cancel is the initial-focus safe action."},
+        {"id": "DS008-07", "kind": "action", "description": "Delete file and index is an explicit danger action and never announces success early."}
+      ]
+    },
+    {
+      "id": "SCR-DS-009",
+      "name": "Choose existing space",
+      "reference_anchor": "design-reference.html#SCR-DS-009",
+      "elements": [
+        {"id": "DS009-01", "kind": "header", "description": "App bar with directional Back, DATA SEARCH eyebrow, and Choose a space title; no selected-space chip."},
+        {"id": "DS009-02", "kind": "title", "description": "Localized Choose a space heading."},
+        {"id": "DS009-03", "kind": "text", "description": "Supporting text says files, indexes, and searches belong to one existing space."},
+        {"id": "DS009-04", "kind": "list", "description": "Cursor-paginated list contains only existing accessible spaces."},
+        {"id": "DS009-05", "kind": "card", "description": "Each full-row space target shows name, confirmed file count, and confirmed bytes used."},
+        {"id": "DS009-06", "kind": "action", "description": "Load more spaces requests the next cursor page without creating or managing a space."},
+        {"id": "DS009-07", "kind": "notice", "description": "Review note states that creation, rename, and deletion are outside this flow."},
+        {"id": "DS009-08", "kind": "panel", "description": "No-space variant blocks entry and explains that Data Search needs an existing space."},
+        {"id": "DS009-09", "kind": "action", "description": "No-space Refresh retries the read and Return home remains available through Back."},
+        {"id": "DS009-10", "kind": "notice", "description": "Offline, permission, and session variants never expose stale space names as authorization."}
+      ]
+    },
+    {
+      "id": "SCR-DS-010",
+      "name": "Same-name replacement warning",
+      "reference_anchor": "design-reference.html#SCR-DS-010",
+      "elements": [
+        {"id": "DS010-01", "kind": "panel", "description": "Modal scrim obscures the add-source surface before registration begins."},
+        {"id": "DS010-02", "kind": "icon", "description": "Replacement glyph in an error container marks a potentially destructive collision."},
+        {"id": "DS010-03", "kind": "title", "description": "Dialog asks whether to replace the older live file with the same normalized name."},
+        {"id": "DS010-04", "kind": "text", "description": "Body says completing the upload may replace the older file and purge its index."},
+        {"id": "DS010-05", "kind": "notice", "description": "Best-effort warning states that a concurrent upload can still create a collision after the client check."},
+        {"id": "DS010-06", "kind": "action", "description": "Cancel receives initial focus and starts no registration or upload."},
+        {"id": "DS010-07", "kind": "action", "description": "Continue and replace is an explicit danger action that proceeds to registration only after confirmation."}
+      ]
+    }
+  ]
+}
