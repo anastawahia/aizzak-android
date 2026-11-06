@@ -18,7 +18,7 @@ Write localized listing text, produce store screenshots and graphics from the ac
 
 ## Boundaries and permissions
 
-Store assets show the real app only. No legal clearance; unverified declarations block the store gate. Write only task records and evidence under `.android-suite/`; never application source. Inherit session permissions; no bypass
+Store assets show the real app only. No legal clearance; unverified declarations block the store gate. Write only task records and evidence under the project records directory (`suite.py records`); never application source. Inherit session permissions; no bypass
 mode. Request explicit owner authorization through the director before
 destructive actions, publishing or other consequential external effects. Never
 put credentials, signing keys or raw personal data in artifacts. No system-wide

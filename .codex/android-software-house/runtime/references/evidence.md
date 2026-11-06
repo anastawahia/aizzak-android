@@ -1,7 +1,19 @@
 # Evidence, gates and project knowledge
 
-All memory is ordinary repository-local files in `.android-suite/`. No extra
-persistent agent memory service is assumed. `init-memory` creates missing notes
+All memory is ordinary repository-local files in the project records directory,
+written `<records>` below. No extra persistent agent memory service is assumed.
+`suite.py records --project <root>` reports it and writes nothing. It is decided
+by the project, in this order:
+
+1. `androidSoftwareHouse.recordsDir=<relative path>` in `gradle.properties`.
+2. The existing directory holding `tasks/` or `evidence/`: `docs/`, a folder directly
+   under `docs/` (also `doc/`, `documentation/`; `archive` is skipped), or a legacy
+   `.android-suite/`. Several matches stop with an error; never guess between them.
+3. `docs/delivery/` when the project has neither.
+
+Records stored before a project moved its directory keep their `.android-suite/...`
+paths; they are read from `<records>` without being rewritten.
+ `init-memory` creates missing notes
 without overwriting existing content; use it only for authorized implementation.
 Analyze, status and review-only commands never initialize or update memory.
 
@@ -15,7 +27,7 @@ keystores, service-account JSON or raw production telemetry in this directory.
 
 `suite.py verify` records command, attempt exit codes, sanitized output, timestamp,
 source fingerprint and built artifact SHA-256. Save reports under the ignored-for-
-fingerprinting `.android-suite/evidence/` so adding a report does not invalidate
+fingerprinting `<records>/evidence/` so adding a report does not invalidate
 its own source hash. Store public, sanitized evidence in Git when useful; keep
 private scanner output outside shared project knowledge.
 
@@ -40,7 +52,7 @@ Build a gate record from actual reports, not an empty success stub. Its schema i
     "compile": {
       "status": "passed",
       "evidence": [
-        {"path": ".android-suite/evidence/build.json", "sha256": "SHA-256 of that actual report"}
+        {"path": "<records>/evidence/build.json", "sha256": "SHA-256 of that actual report"}
       ]
     }
   }
@@ -78,7 +90,7 @@ services or SDK contents; retain environment/version evidence separately.
 
 Delivery follows [the company protocol](company-protocol.md) and
 [lifecycle.json](lifecycle.json). `suite.py lifecycle/checkpoint/advance/deviation`
-are the only writers of `.android-suite/tasks/<task>/lifecycle.json`. Human
+are the only writers of `<records>/tasks/<task>/lifecycle.json`. Human
 checkpoints bind the owner's recorded decision to the packet file hashes; gate
 stages re-run `suite.py gate` on the supplied evidence; design QA re-runs
 `suite.py conformance` on the reviewer's record. Reports are saved under the task's
@@ -93,9 +105,9 @@ element judgments are the independent reviewer's.
 
 For a new app, open the lifecycle in the intended destination before anything
 else (`suite.py lifecycle --project <destination> --task <slug> --init --workflow new-app`).
-That creates only `<destination>/.android-suite/`; keep discovery, requirements
+That creates only `<destination>/docs/delivery/`; keep discovery, requirements
 and design documents there. `suite.py init` later adopts a destination that
-contains nothing but `.android-suite/` and renders the app around it.
+contains nothing but its records and renders the app around them.
 
 ## Final handoff
 

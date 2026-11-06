@@ -73,7 +73,7 @@ python scripts/demo.py --destination ../isolated-demo --extended --execute
 This creates a new, marked fixture app, integrates the feature and OpenAPI
 templates, runs HTTPS MockWebServer/JVM checks, compiles instrumentation sources
 and invokes the optional analyzer. It never uses live backend/Play credentials.
-Reports live under the demo's `.android-suite/evidence/`. Without `--execute` it
+Reports live under the demo's `docs/delivery/evidence/`. Without `--execute` it
 only renders sources. It refuses arbitrary existing product directories.
 
 For local signing mechanics, use a marked demo only:

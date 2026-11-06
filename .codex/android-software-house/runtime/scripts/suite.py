@@ -25,6 +25,11 @@ PLUGIN = Path(__file__).resolve().parents[1]
 IGNORED = {'.git', '.gradle', '.idea', 'build', 'node_modules', '__pycache__', '.android-suite', '.test-output'}
 SECRET_FILE = re.compile(r'(?i)(\.env(?:\.|$)|\.(?:jks|keystore|p12|pem)$|service.account|credentials|local\.properties)')
 TOKEN = re.compile(r'@@([A-Z_]+)@@')
+RECORDS_DEFAULT = 'docs/delivery'
+RECORDS_LEGACY = '.android-suite'
+RECORDS_PROPERTY = 'androidSoftwareHouse.recordsDir'
+RECORDS_MARKERS = ('tasks', 'evidence')
+DOC_ROOTS = ('docs', 'doc', 'documentation')
 KOTLIN_KEYWORDS = set('as break class continue do else false for fun if in interface is null object package return super this throw true try typealias typeof val var when while'.split())
 
 
@@ -68,12 +73,14 @@ def write_json(file, data):
             Path(name).unlink()
 
 
-def files_under(root):
+def files_under(root, skip=None):
     """Bounded walk, no symlink traversal, no secret contents."""
     root = Path(root).resolve()
+    skipped = os.path.normcase(skip) if skip else None
     count = 0
     for base, dirs, names in os.walk(root, followlinks=False):
-        dirs[:] = sorted(d for d in dirs if d not in IGNORED and not Path(base, d).is_symlink())
+        dirs[:] = sorted(d for d in dirs if d not in IGNORED and not Path(base, d).is_symlink()
+                         and os.path.normcase(os.path.join(base, d)) != skipped)
         for name in sorted(names):
             file = Path(base, name)
             if file.is_symlink():
@@ -90,6 +97,61 @@ def safe_child(root, relative):
     if not out.is_relative_to(root) or out == root:
         raise SuiteError('Output path escapes the selected project root.')
     return out
+
+
+def records_location(root):
+    """Where this project keeps its records, as (relative path, how it was decided).
+
+    The project decides: an explicit gradle.properties setting, then a records
+    directory that already exists. Only a project with neither gets the default,
+    so tooling never starts a documentation path parallel to the project's own.
+    """
+    root = Path(root).resolve()
+    properties = root / 'gradle.properties'
+    if properties.is_file():
+        match = re.search(r'(?m)^[ \t]*' + re.escape(RECORDS_PROPERTY) + r'[ \t]*[=:][ \t]*(\S.*?)[ \t]*\r?$',
+                          properties.read_text(encoding='utf-8', errors='replace'))
+        if match:
+            relative = match.group(1).replace('\\', '/').rstrip('/')
+            safe_child(root, relative)
+            return relative, 'gradle.properties'
+    found = []
+    legacy = root / RECORDS_LEGACY
+    if legacy.is_dir() and not legacy.is_symlink():
+        found.append(RECORDS_LEGACY)
+    for name in DOC_ROOTS:
+        base = root / name
+        if not base.is_dir() or base.is_symlink():
+            continue
+        for candidate in [base] + sorted(p for p in base.iterdir() if p.is_dir() and p.name != 'archive'):
+            if not candidate.is_symlink() and any((candidate / marker).is_dir() for marker in RECORDS_MARKERS):
+                found.append(candidate.relative_to(root).as_posix())
+    if len(found) > 1:
+        raise SuiteError(f'Several project records directories found ({", ".join(found)}). '
+                         f'Choose one with {RECORDS_PROPERTY}=<path> in gradle.properties, or merge them.')
+    return (found[0], 'detected') if found else (RECORDS_DEFAULT, 'default')
+
+
+def records_dir(root):
+    return safe_child(root, records_location(root)[0])
+
+
+def records_child(root, relative):
+    return safe_child(root, f'{records_location(root)[0]}/{relative}')
+
+
+def recorded_file(root, path):
+    """A file named by a stored record; records written before the directory moved keep their old path."""
+    file = safe_child(root, path)
+    prefix = RECORDS_LEGACY + '/'
+    if not file.exists() and str(path).startswith(prefix):
+        return records_child(root, str(path)[len(prefix):])
+    return file
+
+
+def records_info(root):
+    relative, source = records_location(root)
+    return {'records_dir': relative, 'source': source, 'exists': safe_child(root, relative).is_dir(), 'read_only': True}
 
 
 def run(argv, cwd, timeout=120):
@@ -214,12 +276,24 @@ def validate_identifier(value, kind='package'):
         raise SuiteError('Package contains a Kotlin keyword.')
 
 
+def adoptable_records(destination):
+    """The top-level folder of the project records when the destination holds nothing else."""
+    if not destination.is_dir() or destination.is_symlink():
+        return None
+    entries = list(destination.iterdir())
+    if len(entries) != 1 or entries[0].is_symlink() or not entries[0].is_dir():
+        return None
+    relative = records_location(destination)[0]
+    records = destination / relative
+    if relative.split('/')[0] != entries[0].name or records.is_symlink() or not records.is_dir():
+        return None
+    return entries[0].name
+
+
 def render_tree(template, destination, values, extra_files=None):
     destination = Path(destination).absolute()
     # A destination holding only project records (lifecycle opened before the scaffold) is adopted.
-    records_only = (destination.is_dir() and not destination.is_symlink()
-                    and [p.name for p in destination.iterdir()] == ['.android-suite']
-                    and not (destination / '.android-suite').is_symlink())
+    records_only = adoptable_records(destination)
     if (destination.exists() or destination.is_symlink()) and not records_only:
         raise SuiteError(f'Refusing to overwrite existing destination: {destination}')
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -248,15 +322,15 @@ def render_tree(template, destination, values, extra_files=None):
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(content, encoding='utf-8', newline='\n')
         if records_only:
-            if (staged / '.android-suite').exists():
+            if (staged / records_only).exists():
                 raise SuiteError('Template must not contain project records.')
-            shutil.move(str(destination / '.android-suite'), str(staged / '.android-suite'))
+            shutil.move(str(destination / records_only), str(staged / records_only))
             try:
                 destination.rmdir()
                 staged.rename(destination)
             except OSError:
                 destination.mkdir(exist_ok=True)
-                shutil.move(str(staged / '.android-suite'), str(destination / '.android-suite'))
+                shutil.move(str(staged / records_only), str(destination / records_only))
                 raise
         else:
             staged.rename(destination)
@@ -381,8 +455,10 @@ def generate_api(args):
 
 
 def source_fingerprint(root):
+    root = Path(root).resolve()
     h = hashlib.sha256()
-    for file in files_under(root):
+    # Records are excluded wherever they live, so saving a report cannot invalidate its own hash.
+    for file in files_under(root, skip=records_dir(root)):
         if SECRET_FILE.search(file.name):
             continue
         rel = file.relative_to(root).as_posix()
@@ -479,7 +555,7 @@ def screenshots(root, module='app', attempts=1, timeout=1800):
         record['status'] = 'failed'
         record['reason'] = f'Gradle succeeded but no screenshots were written under {output}.'
         return record
-    target = safe_child(root, f'.android-suite/evidence/screenshots/{record["timestamp"]}')
+    target = records_child(root, f'evidence/screenshots/{record["timestamp"]}')
     target.mkdir(parents=True, exist_ok=False)
     for image in images:
         copy = target / image.name
@@ -535,8 +611,8 @@ def bootstrap_wrapper(root, download=False):
 
 
 def init_memory(root):
-    destination = safe_child(root, '.android-suite')
-    destination.mkdir(exist_ok=True)
+    destination = records_dir(root)
+    destination.mkdir(parents=True, exist_ok=True)
     created = []
     for template in (PLUGIN / 'templates/documentation').glob('*.md'):
         target = destination / template.name
@@ -578,7 +654,7 @@ def gate(root, evidence_file, stage):
             errors.append(f'{key}: no evidence files.')
         execution_valid = False
         for item in files:
-            f = safe_child(root, item.get('path', ''))
+            f = recorded_file(root, item.get('path', ''))
             if not f.is_file() or digest(f) != item.get('sha256'):
                 errors.append(f'{key}: missing or changed evidence file.')
                 continue
@@ -763,7 +839,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report', help='Explicit JSON report output; overwritten atomically.')
     sub = parser.add_subparsers(dest='action', required=True)
-    for name in ['inspect', 'doctor', 'init-memory', 'status']:
+    for name in ['inspect', 'doctor', 'init-memory', 'status', 'records']:
         p = sub.add_parser(name)
         p.add_argument('--project', default='.')
         if name == 'doctor':
@@ -852,8 +928,9 @@ def main(argv=None):
         if args.action == 'inspect': result = inspect_project(args.project)
         elif args.action == 'doctor': result = doctor(args.project, args.devices)
         elif args.action == 'init-memory': result = init_memory(args.project)
+        elif args.action == 'records': result = records_info(args.project)
         elif args.action == 'status':
-            memory = Path(args.project) / '.android-suite'
+            memory = records_dir(args.project)
             import lifecycle
             tasks = {}
             for file in sorted(memory.glob('tasks/*/lifecycle.json')):
@@ -863,7 +940,7 @@ def main(argv=None):
                                                'stale': [r['stage'] for r in view['stages'] if r['effective'] == 'stale']}
                 except (SuiteError, ValueError, OSError) as exc:
                     tasks[file.parent.name] = {'error': str(exc)}
-            result = {'memory_present': memory.is_dir(), 'documents': sorted(p.name for p in memory.glob('*.md')),
+            result = {'records': records_info(args.project), 'memory_present': memory.is_dir(), 'documents': sorted(p.name for p in memory.glob('*.md')),
                       'tasks': tasks, 'git': git_state(args.project), 'inferred_success': False}
         elif args.action == 'init': result = init_project(args)
         elif args.action == 'feature': result = new_feature(args)

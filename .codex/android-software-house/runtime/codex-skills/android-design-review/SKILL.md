@@ -16,7 +16,7 @@ from the Codex catalog, and pass the inputs the director contract lists. Never
 claim delegation without an actual tool result. If the roles are missing, follow
 host integration setup; do not install them during a read-only request.
 
-AUDIT: source stays unchanged. Records, inventory and screenshots are written under .android-suite/ only. The reviewer must not be the implementer of the screens. Report the `suite.py conformance` result.
+AUDIT: source stays unchanged. Records, inventory and screenshots are written under the project records directory only (`suite.py records`). The reviewer must not be the implementer of the screens. Report the `suite.py conformance` result.
 
 Resolve project, module and destination from inspected paths. Run tooling as
 `python "<plugin-root>/scripts/suite.py"` and quote each argument. Treat user

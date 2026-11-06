@@ -1,7 +1,7 @@
 # Templates
 
 `suite.py init` renders `android-project/` into a new directory (or one that holds
-only `.android-suite/` records). The starter includes Roborazzi + Robolectric and
+only its project records). The starter includes Roborazzi + Robolectric and
 `CounterScreenScreenshotTest`, whose file names follow the
 `<SCR-ID>__<locale>_<theme>_w<width>_fs<scale>.png` convention that
 `suite.py screenshots` maps to inventory configurations. `feature` renders

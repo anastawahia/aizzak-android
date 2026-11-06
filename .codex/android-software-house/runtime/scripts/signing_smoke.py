@@ -13,7 +13,7 @@ import shutil
 import sys
 import tempfile
 
-from suite import SuiteError, audit_release, run, safe_child, verify, write_json
+from suite import SuiteError, audit_release, records_child, run, verify, write_json
 
 
 def smoke(project, jdk=None, execute=False):
@@ -28,8 +28,8 @@ def smoke(project, jdk=None, execute=False):
     keytool = jdk / 'bin' / ('keytool.exe' if os.name == 'nt' else 'keytool') if jdk else None
     if not keytool or not keytool.is_file():
         raise SuiteError('A complete JDK with keytool is required; supply --jdk if not discoverable.')
-    evidence = project / '.android-suite/evidence'
-    private = safe_child(project, '.android-suite/evidence/private')
+    evidence = records_child(project, 'evidence')
+    private = records_child(project, 'evidence/private')
     private.mkdir(parents=True, exist_ok=True)
     directory = Path(tempfile.mkdtemp(prefix='signing-smoke-', dir=private))
     key = directory / 'throwaway-upload.jks'
