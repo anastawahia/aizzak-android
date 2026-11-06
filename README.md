@@ -4,8 +4,9 @@ Native Android foundation for AIZZAK, using Kotlin, Jetpack Compose and Material
 Phone/tablet support starts at Android 8.0 (API 26), with compile/target API 36.
 Namespace and application ID: `android.aizzak.com`, matching the supplied Firebase Android client.
 Debug and release use this same application ID; no debug suffix is applied.
-The reviewed scope and design are linked from [DESIGN-REVIEW.md](docs/DESIGN-REVIEW.md).
-The later approval and delivery evidence are recorded in [.android-suite/tasks/foundation/status.md](.android-suite/tasks/foundation/status.md).
+Project documentation starts at [docs/README.md](docs/README.md).
+The reviewed scope and design are linked from [DESIGN-REVIEW.md](docs/design/DESIGN-REVIEW.md).
+The later approval and delivery evidence are recorded in [docs/delivery/tasks/foundation/status.md](docs/delivery/tasks/foundation/status.md).
 
 1. Use Android Studio with JDK 17 and Android SDK 36.
 2. Use the checked-in Gradle 8.13 Wrapper, whose distribution checksum is pinned.
@@ -25,7 +26,7 @@ Ordinary signout clears the local Firebase session and account context. It does 
 the current backend `/me/logout`, whose master implementation temporarily blocks the
 Firebase subject across all devices and fresh logins. The HTTP logout adapter remains
 dormant pending a separately approved backend contract; see
-[backend reply](.android-suite/tasks/account-context/backend-reply.md).
+[backend reply](docs/delivery/tasks/account-context/backend-reply.md).
 Authentication tests use isolated fakes and do not create real Firebase accounts.
 Agent operations, workspaces and conversations remain deferred by the agreed scope.
 
@@ -38,14 +39,14 @@ that loopback host. Keep the trusted development machine and USB connection avai
 Release requires an explicit HTTPS `AIZZAK_API_BASE_URL` Gradle property or environment variable;
 no production address or permissive certificate trust is supplied by the local setup.
 The scoped integration and logout semantics are recorded in
-[ACCOUNT-CONTEXT-01](.android-suite/tasks/account-context/status.md).
+[ACCOUNT-CONTEXT-01](docs/delivery/tasks/account-context/status.md).
 Backend files/configuration are owned by its developer. Record needed changes as Markdown
 requests in the Android task directory; do not modify the backend from this project.
 
 Firebase settings verified on 2026-10-31: the registered `aizzak-agent` Android app
 matches `android.aizzak.com`, the local JSON matches the remote SDK configuration,
 and Email/Password is enabled in Firebase Console. Build, JVM test and lint verification
-passed. See [verification and limitations](.android-suite/tasks/firebase-settings/status.md).
+passed. See [verification and limitations](docs/delivery/tasks/firebase-settings/status.md).
 
 Pinned baseline: AGP 8.13.2, Kotlin/Compose compiler 2.3.0, Compose BOM 2026.02.01,
 Activity 1.12.4, Lifecycle 2.10.0, Coroutines 1.10.2, AppCompat 1.7.1,
