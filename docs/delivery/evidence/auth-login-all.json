@@ -1,0 +1,45 @@
+{
+  "kind": "all",
+  "status": "passed",
+  "source_sha256": "85dc70f2a9583432acbc977dbffcc2fbb16e8bedce45c7876a9ad002bc960a28",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1793405321,
+  "attempts": [
+    {
+      "exit_code": 0,
+      "output": "To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.\nDaemon will be stopped at the end of the build \n> Task :app:preBuild UP-TO-DATE\n> Task :app:preDebugBuild UP-TO-DATE\n> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE\n> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED\n> Task :app:checkDebugAarMetadata\n> Task :app:processDebugNavigationResources\n> Task :app:generateDebugResValues\n> Task :app:compileDebugNavigationResources\n> Task :app:processDebugGoogleServices\n> Task :app:mapDebugSourceSetPaths\n> Task :app:generateDebugResources\n> Task :app:packageDebugResources\n> Task :app:createDebugCompatibleScreenManifests\n> Task :app:extractDeepLinksDebug\n> Task :app:mergeDebugResources\n> Task :app:parseDebugLocalResources\n> Task :app:processDebugMainManifest\n> Task :app:processDebugManifest\n> Task :app:processDebugManifestForPackage\n> Task :app:javaPreCompileDebug\n> Task :app:mergeDebugShaders\n> Task :app:compileDebugShaders NO-SOURCE\n> Task :app:generateDebugAssets UP-TO-DATE\n> Task :app:mergeDebugAssets\n> Task :app:compressDebugAssets\n> Task :app:desugarDebugFileDependencies\n> Task :app:mergeDebugJniLibFolders\n> Task :app:checkDebugDuplicateClasses\n> Task :app:processDebugResources\n> Task :app:mergeDebugNativeLibs\n> Task :app:mergeLibDexDebug\n\n> Task :app:stripDebugDebugSymbols\nUnable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so. Run with --info option to learn more.\n\n> Task :app:validateSigningDebug\n> Task :app:writeDebugAppMetadata\n> Task :app:writeDebugSigningConfigVersions\n> Task :app:preDebugUnitTestBuild UP-TO-DATE\n> Task :app:preDebugAndroidTestBuild SKIPPED\n> Task :app:javaPreCompileDebugUnitTest\n> Task :app:generateDebugAndroidTestResValues\n> Task :app:extractProguardFiles\n> Task :app:mergeExtDexDebug\n> Task :app:compileDebugKotlin\n> Task :app:compileDebugJavaWithJavac NO-SOURCE\n> Task :app:dexBuilderDebug\n> Task :app:mergeDebugGlobalSynthetics\n> Task :app:processDebugJavaRes\n> Task :app:mergeProjectDexDebug\n> Task :app:bundleDebugClassesToCompileJar\n> Task :app:bundleDebugClassesToRuntimeJar\n> Task :app:generateDebugLintReportModel\n> Task :app:generateDebugAndroidTestLintModel\n> Task :app:generateDebugUnitTestLintModel\n> Task :app:mergeDebugJavaResource\n> Task :app:packageDebug\n> Task :app:createDebugApkListingFileRedirect\n> Task :app:assembleDebug\n> Task :app:compileDebugUnitTestKotlin\n> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE\n> Task :app:processDebugUnitTestJavaRes\n> Task :app:testDebugUnitTest\n> Task :app:lintAnalyzeDebugAndroidTest\n> Task :app:lintAnalyzeDebugUnitTest\n> Task :app:lintAnalyzeDebug\n\n> Task :app:lintReportDebug\nWrote HTML report to file:///C:/Users/anast/Desktop/aizzak-android/app/build/reports/lint-results-debug.html\n\n> Task :app:lintDebug\n\nBUILD SUCCESSFUL in 2m 24s\n54 actionable tasks: 54 executed\n",
+      "duration_seconds": 144.656
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+      "sha256": "5da9e93e10cbe6e61762e8b62302401aadcece341085d4915e2d208789f70234"
+    },
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "sha256": "b8a424ca28cfc46ddd29cc928d342726dc1e2dd881960538ba59e28ab94fdfa8"
+    }
+  ],
+  "test_summary": {
+    "tests": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.data.auth.FirebaseAuthRepositoryTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.data.preferences.DataStorePreferencesRepositoryTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.feature.auth.AuthViewModelTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.feature.settings.SettingsViewModelTest.xml"
+    ]
+  },
+  "signed_verified": false,
+  "published": false
+}

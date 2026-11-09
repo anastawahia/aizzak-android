@@ -1,0 +1,39 @@
+{
+  "kind": "all",
+  "status": "passed",
+  "source_sha256": "64ad8f0bd1d301e77358ac10128c7d90f4264dacad8ec12eed0accdd7ae90885",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1794024070,
+  "attempts": [
+    {
+      "exit_code": 0,
+      "output": "BUILD SUCCESSFUL in 39s; 59 actionable tasks: 10 executed, 49 up-to-date.",
+      "duration_seconds": 39.437
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "sha256": "33d87b04f8642561b8d0d7ea719d5b58c31319ed62ac5f02b069f982566fb888"
+    }
+  ],
+  "test_summary": {
+    "tests": 164,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.feature.datasearch.DataSearchScreenshotTest.xml",
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.feature.datasearch.DataSearchSemanticsTest.xml"
+    ]
+  },
+  "signed_verified": false,
+  "published": false
+}

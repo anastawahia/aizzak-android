@@ -1,0 +1,10 @@
+{
+  "command": "D:\\SDK\\build-tools\\36.0.0\\aapt.exe dump badging app\\build\\outputs\\apk\\debug\\app-debug.apk",
+  "exit_code": 0,
+  "package_line": "package: name='android.aizzak.com' versionCode='1' versionName='1.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+  "launcher_line": "launchable-activity: name='android.aizzak.com.MainActivity'  label='' icon=''",
+  "apk_sha256": "8e6fd1fa30e9da67cb0bd311af8044caec2e7f907cdfa979605976b939d0febc",
+  "firebase_config_sha256": "5adb468765528182bdde1b51c161516a11a481f7ca87fc954b9f835b6e55329a",
+  "lint_errors": 0,
+  "lint_warnings": 22
+}

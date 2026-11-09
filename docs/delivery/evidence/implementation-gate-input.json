@@ -1,0 +1,42 @@
+{
+  "scope": "FOUNDATION-01 local source slice only; device and real service integration unverified",
+  "source_sha256": "3ce87ead9e99e6aae7c9d335e96a53847efe69e05ac7f925d1bc1ce30b33a9b8",
+  "checks": {
+    "compile": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/foundation-all.json",
+          "sha256": "497761a5c106497cf3834bf1d360c6249fb074e885877a0af739b4c4259b16cf"
+        }
+      ]
+    },
+    "static_analysis": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/foundation-all.json",
+          "sha256": "497761a5c106497cf3834bf1d360c6249fb074e885877a0af739b4c4259b16cf"
+        }
+      ]
+    },
+    "relevant_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/evidence/foundation-all.json",
+          "sha256": "497761a5c106497cf3834bf1d360c6249fb074e885877a0af739b4c4259b16cf"
+        }
+      ]
+    },
+    "independent_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": ".android-suite/tasks/foundation/review.md",
+          "sha256": "98b200ec0963fdf9f0b282f3758f8211bc3b4a09e9eee9a9bb859ec12fc5d529"
+        }
+      ]
+    }
+  }
+}

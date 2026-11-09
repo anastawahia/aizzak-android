@@ -1,0 +1,6 @@
+{
+  "stage": "integration",
+  "status": "passed",
+  "errors": [],
+  "limitations": "Evidence hashes establish provenance, not semantic correctness. Human review is required for manual checks."
+}

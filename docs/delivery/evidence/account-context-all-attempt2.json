@@ -1,0 +1,47 @@
+{
+  "kind": "all",
+  "status": "failed",
+  "source_sha256": "7402b38a999d1b6511e0941cd90addeb14f514917ffec334d1b5a079a2deb730",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1793412781,
+  "attempts": [
+    {
+      "exit_code": 1,
+      "output": "To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.\nDaemon will be stopped at the end of the build \n> Task :app:preBuild UP-TO-DATE\n> Task :app:preDebugBuild UP-TO-DATE\n> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE\n> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED\n> Task :app:generateDebugBuildConfig\n> Task :app:checkDebugAarMetadata\n> Task :app:processDebugNavigationResources\n> Task :app:generateDebugResValues\n> Task :app:compileDebugNavigationResources\n> Task :app:processDebugGoogleServices\n> Task :app:mapDebugSourceSetPaths\n> Task :app:generateDebugResources\n> Task :app:packageDebugResources\n> Task :app:createDebugCompatibleScreenManifests\n> Task :app:extractDeepLinksDebug\n> Task :app:parseDebugLocalResources\n> Task :app:mergeDebugResources\n> Task :app:processDebugMainManifest\n> Task :app:processDebugManifest\n> Task :app:processDebugManifestForPackage\n> Task :app:javaPreCompileDebug\n> Task :app:mergeDebugShaders\n> Task :app:compileDebugShaders NO-SOURCE\n> Task :app:generateDebugAssets UP-TO-DATE\n> Task :app:mergeDebugAssets\n> Task :app:compressDebugAssets\n> Task :app:desugarDebugFileDependencies\n> Task :app:processDebugResources\n> Task :app:checkDebugDuplicateClasses\n> Task :app:mergeDebugJniLibFolders\n> Task :app:mergeLibDexDebug\n> Task :app:compileDebugKotlin\n> Task :app:mergeDebugNativeLibs\n> Task :app:validateSigningDebug\n> Task :app:writeDebugAppMetadata\n\n> Task :app:stripDebugDebugSymbols\nUnable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so. Run with --info option to learn more.\n\n> Task :app:writeDebugSigningConfigVersions\n> Task :app:mergeExtDexDebug\n> Task :app:compileDebugJavaWithJavac\n> Task :app:dexBuilderDebug\n> Task :app:mergeDebugGlobalSynthetics\n> Task :app:processDebugJavaRes\n> Task :app:preDebugUnitTestBuild UP-TO-DATE\n> Task :app:preDebugAndroidTestBuild SKIPPED\n> Task :app:javaPreCompileDebugUnitTest\n> Task :app:generateDebugAndroidTestResValues\n> Task :app:extractProguardFiles\n> Task :app:bundleDebugClassesToRuntimeJar\n> Task :app:bundleDebugClassesToCompileJar\n> Task :app:mergeProjectDexDebug\n> Task :app:generateDebugLintReportModel\n> Task :app:mergeDebugJavaResource\n> Task :app:generateDebugAndroidTestLintModel\n> Task :app:generateDebugUnitTestLintModel\n> Task :app:packageDebug\n> Task :app:createDebugApkListingFileRedirect\n> Task :app:assembleDebug\n> Task :app:compileDebugUnitTestKotlin\n> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE\n> Task :app:processDebugUnitTestJavaRes\n\n> Task :app:testDebugUnitTest\n\nHttpAccountContextRepositoryTest > initializationError FAILED\n    org.junit.runners.model.InvalidTestClassError at ParentRunner.java:525\n\n> Task :app:testDebugUnitTest FAILED\n> Task :app:lintAnalyzeDebugAndroidTest\n> Task :app:lintAnalyzeDebugUnitTest\n> Task :app:lintAnalyzeDebug\n54 actionable tasks: 54 executed\n\n42 tests completed, 1 failed\n\nFAILURE: Build failed with an exception.\n\n* What went wrong:\nExecution failed for task ':app:testDebugUnitTest'.\n> There were failing tests. See the report at: file:///C:/Users/anast/Desktop/aizzak-android/app/build/reports/tests/testDebugUnitTest/index.html\n\n* Try:\n> Run with --scan to get full insights.\n\nBUILD FAILED in 1m 44s\n",
+      "duration_seconds": 104.734
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+      "sha256": "702038fbeff4a847f0f0c58a16dfbe7007ee3686ae68bdd97b4027ba6fe5dc51"
+    },
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "sha256": "0c2aedecac007f715789767cd58f8999c2d04900eb78e5bccb8a3751c81dd914"
+    }
+  ],
+  "recovery": "Inspect the first failure: JDK/SDK, dependency transport, then compiler/test failure. Apply the smallest reviewed correction; never disable checks. Maximum three attempts per incident.",
+  "test_summary": {
+    "tests": 42,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.data.auth.FirebaseAuthRepositoryTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.data.preferences.DataStorePreferencesRepositoryTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.data.session.HttpAccountContextRepositoryTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.feature.auth.AuthViewModelTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.feature.settings.SettingsViewModelTest.xml"
+    ]
+  },
+  "signed_verified": false,
+  "published": false
+}

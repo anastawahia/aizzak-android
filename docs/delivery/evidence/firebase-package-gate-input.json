@@ -1,0 +1,42 @@
+{
+  "scope": "FIREBASE-PACKAGE-01 package/configuration migration only; no runtime/auth/service claim",
+  "source_sha256": "dd82aafef9b1c1eb2a56d7386ac9d88b7de919d8540e3d4b8d5908d452867742",
+  "checks": {
+    "compile": {
+      "evidence": [
+        {
+          "sha256": "cd2305926347a8aee13bfb26b1c1291c0c14a83282a630a8dd822648d8e5546e",
+          "path": ".android-suite/evidence/firebase-package-all.json"
+        }
+      ],
+      "status": "passed"
+    },
+    "static_analysis": {
+      "evidence": [
+        {
+          "sha256": "cd2305926347a8aee13bfb26b1c1291c0c14a83282a630a8dd822648d8e5546e",
+          "path": ".android-suite/evidence/firebase-package-all.json"
+        }
+      ],
+      "status": "passed"
+    },
+    "relevant_tests": {
+      "evidence": [
+        {
+          "sha256": "cd2305926347a8aee13bfb26b1c1291c0c14a83282a630a8dd822648d8e5546e",
+          "path": ".android-suite/evidence/firebase-package-all.json"
+        }
+      ],
+      "status": "passed"
+    },
+    "independent_review": {
+      "evidence": [
+        {
+          "sha256": "c1825de110b590a068f87a7b13f263a2c85a5a8ea723375435877da08489294e",
+          "path": ".android-suite/tasks/firebase-package/review.md"
+        }
+      ],
+      "status": "passed"
+    }
+  }
+}

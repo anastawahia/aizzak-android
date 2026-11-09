@@ -1,0 +1,46 @@
+{
+  "kind": "all",
+  "status": "failed",
+  "source_sha256": "6f14a0841c21bccd038366ff6c087b5c9732f647b4c0760eafc8e621c9144060",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1793412502,
+  "attempts": [
+    {
+      "exit_code": 1,
+      "output": "To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.\nDaemon will be stopped at the end of the build \n\n> Configure project :app\ne: file:///C:/Users/anast/Desktop/aizzak-android/app/build.gradle.kts:74:51: Unresolved reference: net\n\nFAILURE: Build failed with an exception.\n\n* Where:\nBuild file 'C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build.gradle.kts' line: 74\n\n* What went wrong:\nScript compilation error:\n\n  Line 74:         val uri = value?.let { runCatching { java.net.URI(it) }.getOrNull() }\n                                                             ^ Unresolved reference: net\n\n1 error\n\n* Try:\n> Run with --stacktrace option to get the stack trace.\n> Run with --info or --debug option to get more log output.\n> Run with --scan to get full insights.\n> Get more help at https://help.gradle.org.\n\nBUILD FAILED in 14s\n",
+      "duration_seconds": 14.797
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+      "sha256": "702038fbeff4a847f0f0c58a16dfbe7007ee3686ae68bdd97b4027ba6fe5dc51"
+    },
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "sha256": "b8a424ca28cfc46ddd29cc928d342726dc1e2dd881960538ba59e28ab94fdfa8"
+    }
+  ],
+  "recovery": "Inspect the first failure: JDK/SDK, dependency transport, then compiler/test failure. Apply the smallest reviewed correction; never disable checks. Maximum three attempts per incident.",
+  "test_summary": {
+    "tests": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.data.auth.FirebaseAuthRepositoryTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.data.preferences.DataStorePreferencesRepositoryTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.feature.auth.AuthViewModelTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-android.aizzak.com.feature.settings.SettingsViewModelTest.xml"
+    ]
+  },
+  "signed_verified": false,
+  "published": false
+}

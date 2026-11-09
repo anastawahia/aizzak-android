@@ -1,0 +1,39 @@
+{
+  "kind": "all",
+  "status": "passed",
+  "source_sha256": "3ce87ead9e99e6aae7c9d335e96a53847efe69e05ac7f925d1bc1ce30b33a9b8",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1793389613,
+  "attempts": [
+    {
+      "exit_code": 0,
+      "output": "To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.\nDaemon will be stopped at the end of the build \n> Task :app:preBuild UP-TO-DATE\n> Task :app:preDebugBuild UP-TO-DATE\n> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE\n> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED\n> Task :app:checkDebugAarMetadata UP-TO-DATE\n> Task :app:processDebugNavigationResources UP-TO-DATE\n> Task :app:compileDebugNavigationResources UP-TO-DATE\n> Task :app:generateDebugResValues UP-TO-DATE\n> Task :app:mapDebugSourceSetPaths UP-TO-DATE\n> Task :app:generateDebugResources UP-TO-DATE\n> Task :app:mergeDebugResources UP-TO-DATE\n> Task :app:packageDebugResources UP-TO-DATE\n> Task :app:parseDebugLocalResources UP-TO-DATE\n> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE\n> Task :app:extractDeepLinksDebug UP-TO-DATE\n> Task :app:processDebugMainManifest UP-TO-DATE\n> Task :app:processDebugManifest UP-TO-DATE\n> Task :app:processDebugManifestForPackage UP-TO-DATE\n> Task :app:processDebugResources UP-TO-DATE\n> Task :app:compileDebugKotlin UP-TO-DATE\n> Task :app:javaPreCompileDebug UP-TO-DATE\n> Task :app:compileDebugJavaWithJavac NO-SOURCE\n> Task :app:mergeDebugShaders UP-TO-DATE\n> Task :app:compileDebugShaders NO-SOURCE\n> Task :app:generateDebugAssets UP-TO-DATE\n> Task :app:mergeDebugAssets UP-TO-DATE\n> Task :app:compressDebugAssets UP-TO-DATE\n> Task :app:desugarDebugFileDependencies UP-TO-DATE\n> Task :app:dexBuilderDebug UP-TO-DATE\n> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE\n> Task :app:processDebugJavaRes UP-TO-DATE\n> Task :app:mergeDebugJavaResource UP-TO-DATE\n> Task :app:checkDebugDuplicateClasses UP-TO-DATE\n> Task :app:mergeExtDexDebug UP-TO-DATE\n> Task :app:mergeLibDexDebug UP-TO-DATE\n> Task :app:mergeProjectDexDebug UP-TO-DATE\n> Task :app:mergeDebugJniLibFolders UP-TO-DATE\n> Task :app:mergeDebugNativeLibs UP-TO-DATE\n> Task :app:stripDebugDebugSymbols UP-TO-DATE\n> Task :app:validateSigningDebug UP-TO-DATE\n> Task :app:writeDebugAppMetadata UP-TO-DATE\n> Task :app:writeDebugSigningConfigVersions UP-TO-DATE\n> Task :app:packageDebug UP-TO-DATE\n> Task :app:createDebugApkListingFileRedirect UP-TO-DATE\n> Task :app:assembleDebug UP-TO-DATE\n> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE\n> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE\n> Task :app:preDebugUnitTestBuild UP-TO-DATE\n> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE\n> Task :app:preDebugAndroidTestBuild SKIPPED\n> Task :app:generateDebugAndroidTestResValues UP-TO-DATE\n> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE\n> Task :app:extractProguardFiles UP-TO-DATE\n> Task :app:generateDebugLintReportModel UP-TO-DATE\n> Task :app:generateDebugUnitTestLintModel\n> Task :app:compileDebugUnitTestKotlin\n> Task :app:lintAnalyzeDebug\n> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE\n> Task :app:processDebugUnitTestJavaRes UP-TO-DATE\n> Task :app:testDebugUnitTest\n> Task :app:lintAnalyzeDebugAndroidTest\n> Task :app:lintAnalyzeDebugUnitTest\n\n> Task :app:lintReportDebug\nWrote HTML report to file:///C:/Users/anast/Desktop/aizzak-android/app/build/reports/lint-results-debug.html\n\n> Task :app:lintDebug\n\nBUILD SUCCESSFUL in 2m 29s\n53 actionable tasks: 8 executed, 45 up-to-date\n",
+      "duration_seconds": 149.64
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "sha256": "f47e66ca555b5363d22605d0bc48bd2aa43c75722316a62c824c5f7dada1da8f"
+    }
+  ],
+  "test_summary": {
+    "tests": 10,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-com.aizzak.android.data.preferences.DataStorePreferencesRepositoryTest.xml",
+      "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\test-results\\testDebugUnitTest\\TEST-com.aizzak.android.feature.settings.SettingsViewModelTest.xml"
+    ]
+  },
+  "signed_verified": false,
+  "published": false
+}

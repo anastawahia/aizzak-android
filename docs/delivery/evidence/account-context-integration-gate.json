@@ -1,0 +1,8 @@
+{
+  "stage": "integration",
+  "status": "failed",
+  "errors": [
+    "Evidence does not match the current project source fingerprint."
+  ],
+  "limitations": "Evidence hashes establish provenance, not semantic correctness. Human review is required for manual checks."
+}
