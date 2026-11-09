@@ -1,0 +1,4061 @@
+{
+  "task": "data-search-agent",
+  "inventory_sha256": "4b32d7a09513f43ecb11cba817fc41c7ab3294e542d7b24bf2266c6f2602c1c8",
+  "source_sha256": "e56cb5e3ed516fc3fc4087a9f63e3dd273144e16cfdc45cbbe1e04d22521fe57",
+  "reviewer": {
+    "role": "design-qa-reviewer",
+    "id": "/root/independent_design_match"
+  },
+  "implementers": [
+    {
+      "role": "compose-developer",
+      "id": "/root/compose_build"
+    },
+    {
+      "role": "compose-developer",
+      "id": "/root/repair_last"
+    },
+    {
+      "role": "compose-developer",
+      "id": "/root/design_conformance_repair"
+    },
+    {
+      "role": "qa-engineer",
+      "id": "/root/visual_evidence_qa"
+    }
+  ],
+  "review_date": "2026-11-09",
+  "method": "Independent visual audit only under owner instruction2026-11-09; all272 current PNGs inspected using20 labeled HTML/Compose comparisons plus58 four-configuration state contact sheets. Completed248 earlier in this same audit session and final24 on resume; targeted shape/typography comparisons reopened to resolve ambiguous differences. Approved reference/tokens/inventory unchanged. Source read only to corroborate observed visual dimensions/styles, never as substitute for images. No implementation, repair, lifecycle advancement or deviation approval performed.",
+  "screens": [
+    {
+      "id": "SCR-DS-001",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-001__ar_dark_w390_fs1.0.png",
+          "sha256": "a8a7c5f4906507b82ea5ad24d9d856e93f83af5fa2f69e99e05478cca2d9433a",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-001__ar_light_w840_fs1.3.png",
+          "sha256": "a9986bc2b22c78746f33d2b9f10871b3083aad9500adef086ec56acbcc6dd999",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-001__en_dark_w840_fs1.0.png",
+          "sha256": "70016fc46c80d4c61abf2699fcb4acec1dd0fd6b1e66c35109ef79e5b1533a25",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-001__en_light_w390_fs1.0.png",
+          "sha256": "ec94f9796e99a0b9920184ee7a54abd83b7028fbb0a2db43e32bf4e65ed0c192",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-001__ar_dark_w390_fs1.0.png",
+          "sha256": "76d456d8348d1167d5286ed6163a7518046c344ebb17c49f5fc84a803a9a22bb",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-001__ar_light_w840_fs1.3.png",
+          "sha256": "39d90e281377c8f0a9319978b46f892c036af95730edbe1c240e51fc3126e000",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-001__en_dark_w840_fs1.0.png",
+          "sha256": "0289cda9190e7790f8d5380e58ed4586d8c51ba263c156bee53f25cafac853f8",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-001__en_light_w390_fs1.0.png",
+          "sha256": "bf74919556134eed96413ffa8d818f4c78f8e9a37c7673f91561e58c860a03da",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-001__ar_dark_w390_fs1.0.png",
+          "sha256": "3645d701774cae000fbd128c4dab967136f1f1393b7abc959360cf78122d999f",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-001__ar_light_w840_fs1.3.png",
+          "sha256": "70d147330f10e948b30baaac61c26d8cac35ca16d08505242bec6f3669c8a45b",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-001__en_dark_w840_fs1.0.png",
+          "sha256": "d81763951c1136367f9746b8fd4e2bae5ece0e1d47609f802538f219a5b7e34f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-001__en_light_w390_fs1.0.png",
+          "sha256": "a1b77066184b3b62995030be771ae996a22b1468c2fb02e5d6638a29cc4623ae",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-001__ar_dark_w390_fs1.0.png",
+          "sha256": "9dfcab6af4ba50ca90a264106ecac314e0b43a57319ac349eee04b0818f40ecd",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-001__ar_light_w840_fs1.3.png",
+          "sha256": "507d36faae2dd75db363d9545caf3cfbf19eed255dcc85141db50766258306bc",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-001__en_dark_w840_fs1.0.png",
+          "sha256": "40a802c6fa007fde4adf835d155aa0c744853a9b082e3a46fd0605ea0a71d4c5",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-001__en_light_w390_fs1.0.png",
+          "sha256": "b4098db8b97e18860dea49d4d823aeadcb72a9b2f8b22f99e88f7d7681cf03ef",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-001__ar_dark_w390_fs1.0.png",
+          "sha256": "a9b039d51866b03872c9593d8ef1db214c8ca773842e0b7cd872cd7b0a39e0d6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-001__ar_light_w840_fs1.3.png",
+          "sha256": "f1a67bf8724beb43a0676e9c1a17584f177b852135f04635aace3e2135c250a6",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-001__en_dark_w840_fs1.0.png",
+          "sha256": "937f872c1570467aa0c59ce85ac1deebf1f1cf9e35f722ec426a6bbb84f61b8f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-001__en_light_w390_fs1.0.png",
+          "sha256": "09b9427d8ef6a73628a13b3d6e91afe83709714edee8ad16b0f2027f93481afa",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS001-01",
+          "status": "matched",
+          "note": "Surface header contains directional Back, DATA SEARCH eyebrow and Choose a space title. Unlike HTML, the title/eyebrow are not repeated in the body; the inventory explicitly places them in the app bar. This is a documented presentation difference, not font rasterization.",
+          "reference_requirement": "Surface app bar with directional Back, DATA SEARCH eyebrow, and Choose a space title."
+        },
+        {
+          "id": "DS001-02",
+          "status": "matched",
+          "note": "Localized space ownership supporting copy is visible.",
+          "reference_requirement": "Supporting copy explains that a space owns its conversations and knowledge sources."
+        },
+        {
+          "id": "DS001-03",
+          "status": "matched",
+          "note": "Existing accessible-space rows and continued paging are visible; data authorization remains separate QA.",
+          "reference_requirement": "Scrollable list contains only existing accessible spaces and supports continued paging."
+        },
+        {
+          "id": "DS001-04",
+          "status": "deviation",
+          "note": "DEVIATION: bordered full-width space cards have 20dp corners (default medium shape), while approved card token is 16dp (HTML approximately15px). Identity/name/counts are present; fixture names/counts are intentionally different.",
+          "finding_id": "AUD-01",
+          "severity": "P3",
+          "reference_requirement": "Each full-width space row shows its name and only server-confirmed file and conversation counts."
+        },
+        {
+          "id": "DS001-05",
+          "status": "matched",
+          "note": "Load more is visible for fixture cursor.",
+          "reference_requirement": "Load more action appears only when another space page is available."
+        },
+        {
+          "id": "DS001-06",
+          "status": "matched",
+          "note": "Amber review note now carries the approved attention role.",
+          "reference_requirement": "Review note states that Android does not create, rename, or delete spaces in this flow."
+        },
+        {
+          "id": "DS001-07",
+          "status": "deviation",
+          "note": "No-space panel blocks entry, uses outlined surface and offers Back/Refresh/Return home with 12dp actions. DEVIATION: empty-state title visibly uses regular headlineSmall rather than the approved 22sp/28sp Bold empty-title token.",
+          "finding_id": "AUD-02",
+          "severity": "P3",
+          "reference_requirement": "No-space state blocks entry and offers Refresh and Return home without inventing a space."
+        },
+        {
+          "id": "DS001-08",
+          "status": "matched",
+          "note": "Offline uses amber; denied/session use errorContainer/error, hide stale space names and offer safe localized Back/Refresh actions.",
+          "reference_requirement": "Offline, permission, and expired-session variants hide stale space names and provide a safe action."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-001-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-001-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-001--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-001--offline-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-001--permission_denied-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-001--session_expired-states.png"
+      ]
+    },
+    {
+      "id": "SCR-DS-002",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-002__ar_dark_w390_fs1.0.png",
+          "sha256": "b8d01658d7b2461078c1e1843ddd8485599adfdca3adc29a0b322b3a47634a18",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-002__ar_light_w840_fs1.3.png",
+          "sha256": "024605e98f91a8986c94b406c336c6d4a3ba0dba3f22a0c2aafc9bdc586cf38a",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-002__en_dark_w840_fs1.0.png",
+          "sha256": "dce4b6b06bd47a5b082c39a8ba1463dbc230ffb1aad098238ba6afc02dd77659",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-002__en_light_w390_fs1.0.png",
+          "sha256": "ce6000662c632356c175e1f6ec78da3fdcf2be335f2cc72d5237e93b48ec3c8f",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/interrupted/SCR-DS-002__ar_dark_w390_fs1.0.png",
+          "sha256": "85ce05231661293587961ad7ff889c16e2f46c39493b6130e19f0ccd0f9612dd",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "interrupted"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/interrupted/SCR-DS-002__ar_light_w840_fs1.3.png",
+          "sha256": "8f8ecb86f539de46b91fd6bf7456c2732657d537e4b676c397fa8797aef17639",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "interrupted"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/interrupted/SCR-DS-002__en_dark_w840_fs1.0.png",
+          "sha256": "8f591205479014f7b37a7dd47510e932db3c91d7479d62c5ffd677e0041be99d",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "interrupted"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/interrupted/SCR-DS-002__en_light_w390_fs1.0.png",
+          "sha256": "3b78932dc5774284d8c53fe6f325672128e0cdfc5843edef91c39b2921ce8aa8",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "interrupted"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-002__ar_dark_w390_fs1.0.png",
+          "sha256": "9186b3396a7f8d0215db41d67bf8811ce6e00cf269d1dd3667fbd75fefbd0f23",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-002__ar_light_w840_fs1.3.png",
+          "sha256": "bef99686e01623ac12d57a4e09255d5470f75698dde41dcd95bc5f2e8e76c52a",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-002__en_dark_w840_fs1.0.png",
+          "sha256": "267e280bc60b3e6bb02c53dc51ec730ebf30561ddeb86b9caa85c5b92be3796d",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-002__en_light_w390_fs1.0.png",
+          "sha256": "811617c08f94100a0f4aa1500baf4c65fb2f72e8f0436b7dea1e56513f4d923a",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-002__ar_dark_w390_fs1.0.png",
+          "sha256": "3645d701774cae000fbd128c4dab967136f1f1393b7abc959360cf78122d999f",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-002__ar_light_w840_fs1.3.png",
+          "sha256": "70d147330f10e948b30baaac61c26d8cac35ca16d08505242bec6f3669c8a45b",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-002__en_dark_w840_fs1.0.png",
+          "sha256": "d81763951c1136367f9746b8fd4e2bae5ece0e1d47609f802538f219a5b7e34f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-002__en_light_w390_fs1.0.png",
+          "sha256": "a1b77066184b3b62995030be771ae996a22b1468c2fb02e5d6638a29cc4623ae",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-002__ar_dark_w390_fs1.0.png",
+          "sha256": "d3837f3d89282ae0001e4462c1caeeab8c9986a90e69041affb5661fba256cce",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-002__ar_light_w840_fs1.3.png",
+          "sha256": "c6e94485fef3ac94f00737d9094182285c86e8b9f0e9c5f70c61545271b7f1c2",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-002__en_dark_w840_fs1.0.png",
+          "sha256": "5a11269450d4e46f50e71086c1956a5b88fd8b25ea2a19880bf9390fb7b1db4e",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-002__en_light_w390_fs1.0.png",
+          "sha256": "c05cb4c7cc9344448db21b1a343e5799d8de483558971dc1d0513d25006bd850",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/sending/SCR-DS-002__ar_dark_w390_fs1.0.png",
+          "sha256": "11ab4b9c5442803b03066e0b6c354066cd5c5e85fab86c8ff929d23cf063c45e",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "sending"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/sending/SCR-DS-002__ar_light_w840_fs1.3.png",
+          "sha256": "89d53875a84ba01840681250dc74d2852a17efe191c46b56fc462b1fe9aa1218",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "sending"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/sending/SCR-DS-002__en_dark_w840_fs1.0.png",
+          "sha256": "e9d3777bfed19104dc32fb968f2e2db2bfc6c3b7cf01ca4c60fdfee5e1e03b91",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "sending"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/sending/SCR-DS-002__en_light_w390_fs1.0.png",
+          "sha256": "a96a3efc25bee1f44dcd5f0dd79a45fb14f6dac2e41f31caee9aed77164721a5",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "sending"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-002__ar_dark_w390_fs1.0.png",
+          "sha256": "a9b039d51866b03872c9593d8ef1db214c8ca773842e0b7cd872cd7b0a39e0d6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-002__ar_light_w840_fs1.3.png",
+          "sha256": "f1a67bf8724beb43a0676e9c1a17584f177b852135f04635aace3e2135c250a6",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-002__en_dark_w840_fs1.0.png",
+          "sha256": "937f872c1570467aa0c59ce85ac1deebf1f1cf9e35f722ec426a6bbb84f61b8f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-002__en_light_w390_fs1.0.png",
+          "sha256": "09b9427d8ef6a73628a13b3d6e91afe83709714edee8ad16b0f2027f93481afa",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS002-01",
+          "status": "matched",
+          "note": "Conversation header now includes document/source glyph, conversations, Back, title and selected-space identity.",
+          "reference_requirement": "Conversation app bar contains Back, conversations action, title, selected space, and sources action."
+        },
+        {
+          "id": "DS002-02",
+          "status": "deviation",
+          "note": "DEVIATION: scope chip uses rounded-rectangle FilterChip and secondaryContainer cyan, instead of approved full-pill/primaryContainer chip. Its row is start-aligned instead of HTML centered. Exact pinned count is readable; differing selected scope is fixture content.",
+          "finding_id": "AUD-04",
+          "severity": "P3",
+          "reference_requirement": "Answer-scope chip states either all indexed sources or the exact number of pinned sources."
+        },
+        {
+          "id": "DS002-03",
+          "status": "matched",
+          "note": "Ordered transcript and Load older are visible.",
+          "reference_requirement": "Transcript is ordered oldest to newest and can load older pages without claiming a partial history is complete."
+        },
+        {
+          "id": "DS002-04",
+          "status": "matched",
+          "note": "User bubble uses primaryContainer with role/time/delivery text.",
+          "reference_requirement": "User message uses the primary container and includes readable delivery state and time."
+        },
+        {
+          "id": "DS002-05",
+          "status": "matched",
+          "note": "Assistant now has secondary start edge and distinct surface; Markdown/code/link/copy are visible.",
+          "reference_requirement": "Assistant message is visually distinct, supports Markdown, code, links and copy, and is the generated answer rather than a search result."
+        },
+        {
+          "id": "DS002-06",
+          "status": "matched",
+          "note": "Streaming and isolated sending cases expose one active indicator and written state; token announcements cannot be established by still images.",
+          "reference_requirement": "Waiting and streaming status is announced without announcing every streamed token."
+        },
+        {
+          "id": "DS002-07",
+          "status": "matched",
+          "note": "Isolated interrupted case preserves errorContainer partial answer and explicit incomplete/manual reconciliation text.",
+          "reference_requirement": "Interrupted stream remains visibly incomplete with reconciliation or manual retry; it never becomes a completed answer silently."
+        },
+        {
+          "id": "DS002-08",
+          "status": "matched",
+          "note": "Structured reference chip is visibly below assistant body for explicitly enabled fixture.",
+          "reference_requirement": "Structured source-reference chips appear below an assistant message only when the confirmed message contract returns them."
+        },
+        {
+          "id": "DS002-09",
+          "status": "matched",
+          "note": "Composer has rounded 12dp outline, persistent Message label, separate Send and nearby draft/disabled copy. IME and persistence behavior are outside still-image proof.",
+          "reference_requirement": "Multiline message composer remains reachable above the IME and preserves a per-account, per-conversation draft."
+        },
+        {
+          "id": "DS002-10",
+          "status": "matched",
+          "note": "Send is a separate rounded-square action with ample visible target and nearby disabled explanation in empty/offline/sending cases; duplicate-prevention behavior is covered by separate QA, not this visual judgment.",
+          "reference_requirement": "48dp Send action prevents duplicate submission and has nearby text explaining disabled states."
+        },
+        {
+          "id": "DS002-11",
+          "status": "deviation",
+          "note": "Centered RAG identity, selected-space invitation and composer are present. DEVIATION: invitation heading is visibly regular headlineSmall rather than approved 22sp/28sp Bold empty-title token.",
+          "finding_id": "AUD-02",
+          "severity": "P3",
+          "reference_requirement": "Empty conversation state invites a question about the selected space and keeps source management secondary."
+        },
+        {
+          "id": "DS002-12",
+          "status": "matched",
+          "note": "Loaded authorized offline transcript and draft remain readable with amber notice and disabled mutations. Permission/session hide protected content with error treatment. Images cannot establish reconnect behavior.",
+          "reference_requirement": "Offline, permission, and session variants preserve or hide content according to authorization and never auto-send on reconnect."
+        },
+        {
+          "id": "DS002-13",
+          "status": "deviation",
+          "note": "DEVIATION / reference-token conflict: en/dark840/fs1.0 retains the widest center, but side panes are approximately210dp each rather than written start260–300/end300–340dp. HTML also uses relative widths below those ranges, so the written dimensions conflict with the rendered reference. Arabic840/fs1.3 correctly collapses side panes. No deviation approval is inferred.",
+          "finding_id": "AUD-05",
+          "severity": "P3",
+          "reference_requirement": "Expanded layout makes the conversation the widest center pane between conversations and sources."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002--interrupted-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002--offline-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002--permission_denied-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002--sending-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002--session_expired-states.png"
+      ]
+    },
+    {
+      "id": "SCR-DS-003",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-003__ar_dark_w390_fs1.0.png",
+          "sha256": "62b53c90089c92a1c677d308c029f5da22a46e022348fc7ba987585ca82417cb",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-003__ar_light_w840_fs1.3.png",
+          "sha256": "960f8bf9b3f066479003ce36b3113ad3064345f4d88a1a1ff5776ba4c5f206ca",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-003__en_dark_w840_fs1.0.png",
+          "sha256": "febfbe2d5f37d8bcbe065d3da0246882c80ca0c8cb6d51f71a654585bb9f2e6a",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-003__en_light_w390_fs1.0.png",
+          "sha256": "79802e2391fefe8f3fb5dbc55c5084438dd6d0df94b9291c387b8ecf3b4e23c4",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-003__ar_dark_w390_fs1.0.png",
+          "sha256": "5671fad4609b3acf3ed3f58c261a1b8a2dabb57145b5a1fda6923a37cab003cf",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-003__ar_light_w840_fs1.3.png",
+          "sha256": "ee0964364a59c436951f7b26e81015565cba868d5b19701de083215f5f2a79c5",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-003__en_dark_w840_fs1.0.png",
+          "sha256": "6e1b567ed1ae9a10e1233eab38a6deb68ab69a4b858e2f7e3f16426fb941871e",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-003__en_light_w390_fs1.0.png",
+          "sha256": "0572bc77dc6325b32f8e1bfcaa33ad564d0c8d6b59c8736528ab9d849e653f85",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/loading/SCR-DS-003__ar_dark_w390_fs1.0.png",
+          "sha256": "d0e5dbaf03169a8fe5b1b7927029167f3e4ede5236ce7b92d9c0aa210a9e0284",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "loading"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/loading/SCR-DS-003__ar_light_w840_fs1.3.png",
+          "sha256": "94419e4b27af56dedd91e62219dc473d12a317023e7c0c102aee869dfdebd043",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "loading"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/loading/SCR-DS-003__en_dark_w840_fs1.0.png",
+          "sha256": "ea18c34ff9adb68b3d0301ae27dc182ac3a0e090c47383647bb340e51886398f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "loading"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/loading/SCR-DS-003__en_light_w390_fs1.0.png",
+          "sha256": "12269147fd7b042b8788339523163e4091561d165dfed619d1bde1b6869ce11b",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "loading"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-003__ar_dark_w390_fs1.0.png",
+          "sha256": "76d456d8348d1167d5286ed6163a7518046c344ebb17c49f5fc84a803a9a22bb",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-003__ar_light_w840_fs1.3.png",
+          "sha256": "39d90e281377c8f0a9319978b46f892c036af95730edbe1c240e51fc3126e000",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-003__en_dark_w840_fs1.0.png",
+          "sha256": "0289cda9190e7790f8d5380e58ed4586d8c51ba263c156bee53f25cafac853f8",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-003__en_light_w390_fs1.0.png",
+          "sha256": "bf74919556134eed96413ffa8d818f4c78f8e9a37c7673f91561e58c860a03da",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-003__ar_dark_w390_fs1.0.png",
+          "sha256": "3645d701774cae000fbd128c4dab967136f1f1393b7abc959360cf78122d999f",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-003__ar_light_w840_fs1.3.png",
+          "sha256": "70d147330f10e948b30baaac61c26d8cac35ca16d08505242bec6f3669c8a45b",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-003__en_dark_w840_fs1.0.png",
+          "sha256": "d81763951c1136367f9746b8fd4e2bae5ece0e1d47609f802538f219a5b7e34f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-003__en_light_w390_fs1.0.png",
+          "sha256": "a1b77066184b3b62995030be771ae996a22b1468c2fb02e5d6638a29cc4623ae",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-003__ar_dark_w390_fs1.0.png",
+          "sha256": "74ac4cf3d289216783c65223e3d6e7202806be3b42bd2fc94103cb94846c04f2",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-003__ar_light_w840_fs1.3.png",
+          "sha256": "7f733cbf8c0479a06aa3f57ee91e03a325dc0bba83226fa5452dc65a4259f261",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-003__en_dark_w840_fs1.0.png",
+          "sha256": "3efc118187871e93207a2f88e2c9af5fd41ac1cb0bf420c6a3f5adfbdbe9d2f4",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-003__en_light_w390_fs1.0.png",
+          "sha256": "401f7da2d46f775c216769f7365184c469101ff259d06f2d55435cd7a6340ea2",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-003__ar_dark_w390_fs1.0.png",
+          "sha256": "a9b039d51866b03872c9593d8ef1db214c8ca773842e0b7cd872cd7b0a39e0d6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-003__ar_light_w840_fs1.3.png",
+          "sha256": "f1a67bf8724beb43a0676e9c1a17584f177b852135f04635aace3e2135c250a6",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-003__en_dark_w840_fs1.0.png",
+          "sha256": "937f872c1570467aa0c59ce85ac1deebf1f1cf9e35f722ec426a6bbb84f61b8f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-003__en_light_w390_fs1.0.png",
+          "sha256": "09b9427d8ef6a73628a13b3d6e91afe83709714edee8ad16b0f2027f93481afa",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS003-01",
+          "status": "matched",
+          "note": "Selected-space heading and localized Close visible.",
+          "reference_requirement": "Drawer or start-pane header names the selected space and has a localized Close action in compact layout."
+        },
+        {
+          "id": "DS003-02",
+          "status": "matched",
+          "note": "New conversation is a primary 12dp action; fixture working state controls availability.",
+          "reference_requirement": "New conversation primary action opens the create flow and prevents duplicate creation."
+        },
+        {
+          "id": "DS003-03",
+          "status": "matched",
+          "note": "Conversation rows stay under selected-space header with loaded order.",
+          "reference_requirement": "Newest-first conversation list remains scoped to Data Search and the selected space."
+        },
+        {
+          "id": "DS003-04",
+          "status": "matched",
+          "note": "Selected row now restores surface/primaryContainer border, avatar and known pinned-scope subtitle; selection semantics are separately tested.",
+          "reference_requirement": "Selected conversation row uses container, label, and selection semantics rather than color alone."
+        },
+        {
+          "id": "DS003-05",
+          "status": "matched",
+          "note": "Separate Rename/Delete labels are visible with ample targets.",
+          "reference_requirement": "Each row exposes separately labelled rename and delete actions with 48dp targets."
+        },
+        {
+          "id": "DS003-06",
+          "status": "matched",
+          "note": "Load more conversations exists below loaded list.",
+          "reference_requirement": "Load more conversations appears while another page exists and does not reorder loaded rows."
+        },
+        {
+          "id": "DS003-07",
+          "status": "deviation",
+          "note": "Outlined surface empty panel and 12dp Start a conversation are present. DEVIATION: No conversations yet title is titleMedium 16sp/22sp Semibold rather than approved empty-state 22sp/28sp Bold.",
+          "finding_id": "AUD-02",
+          "severity": "P3",
+          "reference_requirement": "Empty state offers Start a conversation and does not create multiple threads while a request is pending."
+        },
+        {
+          "id": "DS003-08",
+          "status": "matched",
+          "note": "Loading uses neutral outlined surface/indicator; error and denied/session use error roles; offline amber. Protected names remain hidden in blocked states; no cross-space fixture mixing is visible.",
+          "reference_requirement": "Loading, refresh failure, offline, permission, and session states do not mix conversations from another space."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-003-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-003-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-003--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-003--error-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-003--loading-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-003--offline-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-003--permission_denied-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-003--session_expired-states.png"
+      ]
+    },
+    {
+      "id": "SCR-DS-004",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-004__ar_dark_w390_fs1.0.png",
+          "sha256": "2751fba2cb7278b59fc494f7f4863c86cdcdfe0addd617f603ef45d7e250762c",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-004__ar_light_w840_fs1.3.png",
+          "sha256": "f5c4b15b9a4edeefc9ec87e94cde6d1190856faf20964b97a551a8e648fcf9af",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-004__en_dark_w840_fs1.0.png",
+          "sha256": "24e9066d647dabd27eb8c1ee428fd1700b87a516e666a5c774946718bcdcd97a",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-004__en_light_w390_fs1.0.png",
+          "sha256": "bf2ed3f6f74f9290adb1cefe9309861814eb6fd41feb7d5b98b576c9eabf3f39",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-004__ar_dark_w390_fs1.0.png",
+          "sha256": "554c7d4e3d5d3a6ad4e1bcd158bd9007cac2aea20b70e2c7b19d452963dd4e31",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-004__ar_light_w840_fs1.3.png",
+          "sha256": "ebab6f75a50a028972bfb0160edd449652e945aa8e81e7a14ee5110aaff02a42",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-004__en_dark_w840_fs1.0.png",
+          "sha256": "c993cdc4b95c4b56cca78a292d9b30e3996d884b363e0f316fce896f815d591b",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-004__en_light_w390_fs1.0.png",
+          "sha256": "b524faeb2077218f9a21a8adf1e1ea5d9e0bf32149189065f263f1b96738c221",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-004__ar_dark_w390_fs1.0.png",
+          "sha256": "2751fba2cb7278b59fc494f7f4863c86cdcdfe0addd617f603ef45d7e250762c",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-004__ar_light_w840_fs1.3.png",
+          "sha256": "f5c4b15b9a4edeefc9ec87e94cde6d1190856faf20964b97a551a8e648fcf9af",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-004__en_dark_w840_fs1.0.png",
+          "sha256": "24e9066d647dabd27eb8c1ee428fd1700b87a516e666a5c774946718bcdcd97a",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-004__en_light_w390_fs1.0.png",
+          "sha256": "bf2ed3f6f74f9290adb1cefe9309861814eb6fd41feb7d5b98b576c9eabf3f39",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-004__ar_dark_w390_fs1.0.png",
+          "sha256": "3645d701774cae000fbd128c4dab967136f1f1393b7abc959360cf78122d999f",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-004__ar_light_w840_fs1.3.png",
+          "sha256": "70d147330f10e948b30baaac61c26d8cac35ca16d08505242bec6f3669c8a45b",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-004__en_dark_w840_fs1.0.png",
+          "sha256": "d81763951c1136367f9746b8fd4e2bae5ece0e1d47609f802538f219a5b7e34f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-004__en_light_w390_fs1.0.png",
+          "sha256": "a1b77066184b3b62995030be771ae996a22b1468c2fb02e5d6638a29cc4623ae",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/rename/SCR-DS-004__ar_dark_w390_fs1.0.png",
+          "sha256": "33c976ad0f882b05e292abe2cb6164a8b863393503bb055fcf03bcd49205dc05",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "rename"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/rename/SCR-DS-004__ar_light_w840_fs1.3.png",
+          "sha256": "d193294587142077b1f3decd25af90f63c5184d37fb9f40995de5ec40e98a243",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "rename"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/rename/SCR-DS-004__en_dark_w840_fs1.0.png",
+          "sha256": "5f3aa5a2256b7788b6bfdaff35610e2952089dee5008ae3bfd42fe51be63aed2",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "rename"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/rename/SCR-DS-004__en_light_w390_fs1.0.png",
+          "sha256": "471a82d41c7cb7d45c10fe5981f53dc79e744dc8f615ffe517673d3b1149943f",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "rename"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-004__ar_dark_w390_fs1.0.png",
+          "sha256": "cb181257bffb9020f5c265bf5baec8c6df957b12987a7947e8d552deb4da71cc",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-004__ar_light_w840_fs1.3.png",
+          "sha256": "0c9c67ed5fb067eb21b52adcc4fdb8812505af65f3019bf6ded260999e5f5946",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-004__en_dark_w840_fs1.0.png",
+          "sha256": "976d8f8718b734f169c0858a66fbf797d55f72ed7a3113ed2fb70f8826ba292d",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-004__en_light_w390_fs1.0.png",
+          "sha256": "4e248ab82df35df85137f45a9fb772227a9beff7c3832a6d2c8f8db68c1cef80",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-004__ar_dark_w390_fs1.0.png",
+          "sha256": "a9b039d51866b03872c9593d8ef1db214c8ca773842e0b7cd872cd7b0a39e0d6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-004__ar_light_w840_fs1.3.png",
+          "sha256": "f1a67bf8724beb43a0676e9c1a17584f177b852135f04635aace3e2135c250a6",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-004__en_dark_w840_fs1.0.png",
+          "sha256": "937f872c1570467aa0c59ce85ac1deebf1f1cf9e35f722ec426a6bbb84f61b8f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-004__en_light_w390_fs1.0.png",
+          "sha256": "09b9427d8ef6a73628a13b3d6e91afe83709714edee8ad16b0f2027f93481afa",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/validation/SCR-DS-004__ar_dark_w390_fs1.0.png",
+          "sha256": "1dbba6a1dc5aca7ab2120b40d4b17cbde56d4b7d7bdabdeffae8ff582247a794",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "validation"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/validation/SCR-DS-004__ar_light_w840_fs1.3.png",
+          "sha256": "4026cb35949cda56626418c4acccf71467556d8d9d011f890cf99d6739b9d7fd",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "validation"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/validation/SCR-DS-004__en_dark_w840_fs1.0.png",
+          "sha256": "4fe5904af676b7b38246beb7ee0637b4c0b61fb0563b24b348b2272848a962e3",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "validation"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/validation/SCR-DS-004__en_light_w390_fs1.0.png",
+          "sha256": "af15425f36e4040841f7e9f5acbbfb79ace805d30a950df70836cf5326b5f9b8",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "validation"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS004-01",
+          "status": "matched",
+          "note": "Create and rename variants now have surface app bar with selected space, directional Back and Close; actual host sheet/navigation remains outside static isolated evidence.",
+          "reference_requirement": "Modal sheet header distinguishes New conversation from Rename conversation and provides Close."
+        },
+        {
+          "id": "DS004-02",
+          "status": "matched",
+          "note": "Conversation name label stays visible for populated/empty field.",
+          "reference_requirement": "Persistent Conversation name label remains visible with input content."
+        },
+        {
+          "id": "DS004-03",
+          "status": "matched",
+          "note": "Rounded 12dp single title field preserves populated input; blank-name variant has visible field error and required-name text without invented server limit.",
+          "reference_requirement": "Single text field preserves user input and shows no invented server character limit."
+        },
+        {
+          "id": "DS004-04",
+          "status": "matched",
+          "note": "Selected-space supporting copy visible.",
+          "reference_requirement": "Supporting copy says the conversation stays inside the selected space."
+        },
+        {
+          "id": "DS004-05",
+          "status": "matched",
+          "note": "Conditional model selector is present only in capability-enabled fixtures and now uses 12dp outlined action shape.",
+          "reference_requirement": "Optional model selector appears only when confirmed model catalogue and pinning are available."
+        },
+        {
+          "id": "DS004-06",
+          "status": "matched",
+          "note": "12dp Cancel precedes Create/Save in reading order. Actual focus order is separate executed QA evidence.",
+          "reference_requirement": "Cancel precedes the primary action in reading and focus order."
+        },
+        {
+          "id": "DS004-07",
+          "status": "matched",
+          "note": "12dp Create/Save is primary; blank-name and offline working variants disable submission with nearby explanation.",
+          "reference_requirement": "Create or Save action disables during submission and never creates a second conversation on retry."
+        },
+        {
+          "id": "DS004-08",
+          "status": "matched",
+          "note": "Blank name shows actual inline required text; error/partial show concrete save-failure message with title retained. Offline retains title read-only with amber notice; denied/session hide sensitive context with error treatment.",
+          "reference_requirement": "Inline validation, network, permission, and model-pinning failures preserve the conversation and entered title."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-004-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-004-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-004--error-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-004--offline-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-004--partial-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-004--permission_denied-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-004--rename-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-004--session_expired-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-004--validation-states.png"
+      ]
+    },
+    {
+      "id": "SCR-DS-005",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-005__ar_dark_w390_fs1.0.png",
+          "sha256": "13f7c6d32f844b33ac97e1ba0c5ed8ce10efb1a361ecc10fb3357d0373961449",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-005__ar_light_w840_fs1.3.png",
+          "sha256": "fa6ad12489a6c00a809117aeb8a7a6ae7075f1104c7758d71472108008df4c65",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-005__en_dark_w840_fs1.0.png",
+          "sha256": "03a97040c1ff228dab5a3c464b612939612fcc3cdc3fdedee9d55fd6bb069dcc",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-005__en_light_w390_fs1.0.png",
+          "sha256": "1596d46c6e64187c1f0f2b7412dcd79c84b3becf7e05eae13a1579795a61e8ff",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS005-01",
+          "status": "matched",
+          "note": "Delete conversation scrim now preserves visible list/active row context as inventory requires; HTML uses chat context, an inventory-consistent host variation.",
+          "reference_requirement": "Modal scrim obscures the conversation list while preserving context."
+        },
+        {
+          "id": "DS005-02",
+          "status": "matched",
+          "note": "Real trash glyph in errorContainer replaces exclamation.",
+          "reference_requirement": "Error-container delete icon communicates destructive intent without relying on color alone."
+        },
+        {
+          "id": "DS005-03",
+          "status": "deviation",
+          "note": "DEVIATION: dialog title includes conversation name but is visibly regular/larger headlineSmall compared with the bold title in approved HTML. Fixture name substitution is not itself a deviation.",
+          "finding_id": "AUD-03",
+          "severity": "P3",
+          "reference_requirement": "Dialog title includes the conversation name."
+        },
+        {
+          "id": "DS005-04",
+          "status": "matched",
+          "note": "Body distinguishes permanent transcript deletion from unchanged space files.",
+          "reference_requirement": "Body says the transcript is permanently deleted while all space files remain unchanged."
+        },
+        {
+          "id": "DS005-05",
+          "status": "matched",
+          "note": "Written pending-confirmation note and visible row remain.",
+          "reference_requirement": "The active row stays visible until the server confirms deletion."
+        },
+        {
+          "id": "DS005-06",
+          "status": "matched",
+          "note": "Safe Cancel visually separated with correct rounded12dp action; keyboard initial focus is verified by separate QA, not inferred from image.",
+          "reference_requirement": "Cancel is the initial-focus safe action."
+        },
+        {
+          "id": "DS005-07",
+          "status": "matched",
+          "note": "Explicit destructive action now uses errorContainer/error and rounded12dp shape without early success.",
+          "reference_requirement": "Delete conversation is an explicit danger action and never announces success early."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-005-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-005-expanded.png"
+      ]
+    },
+    {
+      "id": "SCR-DS-006",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-006__ar_dark_w390_fs1.0.png",
+          "sha256": "83a85a60b5152ba71838c9ef8b69a812d2ad908dda87d2959a997712183baf52",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-006__ar_light_w840_fs1.3.png",
+          "sha256": "f52318448dc86fced29b77d41a70dfbaf371f44fea0abef61a27cec703d065b0",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-006__en_dark_w840_fs1.0.png",
+          "sha256": "98319e2b9cbbbdbec30a85dd578bd0fd5f1b056afa7046f943b07d75e8915b81",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-006__en_light_w390_fs1.0.png",
+          "sha256": "4211d183b7bc1bb118184587d99453e477e82f96d952ecaa11ba80751a62e6ab",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/filtered_empty/SCR-DS-006__ar_dark_w390_fs1.0.png",
+          "sha256": "86519eaa21f18dce4bc1becab16c6d221253e804efaf89abeed0b2050e44cf1b",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "filtered_empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/filtered_empty/SCR-DS-006__ar_light_w840_fs1.3.png",
+          "sha256": "7e3487e6b6064544b078e9d5bac069287f378c4c312abace75fa0adc28ffe20b",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "filtered_empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/filtered_empty/SCR-DS-006__en_dark_w840_fs1.0.png",
+          "sha256": "a23a7b95f0c847d85dfa7aad976ff1551a598c5c0c2715d445b680101a3cc4ba",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "filtered_empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/filtered_empty/SCR-DS-006__en_light_w390_fs1.0.png",
+          "sha256": "3832189aa2b9fb0066a9f46b34d802a564f7adc1a48beee3168ab6521b9a0160",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "filtered_empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-006__ar_dark_w390_fs1.0.png",
+          "sha256": "7c5b2face6d1b275ceff5af3975040f37fdfa22eea324bf771e57061113e0924",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-006__ar_light_w840_fs1.3.png",
+          "sha256": "5875259d8d5e4724ec104c7b0bcf49ae0cda42bd0d92112adf803accaf7c2b05",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-006__en_dark_w840_fs1.0.png",
+          "sha256": "267e280bc60b3e6bb02c53dc51ec730ebf30561ddeb86b9caa85c5b92be3796d",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-006__en_light_w390_fs1.0.png",
+          "sha256": "5c9dfa0ba46dd4c18c94934e4036cc48783298801660d11a9a3994c186d17832",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-006__ar_dark_w390_fs1.0.png",
+          "sha256": "240297c75f267b37b716c19756bf1f50a185f9d7f3ac07fa0dc064a4ef1fcdb6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-006__ar_light_w840_fs1.3.png",
+          "sha256": "712b0110b1efd96132b7d14700543648b111de67a2e4cc6e0972e7ea51614977",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-006__en_dark_w840_fs1.0.png",
+          "sha256": "c88c8673d81aa4373faa11a4ec5c7de19a8b478c9f3823c532b2e7b8ea6e0d90",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-006__en_light_w390_fs1.0.png",
+          "sha256": "38951c8e490e6ca4f89773987821b3dbf40f3493dab6d61a4801659a28b61807",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-006__ar_dark_w390_fs1.0.png",
+          "sha256": "3645d701774cae000fbd128c4dab967136f1f1393b7abc959360cf78122d999f",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-006__ar_light_w840_fs1.3.png",
+          "sha256": "70d147330f10e948b30baaac61c26d8cac35ca16d08505242bec6f3669c8a45b",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-006__en_dark_w840_fs1.0.png",
+          "sha256": "d81763951c1136367f9746b8fd4e2bae5ece0e1d47609f802538f219a5b7e34f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-006__en_light_w390_fs1.0.png",
+          "sha256": "a1b77066184b3b62995030be771ae996a22b1468c2fb02e5d6638a29cc4623ae",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-006__ar_dark_w390_fs1.0.png",
+          "sha256": "453eca7bf622e2eae94530107cab9148ad2ea46032be62f90b99b7229d621cb9",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-006__ar_light_w840_fs1.3.png",
+          "sha256": "4e84db589c62d80417b14517ff6f8cd2bbcb34d806c2e11e7eb720577f8325c0",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-006__en_dark_w840_fs1.0.png",
+          "sha256": "5a11269450d4e46f50e71086c1956a5b88fd8b25ea2a19880bf9390fb7b1db4e",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-006__en_light_w390_fs1.0.png",
+          "sha256": "244ad958079ec7db28d1a1b5771bfe89689602e4d9356540ee3659dd00361122",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-006__ar_dark_w390_fs1.0.png",
+          "sha256": "a9b039d51866b03872c9593d8ef1db214c8ca773842e0b7cd872cd7b0a39e0d6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-006__ar_light_w840_fs1.3.png",
+          "sha256": "f1a67bf8724beb43a0676e9c1a17584f177b852135f04635aace3e2135c250a6",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-006__en_dark_w840_fs1.0.png",
+          "sha256": "937f872c1570467aa0c59ce85ac1deebf1f1cf9e35f722ec426a6bbb84f61b8f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-006__en_light_w390_fs1.0.png",
+          "sha256": "09b9427d8ef6a73628a13b3d6e91afe83709714edee8ad16b0f2027f93481afa",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS006-01",
+          "status": "matched",
+          "note": "Sources header names selected space and Back in compact.",
+          "reference_requirement": "Sources header shows the selected space and returns to the active conversation in compact layout."
+        },
+        {
+          "id": "DS006-02",
+          "status": "matched",
+          "note": "12dp primary Add source is present and leads to visible file/text alternatives in the separate choice fixture.",
+          "reference_requirement": "Add source action offers system file picker and conditional Add text flow."
+        },
+        {
+          "id": "DS006-03",
+          "status": "matched",
+          "note": "Written explanation distinguishes upload, safety and indexing.",
+          "reference_requirement": "Explanation states that uploaded files affect answers only after successful indexing."
+        },
+        {
+          "id": "DS006-04",
+          "status": "deviation",
+          "note": "DEVIATION: all four filters have readable localized labels and selection state, but FilterChip rounded rectangles and selected cyan secondaryContainer differ from full-pill/primaryContainer chips in approved reference. Two-row/vertical wrapping accommodates inventory's additional filters.",
+          "finding_id": "AUD-04",
+          "severity": "P3",
+          "reference_requirement": "Filter chips separate all, indexed, not indexed, and failed sources with written labels."
+        },
+        {
+          "id": "DS006-05",
+          "status": "matched",
+          "note": "Unified source cards visible.",
+          "reference_requirement": "Unified source list joins file and knowledge state by stable id rather than file name."
+        },
+        {
+          "id": "DS006-06",
+          "status": "matched",
+          "note": "Bordered surface cards restore document avatar and separate secondary/amber written safety/index statuses.",
+          "reference_requirement": "Each source row shows name and confirmed metadata plus separate File safety and Answer index statuses."
+        },
+        {
+          "id": "DS006-07",
+          "status": "matched",
+          "note": "12dp Index/Retry is visible only for relevant eligible fixture states; unsafe index cases remain disabled.",
+          "reference_requirement": "Index or Retry appears only for the applicable confirmed state and permission."
+        },
+        {
+          "id": "DS006-08",
+          "status": "matched",
+          "note": "Details/Rename/Delete are separately labelled controls.",
+          "reference_requirement": "Source row opens details; rename and delete remain separate labelled actions."
+        },
+        {
+          "id": "DS006-09",
+          "status": "deviation",
+          "note": "Empty/filtered-empty outlined surface offers 12dp Add and filtered Show all. DEVIATION: title uses 16sp/22sp Semibold titleMedium rather than approved 22sp/28sp Bold empty-title token.",
+          "finding_id": "AUD-02",
+          "severity": "P3",
+          "reference_requirement": "Empty state offers an allowed add path; filtered-empty state can restore all sources."
+        },
+        {
+          "id": "DS006-10",
+          "status": "matched",
+          "note": "Offline retains loaded authorized sources with amber notice and disabled mutation controls; partial uses error notice; denied/session hide protected content with error treatment.",
+          "reference_requirement": "Partial-read, offline, permission, and session variants identify stale or hidden content safely."
+        },
+        {
+          "id": "DS006-11",
+          "status": "deviation",
+          "note": "DEVIATION / reference-token conflict: en/dark840/fs1.0 sources remain a supporting end pane without shrinking the conversation below readability, but end pane is approximately210dp instead of written300–340dp. HTML's relative sizing itself disagrees with that range; Arabic840/fs1.3 collapse is correct. No owner exception is assumed.",
+          "finding_id": "AUD-05",
+          "severity": "P3",
+          "reference_requirement": "Expanded layout presents sources as a supporting end pane without shrinking the conversation below readability."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006--filtered_empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006--offline-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006--partial-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006--permission_denied-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006--session_expired-states.png"
+      ]
+    },
+    {
+      "id": "SCR-DS-007",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/choice/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "4a16baaf58ec671104ea1a5762d5bf9f95f01fbbe0cd405150937586221b6450",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "choice"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/choice/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "ca68f8409d831ccd82b74a9a32b5daee446be6272761638c17d4b94d28e304ac",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "choice"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/choice/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "118d9c527f566bbdf6513b3b1f61ca6b53c129bdbb8415ab440517576cc486c4",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "choice"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/choice/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "07da6c2d4412f8e79c013991d90f59a26a874bcb7e5b8769fa86a5c5f66522a0",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "choice"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "76d456d8348d1167d5286ed6163a7518046c344ebb17c49f5fc84a803a9a22bb",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "39d90e281377c8f0a9319978b46f892c036af95730edbe1c240e51fc3126e000",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "0289cda9190e7790f8d5380e58ed4586d8c51ba263c156bee53f25cafac853f8",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "bf74919556134eed96413ffa8d818f4c78f8e9a37c7673f91561e58c860a03da",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "3645d701774cae000fbd128c4dab967136f1f1393b7abc959360cf78122d999f",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "70d147330f10e948b30baaac61c26d8cac35ca16d08505242bec6f3669c8a45b",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "d81763951c1136367f9746b8fd4e2bae5ece0e1d47609f802538f219a5b7e34f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "a1b77066184b3b62995030be771ae996a22b1468c2fb02e5d6638a29cc4623ae",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "aca59ef9fd1708b30c4ff2c6f7ad5b672e25a22efc8fe3b4be0b3c1b83efb745",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "9dd71a97d7c8e155d32f5325a763e5c728b1c71b92e35362f4982358b7349a80",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "14e12038fa4688b7afbf79e9c50b0dded964285efef7f0d99544d2b0cbbd662a",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "6175c8adc16a292eacc0bd628eb7c487f92246856a6621dd327fd54aaa469270",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "a9b039d51866b03872c9593d8ef1db214c8ca773842e0b7cd872cd7b0a39e0d6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "f1a67bf8724beb43a0676e9c1a17584f177b852135f04635aace3e2135c250a6",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "937f872c1570467aa0c59ce85ac1deebf1f1cf9e35f722ec426a6bbb84f61b8f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "09b9427d8ef6a73628a13b3d6e91afe83709714edee8ad16b0f2027f93481afa",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_byte_upload/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "f7105711b84324cd3366242b08be64650294e290e1a0d8d7afa05c46b58e412b",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_byte_upload"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_byte_upload/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "0966733d687071a0516cec3135448e146383223c170e91627a7cc1004e585ea1",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "upload_byte_upload"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_byte_upload/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "bc42693120951a2df9eaef41ff789793d229df191accf2fadfbadf2f0ab3a390",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "upload_byte_upload"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_byte_upload/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "09a9b84e57b564f7d28040f64a5a8b25a82e0679976a0c4a7f3b26e621133841",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_byte_upload"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_expired/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "57f2649dc1b8ce6cd1e97e32ee406149cc6a170bc3e4d86e2a5b7b259389f896",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_expired/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "ef43ff8ff24e2cfcfd9404e40a1f26f43f2912d6cae48e3b9dd494c6f13e3d29",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "upload_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_expired/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "78429481004b41b3fa96889a2b7981137ff6d411eb99d2e90e2d87dd44eb85d6",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "upload_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_expired/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "2aff62ce3587ed0067ca24ef0fecf0ef9ec84da0d233d57b6cf2e2b46f793d7b",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_failed/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "5c7ab58b1f9f100c8d6f2fd1bb743c3b2a433821306b2936383f5052ac3c0ce0",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_failed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_failed/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "41ea955d6218795eab3149e4f9b3f9ad379002d3322d94eed7827ee82889e615",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "upload_failed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_failed/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "2bd0be8aa2f979ab5b2826bf19d85de689091a10827546c1ee964d37bf070956",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "upload_failed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_failed/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "c1f95f79f4330d7bb5628c801d8390727c2a608fa0e70cce37780e8cc12df406",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_failed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_quarantined/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "d17e6201721b28ee5116ad5c4d35d1b9ed28b8fff15b6551819144eaf19cb7d6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_quarantined"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_quarantined/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "ec8b03d42fc4c2f9a12c4f54db6122f398d4fb115ca26a1335fcd9c77cb4e57d",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "upload_quarantined"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_quarantined/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "899bc464daeba2eb85d9e6e66f46e77cf8e8650a6bfcd69dcbe41b48f38f8f12",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "upload_quarantined"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_quarantined/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "5425e6f018784390ef75033dc1beba8f56f026522588befe407af44c69b3d8e4",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_quarantined"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_ready_not_indexed/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "aeffeb1f759562cb92e62fa205c5c893f0ceeff9e30587de2d031f8c559c34e7",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_ready_not_indexed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_ready_not_indexed/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "97ece19bd57b29b40317d8661282c5ecf947385341e98c13b39995d84a779715",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "upload_ready_not_indexed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_ready_not_indexed/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "8dafb6f624860820a7a169c3a373768f2637a70f9139c08f506b3d4eb71d6271",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "upload_ready_not_indexed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_ready_not_indexed/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "58d40f2c3052a1e468d9c9bfdf1b93d39d7794d03e67eaccc3ac586fd62c8620",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_ready_not_indexed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_recovery_required/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "ba3acb0f5cb451d0858ad3885f10c35b29640d4f0c7309b8b35355b90cb25849",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_recovery_required"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_recovery_required/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "d43b905e8e4decb0d9fc72e2c31cb03861361ac247ca5ae072b04f87149b2461",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "upload_recovery_required"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_recovery_required/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "8b9634fe839b5d2c780d0b85d0f226d7ac192bb96480d91f1aa27e3a02d6ca5c",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "upload_recovery_required"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_recovery_required/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "95d1d1174d826f7be322b8ef0bbed7711f7a4b49e2ec1c97a210409b4347745f",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_recovery_required"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_upload_complete/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "9f0f0509f342c5e525fe98df4030d309e7dd18d5b51eb4bf42b9b1f2cf833cf5",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_upload_complete"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_upload_complete/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "c3d0941d6f69ccaa868e722e59e89f54c93ab03314b5b55299affce828eab7c4",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "upload_upload_complete"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_upload_complete/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "3cfe2a5033d41d45d3c5cbe892d8ee9a4aef1025041a175b6db27c482df3e4d1",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "upload_upload_complete"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/upload_upload_complete/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "f39a1974986ea31f3dc50a78e8a838956e64aee3ca0d058b4d1e214b8addea6a",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "upload_upload_complete"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS007-01",
+          "status": "matched",
+          "note": "Add source surface header with Back/selected space visible.",
+          "reference_requirement": "Add source header includes Back and the selected space."
+        },
+        {
+          "id": "DS007-02",
+          "status": "matched",
+          "note": "Choice case now shows adjacent wrapping file/text actions and document glyph without generic container.",
+          "reference_requirement": "Choice panel distinguishes Choose file from conditional Add text as a file."
+        },
+        {
+          "id": "DS007-03",
+          "status": "matched",
+          "note": "Persistent File name/Content labels and retained values are visible in 12dp outlined fields; no invented MIME/size promise.",
+          "reference_requirement": "Add-text variant has persistent File name and Content labels and no invented MIME or size promise."
+        },
+        {
+          "id": "DS007-04",
+          "status": "matched",
+          "note": "All six distinct phases use bordered cards, completed secondary and active amber roles.",
+          "reference_requirement": "Written stages separate local preparation, registration, byte upload, completion, safety scan, and indexing."
+        },
+        {
+          "id": "DS007-05",
+          "status": "matched",
+          "note": "Only active phase has indicator; no invented percentage.",
+          "reference_requirement": "Only the active stage shows an accessible progress indicator; no fake percentage is displayed."
+        },
+        {
+          "id": "DS007-06",
+          "status": "matched",
+          "note": "Ready-unindexed/quarantined/failed/expired/recovery variants show distinct written notices; no false indexing readiness.",
+          "reference_requirement": "Ready but not indexed, quarantined, failed, expired upload, and ambiguous recovery are distinct states."
+        },
+        {
+          "id": "DS007-07",
+          "status": "matched",
+          "note": "12dp Cancel is available for the captured cancellable byte-transfer state and absent/disabled where cancellation is not safe.",
+          "reference_requirement": "Cancel is available only when the confirmed operation can be cancelled safely."
+        },
+        {
+          "id": "DS007-08",
+          "status": "matched",
+          "note": "12dp Done is enabled only for pictured confirmed successful terminal state; failure/expiry/quarantine/recovery do not announce false readiness.",
+          "reference_requirement": "Done returns to sources only after a confirmed terminal state."
+        },
+        {
+          "id": "DS007-09",
+          "status": "matched",
+          "note": "Offline amber and denied/session error panels block unsafe repeated operations; safe localized actions are visible.",
+          "reference_requirement": "Offline, permission, and session variants do not repeat a registration, upload, or indexing request blindly."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--choice-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--offline-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--permission_denied-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--session_expired-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--upload_byte_upload-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--upload_expired-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--upload_failed-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--upload_quarantined-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--upload_ready_not_indexed-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--upload_recovery_required-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-007--upload_upload_complete-states.png"
+      ]
+    },
+    {
+      "id": "SCR-DS-008",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_failed/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "79e5a4d320708d358dd7dec098e62ff1d561267e630b3b3fe35fad2e2a9be4f2",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "index_failed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_failed/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "10e0532f4f1d1643165348c7f68788280ebc3ea745551232d5d405715886284c",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "index_failed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_failed/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "cb7e32d2ac654ff45d52da2cd41d8cf16b886b362526ae624cf52cb3cb48e42c",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "index_failed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_failed/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "f0c53b6f52fc3cf57e088ce867e82a73654a8d6ea03e96cf92c280f33fad4bda",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "index_failed"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_indexing/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "356ec4408f2297f17d517da605195cad1d17e5c71dfee36d504d9680211325c1",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "index_indexing"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_indexing/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "1752805b67ff5cb15a917e658c7d8fa331e85ba99cb5cae3fc7d84bad59e0713",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "index_indexing"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_indexing/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "30ea906df2b957d5c0b10901e178023ae9bec92e815ed79183e5a9db42042ee9",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "index_indexing"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_indexing/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "4c3ca7abce2d06be62297fee79d59f66c01d6c5b7ac37de08882290d8fae7ca1",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "index_indexing"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_not_started/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "c43702d6af32ca4c1e599e0aefb6b6eaf28fdd576dfc8b2e1c13a318c3a9bceb",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "index_not_started"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_not_started/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "ed507c919f03e6656e815118d07b79a8f4fcff1c71c4c007662bf1eeedd834fe",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "index_not_started"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_not_started/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "17675fe4ed8477a3e7b28dff086bc72e4a4ccf727f8f097f71b9d3f1d969c650",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "index_not_started"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_not_started/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "ae30127405167d7081504b1cc4f657939b3183ec48353bec6202af98ea24ca14",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "index_not_started"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_pending/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "4473e51b8d20f114e69ef1814cca0ff270007c7e1c69feb6da80887c3b2fef1a",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "index_pending"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_pending/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "22924b8605a3c78a740a5f7d549f6e2231afb2d34816909a6342c7c0cc606c97",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "index_pending"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_pending/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "f75e76df6adba289fc381ce94e98a202355b52da2ac35d145dc5427f8826d98b",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "index_pending"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/index_pending/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "4af1f80ada56b2e9d921bed2565f55173c02f505bd251e6ec47b97a32cb00047",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "index_pending"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "764bb2f417cc16804aed42633a46c973b5cb3e045bff6b420c939babfd6c248a",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "6c814ea88bb854b15e073015de5e9325196885d11f0640f40bd73795097ca927",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "6ffc2328c2e08095711d8b34f420b1ee6bc0c2908fa506dac94d23e674e02237",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "1d6ab20bf573d8152972fa841b6324cf259fadd18cb7e4c16f1f525dc5b60900",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "9bd6724b5e5f2a98d063f82def499d84577c41167ab687a896b48a6faebf6bbe",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "95454c0ff499fee12800dd70d51907fe39f1cc5f6704ac46450ecc51ea742b04",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "d84eb278d4f640e0c9940ac3610da7b5870e522bdcd2ea1103638b0a938d59af",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "98004d90a418ac1a776acaa9b1ab8022d6f5d2c3d3bb69675b869eeb8a09f36e",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "3645d701774cae000fbd128c4dab967136f1f1393b7abc959360cf78122d999f",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "70d147330f10e948b30baaac61c26d8cac35ca16d08505242bec6f3669c8a45b",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "d81763951c1136367f9746b8fd4e2bae5ece0e1d47609f802538f219a5b7e34f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "a1b77066184b3b62995030be771ae996a22b1468c2fb02e5d6638a29cc4623ae",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_quarantined/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "08c027d1f82fd4d3247422140915e96600aaaca20e3c94e7e974a71f91cb1900",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "safety_quarantined"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_quarantined/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "be39908d3238889c0fec45f9c7bda2b194aefc5666822a3f94c04c7c0ff9aedc",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "safety_quarantined"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_quarantined/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "9e51f03ed02a0847bd04e35bce42ee13bb3510ab783c7e8f5b6ef586245b9694",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "safety_quarantined"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_quarantined/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "dee586d9e430676a9bd92bbc7563156f322423344f8759e4246b380c223107c9",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "safety_quarantined"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_scanning/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "80fa0d08006f8ba423817c9b9e06493e715442fc98eda7ba692891ea0ff20635",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "safety_scanning"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_scanning/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "bda78877b8867126301b3eb3e9eee8bb20e6aeda3c54e256d9eb22ed520d9c02",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "safety_scanning"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_scanning/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "f5dcfdcbb628f025f07371d4931e6de89ea65e1db082a7e5ab63fff7ad6d095e",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "safety_scanning"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_scanning/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "c07012e282f27009fc3964f311bfd27f588a1ec1b7258c85534fa6cacd760818",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "safety_scanning"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_uploaded/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "dcc3014c590e128635933021f4f37209fc860fc067468f2c1dc39347dcd6dce5",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "safety_uploaded"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_uploaded/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "53a8068c3a4578101525d7a94aeb3b5d9217b74adf7e6d07eaf59084cd77f55f",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "safety_uploaded"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_uploaded/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "42c537711b8123be8c9169480f67076ef96d25834e43585fa2ba2faeb57c66dd",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "safety_uploaded"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/safety_uploaded/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "f665cf103650808bc2d9bee7ffed9546e980ba6d2eed546ce7a7e7c615d9ea8e",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "safety_uploaded"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "fe4daa33d5e21c14add883766d6c2f4d6cbff4e0456d7ce00d6d1f4ff00b2021",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "9b71f8828fc2bcd7c3c8419dc5679e9c9bf547909b51a0ab28772811f6f152d2",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "e29c7dd92c01a7a3612f7be9d4d372776ddb1c443a4b274ce555ddb75ae8ec0e",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "dc32b9bcdfcf133915d4b478aaaf3a6f5dab49f4f2aba7136f8c0c42de4e418f",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "a9b039d51866b03872c9593d8ef1db214c8ca773842e0b7cd872cd7b0a39e0d6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "f1a67bf8724beb43a0676e9c1a17584f177b852135f04635aace3e2135c250a6",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "937f872c1570467aa0c59ce85ac1deebf1f1cf9e35f722ec426a6bbb84f61b8f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "09b9427d8ef6a73628a13b3d6e91afe83709714edee8ad16b0f2027f93481afa",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS008-01",
+          "status": "matched",
+          "note": "Localized details app bar with Back/selected space visible.",
+          "reference_requirement": "Source details app bar has directional Back and the selected-space label."
+        },
+        {
+          "id": "DS008-02",
+          "status": "matched",
+          "note": "Filename/type remain readable across all configs.",
+          "reference_requirement": "Source name and confirmed type are readable without truncating at large font scale."
+        },
+        {
+          "id": "DS008-03",
+          "status": "matched",
+          "note": "Separate bordered safety panel now includes explanatory text and all UPLOADED/SCANNING/READY/QUARANTINED variants are pictured with appropriate amber/secondary/error text.",
+          "reference_requirement": "File safety panel independently renders uploaded, scanning, ready, or quarantined."
+        },
+        {
+          "id": "DS008-04",
+          "status": "matched",
+          "note": "Separate bordered index panel now includes explanatory text and all NOT_STARTED/PENDING/INDEXING/INDEXED/FAILED variants are pictured.",
+          "reference_requirement": "Answer index panel independently renders not started, pending, indexing, indexed, or failed."
+        },
+        {
+          "id": "DS008-05",
+          "status": "matched",
+          "note": "RAG effect changes between ready/indexed and unavailable states.",
+          "reference_requirement": "RAG impact explains whether this source can currently contribute to answers."
+        },
+        {
+          "id": "DS008-06",
+          "status": "matched",
+          "note": "12dp Include/remove control is state-aware and disabled for unsafe/unindexed/offline cases; text distinguishes scope from access.",
+          "reference_requirement": "Include or remove from this conversation updates retrieval scope only and never grants file access."
+        },
+        {
+          "id": "DS008-07",
+          "status": "matched",
+          "note": "12dp Index/Retry/Rename have state/capability-dependent availability across captured index/safety variants.",
+          "reference_requirement": "Index or Retry and Rename appear only when confirmed by state, contract, and permission."
+        },
+        {
+          "id": "DS008-08",
+          "status": "matched",
+          "note": "Full-width Delete source now errorContainer/error with12dp corners.",
+          "reference_requirement": "Delete source is a full-width danger action with separate confirmation."
+        },
+        {
+          "id": "DS008-09",
+          "status": "matched",
+          "note": "Offline retains authorized source detail context with amber notice and disabled mutations; partial uses error notice; denied/session hide names and details.",
+          "reference_requirement": "Offline, partial, permission, and session variants hide or freeze actions without fabricating state."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--index_failed-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--index_indexing-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--index_not_started-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--index_pending-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--offline-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--partial-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--permission_denied-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--safety_quarantined-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--safety_scanning-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--safety_uploaded-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-008--session_expired-states.png"
+      ]
+    },
+    {
+      "id": "SCR-DS-009",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-009__ar_dark_w390_fs1.0.png",
+          "sha256": "ade80ca1b31bce69b4ef19f9c8514a5623c489d74488886bc7f69b3e2545607b",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-009__ar_light_w840_fs1.3.png",
+          "sha256": "37b7cf0e7d8d9c409542085355971cc4e64156b713c113d31800fb77e004d261",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-009__en_dark_w840_fs1.0.png",
+          "sha256": "b53d31c99e71e546dcf3b615f6d1d9ed4eea114ce3424691192e202119db27ea",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/empty/SCR-DS-009__en_light_w390_fs1.0.png",
+          "sha256": "5f350e5d45ea3ec5c025f6ee827c3bb9be1661ae49abe654a5f4e3d38ef26ed1",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "empty"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-009__ar_dark_w390_fs1.0.png",
+          "sha256": "812d97a53db5fc7c383d24b29e5516dee7ce9da6dd5441500d94d57fcc227656",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-009__ar_light_w840_fs1.3.png",
+          "sha256": "61dc49c5a3dfe2121f5a58561881c2fb8f369e7ccccf04da0b60eb297fda0532",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-009__en_dark_w840_fs1.0.png",
+          "sha256": "f0a50d155dd3f17805f98b37eb2a740ebf98050a9df7af2eb66316c8f14dd58a",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/error/SCR-DS-009__en_light_w390_fs1.0.png",
+          "sha256": "a3b66339195223730d5d1abcd1af4e3cddfe23cb41859f473a140a5ed5bad102",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "error"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/loading/SCR-DS-009__ar_dark_w390_fs1.0.png",
+          "sha256": "d0e5dbaf03169a8fe5b1b7927029167f3e4ede5236ce7b92d9c0aa210a9e0284",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "loading"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/loading/SCR-DS-009__ar_light_w840_fs1.3.png",
+          "sha256": "94419e4b27af56dedd91e62219dc473d12a317023e7c0c102aee869dfdebd043",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "loading"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/loading/SCR-DS-009__en_dark_w840_fs1.0.png",
+          "sha256": "ea18c34ff9adb68b3d0301ae27dc182ac3a0e090c47383647bb340e51886398f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "loading"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/loading/SCR-DS-009__en_light_w390_fs1.0.png",
+          "sha256": "12269147fd7b042b8788339523163e4091561d165dfed619d1bde1b6869ce11b",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "loading"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-009__ar_dark_w390_fs1.0.png",
+          "sha256": "76d456d8348d1167d5286ed6163a7518046c344ebb17c49f5fc84a803a9a22bb",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-009__ar_light_w840_fs1.3.png",
+          "sha256": "39d90e281377c8f0a9319978b46f892c036af95730edbe1c240e51fc3126e000",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-009__en_dark_w840_fs1.0.png",
+          "sha256": "0289cda9190e7790f8d5380e58ed4586d8c51ba263c156bee53f25cafac853f8",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/offline/SCR-DS-009__en_light_w390_fs1.0.png",
+          "sha256": "bf74919556134eed96413ffa8d818f4c78f8e9a37c7673f91561e58c860a03da",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "offline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-009__ar_dark_w390_fs1.0.png",
+          "sha256": "812d97a53db5fc7c383d24b29e5516dee7ce9da6dd5441500d94d57fcc227656",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-009__ar_light_w840_fs1.3.png",
+          "sha256": "61dc49c5a3dfe2121f5a58561881c2fb8f369e7ccccf04da0b60eb297fda0532",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-009__en_dark_w840_fs1.0.png",
+          "sha256": "f0a50d155dd3f17805f98b37eb2a740ebf98050a9df7af2eb66316c8f14dd58a",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/partial/SCR-DS-009__en_light_w390_fs1.0.png",
+          "sha256": "a3b66339195223730d5d1abcd1af4e3cddfe23cb41859f473a140a5ed5bad102",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "partial"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-009__ar_dark_w390_fs1.0.png",
+          "sha256": "3645d701774cae000fbd128c4dab967136f1f1393b7abc959360cf78122d999f",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-009__ar_light_w840_fs1.3.png",
+          "sha256": "70d147330f10e948b30baaac61c26d8cac35ca16d08505242bec6f3669c8a45b",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-009__en_dark_w840_fs1.0.png",
+          "sha256": "d81763951c1136367f9746b8fd4e2bae5ece0e1d47609f802538f219a5b7e34f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/permission_denied/SCR-DS-009__en_light_w390_fs1.0.png",
+          "sha256": "a1b77066184b3b62995030be771ae996a22b1468c2fb02e5d6638a29cc4623ae",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "permission_denied"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-009__ar_dark_w390_fs1.0.png",
+          "sha256": "949e2ddd6c24e2043c9464a0840dbe38fae883bcfe0f87a883b17c77272cbf59",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-009__ar_light_w840_fs1.3.png",
+          "sha256": "f03dc92fff73e25495730d513ecee8a750baccee44a7b1a1f389e967d17997d5",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-009__en_dark_w840_fs1.0.png",
+          "sha256": "e1575ce62e73329233d3f806b71ed836aca9f34a95ff8f799d523215db8ab1be",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-009__en_light_w390_fs1.0.png",
+          "sha256": "115694db428aec9c4a3195ce2521d6536840b78f01287f1fb1f8eab3cbe1b085",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-009__ar_dark_w390_fs1.0.png",
+          "sha256": "a9b039d51866b03872c9593d8ef1db214c8ca773842e0b7cd872cd7b0a39e0d6",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-009__ar_light_w840_fs1.3.png",
+          "sha256": "f1a67bf8724beb43a0676e9c1a17584f177b852135f04635aace3e2135c250a6",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-009__en_dark_w840_fs1.0.png",
+          "sha256": "937f872c1570467aa0c59ce85ac1deebf1f1cf9e35f722ec426a6bbb84f61b8f",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/session_expired/SCR-DS-009__en_light_w390_fs1.0.png",
+          "sha256": "09b9427d8ef6a73628a13b3d6e91afe83709714edee8ad16b0f2027f93481afa",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "session_expired"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS009-01",
+          "status": "matched",
+          "note": "Answer scope heading/Close visible; actual host-sheet focus return is outside isolated still images.",
+          "reference_requirement": "Bottom sheet or end-pane header names Answer scope and provides Close."
+        },
+        {
+          "id": "DS009-02",
+          "status": "matched",
+          "note": "All indexed option now bordered surface with written no-pins default.",
+          "reference_requirement": "All indexed sources option explains that it is the default represented by no pinned files."
+        },
+        {
+          "id": "DS009-03",
+          "status": "matched",
+          "note": "Selected subset option now bordered surface with explicit narrowing explanation.",
+          "reference_requirement": "Selected sources only option explains that any pin narrows answers to the pinned subset."
+        },
+        {
+          "id": "DS009-04",
+          "status": "matched",
+          "note": "Individual source cards now show checkbox, name, confirmed fixture pin and secondary indexed text.",
+          "reference_requirement": "Source checklist shows indexed files and the confirmed server pin state."
+        },
+        {
+          "id": "DS009-05",
+          "status": "matched",
+          "note": "Unindexed row disabled with explicit amber exclusion reason.",
+          "reference_requirement": "Unindexed source remains visible but disabled with a written reason."
+        },
+        {
+          "id": "DS009-06",
+          "status": "matched",
+          "note": "Error/partial snapshots show concrete update failure and restoration of previous selection; pictured checkboxes retain confirmed fixture state. Earlier-answer immutability is separate behavior evidence.",
+          "reference_requirement": "Inline failure restores the affected checkbox to server state and does not alter earlier answers."
+        },
+        {
+          "id": "DS009-07",
+          "status": "matched",
+          "note": "Use all now text action, below checklist; no file deletion claim.",
+          "reference_requirement": "Use all removes every pin without deleting files or changing space."
+        },
+        {
+          "id": "DS009-08",
+          "status": "matched",
+          "note": "12dp Done is visible below scope checklist; focus return is outside isolated still-image evidence.",
+          "reference_requirement": "Done closes the scope surface and returns focus to its trigger."
+        },
+        {
+          "id": "DS009-09",
+          "status": "deviation",
+          "note": "Loading/empty surfaces are neutral, offline amber, denied/session error, with protected cached pins hidden. DEVIATION: empty title uses regular headlineSmall instead of approved 22sp/28sp Bold empty-title token.",
+          "finding_id": "AUD-02",
+          "severity": "P3",
+          "reference_requirement": "Loading, empty, offline, permission, and session variants do not treat cached pins as authorization."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009--error-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009--loading-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009--offline-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009--partial-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009--permission_denied-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009--session_expired-states.png"
+      ]
+    },
+    {
+      "id": "SCR-DS-010",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-010__ar_dark_w390_fs1.0.png",
+          "sha256": "ffc096b594912aad7b53be9fdfd71d33c2c98ce8bf5f797f51840ff3615a1670",
+          "config": {
+            "locale": "ar",
+            "theme": "dark",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-010__ar_light_w840_fs1.3.png",
+          "sha256": "28aaf4a52e2c236e9912c1be30037b7b5753b9d46c8e493157c13381c0c90bce",
+          "config": {
+            "locale": "ar",
+            "theme": "light",
+            "width_dp": 840,
+            "font_scale": 1.3
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-010__en_dark_w840_fs1.0.png",
+          "sha256": "4ff8c47888fce3891bd9aea929add30257771a40cd2773911cae9ed208a8aa05",
+          "config": {
+            "locale": "en",
+            "theme": "dark",
+            "width_dp": 840,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/SCR-DS-010__en_light_w390_fs1.0.png",
+          "sha256": "57b6d0382a77812d61afa65e6d820246baf51d53842051b74537a32c189fe485",
+          "config": {
+            "locale": "en",
+            "theme": "light",
+            "width_dp": 390,
+            "font_scale": 1
+          },
+          "scenario": "baseline"
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS010-01",
+          "status": "matched",
+          "note": "Delete-source scrim now preserves visible source-details context as inventory requires; stronger than simplified HTML chat background.",
+          "reference_requirement": "Modal scrim obscures source details while preserving context."
+        },
+        {
+          "id": "DS010-02",
+          "status": "matched",
+          "note": "Trash glyph now in errorContainer.",
+          "reference_requirement": "Error-container source-delete icon communicates destructive intent beyond color."
+        },
+        {
+          "id": "DS010-03",
+          "status": "deviation",
+          "note": "DEVIATION: dialog title includes filename but is visibly regular/larger headlineSmall compared with bold approved HTML dialog title. Different filename is fixture content.",
+          "finding_id": "AUD-03",
+          "severity": "P3",
+          "reference_requirement": "Dialog title includes the source file name."
+        },
+        {
+          "id": "DS010-04",
+          "status": "matched",
+          "note": "Body states every-conversation impact and removal from pinned scopes.",
+          "reference_requirement": "Body says the source stops contributing to every conversation in the space and leaves pinned scopes."
+        },
+        {
+          "id": "DS010-05",
+          "status": "matched",
+          "note": "Unconfirmed index/chunk purge wording is now absent; no internal contract instruction appears.",
+          "reference_requirement": "Index and chunk purge wording appears only when confirmed by the working backend contract."
+        },
+        {
+          "id": "DS010-06",
+          "status": "matched",
+          "note": "Written service confirmation notice and underlying details remain.",
+          "reference_requirement": "The source remains visible until deletion is confirmed by the service."
+        },
+        {
+          "id": "DS010-07",
+          "status": "matched",
+          "note": "Cancel separated as safe12dp action; initial focus is external executed QA evidence.",
+          "reference_requirement": "Cancel is the initial-focus safe action."
+        },
+        {
+          "id": "DS010-08",
+          "status": "matched",
+          "note": "Delete source explicit danger action uses errorContainer/error and12dp corners.",
+          "reference_requirement": "Delete source is an explicit danger action and never announces success early."
+        }
+      ],
+      "comparison_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-010-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-010-expanded.png"
+      ]
+    }
+  ],
+  "owner_instruction": "توقف عن دورات الاصلاح قم بالفحص والمقارنة وتوثيق الاختلاف والانحراف عن التصميم بدون اكمال الاصلاح",
+  "approved_design_packet": [
+    {
+      "path": "docs/delivery/tasks/data-search-agent/ux-journeys.md",
+      "sha256": "04778d7c18358c452290ba14b14d9addb443e7aeaeffcc5b0391e2b1797e8a26"
+    },
+    {
+      "path": "docs/delivery/tasks/data-search-agent/wireframes.md",
+      "sha256": "1ae73a1e04f6def53dd107adddcf4921ee674b1a2d6e61fd958b7d1681987199"
+    },
+    {
+      "path": "docs/delivery/tasks/data-search-agent/design-reference.html",
+      "sha256": "a980babc438fbd667dbf621a7a0e246de27b4178a4d071b90065336f4b28a884"
+    },
+    {
+      "path": "docs/delivery/tasks/data-search-agent/design-tokens.md",
+      "sha256": "2122771e81d0fddb8b9b11516d82d34b1d0afb958f26664a276d0c99d70667f2"
+    },
+    {
+      "path": "docs/delivery/tasks/data-search-agent/screen-inventory.json",
+      "sha256": "4b32d7a09513f43ecb11cba817fc41c7ab3294e542d7b24bf2266c6f2602c1c8"
+    }
+  ],
+  "manifest": {
+    "path": "docs/delivery/evidence/screenshots/data-search-agent-conform-e56cb5e3/manifest.json",
+    "sha256": "921963b9ada24440cf29009adaecaf39e9ec2c892314e6f0fa773acbc1b19d25",
+    "images": 272,
+    "bytes": 33345505
+  },
+  "requirements": [
+    "DS-REQ-01",
+    "DS-REQ-02",
+    "DS-REQ-03",
+    "DS-REQ-04",
+    "DS-REQ-05",
+    "DS-REQ-06",
+    "DS-REQ-07",
+    "DS-REQ-08",
+    "DS-REQ-09",
+    "DS-REQ-10",
+    "DS-REQ-11",
+    "DS-REQ-12",
+    "DS-REQ-13",
+    "DS-REQ-14",
+    "DS-REQ-15"
+  ],
+  "configurations": [
+    {
+      "locale": "en",
+      "theme": "light",
+      "width_dp": 390,
+      "font_scale": 1
+    },
+    {
+      "locale": "ar",
+      "theme": "dark",
+      "width_dp": 390,
+      "font_scale": 1
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width_dp": 840,
+      "font_scale": 1
+    },
+    {
+      "locale": "ar",
+      "theme": "light",
+      "width_dp": 840,
+      "font_scale": 1.3
+    }
+  ],
+  "audit_limitations": [
+    "Static JVM Roborazzi images demonstrate pictured visual states, not TalkBack announcements, physical touch accuracy, IME avoidance, focus return, live network behavior or device rendering.",
+    "The source and every PNG hash were checked current; tests/code review are separate QA evidence and do not determine visual judgments.",
+    "No pixel-identity claim: system-font rasterization, HTML review chrome, fixture names/counts/time/message text and conditionally enabled capabilities are documented separately.",
+    "AUD-05 records a conflict between written pane-width tokens and relative HTML rendering; it is retained as deviation rather than silently granting an exception."
+  ],
+  "findings": [
+    {
+      "id": "AUD-01",
+      "severity": "P3",
+      "classification": "confirmed_visual_deviation",
+      "elements": [
+        "DS001-04"
+      ],
+      "configs": [
+        {
+          "locale": "en",
+          "theme": "light",
+          "width_dp": 390,
+          "font_scale": 1
+        },
+        {
+          "locale": "ar",
+          "theme": "dark",
+          "width_dp": 390,
+          "font_scale": 1
+        },
+        {
+          "locale": "en",
+          "theme": "dark",
+          "width_dp": 840,
+          "font_scale": 1
+        },
+        {
+          "locale": "ar",
+          "theme": "light",
+          "width_dp": 840,
+          "font_scale": 1.3
+        }
+      ],
+      "reference": "design-tokens.md §4: cards16dp; HTML card15px",
+      "actual": "Space-row cards20dp corners",
+      "image_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-001-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-001-expanded.png"
+      ],
+      "source_corroboration": [
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:238",
+        "app/src/main/java/android/aizzak/com/core/designsystem/AizzakTheme.kt:63"
+      ]
+    },
+    {
+      "id": "AUD-02",
+      "severity": "P3",
+      "classification": "confirmed_visual_deviation",
+      "elements": [
+        "DS001-07",
+        "DS002-11",
+        "DS003-07",
+        "DS006-09",
+        "DS009-09"
+      ],
+      "configs": [
+        {
+          "locale": "en",
+          "theme": "light",
+          "width_dp": 390,
+          "font_scale": 1
+        },
+        {
+          "locale": "ar",
+          "theme": "dark",
+          "width_dp": 390,
+          "font_scale": 1
+        },
+        {
+          "locale": "en",
+          "theme": "dark",
+          "width_dp": 840,
+          "font_scale": 1
+        },
+        {
+          "locale": "ar",
+          "theme": "light",
+          "width_dp": 840,
+          "font_scale": 1.3
+        }
+      ],
+      "reference": "design-tokens.md §3: empty-title headlineSmall22sp/28sp/Bold; HTML empty chat heading bold",
+      "actual": "DS001/002/009 empty headings use regular inherited headlineSmall; DS003/006 use smaller16sp/22sp Semibold titleMedium",
+      "image_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-001--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-003--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-009--empty-states.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006--filtered_empty-states.png"
+      ],
+      "source_corroboration": [
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:318",
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:502",
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:713",
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:1253",
+        "app/src/main/java/android/aizzak/com/core/designsystem/AizzakTheme.kt:47"
+      ]
+    },
+    {
+      "id": "AUD-03",
+      "severity": "P3",
+      "classification": "confirmed_visual_deviation",
+      "elements": [
+        "DS005-03",
+        "DS010-03"
+      ],
+      "configs": [
+        {
+          "locale": "en",
+          "theme": "light",
+          "width_dp": 390,
+          "font_scale": 1
+        },
+        {
+          "locale": "ar",
+          "theme": "dark",
+          "width_dp": 390,
+          "font_scale": 1
+        },
+        {
+          "locale": "en",
+          "theme": "dark",
+          "width_dp": 840,
+          "font_scale": 1
+        },
+        {
+          "locale": "ar",
+          "theme": "light",
+          "width_dp": 840,
+          "font_scale": 1.3
+        }
+      ],
+      "reference": "design-reference.html dialog h1 is bold",
+      "actual": "Dialog titles are visibly regular and larger, using inherited headlineSmall",
+      "image_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-005-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-005-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-010-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-010-expanded.png"
+      ],
+      "source_corroboration": [
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:1034"
+      ]
+    },
+    {
+      "id": "AUD-04",
+      "severity": "P3",
+      "classification": "confirmed_visual_deviation",
+      "elements": [
+        "DS002-02",
+        "DS006-04"
+      ],
+      "configs": [
+        {
+          "locale": "en",
+          "theme": "light",
+          "width_dp": 390,
+          "font_scale": 1
+        },
+        {
+          "locale": "ar",
+          "theme": "dark",
+          "width_dp": 390,
+          "font_scale": 1
+        },
+        {
+          "locale": "en",
+          "theme": "dark",
+          "width_dp": 840,
+          "font_scale": 1
+        },
+        {
+          "locale": "ar",
+          "theme": "light",
+          "width_dp": 840,
+          "font_scale": 1.3
+        }
+      ],
+      "reference": "design-tokens.md §4: full-pill chips; HTML .chip primaryContainer; scopebar centered",
+      "actual": "Rounded-rectangle chips, selected secondaryContainer; scope row start-aligned",
+      "image_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006-compact.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006-expanded.png"
+      ],
+      "source_corroboration": [
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:299",
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:693"
+      ]
+    },
+    {
+      "id": "AUD-05",
+      "severity": "P3",
+      "classification": "unresolved_reference_token_conflict",
+      "elements": [
+        "DS002-13",
+        "DS006-11"
+      ],
+      "configs": [
+        {
+          "locale": "en",
+          "theme": "dark",
+          "width_dp": 840,
+          "font_scale": 1
+        }
+      ],
+      "reference": "design-tokens.md §5: conversations260–300dp; sources300–340dp. HTML instead uses relative27%/30% widths and a host rail, already below those ranges at840dp.",
+      "actual": "At840dp/fs1.0 the feature has approximately210/420/210dp panes. Center remains widest. Large-font collapse conforms. Retained as strict dimensional deviation; no design conflict resolved or exception inferred by reviewer.",
+      "image_evidence": [
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-002-expanded.png",
+        "docs/delivery/evidence/design-repair-contact-e56cb5e3/SCR-DS-006-expanded.png"
+      ],
+      "source_corroboration": [
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:268",
+        "app/src/main/java/android/aizzak/com/feature/datasearch/DataSearchScreens.kt:274"
+      ]
+    }
+  ],
+  "summary": {
+    "matched": 78,
+    "deviation": 12,
+    "missing": 0,
+    "confirmed_deviation_elements": 10,
+    "reference_token_conflict_elements": 2
+  }
+}

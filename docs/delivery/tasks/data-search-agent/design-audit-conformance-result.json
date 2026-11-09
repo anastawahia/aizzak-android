@@ -1,0 +1,36 @@
+{
+  "stage": "design_conformance",
+  "task": "data-search-agent",
+  "status": "failed",
+  "errors": [
+    "DS001-04 deviates without owner approval (record it with suite.py deviation).",
+    "DS001-07 deviates without owner approval (record it with suite.py deviation).",
+    "DS002-02 deviates without owner approval (record it with suite.py deviation).",
+    "DS002-11 deviates without owner approval (record it with suite.py deviation).",
+    "DS002-13 deviates without owner approval (record it with suite.py deviation).",
+    "DS003-07 deviates without owner approval (record it with suite.py deviation).",
+    "DS005-03 deviates without owner approval (record it with suite.py deviation).",
+    "DS006-04 deviates without owner approval (record it with suite.py deviation).",
+    "DS006-09 deviates without owner approval (record it with suite.py deviation).",
+    "DS006-11 deviates without owner approval (record it with suite.py deviation).",
+    "DS009-09 deviates without owner approval (record it with suite.py deviation).",
+    "DS010-03 deviates without owner approval (record it with suite.py deviation)."
+  ],
+  "checks": {
+    "reference_locked": true,
+    "inventory_complete": true,
+    "screenshots_current": true,
+    "independent_design_review": true
+  },
+  "summary": {
+    "matched": 78,
+    "deviation": 12,
+    "missing": 0
+  },
+  "approved_deviations": [],
+  "source_sha256": "e56cb5e3ed516fc3fc4087a9f63e3dd273144e16cfdc45cbbe1e04d22521fe57",
+  "inventory_sha256": "4b32d7a09513f43ecb11cba817fc41c7ab3294e542d7b24bf2266c6f2602c1c8",
+  "record": "C:/Users/anast/Desktop/aizzak-android/docs/delivery/tasks/data-search-agent/design-audit-conformance-record.json",
+  "record_sha256": "fd77c30b227cb400436ccf7871850bddd4a2e97771b603d4fea392996f08f784",
+  "limitations": "Element judgments are the reviewer's; suite.py verifies completeness, approvals, screenshot provenance, independence claims and freshness, not visual similarity."
+}

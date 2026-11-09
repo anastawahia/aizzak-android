@@ -1,0 +1,34 @@
+{
+  "kind": "screenshots",
+  "status": "passed",
+  "source_sha256": "3f3ab2bdb0bae1102c452d7e3206066e96edd4ce7494b82be47e196b48e3509f",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:recordRoborazziDebug",
+    "--tests",
+    "android.aizzak.com.feature.datasearch.DataSearchScreenshotTest",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1794089964,
+  "attempts": [
+    {
+      "exit_code": 0,
+      "output": "To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.\r\nDaemon will be stopped at the end of the build \r\n> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED\r\n> Task :app:preBuild UP-TO-DATE\r\n> Task :app:preDebugBuild UP-TO-DATE\r\n> Task :app:generateDebugBuildConfig UP-TO-DATE\r\n> Task :app:checkDebugAarMetadata UP-TO-DATE\r\n> Task :app:processDebugNavigationResources UP-TO-DATE\r\n> Task :app:compileDebugNavigationResources UP-TO-DATE\r\n> Task :app:generateDebugResValues UP-TO-DATE\r\n> Task :app:processDebugGoogleServices UP-TO-DATE\r\n> Task :app:mapDebugSourceSetPaths UP-TO-DATE\r\n> Task :app:generateDebugResources UP-TO-DATE\r\n> Task :app:mergeDebugResources UP-TO-DATE\r\n> Task :app:packageDebugResources UP-TO-DATE\r\n> Task :app:parseDebugLocalResources UP-TO-DATE\r\n> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE\r\n> Task :app:extractDeepLinksDebug UP-TO-DATE\r\n> Task :app:processDebugMainManifest UP-TO-DATE\r\n> Task :app:processDebugManifest UP-TO-DATE\r\n> Task :app:processDebugManifestForPackage UP-TO-DATE\r\n> Task :app:processDebugResources UP-TO-DATE\r\n> Task :app:compileDebugKotlin UP-TO-DATE\r\n> Task :app:javaPreCompileDebug UP-TO-DATE\r\n> Task :app:compileDebugJavaWithJavac UP-TO-DATE\r\n> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE\r\n> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE\r\n> Task :app:compileDebugUnitTestKotlin UP-TO-DATE\r\n> Task :app:preDebugUnitTestBuild UP-TO-DATE\r\n> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE\r\n> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE\r\n> Task :app:mergeDebugShaders UP-TO-DATE\r\n> Task :app:compileDebugShaders NO-SOURCE\r\n> Task :app:generateDebugAssets UP-TO-DATE\r\n> Task :app:mergeDebugAssets UP-TO-DATE\r\n> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE\r\n> Task :app:processDebugUnitTestManifest UP-TO-DATE\r\n> Task :app:generateDebugUnitTestConfig UP-TO-DATE\r\n> Task :app:processDebugJavaRes UP-TO-DATE\r\n> Task :app:processDebugUnitTestJavaRes UP-TO-DATE\r\n> Task :app:testDebugUnitTest\r\n> Task :app:finalizeTestRoborazziDebug\r\n> Task :app:recordRoborazziDebug\r\n\r\nBUILD SUCCESSFUL in 1m 24s\r\n33 actionable tasks: 2 executed, 31 up-to-date\r\n"
+    }
+  ],
+  "test_summary": {
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.feature.datasearch.DataSearchScreenshotTest.xml"
+    ]
+  },
+  "screenshot_count": 40,
+  "manifest": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/manifest.json",
+  "capture_scope": "Data Search only. suite.py screenshots runs all Roborazzi tests and gathers all output recursively; scoped Gradle execution and the same manifest schema are used to avoid mixing existing Home outputs. No suite result was edited or fabricated.",
+  "signed_verified": false,
+  "published": false
+}

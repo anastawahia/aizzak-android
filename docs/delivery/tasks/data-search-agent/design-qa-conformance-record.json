@@ -1,0 +1,943 @@
+{
+  "task": "data-search-agent",
+  "inventory_sha256": "4b32d7a09513f43ecb11cba817fc41c7ab3294e542d7b24bf2266c6f2602c1c8",
+  "source_sha256": "3f3ab2bdb0bae1102c452d7e3206066e96edd4ce7494b82be47e196b48e3509f",
+  "reviewer": {
+    "role": "design-qa-reviewer",
+    "id": "/root/design_qa_last"
+  },
+  "implementers": [
+    {
+      "role": "compose-developer",
+      "id": "/root/compose_build"
+    },
+    {
+      "role": "compose-developer",
+      "id": "/root/repair_last"
+    }
+  ],
+  "review_date": "2026-11-08",
+  "method": "40 current images and 40 local headless Edge renderings of approved HTML inspected via 20 labelled comparison sheets. Content data differences and system bars are not conformance failures. Missing statuses include visually unverified state variants; they do not claim absence from code.",
+  "screens": [
+    {
+      "id": "SCR-DS-001",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-001__ar_dark_w390_fs1.0.png",
+          "sha256": "b49abc34fd98c8d5f28411b03619e067b4d28d1ce9579d4f43145b548983382b",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-001__ar_light_w840_fs1.3.png",
+          "sha256": "a4a3a9060d600d4393c47ee7b026e08ec7c87d5cb499c544644c22b00038babe",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-001__en_dark_w840_fs1.0.png",
+          "sha256": "dc5c20f32fa160eebcf83c4e13407062cf846e2db138f7b026025a689b1581fa",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-001__en_light_w390_fs1.0.png",
+          "sha256": "aafdbf2fe20a3f7c72d751588ab210ac2d9b4d5c02fbf7f87cef6ba0a97fd903",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS001-01",
+          "status": "matched",
+          "note": "Localized directional Back, DATA SEARCH eyebrow and Choose a space title are visible in all four configurations. Platform system bars are outside the capture scope."
+        },
+        {
+          "id": "DS001-02",
+          "status": "matched",
+          "note": "Space-isolation supporting copy is visible and localized."
+        },
+        {
+          "id": "DS001-03",
+          "status": "matched",
+          "note": "Existing-space rows are visible in a full-width list. Scrolling and data authorization are outside still-image proof."
+        },
+        {
+          "id": "DS001-04",
+          "status": "deviation",
+          "note": "Reference space rows include a secondary-container space avatar; current rows omit the icon/identity and use a simplified text-only hierarchy."
+        },
+        {
+          "id": "DS001-05",
+          "status": "matched",
+          "note": "Load more is visible for the fixture's available next page."
+        },
+        {
+          "id": "DS001-06",
+          "status": "deviation",
+          "note": "Reference review note is amber warning/attention styling; current note uses neutral surfaceVariant, losing the approved warning role."
+        },
+        {
+          "id": "DS001-07",
+          "status": "missing",
+          "note": "No no-space screenshot was supplied; blocking panel and safe actions are visually unverified, not asserted absent from code."
+        },
+        {
+          "id": "DS001-08",
+          "status": "missing",
+          "note": "No offline/permission/session space screenshots were supplied; safe hiding and action layouts are visually unverified."
+        }
+      ]
+    },
+    {
+      "id": "SCR-DS-002",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-002__ar_dark_w390_fs1.0.png",
+          "sha256": "577d33e01cc607064eb807d5946e0eb34bbbe7d21437daaa74cb9b2426952ecc",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-002__ar_light_w840_fs1.3.png",
+          "sha256": "efc0f2b578c33730aacc7bc5b9e955c1ff46c1f2c8eee757f25cff606feaba3a",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-002__en_dark_w840_fs1.0.png",
+          "sha256": "2a4d316d0ed1e31cd15b758c334ef153b11d883940fd3612dfc1acc7e8212b6f",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-002__en_light_w390_fs1.0.png",
+          "sha256": "aaa5f8d14d041a38733df4959eaad0650bd6080d9535556ef9361b0085f30402",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS002-01",
+          "status": "deviation",
+          "note": "Header contains title/space/Back/conversations, but Sources is rendered as a magnifying-glass search glyph rather than the source/document icon in the reference."
+        },
+        {
+          "id": "DS002-02",
+          "status": "matched",
+          "note": "Exact selected-source count chip is readable. Fixture uses a pinned scope rather than the reference default; this is valid content variation."
+        },
+        {
+          "id": "DS002-03",
+          "status": "matched",
+          "note": "Transcript, chronology and Load older are visible; paging correctness is covered separately by QA."
+        },
+        {
+          "id": "DS002-04",
+          "status": "matched",
+          "note": "User message uses primaryContainer at end, with author/time/delivery text."
+        },
+        {
+          "id": "DS002-05",
+          "status": "deviation",
+          "note": "Assistant body supports visible bold/code/link/copy, but omits the approved secondary start-edge/avatar identity. Current card is a generic outlined surface."
+        },
+        {
+          "id": "DS002-06",
+          "status": "matched",
+          "note": "Streaming text and one active progress indicator are visible; token announcement behavior requires accessibility testing."
+        },
+        {
+          "id": "DS002-07",
+          "status": "matched",
+          "note": "Interrupted message remains in errorContainer with written incomplete status. Its lower controls require scroll and are not all visible in the compact still."
+        },
+        {
+          "id": "DS002-08",
+          "status": "matched",
+          "note": "Reference chips appear below assistant body for the explicit structured-reference fixture."
+        },
+        {
+          "id": "DS002-09",
+          "status": "matched",
+          "note": "Multiline labelled composer is visible at the bottom in all configurations. IME/device draft persistence is not established by images."
+        },
+        {
+          "id": "DS002-10",
+          "status": "matched",
+          "note": "Separate Send action is visible with ample visual target. Enabled/duplicate semantics rely on QA tests."
+        },
+        {
+          "id": "DS002-11",
+          "status": "missing",
+          "note": "No empty-conversation image was supplied; the empty invitation with preserved composer is visually unverified."
+        },
+        {
+          "id": "DS002-12",
+          "status": "missing",
+          "note": "No offline/permission/session conversation images were supplied; hiding/preservation variants are visually unverified."
+        },
+        {
+          "id": "DS002-13",
+          "status": "matched",
+          "note": "English 840dp image uses a widest center conversation pane. Arabic fontScale1.3 collapses support panes, consistent with approved tokens section6 despite simplified HTML behavior."
+        }
+      ]
+    },
+    {
+      "id": "SCR-DS-003",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-003__ar_dark_w390_fs1.0.png",
+          "sha256": "00953d88c90b5b5b570874f32b72998926f02fe6a11568393f9c03425e746134",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-003__ar_light_w840_fs1.3.png",
+          "sha256": "df5783abad3bdeb8b8a7203db462750323b5bb0573ef4ef692598d457b37eb0d",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-003__en_dark_w840_fs1.0.png",
+          "sha256": "296418372fceef933f39d1a8b857fd7a1bdec5b9cf0b39ace93a267ea9bfe866",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-003__en_light_w390_fs1.0.png",
+          "sha256": "a41d9fbb68d56878253e01e175d647ce5de74bbcddd9330a0e4ac1d49846bf7f",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS003-01",
+          "status": "matched",
+          "note": "Selected-space header and localized compact Close are visible."
+        },
+        {
+          "id": "DS003-02",
+          "status": "matched",
+          "note": "New conversation primary action is visible."
+        },
+        {
+          "id": "DS003-03",
+          "status": "matched",
+          "note": "Conversation list is scoped under the selected-space label; order reflects fixture data."
+        },
+        {
+          "id": "DS003-04",
+          "status": "deviation",
+          "note": "Selected row has container and dot, but approved card/avatar/outline and secondary scope label are replaced by a simplified row. Selection semantics remain the separate P3 code-review note."
+        },
+        {
+          "id": "DS003-05",
+          "status": "matched",
+          "note": "Separate localized Rename/Delete labels are visible; 48dp target/focus requires semantics/device evidence."
+        },
+        {
+          "id": "DS003-06",
+          "status": "matched",
+          "note": "Load more conversations appears below the fixture rows."
+        },
+        {
+          "id": "DS003-07",
+          "status": "missing",
+          "note": "No empty-list screenshot supplied; Start conversation variant is visually unverified."
+        },
+        {
+          "id": "DS003-08",
+          "status": "missing",
+          "note": "No loading/error/offline/permission/session conversation-list screenshots supplied."
+        }
+      ]
+    },
+    {
+      "id": "SCR-DS-004",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-004__ar_dark_w390_fs1.0.png",
+          "sha256": "24dad4c7cd024f0c7d407e8fb5cbcd505ad3e2fe15d01df11a0846fc58addcd4",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-004__ar_light_w840_fs1.3.png",
+          "sha256": "c2eced24bf86301b2b25fece6eba27d5472db79f848f6c3cc6d083ed57404a3f",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-004__en_dark_w840_fs1.0.png",
+          "sha256": "6aa61fc21b603cabf080755a30a62ea7262bbab13467dc3022859bfc2ebb029e",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-004__en_light_w390_fs1.0.png",
+          "sha256": "d4c772f9398b27aa1aa1d7d07ae23fb7c8a3ec7e405df9a61d097e66ce2dfb21",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS004-01",
+          "status": "deviation",
+          "note": "Current edit surface is a full-screen heading/Close layout rather than the approved modal-sheet/app-bar structure. No rename-state screenshot is supplied."
+        },
+        {
+          "id": "DS004-02",
+          "status": "matched",
+          "note": "Persistent Conversation name label is visible; current capture also has the field's floating label."
+        },
+        {
+          "id": "DS004-03",
+          "status": "matched",
+          "note": "Name text field and entered content are visible without an invented limit."
+        },
+        {
+          "id": "DS004-04",
+          "status": "matched",
+          "note": "Supporting text identifies the selected space."
+        },
+        {
+          "id": "DS004-05",
+          "status": "matched",
+          "note": "Optional model selector is visible only in the explicit capability-enabled fixture. Runtime contract availability is outside visual review."
+        },
+        {
+          "id": "DS004-06",
+          "status": "matched",
+          "note": "Cancel is before the primary action in reading order in LTR and mirrored RTL."
+        },
+        {
+          "id": "DS004-07",
+          "status": "matched",
+          "note": "Create is a distinct primary action. Save/rename/submitting variants are not pictured."
+        },
+        {
+          "id": "DS004-08",
+          "status": "missing",
+          "note": "No validation/network/permission/model failure screenshots supplied; preserved-input error layout is visually unverified."
+        }
+      ]
+    },
+    {
+      "id": "SCR-DS-005",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-005__ar_dark_w390_fs1.0.png",
+          "sha256": "da072ed48b8dddbeaac0ed82da4b947533003df6464dc1a79f8ad011d6e2ab93",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-005__ar_light_w840_fs1.3.png",
+          "sha256": "0a586fbb309c9edf6c68c4ec7736ac74576bbaee5a18f55091803c487de9d30c",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-005__en_dark_w840_fs1.0.png",
+          "sha256": "c52bbbf1062fbe61d8b432a1be137f819e0e88b876e6737577baea01c84342c4",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-005__en_light_w390_fs1.0.png",
+          "sha256": "0b5a803fd83dd71f8675b24e0bc0a7f5cf04a69551f454e3fcddd39ab8940b8c",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS005-01",
+          "status": "deviation",
+          "note": "Scrim is visible but its background is blank; the selected conversation/list context required by the inventory/reference is missing from all four dialog captures."
+        },
+        {
+          "id": "DS005-02",
+          "status": "missing",
+          "note": "Reference destructive delete glyph is absent; a generic exclamation mark is substituted. This is not a platform font-rendering variation."
+        },
+        {
+          "id": "DS005-03",
+          "status": "matched",
+          "note": "Dialog title includes the fixture conversation name."
+        },
+        {
+          "id": "DS005-04",
+          "status": "matched",
+          "note": "Body distinguishes permanent transcript deletion from unaffected space files."
+        },
+        {
+          "id": "DS005-05",
+          "status": "matched",
+          "note": "Pending-confirmation wording remains visible."
+        },
+        {
+          "id": "DS005-06",
+          "status": "matched",
+          "note": "Cancel is visibly separated as the safe action; initial focus is not observable in a still image."
+        },
+        {
+          "id": "DS005-07",
+          "status": "deviation",
+          "note": "Danger action is full filled error/onError with pill shape, rather than approved errorContainer/error styling and 12dp action shape."
+        }
+      ]
+    },
+    {
+      "id": "SCR-DS-006",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-006__ar_dark_w390_fs1.0.png",
+          "sha256": "8ee639e79923a767fd0099a6b5d41843d0a631b4548a3c98b8a9f84c6d849365",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-006__ar_light_w840_fs1.3.png",
+          "sha256": "8cf217a637be03799349b078b1ccc6bb454f00bfbf3b68adbab4a961f56c71e6",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-006__en_dark_w840_fs1.0.png",
+          "sha256": "2a4d316d0ed1e31cd15b758c334ef153b11d883940fd3612dfc1acc7e8212b6f",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-006__en_light_w390_fs1.0.png",
+          "sha256": "acbb77f411ce3b7119f067332952b74df7a3d2d53d558779155379c6ff64d0db",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS006-01",
+          "status": "matched",
+          "note": "Sources header identifies selected space and compact Back."
+        },
+        {
+          "id": "DS006-02",
+          "status": "matched",
+          "note": "Add source is visibly available."
+        },
+        {
+          "id": "DS006-03",
+          "status": "matched",
+          "note": "Written explanation distinguishes upload, safety and answer indexing."
+        },
+        {
+          "id": "DS006-04",
+          "status": "matched",
+          "note": "All/indexed/not-indexed/failed filters have localized written labels."
+        },
+        {
+          "id": "DS006-05",
+          "status": "matched",
+          "note": "Unified source list is visible. Stable identity is a QA concern."
+        },
+        {
+          "id": "DS006-06",
+          "status": "deviation",
+          "note": "Approved white/surface bordered cards with source avatar and secondary/amber written status roles became gray/lavender generic cards with no source icon/status accent."
+        },
+        {
+          "id": "DS006-07",
+          "status": "matched",
+          "note": "Index is shown on the unstarted source and absent on indexed rows; capabilities can disable it."
+        },
+        {
+          "id": "DS006-08",
+          "status": "matched",
+          "note": "Details/Rename/Delete are separate labelled row actions."
+        },
+        {
+          "id": "DS006-09",
+          "status": "missing",
+          "note": "No empty/filtered-empty source image supplied."
+        },
+        {
+          "id": "DS006-10",
+          "status": "missing",
+          "note": "Partial-read notice is visible in compact capture, but offline/permission/session variants lack screenshots, so this aggregate state element cannot be fully verified."
+        },
+        {
+          "id": "DS006-11",
+          "status": "matched",
+          "note": "840dp English preserves source end pane and widest conversation center; Arabic fontScale1.3 collapse follows tokens section6."
+        }
+      ]
+    },
+    {
+      "id": "SCR-DS-007",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-007__ar_dark_w390_fs1.0.png",
+          "sha256": "12cdf36839c7c91ff3f64a4c397718aedea5920fd346a7650d9cccfff06f9ac5",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-007__ar_light_w840_fs1.3.png",
+          "sha256": "2aef21423582d2daea022df485104bf63f3bed38cdcea5612dfa5c3f45b82b02",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-007__en_dark_w840_fs1.0.png",
+          "sha256": "ac43ea4f9eefe1dfc3ebd4319a3a193643ac2186560a95ee71bb626f54160872",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-007__en_light_w390_fs1.0.png",
+          "sha256": "39d523cb681a11f2ec57e9d8249ac87d5bd70a15909f8e3b47ac75dff7f56d0c",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS007-01",
+          "status": "matched",
+          "note": "Localized Add knowledge source header includes Back and selected space."
+        },
+        {
+          "id": "DS007-02",
+          "status": "deviation",
+          "note": "Approved paired file/text choices with source icon are replaced by a large generic gray/lavender card with vertically stacked controls and no source icon."
+        },
+        {
+          "id": "DS007-03",
+          "status": "matched",
+          "note": "Text variant displays persistent File name and Content labels. Fixture is an active upload, so fields are disabled appropriately."
+        },
+        {
+          "id": "DS007-04",
+          "status": "deviation",
+          "note": "Written phases are separated more precisely, but approved bordered stage cards and completed-secondary/active-amber hierarchy are absent; current stages are plain rows."
+        },
+        {
+          "id": "DS007-05",
+          "status": "matched",
+          "note": "Only the active upload stage has a progress indicator; no fake percentage is visible."
+        },
+        {
+          "id": "DS007-06",
+          "status": "missing",
+          "note": "Only byte-upload phase is pictured; ready/unindexed/quarantined/failed/expired/recovery variants are visually unverified."
+        },
+        {
+          "id": "DS007-07",
+          "status": "matched",
+          "note": "Cancel is visible for the pictured cancellable upload phase."
+        },
+        {
+          "id": "DS007-08",
+          "status": "matched",
+          "note": "Done is visibly disabled before the terminal successful state; the terminal layout is not pictured."
+        },
+        {
+          "id": "DS007-09",
+          "status": "missing",
+          "note": "No offline/permission/session acquisition screenshots supplied."
+        }
+      ]
+    },
+    {
+      "id": "SCR-DS-008",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-008__ar_dark_w390_fs1.0.png",
+          "sha256": "34ac952d03210720724e36be2c7dc1d3aff3b1d36d7e97825e5684179378f683",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-008__ar_light_w840_fs1.3.png",
+          "sha256": "64ce8c48c99802b29c391a14cff4ba8fe777776c3ac4ee1a60b8446d2404ac47",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-008__en_dark_w840_fs1.0.png",
+          "sha256": "753f18c4c8d910815712470439e8200b526e43b23990faae6d250549f6f64704",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-008__en_light_w390_fs1.0.png",
+          "sha256": "4b979d562a7b56f904668fe3398e2d70606d26e8e200b2686e22e453999cc97b",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS008-01",
+          "status": "matched",
+          "note": "Localized Back/title and selected-space header are visible."
+        },
+        {
+          "id": "DS008-02",
+          "status": "matched",
+          "note": "Source name and confirmed type are readable without truncation in all four supplied configurations."
+        },
+        {
+          "id": "DS008-03",
+          "status": "deviation",
+          "note": "Independent File safety label/value exists, but approved outlined surface panel with explanatory secondary copy is replaced by an unbordered surfaceVariant block."
+        },
+        {
+          "id": "DS008-04",
+          "status": "deviation",
+          "note": "Independent Answer index label/value exists, but approved outlined surface panel hierarchy/explanatory secondary copy is replaced by an unbordered surfaceVariant block."
+        },
+        {
+          "id": "DS008-05",
+          "status": "matched",
+          "note": "Written RAG impact explains the indexed source's current contribution."
+        },
+        {
+          "id": "DS008-06",
+          "status": "matched",
+          "note": "Remove-from-conversation action matches the pinned fixture; include-state needs separate visual evidence."
+        },
+        {
+          "id": "DS008-07",
+          "status": "matched",
+          "note": "Rename is visible and reindex is absent for the indexed fixture; other conditional states rely on QA."
+        },
+        {
+          "id": "DS008-08",
+          "status": "deviation",
+          "note": "Full-width danger button uses filled error/onError pill rather than approved errorContainer/error role and action shape."
+        },
+        {
+          "id": "DS008-09",
+          "status": "missing",
+          "note": "No offline/partial/permission/session detail screenshots supplied."
+        }
+      ]
+    },
+    {
+      "id": "SCR-DS-009",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-009__ar_dark_w390_fs1.0.png",
+          "sha256": "48602ea36a0eea00ca95d55e2bccac0f0d4ab331b2a2022dc021efd81a22bf84",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-009__ar_light_w840_fs1.3.png",
+          "sha256": "62b10a3287b77119df969f20eafc715bc7a075f507c8bce207f7a9c02c24ade7",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-009__en_dark_w840_fs1.0.png",
+          "sha256": "6e77e941d463782e08b2e08fdaed56f13df44a2bd9233be5e547667101e259bd",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-009__en_light_w390_fs1.0.png",
+          "sha256": "6335da622b857261dd202baa6f74d6c16f3ebecaf5cccf9c3efb0d3e0f4690c7",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS009-01",
+          "status": "matched",
+          "note": "Answer scope title and localized Close are visible. Host sheet focus behavior is not established by the standalone capture."
+        },
+        {
+          "id": "DS009-02",
+          "status": "deviation",
+          "note": "All indexed sources explanation exists, but approved surface/outlined scope card is replaced with gray/lavender filled card; typography and radio alignment hierarchy differ."
+        },
+        {
+          "id": "DS009-03",
+          "status": "deviation",
+          "note": "Selected sources explanation exists, but approved surface/outlined scope card is replaced with gray/lavender filled card."
+        },
+        {
+          "id": "DS009-04",
+          "status": "deviation",
+          "note": "Checklist keeps names/checks but omits approved individual source cards and explicit indexed-status secondary text on indexed entries."
+        },
+        {
+          "id": "DS009-05",
+          "status": "matched",
+          "note": "Unindexed item is visibly disabled and has a written Not indexed reason."
+        },
+        {
+          "id": "DS009-06",
+          "status": "missing",
+          "note": "No pin failure screenshot supplied; inline error/server-restoration layout is visually unverified."
+        },
+        {
+          "id": "DS009-07",
+          "status": "deviation",
+          "note": "Use all is outlined rather than the approved text action, changing hierarchy against Done."
+        },
+        {
+          "id": "DS009-08",
+          "status": "matched",
+          "note": "Done is a distinct primary close action; returned focus needs device/semantics evidence."
+        },
+        {
+          "id": "DS009-09",
+          "status": "missing",
+          "note": "No loading/empty/offline/permission/session answer-scope screenshots supplied."
+        }
+      ]
+    },
+    {
+      "id": "SCR-DS-010",
+      "screenshots": [
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-010__ar_dark_w390_fs1.0.png",
+          "sha256": "45ed4a4a2a7187f0a92f046d2a98f6250cd8fe89ee78038b9df67b1e2e45dc57",
+          "config": {
+            "font_scale": 1,
+            "locale": "ar",
+            "width_dp": 390,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-010__ar_light_w840_fs1.3.png",
+          "sha256": "082b9477f19f932bae8c7acf91ee039defec760d27df6fd0603814e34a0e446e",
+          "config": {
+            "font_scale": 1.3,
+            "locale": "ar",
+            "width_dp": 840,
+            "theme": "light"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-010__en_dark_w840_fs1.0.png",
+          "sha256": "942a00e14a0474f270078784138a99ea1ff8b4666a41c1625320d819826f71a4",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 840,
+            "theme": "dark"
+          }
+        },
+        {
+          "path": "docs/delivery/evidence/screenshots/data-search-agent-3f3ab2bd/SCR-DS-010__en_light_w390_fs1.0.png",
+          "sha256": "0b0fb09b0295d71c13e95a4ba8a6f47f7d48dd6c7a0c256b684d7dedb2e75107",
+          "config": {
+            "font_scale": 1,
+            "locale": "en",
+            "width_dp": 390,
+            "theme": "light"
+          }
+        }
+      ],
+      "elements": [
+        {
+          "id": "DS010-01",
+          "status": "deviation",
+          "note": "Scrim is visible over a blank background; source-details/conversation context required by inventory/reference is absent in all configurations."
+        },
+        {
+          "id": "DS010-02",
+          "status": "missing",
+          "note": "Reference source-delete icon is absent; a generic exclamation mark is substituted."
+        },
+        {
+          "id": "DS010-03",
+          "status": "matched",
+          "note": "Dialog title includes source filename."
+        },
+        {
+          "id": "DS010-04",
+          "status": "matched",
+          "note": "Body states space-wide answer impact and removal from pinned scopes."
+        },
+        {
+          "id": "DS010-05",
+          "status": "deviation",
+          "note": "User-facing dialog displays an internal contract instruction ('Index and chunk cleanup wording is shown only when confirmed...') rather than conditionally hiding unconfirmed purge wording."
+        },
+        {
+          "id": "DS010-06",
+          "status": "matched",
+          "note": "Service-confirmation wording remains visible."
+        },
+        {
+          "id": "DS010-07",
+          "status": "matched",
+          "note": "Cancel is visually separated as safe action; initial focus is not established by still images."
+        },
+        {
+          "id": "DS010-08",
+          "status": "deviation",
+          "note": "Delete source uses filled error/onError pill rather than the approved errorContainer/error treatment."
+        }
+      ]
+    }
+  ]
+}
