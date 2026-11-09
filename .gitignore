@@ -10,3 +10,12 @@ local.properties
 docs/delivery/evidence/private/
 docs/delivery/evidence/scaffold-*/
 docs/delivery/evidence/bootstrap-cache/
+
+# Generated/heavy delivery evidence; keep manifests and summaries tracked.
+docs/delivery/evidence/**/*.png
+docs/delivery/evidence/**/browser-profile/
+docs/delivery/evidence/**/TEST-*.xml
+docs/delivery/evidence/**/lint-results-*.xml
+docs/delivery/evidence/**/*.apk
+docs/delivery/evidence/**/*.aab
+docs/delivery/evidence/**/*.zip

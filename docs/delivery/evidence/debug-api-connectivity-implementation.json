@@ -1,9 +1,0 @@
-{
-  "stage": "implementation",
-  "status": "passed",
-  "errors": [],
-  "source_sha256": "4b98eb7c1dffc2d528f0d38d03387fcf96e09e1ac3cc63c5bf74b3ffaee6bcc8",
-  "evidence_file": "C:/Users/anast/Desktop/aizzak-android/.android-suite/tasks/debug-api-connectivity/gate-evidence.json",
-  "evidence_sha256": "cd1b664aadacaec14e0490be5cfcdf18ed499800b3c1ca3d6981a9e08d046b9d",
-  "limitations": "Evidence hashes establish provenance, not semantic correctness. Human review is required for manual checks."
-}
