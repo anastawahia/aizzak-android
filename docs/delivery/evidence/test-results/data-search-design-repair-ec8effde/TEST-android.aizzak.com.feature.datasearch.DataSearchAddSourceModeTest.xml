@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchAddSourceModeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:47:06.450Z" hostname="ENG-ANAS" time="6.03">
+  <properties/>
+  <testcase name="modeAndPhaseControlFieldsAndProgress[CHOICE-active=false]" classname="android.aizzak.com.feature.datasearch.DataSearchAddSourceModeTest" time="5.33"/>
+  <testcase name="modeAndPhaseControlFieldsAndProgress[CHOICE-active=true]" classname="android.aizzak.com.feature.datasearch.DataSearchAddSourceModeTest" time="0.073"/>
+  <testcase name="modeAndPhaseControlFieldsAndProgress[FILE-active=false]" classname="android.aizzak.com.feature.datasearch.DataSearchAddSourceModeTest" time="0.074"/>
+  <testcase name="modeAndPhaseControlFieldsAndProgress[FILE-active=true]" classname="android.aizzak.com.feature.datasearch.DataSearchAddSourceModeTest" time="0.141"/>
+  <testcase name="modeAndPhaseControlFieldsAndProgress[TEXT-active=false]" classname="android.aizzak.com.feature.datasearch.DataSearchAddSourceModeTest" time="0.289"/>
+  <testcase name="modeAndPhaseControlFieldsAndProgress[TEXT-active=true]" classname="android.aizzak.com.feature.datasearch.DataSearchAddSourceModeTest" time="0.115"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

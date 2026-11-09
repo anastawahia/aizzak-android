@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchReview2Test" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-07T22:18:27.515Z" hostname="ENG-ANAS" time="1.297">
+  <properties/>
+  <testcase name="unconfirmedMessageDeleteCapabilityHidesDeleteAction" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.225"/>
+  <testcase name="missingPendingDeleteTargetDisablesConfirmation" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.076"/>
+  <testcase name="scopeRadioEmitsTypedSelection" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.153"/>
+  <testcase name="conversationListEmptyKeepsStartAction" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.13"/>
+  <testcase name="conversationConfirmationUsesExplicitPendingId" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.107"/>
+  <testcase name="sourceConfirmationUsesExplicitPendingId" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.139"/>
+  <testcase name="staleSelectedSourceDoesNotFallBackToFirstSource" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.115"/>
+  <testcase name="sourcesEmptyKeepsAddAction" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.109"/>
+  <testcase name="conversationEmptyKeepsScopeComposerAndStartPrompt" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.104"/>
+  <testcase name="unconfirmedCapabilitiesHideAddTextAndMessageDelete" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.076"/>
+  <testcase name="missingPendingConversationTargetDisablesConfirmation" classname="android.aizzak.com.feature.datasearch.DataSearchReview2Test" time="0.061"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

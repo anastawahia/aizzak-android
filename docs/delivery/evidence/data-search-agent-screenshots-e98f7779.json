@@ -1,0 +1,36 @@
+{
+  "kind": "screenshots",
+  "status": "passed",
+  "source_sha256": "e98f7779057d19d7b08d70331801c07be08d0a1623cecda603bc28783020320d",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:recordRoborazziDebug",
+    "--tests",
+    "android.aizzak.com.feature.datasearch.DataSearchScreenshotTest",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "attempts": [
+    {
+      "exit_code": 0,
+      "output": "BUILD SUCCESSFUL in 2m 11s; 33 actionable tasks: 2 executed, 31 up-to-date.",
+      "duration_seconds": 131
+    }
+  ],
+  "test_summary": {
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "app/build/test-results/testDebugUnitTest/TEST-android.aizzak.com.feature.datasearch.DataSearchScreenshotTest.xml"
+    ]
+  },
+  "screenshot_count": 40,
+  "manifest": "docs/delivery/evidence/screenshots/data-search-agent-e98f7779/manifest.json",
+  "visual_samples_inspected": [
+    "SCR-DS-002__en_light_w390_fs1.0.png",
+    "SCR-DS-002__ar_light_w840_fs1.3.png",
+    "SCR-DS-006__en_dark_w840_fs1.0.png"
+  ]
+}

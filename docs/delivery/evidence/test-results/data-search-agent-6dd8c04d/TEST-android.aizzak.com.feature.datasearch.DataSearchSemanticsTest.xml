@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" tests="30" skipped="0" failures="0" errors="0" timestamp="2026-11-07T16:04:56.663Z" hostname="ENG-ANAS" time="0.775">
+  <properties/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[SPACES]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.02"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[SPACES]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.027"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[SPACES]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.019"/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.025"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.066"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.046"/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[CONVERSATIONS]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.017"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[CONVERSATIONS]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.028"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[CONVERSATIONS]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.018"/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[EDIT_CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.016"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[EDIT_CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.03"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[EDIT_CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.021"/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[DELETE_CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.028"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[DELETE_CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.029"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[DELETE_CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.018"/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[SOURCES]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.017"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[SOURCES]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.049"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[SOURCES]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.017"/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[ADD_SOURCE]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.022"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[ADD_SOURCE]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.034"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[ADD_SOURCE]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.02"/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[SOURCE_DETAILS]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.023"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[SOURCE_DETAILS]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.025"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[SOURCE_DETAILS]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.02"/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[ANSWER_SCOPE]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.018"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[ANSWER_SCOPE]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.028"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[ANSWER_SCOPE]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.02"/>
+  <testcase name="offlineConversationElementIsRenderedWithoutProtectedContent[DELETE_SOURCE]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.016"/>
+  <testcase name="everyApprovedInventoryElementHasSemanticsNode[DELETE_SOURCE]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.027"/>
+  <testcase name="emptyConversationElementIsRenderedOnlyByEmptyState[DELETE_SOURCE]" classname="android.aizzak.com.feature.datasearch.DataSearchSemanticsTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

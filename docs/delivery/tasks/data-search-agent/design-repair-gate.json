@@ -1,0 +1,21 @@
+{
+  "source_sha256": "72cc95c013a8d37a0c19cbf49a2273f292f4be21a7beea2b830f1e1cdd81b9a6",
+  "checks": {
+    "compile": {
+      "status": "passed",
+      "evidence": [{ "path": "docs/delivery/evidence/data-search-design-repair-all-72cc95c0.json", "sha256": "90176d10a6900072b172c685e426d503932ff6be03fea772519503ef2c119fb6" }]
+    },
+    "static_analysis": {
+      "status": "passed",
+      "evidence": [{ "path": "docs/delivery/evidence/data-search-design-repair-all-72cc95c0.json", "sha256": "90176d10a6900072b172c685e426d503932ff6be03fea772519503ef2c119fb6" }]
+    },
+    "relevant_tests": {
+      "status": "passed",
+      "evidence": [{ "path": "docs/delivery/evidence/data-search-design-repair-all-72cc95c0.json", "sha256": "90176d10a6900072b172c685e426d503932ff6be03fea772519503ef2c119fb6" }]
+    },
+    "independent_review": {
+      "status": "passed",
+      "evidence": [{ "path": "docs/delivery/tasks/data-search-agent/design-repair-code-review.md", "sha256": "15e5d10f1909ca26c803317a8a01c955b05650cb1b28e3053be907f1c1870d62" }]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchModalIsolationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:27:32.476Z" hostname="ENG-ANAS" time="6.295">
+  <properties/>
+  <testcase name="outsideTapsAndKeyboardTraversalCannotActivateContextualControls[DELETE_CONVERSATION]" classname="android.aizzak.com.feature.datasearch.DataSearchModalIsolationTest" time="6.141"/>
+  <testcase name="outsideTapsAndKeyboardTraversalCannotActivateContextualControls[DELETE_SOURCE]" classname="android.aizzak.com.feature.datasearch.DataSearchModalIsolationTest" time="0.152"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Robolectric] WARN: Android SDK 36 requires Java 21 (have Java 17). Tests won't be run on SDK 36 unless explicitly requested.
+[Robolectric] WARN: Android SDK 37 requires Java 21 (have Java 17). Tests won't be run on SDK 37 unless explicitly requested.
+]]></system-err>
+</testsuite>

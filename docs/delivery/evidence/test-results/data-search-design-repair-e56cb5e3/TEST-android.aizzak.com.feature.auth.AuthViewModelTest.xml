@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.auth.AuthViewModelTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:50:50.611Z" hostname="ENG-ANAS" time="0.049">
+  <properties/>
+  <testcase name="localLogoutClearsVisibleContextAndBlocksNewCredentialsUntilCleanupCompletes" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.007"/>
+  <testcase name="invalidInputsDoNotDispatchAndPasswordsHaveNoInventedMinimum" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.002"/>
+  <testcase name="expiredContextSignsOutLocallyWithoutAnotherServerLogout" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.004"/>
+  <testcase name="restoredUnverifiedIdentityNeedsVerification" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.002"/>
+  <testcase name="passwordChangeRequiresReadyContextValidatesAndUsesRealRepositoryAction" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.001"/>
+  <testcase name="signupCompletionFeedbackSurvivesDeferredSessionDelivery" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.003"/>
+  <testcase name="resetReportsNeutralResultAndVerificationRefreshRetainsGate" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.002"/>
+  <testcase name="restoredVerifiedIdentityCannotBypassMissingAccountContext" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.002"/>
+  <testcase name="duplicateSubmissionDispatchesOnceAndTypedFailureIsVisible" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.001"/>
+  <testcase name="lateAccountAErrorCannotLeakIntoAccountB" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.003"/>
+  <testcase name="signupVerificationFailureRetainsCreatedIdentityWithoutSuccessMessage" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.002"/>
+  <testcase name="lateContextCannotReopenHomeAfterSignout" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.003"/>
+  <testcase name="lateContextFromPreviousAccountCannotReplaceNewContext" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.002"/>
+  <testcase name="forbiddenContextPreservesIdentityAndNeverGrantsContent" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.002"/>
+  <testcase name="ordinaryLogoutDoesNotCallBackendAndAllowsImmediateVerifiedLogin" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.002"/>
+  <testcase name="explicitRetryReloadsFailedContextExactlyOnceEvenWhenRefreshEmitsIdentity" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.004"/>
+  <testcase name="clearingViewModelDuringLogoutStillExecutesLocalCleanup" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.002"/>
+  <testcase name="lateCancellationIgnoringRefreshCannotRestoreIdentityAfterSignout" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.003"/>
+  <testcase name="verifiedIdentityWaitsForContextBeforeReadyAndIgnoresEquivalentSdkEmissions" classname="android.aizzak.com.feature.auth.AuthViewModelTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

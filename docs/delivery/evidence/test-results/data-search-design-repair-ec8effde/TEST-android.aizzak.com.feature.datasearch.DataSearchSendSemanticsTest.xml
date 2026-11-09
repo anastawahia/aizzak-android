@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchSendSemanticsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:47:34.363Z" hostname="ENG-ANAS" time="0.109">
+  <properties/>
+  <testcase name="sendButtonHasLocalizedTalkBackLabel[en]" classname="android.aizzak.com.feature.datasearch.DataSearchSendSemanticsTest" time="0.032"/>
+  <testcase name="sendButtonHasLocalizedTalkBackLabel[ar]" classname="android.aizzak.com.feature.datasearch.DataSearchSendSemanticsTest" time="0.076"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

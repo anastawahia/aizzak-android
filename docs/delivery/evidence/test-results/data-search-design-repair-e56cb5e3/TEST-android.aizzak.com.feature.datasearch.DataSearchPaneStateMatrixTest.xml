@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:51:00.236Z" hostname="ENG-ANAS" time="0.956">
+  <properties/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.047"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION-CONTENT]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.05"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.038"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.031"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.036"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.035"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.035"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.051"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION_LIST-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.037"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION_LIST-CONTENT]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.042"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION_LIST-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.035"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION_LIST-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.03"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION_LIST-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.036"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION_LIST-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.035"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION_LIST-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.036"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[CONVERSATION_LIST-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.06"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[SOURCES-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.037"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[SOURCES-CONTENT]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.045"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[SOURCES-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.038"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[SOURCES-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.034"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[SOURCES-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.031"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[SOURCES-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.033"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[SOURCES-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.036"/>
+  <testcase name="paneStateRendersDataEmptyOrSafeSurfaceExclusively[SOURCES-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchPaneStateMatrixTest" time="0.035"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

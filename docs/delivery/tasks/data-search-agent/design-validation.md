@@ -1,44 +1,27 @@
-# تحقق تصميم Data Search Agent — مواءمة API وتوحيد النظام البصري
+# تحقق تصميم Data Search — وكيل RAG محادثي
 
-الحالة: `passed` للتحقق الوثائقي والساكن قبل نقطة اعتماد التصميم  
+الحالة: `passed` للفحص الوثائقي والساكن قبل نقطة اعتماد التصميم
 التاريخ: 2026-11-06  
-النطاق: `DS-REQ-01..13` و`SCR-DS-001..010`
+النطاق: `DS-REQ-01..15` و`SCR-DS-001..010`
 
-## توحيد التصميم مع المرجع العام
+## التصحيح المفحوص
 
-المرجعان الحاكمان لهذا التحديث هما:
+- أصبحت المحادثة وسجل الرسائل والمؤلف هي سطح العمل الرئيس.
+- أزيلت رحلة البحث ونتائج `top-k` المستقلة من الواجهة الأساسية.
+- أصبحت الملفات والفهرسة ونطاق الاسترجاع أدوات مساندة.
+- وُثّق الافتراضي: لا تثبيتات = كل المصادر المفهرسة في المساحة؛ وجود تثبيتات = المجموعة المثبتة فقط.
+- لا تظهر مراجع المصادر إلا إذا أعادها عقد الرسالة بصورة منظمة مؤكدة.
+- لا توجد أفعال إنشاء/إعادة تسمية/حذف مساحة في Android.
 
-- `docs/design/UI-PREVIEW.html` ببصمة `D20DC95814303301C5DFB0146F8EC25EA717D4ECCA64E28D5E4AC6E125F98D0C`.
-- `docs/design/UI-DESIGN.md` ببصمة `8B9C00244E6571B50E2CCB03FD3F8F6BCFF643E196D8E518F333BC426E008684`.
-
-نُفذ فحص PowerShell محلي يقرأ متغيرات CSS من `.phone/.phone.dark` و`.device/.device.dark` ويقارن 18 دوراً في كل مظهر، ثم يتحقق من overrides التوزيع الدلالي الثمانية في نهاية `<style>`.
-
-- أدوار الألوان المفحوصة: 36؛ الاختلافات: 0.
-- overrides التوزيع المطلوبة: 8؛ المفقود: 0.
-- Chrome المراجعة يطابق خلفية الصفحة وحدود عناصر التحكم والجهاز والملاحظة والظل وحاوية المسودة في `UI-PREVIEW.html`.
-- الوجهة النشطة تستخدم `primary/onPrimary`.
-- eyebrow والتحميل وشريحة المساحة تستخدم الأزرق العام؛ بقي السماوي لأيقونات هوية Data Search، حافة المقتطف، وحالات `ready/indexed` ذات النص.
-- لم تتغير الرحلات أو النصوص أو عناصر الشاشات أو عقد API؛ لذلك بقي `screen-inventory.json` دون تعديل.
-
-## سلطة العقد
-
-قُرئت حزمة `docs/api` قبل هذا التحديث. مصدرها المعلن:
-
-- الفرع: `chore/public-file-links-closing`
-- الالتزام: `ff547ad8228741a532077b8eaf8fa2eb928be782`
-- تاريخ التوليد: 2026-10-22
-
-ليست الحزمة دليلاً على `master` العامل. لذلك يعكس التصميم المسارات والحقول الموثقة، ويعرض في أدوات المراجعة تحذيراً بأن التنفيذ ينتظر تأكيد الباك إند. لم يُعدل الباك إند.
-
-## الملفات والبصمات
+## بصمات حزمة التصميم
 
 | الملف | SHA-256 |
 |---|---|
-| `ux-journeys.md` | `B2D277811E45868196C971467BED0D8D129B5BB6A1CFEBB1A56AFD6EAEB37CF7` |
-| `wireframes.md` | `E9DEE56A346E5C4129562FDF1DDDF1FF4BB81B1BC8F823CFA33F5DDE1B098509` |
-| `design-reference.html` | `D03F7F917FD8EAC830F9108EF33F6C2CDCB081496F850E94F336B83B1E115C7E` |
-| `design-tokens.md` | `5C9030854CF1723807F1F2FEBA65EE48441EBA194BF90BD03EE73392CE917ED6` |
-| `screen-inventory.json` | `D13B637E885437ECB69BD7F2DE3B1BCF4E12FBA4816EC2E21412655A708A8816` |
+| `ux-journeys.md` | `04778D7C18358C452290BA14B14D9ADDB443E7AEAEFFCC5B0391E2B1797E8A26` |
+| `wireframes.md` | `1AE73A1E04F6DEF53DD107ADDDCF4921EE674B1A2D6E61FD958B7D1681987199` |
+| `design-reference.html` | `A980BABC438FBD667DBF621A7A0E246DE27B4178A4D071B90065336F4B28A884` |
+| `design-tokens.md` | `2122771E81D0FDDB8B9B11516D82D34B1D0AFB958F26664A276D0C99D70667F2` |
+| `screen-inventory.json` | `4B32D7A09513F43ECB11CBA817FC41C7AB3294E542D7B24BF2266C6F2602C1C8` |
 
 ## فحص الجرد
 
@@ -48,70 +31,56 @@
 python "C:\Users\anast\Desktop\aizzak-android\.codex\android-software-house\runtime\scripts\suite.py" inventory --file "C:\Users\anast\Desktop\aizzak-android\docs\delivery\tasks\data-search-agent\screen-inventory.json"
 ```
 
-النتيجة: رمز خروج `0`، و`status: passed`، و`errors: []`.
+النتيجة: exit `0`، `status: passed`، و`errors: []`.
 
 - الشاشات: 10 (`SCR-DS-001..010`).
-- العناصر: 106، بمعرفات مستقرة وفريدة.
+- العناصر: 90، بمعرفات فريدة.
 - اللغات: الإنجليزية والعربية.
-- التكيف: compact وexpanded ومقياس 1.3.
-- التكوينات المطلوبة: en/light/390/1.0، ar/dark/390/1.0، en/dark/840/1.0، ar/light/840/1.3.
+- التكوينات: EN/light/390/1.0، AR/dark/390/1.0، EN/dark/840/1.0، AR/light/840/1.3.
+- فحص ربط المعرفات بالمرجع: 10 شاشات، 90 عنصراً، 0 معرف شاشة مفقود.
 
-## JavaScript وترابط المرجع
+## JavaScript والمرجع التفاعلي
 
-استُخرج `<script>` من `design-reference.html` وشُغّل:
+قُرئ `<script>` من `design-reference.html` وشُغّل عبر `new Function` في Node دون كتابة ملف مؤقت:
 
 ```powershell
-node --check -
+node -e "const fs=require('fs'); const h=fs.readFileSync('docs/delivery/tasks/data-search-agent/design-reference.html','utf8'); const s=h.match(/<script>([\s\S]*?)<\/script>/); if(!s) throw new Error('script missing'); new Function(s[1]); console.log('script syntax passed')"
 ```
 
-النتيجة: رمز خروج `0` بلا أخطاء صياغة. يحتوي map التنفيذ على الشاشات العشر، وكل `reference_anchor` في الجرد يقابل معرفاً موجوداً في المرجع.
+النتيجة: exit `0` و`script syntax passed`.
 
-أضيف دعم إعدادات اللقطة داخل fragment بعد `|` حتى يمكن تشغيل التكوينات محلياً من دون شبكة أو تعديل الملف.
+يدعم fragment صيغة `SCR|locale|theme|layout|scale|state` ويغطي حالات content وstreaming وpartial وempty وoffline وpermission وsession.
 
-## دليل Edge التاريخي
+## لقطات Edge الحالية
 
-شُغّل `msedge.exe --headless=new --dump-dom` في التحقق السابق بملف مستخدم مؤقت منفصل. يثبت الجدول اكتمال المحتوى والتكيف قبل تعديل الألوان، لكنه لا يُعد دليلاً بصرياً حالياً بعد التوحيد:
+استُخدم:
 
-| الشاشة/التكوين | Exit | أحرف `#product-screen` | النتيجة |
-|---|---:|---:|---|
-| SCR-DS-001 · en/light/compact | 0 | 3055 | passed |
-| SCR-DS-009 · ar/dark/compact | 0 | 998 | passed، RTL |
-| SCR-DS-003 · en/dark/expanded | 0 | 2696 | passed |
-| SCR-DS-004 · ar/light/compact/1.3 · quarantined | 0 | 1577 | passed، RTL |
-| SCR-DS-006 · ar/light/expanded/1.3 | 0 | 1477 | passed، RTL |
-| SCR-DS-010 · en/dark/compact | 0 | 1040 | passed |
+```powershell
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless=new --disable-gpu --hide-scrollbars --no-first-run --window-size=<w>,<h> --screenshot=<output> "file:///.../design-reference.html#<config>"
+```
 
-كان stderr فارغاً في الحالات الست.
-
-## اللقطات المرئية التاريخية
+نجحت الحالات الخمس، exit `0` لكل منها:
 
 | الملف | التكوين | SHA-256 |
 |---|---|---|
-| `design-preview.png` | Dashboard · en/light/compact | `0DEFA6818E693479771FFCE64592FADC41B6A3E866F291C7FF0235D1E0FAE1B1` |
-| `design-preview-space-ar.png` | Choose space · ar/dark/compact | `21B0CAFCB8179B94D743ACC3CD27ABF6FAC6BDB2D0855FDD0048999520529D61` |
-| `design-preview-library-wide.png` | Library · en/dark/expanded | `4DD84F5D34A1423E3593EF12BA1C7C05F2BCB880FFD32C6C71298AE734A7B960` |
-| `design-preview-results-ar-wide.png` | Results · ar/light/expanded/1.3 | `53D877BA072AD083BF504444AC7DAD11D4D509451EEE33BFC0DF13900E4715CA` |
-| `design-preview-replace-dark.png` | Replace warning · en/dark/compact | `7F27A32309388BC6FF524A9AD0D8B134D9D6B089AA64869D8057C921D5B01C34` |
+| `design-preview.png` | محادثة · EN/light/compact/content | `A47AF3B8A5196F4816B6BBBBED32275ACC2A3258C6576EA402DF56C938A017F8` |
+| `design-preview-space-ar.png` | اختيار مساحة · AR/dark/compact/content | `87853501AA4AB61DE85245AA6DC09FB119AE3C006A23B46470C403C101799563` |
+| `design-preview-library-wide.png` | مصادر · EN/dark/expanded/content | `70CB1ECA320BFFCE6F105C5A61BE1D5915CE3423FC94A4E14A42242601AFC11D` |
+| `design-preview-results-ar-wide.png` | محادثة · AR/light/expanded/1.3/streaming | `040A2B1E218DE2CA27C95E4F25DF8B4330500C7E8A2C3B78888092051D888CA9` |
+| `design-preview-replace-dark.png` | نطاق إجابة · EN/dark/compact/content | `43D6A1E8ED72C008F2F9A9D595F109FCD05E446E26577FAA1A2B6BE1C1D73F53` |
 
-فُحصت هذه اللقطات في التحقق السابق. تظهر عناوين ووصف بطاقات الإضافة في أسطر منفصلة، وسلامة الملف وفهرسة البحث كسطرين مستقلين، ولا يوجد قص ظاهر في العربية 1.3 أو الحوارات. لكنها تسبق توحيد التوزيع اللوني ولا تُستخدم كمرجع اعتماد للون الحالي؛ المرجع الحالي هو HTML ذو البصمة أعلاه.
+أسماء اللقطتين `results` و`replace` محفوظة لاستقرار المسارات التاريخية فقط؛ محتواهما الحالي هو محادثة تبث ونطاق إجابة، وليس نتائج بحث أو تحذير استبدال.
 
-## مطابقة عقد API في التصميم
+فُحصت بصرياً لقطة المحادثة compact الإنجليزية ولقطة المحادثة expanded العربية عند 1.3. ظهرت الرسائل والمؤلف وحالة البث والأجزاء الثلاثة بلا قص مرئي. هذا فحص مرجع HTML، وليس اختبار Compose أو جهاز.
 
-- `space_id`: اختيار مساحة موجودة وحالة no-space مانعة؛ لا إنشاء أو إدارة.
-- الرفع: تسجيل → رابط رفع موقع → complete → `uploaded/scanning/ready/quarantined`.
-- الفهرسة: تبدأ بعد ready فقط → 202 → `pending/indexing/indexed/failed`.
-- النص: اقتراح Android يحوله إلى UTF-8 `text/plain` ويمر بمسار الملف نفسه؛ لا endpoint نص مختلق.
-- المكتبة: دمج `FileOut.id` مع `DocumentOut.file_id`، وcursor مستقل للقائمتين.
-- البحث: top-k داخل مساحة واحدة، افتراضي 5 وحد 50، بلا cursor في الإدخال.
-- النتيجة: text وfile_name وpage_number وsection عند توفرها؛ لا score ظاهر ولا إجابة مولدة.
-- الحذف: حذف ناعم للملف وتطهير غير قابل للتراجع للمستندات والقطع والفهرس.
-- تطابق الاسم: تحذير best-effort قبل التسجيل مع تصريح باحتمال السباق.
+## فحص diff
 
-## قيود الدليل
+`git diff --check` نجح، exit `0`. ظهرت تحذيرات تحويل LF إلى CRLF فقط، بلا أخطاء whitespace.
 
-- لم يُنفذ Android build أو Compose preview أو screenshot test أو اختبار جهاز.
-- لم يُختبر TalkBack أو IME أو split-screen فعلياً.
-- لم تُلتقط صور متصفح جديدة بعد توحيد اللون؛ فحوص هذا التحديث ساكنة ومحلية كما حُددت ميزانية التحقق.
-- لقطة API ليست تأكيداً على `master`، ولا تثبت مفتاح Data Search أو أسماء صلاحيات الملفات الدقيقة أو MIME/limits أو استعادة upload URL منتهٍ.
-- التحقق الحالي من تنفيذ `ui-designer` وليس مراجعة `design-qa` مستقلة؛ تبقى المطابقة الفعلية بعد التنفيذ لمرحلة لاحقة.
-- لم تُعدّل ملفات التطبيق أو الباك إند.
+## سلطة العقد والقيود
+
+- تطبيق الويب مرجع سلوك منتج للقراءة فقط، وليس إثباتاً لعقد `master`.
+- لم يُعدل تطبيق Android أو تطبيق الويب أو الباك إند.
+- لا يثبت التصميم مفتاح Data Search أو الصلاحيات أو message content أو SSE events أو citations أو pagination أو model routes أو pins أو MIME/limits أو recovery.
+- لم يُنفذ Android build أو Compose preview أو screenshot test أو TalkBack أو IME أو جهاز فعلي.
+- التحقق الحالي فحص ذاتي لمخرجات UI designer؛ لا يحل محل `design-qa` المستقل بعد التنفيذ.

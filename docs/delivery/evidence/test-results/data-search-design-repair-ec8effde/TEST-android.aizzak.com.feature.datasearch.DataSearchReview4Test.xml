@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchReview4Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:47:22.734Z" hostname="ENG-ANAS" time="0.184">
+  <properties/>
+  <testcase name="pinnedNonIndexedSourceCanStillBeRemoved" classname="android.aizzak.com.feature.datasearch.DataSearchReview4Test" time="0.075"/>
+  <testcase name="unpinnedNonIndexedSourceCannotBeIncluded" classname="android.aizzak.com.feature.datasearch.DataSearchReview4Test" time="0.059"/>
+  <testcase name="acquisitionChoiceCallbacksEmitTypedModes" classname="android.aizzak.com.feature.datasearch.DataSearchReview4Test" time="0.05"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

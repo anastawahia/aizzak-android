@@ -1,0 +1,41 @@
+{
+  "source_sha256": "e56cb5e3ed516fc3fc4087a9f63e3dd273144e16cfdc45cbbe1e04d22521fe57",
+  "checks": {
+    "compile": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/delivery/evidence/data-search-design-repair-all-e56cb5e3.json",
+          "sha256": "d4ce73ddd6761e99c4533644f0b48700d1a0b6343ef36388c9a5914ec5ddc992"
+        }
+      ]
+    },
+    "static_analysis": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/delivery/evidence/data-search-design-repair-all-e56cb5e3.json",
+          "sha256": "d4ce73ddd6761e99c4533644f0b48700d1a0b6343ef36388c9a5914ec5ddc992"
+        }
+      ]
+    },
+    "relevant_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/delivery/evidence/data-search-design-repair-all-e56cb5e3.json",
+          "sha256": "d4ce73ddd6761e99c4533644f0b48700d1a0b6343ef36388c9a5914ec5ddc992"
+        }
+      ]
+    },
+    "independent_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/delivery/tasks/data-search-agent/design-repair-code-review-final.md",
+          "sha256": "9b2b15db0eb42086710c6add07b20ff2ffa413bac0fe4a380ced26fb8307697e"
+        }
+      ]
+    }
+  }
+}

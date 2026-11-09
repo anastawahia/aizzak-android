@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchInteractionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-07T16:04:52.268Z" hostname="ENG-ANAS" time="0.433">
+  <properties/>
+  <testcase name="composerHoistsTypingSendCopyDeleteAndBack" classname="android.aizzak.com.feature.datasearch.DataSearchInteractionTest" time="0.257"/>
+  <testcase name="paginationAndSelectionsUseCallbacks" classname="android.aizzak.com.feature.datasearch.DataSearchInteractionTest" time="0.058"/>
+  <testcase name="sendAndDestructiveActionsRespectCapabilities" classname="android.aizzak.com.feature.datasearch.DataSearchInteractionTest" time="0.069"/>
+  <testcase name="deleteConfirmationAndCancelAreHoisted" classname="android.aizzak.com.feature.datasearch.DataSearchInteractionTest" time="0.049"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

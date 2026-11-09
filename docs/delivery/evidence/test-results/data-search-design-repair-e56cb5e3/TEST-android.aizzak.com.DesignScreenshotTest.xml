@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.DesignScreenshotTest" tests="40" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:50:40.457Z" hostname="ENG-ANAS" time="8.579">
+  <properties/>
+  <testcase name="recordApprovedConfiguration[SCR-HOME-01__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="5.328"/>
+  <testcase name="recordApprovedConfiguration[SCR-HOME-01__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.14"/>
+  <testcase name="recordApprovedConfiguration[SCR-HOME-01__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.205"/>
+  <testcase name="recordApprovedConfiguration[SCR-HOME-01__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.098"/>
+  <testcase name="recordApprovedConfiguration[SCR-ACCT-01__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.28"/>
+  <testcase name="recordApprovedConfiguration[SCR-ACCT-01__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.107"/>
+  <testcase name="recordApprovedConfiguration[SCR-ACCT-01__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.127"/>
+  <testcase name="recordApprovedConfiguration[SCR-ACCT-01__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.117"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-01__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.229"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-01__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.086"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-01__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.081"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-01__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.065"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-02__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.071"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-02__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.075"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-02__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.083"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-02__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.077"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-03__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.062"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-03__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.056"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-03__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.051"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-03__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.06"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-04__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.061"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-04__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.051"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-04__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.049"/>
+  <testcase name="recordApprovedConfiguration[SCR-AUTH-04__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.061"/>
+  <testcase name="recordApprovedConfiguration[SCR-LOAD-01__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.06"/>
+  <testcase name="recordApprovedConfiguration[SCR-LOAD-01__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.047"/>
+  <testcase name="recordApprovedConfiguration[SCR-LOAD-01__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.037"/>
+  <testcase name="recordApprovedConfiguration[SCR-LOAD-01__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.047"/>
+  <testcase name="recordApprovedConfiguration[SCR-CTX-01__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.047"/>
+  <testcase name="recordApprovedConfiguration[SCR-CTX-01__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.05"/>
+  <testcase name="recordApprovedConfiguration[SCR-CTX-01__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.042"/>
+  <testcase name="recordApprovedConfiguration[SCR-CTX-01__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.043"/>
+  <testcase name="recordApprovedConfiguration[SCR-SET-01__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.086"/>
+  <testcase name="recordApprovedConfiguration[SCR-SET-01__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.067"/>
+  <testcase name="recordApprovedConfiguration[SCR-SET-01__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.068"/>
+  <testcase name="recordApprovedConfiguration[SCR-SET-01__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.069"/>
+  <testcase name="recordApprovedConfiguration[SCR-ACCT-02__en_light_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.075"/>
+  <testcase name="recordApprovedConfiguration[SCR-ACCT-02__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.053"/>
+  <testcase name="recordApprovedConfiguration[SCR-ACCT-02__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.052"/>
+  <testcase name="recordApprovedConfiguration[SCR-ACCT-02__ar_light_w840_fs1.5.png]" classname="android.aizzak.com.DesignScreenshotTest" time="0.051"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Robolectric] WARN: Android SDK 36 requires Java 21 (have Java 17). Tests won't be run on SDK 36 unless explicitly requested.
+[Robolectric] WARN: Android SDK 37 requires Java 21 (have Java 17). Tests won't be run on SDK 37 unless explicitly requested.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.HomePhoneScreenshotTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:28:42.864Z" hostname="ENG-ANAS" time="0.753">
+  <properties/>
+  <testcase name="compactLayoutAndNavigationRemainUsable[en_false_w390_fs1]" classname="android.aizzak.com.HomePhoneScreenshotTest" time="0.09"/>
+  <testcase name="compactLayoutAndNavigationRemainUsable[ar_true_w390_fs1]" classname="android.aizzak.com.HomePhoneScreenshotTest" time="0.085"/>
+  <testcase name="compactLayoutAndNavigationRemainUsable[en_true_w390_fs1]" classname="android.aizzak.com.HomePhoneScreenshotTest" time="0.098"/>
+  <testcase name="compactLayoutAndNavigationRemainUsable[ar_false_w390_fs1]" classname="android.aizzak.com.HomePhoneScreenshotTest" time="0.087"/>
+  <testcase name="compactLayoutAndNavigationRemainUsable[en_false_w360_fs1.5]" classname="android.aizzak.com.HomePhoneScreenshotTest" time="0.103"/>
+  <testcase name="compactLayoutAndNavigationRemainUsable[ar_true_w360_fs1.5]" classname="android.aizzak.com.HomePhoneScreenshotTest" time="0.096"/>
+  <testcase name="compactLayoutAndNavigationRemainUsable[en_true_w360_fs2]" classname="android.aizzak.com.HomePhoneScreenshotTest" time="0.082"/>
+  <testcase name="compactLayoutAndNavigationRemainUsable[ar_false_w360_fs2]" classname="android.aizzak.com.HomePhoneScreenshotTest" time="0.102"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

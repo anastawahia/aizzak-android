@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:47:05.695Z" hostname="ENG-ANAS" time="0.567">
+  <properties/>
+  <testcase name="rateLimitAndUnavailableDoNotAutoRetryAndUnsafeCorrelationIsDropped" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.238"/>
+  <testcase name="resourceIsUnwrappedAndUnknownFieldsRolesAndEmptyPermissionsAreAccepted" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.02"/>
+  <testcase name="logoutUsesPostAndNeverRefreshesOrRetriesWrites" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.017"/>
+  <testcase name="oversizedAndWrongContentTypeAreRejected" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.02"/>
+  <testcase name="disconnectedRequestMapsToNetworkWithoutAutomaticRetry" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.01"/>
+  <testcase name="redirectsDoNotForwardBearerToAnotherDestination" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.012"/>
+  <testcase name="timeoutIsBoundedAndExternalCancellationRemainsCancellation" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.17"/>
+  <testcase name="tokenFailuresAreTypedAndNeverDispatchHttp" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.011"/>
+  <testcase name="environmentRejectsReleaseHttpNonloopbackAndCredentialUrls" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.007"/>
+  <testcase name="missingNullWrongTypesWrappedDataAndNoncanonicalUuidNeverGrantContext" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.022"/>
+  <testcase name="repeatedUnauthorizedAndForbiddenRemainDifferentAndBounded" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.014"/>
+  <testcase name="unauthorizedGetRefreshesAndRetriesExactlyOnce" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.012"/>
+  <testcase name="cookiesAreNotPersistedAndContextIsFetchedEachTime" classname="android.aizzak.com.data.session.HttpAccountContextRepositoryTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 08, 2026 7:47:06 AM okhttp3.mockwebserver.MockWebServer$SocketHandler handle
+WARNING: MockWebServer[52348] connection from /127.0.0.1 didn't make a request
+Nov 08, 2026 7:47:06 AM okhttp3.mockwebserver.MockWebServer$SocketHandler handle
+WARNING: MockWebServer[52348] connection from /127.0.0.1 didn't make a request
+]]></system-err>
+</testsuite>

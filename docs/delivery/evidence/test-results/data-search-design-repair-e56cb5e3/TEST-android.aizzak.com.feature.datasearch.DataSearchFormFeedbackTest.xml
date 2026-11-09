@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchFormFeedbackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:50:55.501Z" hostname="ENG-ANAS" time="0.245">
+  <properties/>
+  <testcase name="blankNameExplainsValidationAndValidNameCanBeSubmittedOnce" classname="android.aizzak.com.feature.datasearch.DataSearchFormFeedbackTest" time="0.245"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

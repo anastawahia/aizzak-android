@@ -3,7 +3,7 @@
   "task": "data-search-agent",
   "workflow": "ui-redesign",
   "created": "2026-11-06T01:58:49+0300",
-  "sequence": 2,
+  "sequence": 10,
   "mandatory": [
     "intake",
     "design",
@@ -21,39 +21,52 @@
       "seq": 1
     },
     "design": {
-      "state": "changes_requested",
-      "decision": "changes_requested",
-      "ref": "طلب المالك: قم بتحديث التصميم — 2026-11-06؛ السبب: مواءمة التصميم مع وثائق API المحلية.",
+      "state": "passed",
+      "decision": "approved",
+      "ref": "اعتمد التصميم؛ لا تبدا بالتنفيذ — 2026-11-06",
       "packet": [
         {
-          "path": ".android-suite/tasks/data-search-agent/ux-journeys.md",
-          "sha256": "2d376cf68bbe5576349860affd9aa0133689abc9c4297b757ae03f45e40ed9f4"
+          "path": "docs/delivery/tasks/data-search-agent/ux-journeys.md",
+          "sha256": "04778d7c18358c452290ba14b14d9addb443e7aeaeffcc5b0391e2b1797e8a26"
         },
         {
-          "path": ".android-suite/tasks/data-search-agent/wireframes.md",
-          "sha256": "6e6ac10ac563f52ce9efc8bad382d8c72b85a2c910e90c6bb5dce3778485a81a"
+          "path": "docs/delivery/tasks/data-search-agent/wireframes.md",
+          "sha256": "1ae73a1e04f6def53dd107adddcf4921ee674b1a2d6e61fd958b7d1681987199"
         },
         {
-          "path": ".android-suite/tasks/data-search-agent/design-reference.html",
-          "sha256": "e7215b9ca2ab9927f9ca4f2e5ad495ce2f4f90393d04452c22f1b31de3005131"
+          "path": "docs/delivery/tasks/data-search-agent/design-reference.html",
+          "sha256": "a980babc438fbd667dbf621a7a0e246de27b4178a4d071b90065336f4b28a884"
         },
         {
-          "path": ".android-suite/tasks/data-search-agent/design-tokens.md",
-          "sha256": "479312910f435e30724900d6da2e35d5ebbc924ad55f69915d88ad5a32ae11de"
+          "path": "docs/delivery/tasks/data-search-agent/design-tokens.md",
+          "sha256": "2122771e81d0fddb8b9b11516d82d34b1d0afb958f26664a276d0c99d70667f2"
         },
         {
-          "path": ".android-suite/tasks/data-search-agent/screen-inventory.json",
-          "sha256": "e8cbe7d9c1cf200c0e3fa47f51552e15d05395f7d63c4242f84f757de10ae65f"
+          "path": "docs/delivery/tasks/data-search-agent/screen-inventory.json",
+          "sha256": "4b32d7a09513f43ecb11cba817fc41c7ab3294e542d7b24bf2266c6f2602c1c8"
         }
       ],
-      "at": "2026-11-06T02:51:24+0300",
-      "seq": 2
+      "at": "2026-11-06T22:44:45+0300",
+      "seq": 3
     },
     "build": {
-      "state": "pending"
+      "state": "passed",
+      "at": "2026-11-08T07:55:07+0300",
+      "source_sha256": "e56cb5e3ed516fc3fc4087a9f63e3dd273144e16cfdc45cbbe1e04d22521fe57",
+      "note": "قُبل تسليم الدفعة البصرية وإصلاح حاجز صلاحية التحرير offline في design-repair-handoff.md؛ المراجعة البرمجية النهائية passed، وQA أثبت675 اختباراً ناجحاً و272 لقطة حديثة على المصدر e56cb5e3، دون تعديل المرجع أو الباك إند. مطابقة الصور المستقلة قيد الفحص.",
+      "seq": 9
     },
     "verification": {
-      "state": "pending"
+      "state": "passed",
+      "at": "2026-11-08T07:55:09+0300",
+      "source_sha256": "e56cb5e3ed516fc3fc4087a9f63e3dd273144e16cfdc45cbbe1e04d22521fe57",
+      "evidence": [
+        {
+          "path": "docs/delivery/tasks/data-search-agent/reports/verification.json",
+          "sha256": "058cff79cf5db54b700fd2e0b54193da3fe4fdff2712372b2b221a22aaedf892"
+        }
+      ],
+      "seq": 10
     },
     "design-qa": {
       "state": "pending"
@@ -80,6 +93,54 @@
       "event": "checkpoint",
       "stage": "design",
       "state": "changes_requested"
+    },
+    {
+      "at": "2026-11-06T22:44:45+0300",
+      "event": "checkpoint",
+      "stage": "design",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-06T23:17:01+0300",
+      "event": "advanced",
+      "stage": "build",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-08T01:21:44+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-08T02:02:15+0300",
+      "event": "advanced",
+      "stage": "build",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-08T07:33:40+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-08T07:46:44+0300",
+      "event": "advanced",
+      "stage": "build",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-08T07:55:07+0300",
+      "event": "advanced",
+      "stage": "build",
+      "state": "passed"
+    },
+    {
+      "at": "2026-11-08T07:55:09+0300",
+      "event": "advanced",
+      "stage": "verification",
+      "state": "passed"
     }
   ]
 }

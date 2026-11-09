@@ -1,0 +1,45 @@
+{
+  "kind": "all",
+  "status": "passed",
+  "source_sha256": "e98f7779057d19d7b08d70331801c07be08d0a1623cecda603bc28783020320d",
+  "command": [
+    "C:\\Users\\anast\\Desktop\\aizzak-android\\gradlew.bat",
+    ":app:assembleDebug",
+    ":app:testDebugUnitTest",
+    ":app:lintDebug",
+    "--console=plain",
+    "--no-daemon"
+  ],
+  "timestamp": 1794065984,
+  "attempts": [
+    {
+      "exit_code": 0,
+      "output": "BUILD SUCCESSFUL in 2m 29s; 59 actionable tasks: 5 executed, 54 up-to-date.",
+      "duration_seconds": 150.438
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:\\Users\\anast\\Desktop\\aizzak-android\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "sha256": "3a488ced0bc42ecf141f72facc66b3419751bea80b765dc920936b0053d894e1"
+    }
+  ],
+  "test_summary": {
+    "tests": 288,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reports": [
+      "app/build/test-results/testDebugUnitTest"
+    ]
+  },
+  "data_search_test_summary": {
+    "reports": 11,
+    "tests": 184,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "signed_verified": false,
+  "published": false
+}

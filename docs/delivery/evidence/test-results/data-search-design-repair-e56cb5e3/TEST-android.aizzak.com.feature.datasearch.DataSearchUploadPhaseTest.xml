@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:51:12.584Z" hostname="ENG-ANAS" time="0.36">
+  <properties/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[IDLE]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.024"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[LOCAL_PREPARATION]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.026"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[REGISTRATION]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.023"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[BYTE_UPLOAD]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.025"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[UPLOAD_COMPLETE]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.027"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[SAFETY_SCAN]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.031"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[READY_NOT_INDEXED]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.041"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[INDEXING]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.027"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[SEARCHABLE]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.025"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[QUARANTINED]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.024"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[FAILED]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.023"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.025"/>
+  <testcase name="phaseDerivesIndicatorCancellationAndTerminalAction[RECOVERY_REQUIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchUploadPhaseTest" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

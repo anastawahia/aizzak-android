@@ -1,0 +1,41 @@
+{
+  "source_sha256": "3f3ab2bdb0bae1102c452d7e3206066e96edd4ce7494b82be47e196b48e3509f",
+  "checks": {
+    "compile": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/delivery/evidence/data-search-agent-all-3f3ab2bd.json",
+          "sha256": "1412d4926a0c263d01ec6f1172392f93139040d47eb03eb82a98c860ac3afa6c"
+        }
+      ]
+    },
+    "static_analysis": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/delivery/evidence/data-search-agent-all-3f3ab2bd.json",
+          "sha256": "1412d4926a0c263d01ec6f1172392f93139040d47eb03eb82a98c860ac3afa6c"
+        }
+      ]
+    },
+    "relevant_tests": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/delivery/evidence/data-search-agent-all-3f3ab2bd.json",
+          "sha256": "1412d4926a0c263d01ec6f1172392f93139040d47eb03eb82a98c860ac3afa6c"
+        }
+      ]
+    },
+    "independent_review": {
+      "status": "passed",
+      "evidence": [
+        {
+          "path": "docs/delivery/tasks/data-search-agent/code-review-6.md",
+          "sha256": "df2c60a88f109b75294765a467e778e0ccbc29a7a134cb498139508cd3a2dd01"
+        }
+      ]
+    }
+  }
+}

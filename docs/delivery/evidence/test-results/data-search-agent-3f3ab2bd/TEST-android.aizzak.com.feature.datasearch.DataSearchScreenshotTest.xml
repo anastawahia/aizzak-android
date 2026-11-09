@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" tests="40" skipped="0" failures="0" errors="0" timestamp="2026-11-07T22:18:29.862Z" hostname="ENG-ANAS" time="5.925">
+  <properties/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-001__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.454"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-001__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.114"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-001__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.108"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-001__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.117"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-002__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.541"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-002__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.245"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-002__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.44"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-002__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.176"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-003__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.106"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-003__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.114"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-003__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.114"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-003__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.097"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-004__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.097"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-004__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.095"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-004__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.133"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-004__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.204"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-005__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.088"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-005__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.082"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-005__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.053"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-005__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.097"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-006__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.147"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-006__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.147"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-006__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.242"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-006__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.15"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-007__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.148"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-007__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.142"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-007__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.141"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-007__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.112"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-008__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.114"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-008__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.082"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-008__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.071"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-008__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.089"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-009__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.126"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-009__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.08"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-009__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.107"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-009__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.12"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-010__en_light_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.108"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-010__ar_dark_w390_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.117"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-010__en_dark_w840_fs1.0.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.055"/>
+  <testcase name="recordInventoryConfiguration[SCR-DS-010__ar_light_w840_fs1.3.png]" classname="android.aizzak.com.feature.datasearch.DataSearchScreenshotTest" time="0.043"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

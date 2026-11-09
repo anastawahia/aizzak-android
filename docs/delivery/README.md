@@ -25,7 +25,7 @@
 
 - [account-context](tasks/account-context/status.md)
 - [auth-login](tasks/auth-login/status.md)
-- [data-search-agent](tasks/data-search-agent/intake.md)
+- [data-search-agent](tasks/data-search-agent/status.md)
 - [debug-api-connectivity](tasks/debug-api-connectivity/acceptance-packet.md)
 - [design-conformance](tasks/design-conformance/acceptance-checkpoint-2026-11-05.md)
 - [design-docs-paths](tasks/design-docs-paths/status.md)

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" tests="70" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:29:04.525Z" hostname="ENG-ANAS" time="1.564">
+  <properties/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SPACES-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SPACES-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SPACES-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.023"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SPACES-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SPACES-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.024"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SPACES-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SPACES-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATION-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATION-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.024"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATION-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATION-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.022"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATION-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATION-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATION-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.03"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATIONS-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.023"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATIONS-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.021"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATIONS-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATIONS-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATIONS-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.03"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATIONS-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[CONVERSATIONS-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.022"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[EDIT_CONVERSATION-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[EDIT_CONVERSATION-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[EDIT_CONVERSATION-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.022"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[EDIT_CONVERSATION-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.023"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[EDIT_CONVERSATION-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[EDIT_CONVERSATION-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[EDIT_CONVERSATION-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.023"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_CONVERSATION-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.022"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_CONVERSATION-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.027"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_CONVERSATION-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.04"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_CONVERSATION-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.017"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_CONVERSATION-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_CONVERSATION-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.017"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_CONVERSATION-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.027"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCES-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCES-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.022"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCES-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCES-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCES-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.026"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCES-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCES-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.025"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ADD_SOURCE-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ADD_SOURCE-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ADD_SOURCE-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.024"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ADD_SOURCE-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.017"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ADD_SOURCE-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.017"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ADD_SOURCE-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ADD_SOURCE-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.025"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCE_DETAILS-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCE_DETAILS-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCE_DETAILS-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCE_DETAILS-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCE_DETAILS-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.024"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCE_DETAILS-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.021"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[SOURCE_DETAILS-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.023"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ANSWER_SCOPE-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.024"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ANSWER_SCOPE-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.02"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ANSWER_SCOPE-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.023"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ANSWER_SCOPE-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.021"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ANSWER_SCOPE-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.034"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ANSWER_SCOPE-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.021"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[ANSWER_SCOPE-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.022"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_SOURCE-LOADING]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_SOURCE-EMPTY]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_SOURCE-ERROR]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_SOURCE-PERMISSION_DENIED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_SOURCE-OFFLINE]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.019"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_SOURCE-SESSION_EXPIRED]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.018"/>
+  <testcase name="stateIsExclusiveAndAuthorizationSafe[DELETE_SOURCE-PARTIAL]" classname="android.aizzak.com.feature.datasearch.DataSearchStateMatrixTest" time="0.024"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

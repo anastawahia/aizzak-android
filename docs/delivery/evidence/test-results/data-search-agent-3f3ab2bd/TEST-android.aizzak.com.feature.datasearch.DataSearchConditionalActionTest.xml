@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchConditionalActionTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-07T22:18:10.464Z" hostname="ENG-ANAS" time="0.678">
+  <properties/>
+  <testcase name="sourceDetailIndexActionMatchesItemState[NOT_STARTED]" classname="android.aizzak.com.feature.datasearch.DataSearchConditionalActionTest" time="0.191"/>
+  <testcase name="sourceDetailIndexActionMatchesItemState[INDEXING]" classname="android.aizzak.com.feature.datasearch.DataSearchConditionalActionTest" time="0.163"/>
+  <testcase name="sourceDetailIndexActionMatchesItemState[INDEXED]" classname="android.aizzak.com.feature.datasearch.DataSearchConditionalActionTest" time="0.146"/>
+  <testcase name="sourceDetailIndexActionMatchesItemState[FAILED]" classname="android.aizzak.com.feature.datasearch.DataSearchConditionalActionTest" time="0.169"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

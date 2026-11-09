@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.DataSearchReview3Test" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:51:01.546Z" hostname="ENG-ANAS" time="0.243">
+  <properties/>
+  <testcase name="emptySourcesAt840KeepsConversationPanesPopulated" classname="android.aizzak.com.feature.datasearch.DataSearchReview3Test" time="0.044"/>
+  <testcase name="unpinnedSourceUsesIncludeMeaningAndTogglesOn" classname="android.aizzak.com.feature.datasearch.DataSearchReview3Test" time="0.025"/>
+  <testcase name="pinnedSourceUsesRemoveMeaningAndTogglesOff" classname="android.aizzak.com.feature.datasearch.DataSearchReview3Test" time="0.026"/>
+  <testcase name="partialAndErrorMessagesRemainVisibleWithAccessibleRetry" classname="android.aizzak.com.feature.datasearch.DataSearchReview3Test" time="0.054"/>
+  <testcase name="emptyConversationAt840KeepsPopulatedSupportingPanes" classname="android.aizzak.com.feature.datasearch.DataSearchReview3Test" time="0.035"/>
+  <testcase name="createModeUsesCreateCapabilityLabelAndNameCallback" classname="android.aizzak.com.feature.datasearch.DataSearchReview3Test" time="0.026"/>
+  <testcase name="renameModeUsesRenameCapabilityTargetAndNameCallback" classname="android.aizzak.com.feature.datasearch.DataSearchReview3Test" time="0.032"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

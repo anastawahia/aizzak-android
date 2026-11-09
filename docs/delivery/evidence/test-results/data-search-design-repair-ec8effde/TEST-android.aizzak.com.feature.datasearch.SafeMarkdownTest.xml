@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="android.aizzak.com.feature.datasearch.SafeMarkdownTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-08T04:47:36.610Z" hostname="ENG-ANAS" time="0.026">
+  <properties/>
+  <testcase name="unsafeSchemesAreNotLinkAnnotations" classname="android.aizzak.com.feature.datasearch.SafeMarkdownTest" time="0.022"/>
+  <testcase name="parserSeparatesCodeBlocksAndPreservesPlainText" classname="android.aizzak.com.feature.datasearch.SafeMarkdownTest" time="0.001"/>
+  <testcase name="inlineParserSupportsBoldCodeAndSafeLinks" classname="android.aizzak.com.feature.datasearch.SafeMarkdownTest" time="0.003"/>
+  <testcase name="webLinkPolicyAllowsOnlyHttpAndHttps" classname="android.aizzak.com.feature.datasearch.SafeMarkdownTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
